@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+<header><h1 class="title"> Port19's Webpage </h1></header>
+<span></span>
+<a href="/rss.xml"><img src="/rss.svg" alt="" height=20em width=40em></a>
+<a href="https://github.com/port19x"><img src="/github.svg" alt="" height=20em width=40em></a>
+<hr>
+
+<span>
+    {% for post in section.pages %}
+    {% if post.updated %}
+    <a class="lists" href="{{ post.permalink | safe }}">{{ post.title }}</a>
+    {% endif %}
+    {% endfor %}
+ </span>
+
+<h2> Tech </h2>
+    <ul>
+    {% for post in section.pages %}
+    {% if "💻" in post.title %}
+    <li>
+      <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash; 
+      <a href="{{ post.permalink | safe }}">{{ post.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+
+<h2> Recipes </h2>
+    <ul>
+    {% for post in section.pages %}
+    {% if "🍽" in post.title %}
+    <li>
+      <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash; 
+      <a href="{{ post.permalink | safe }}">{{ post.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+<h2> Lifestyle </h2>
+    <ul>
+    {% for post in section.pages %}
+    {% if "📚" in post.title %}
+    <li>
+      <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash; 
+      <a href="{{ post.permalink | safe }}">{{ post.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+<hr>
+
+{% endblock content %}

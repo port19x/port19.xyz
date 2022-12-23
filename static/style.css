@@ -1,0 +1,63 @@
+body {
+  text-align: center;
+  background-color: #1d2021;
+  color: #ebdbb2;
+}
+
+a:link {
+  color: #83a598;
+}
+
+a:visited {
+  color: #d3869b;
+}
+
+table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  border: 1px dashed #8ec07c;
+}
+
+ol, ul, p, h3 {
+    list-style-position: inside;
+    text-align: left;
+    margin-left: 5em;
+}
+
+h3 {
+  margin-left: 6em;
+}
+
+h2 {
+  background-color:#282828;
+}
+
+thead, th {
+  border-bottom-style: double;
+}
+
+time {
+	font-family: monospace ;
+	color: #888 ;
+	font-size: 10pt ;
+}
+
+header {
+	text-align: center ;
+	font-family: "Fira Sans",sans ;
+	padding-bottom: 15pt ;
+}
+header h1 {
+	font-size: 30pt ;
+	margin-bottom: 0 ;
+}
+
+.lists {
+  margin-left: 1em;
+  margin-right: 1em;
+}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  {{ page.title }}
+</h1>
+{% if page.updated %}
+<i>Last Updated: {{ page.updated }}</i><br>
+{% else %}
+<i>First Published: {{ page.date }}</i>
+{% endif %}
+<hr>
+{{ page.content | safe }}
+<hr>
+{% endblock content %}
