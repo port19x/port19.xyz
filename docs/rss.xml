@@ -38,7 +38,7 @@ Actually usable documentation.
 A non-moronic directory structure.
 No theme required by default, you write the templates yourself.
 Unpolluted search results when checking for details.
-Thats where left off.  Convinced of zola but not yet applying it.&lt;&#x2F;p&gt;
+Thats where I left off.  Convinced of zola but not yet applying it.&lt;&#x2F;p&gt;
 &lt;p&gt;So the better answer to &amp;quot;Using Hugo without a theme&amp;quot; would have been &amp;quot;Use zola&amp;quot;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;migration&quot;&gt;Migration&lt;&#x2F;h2&gt;
 &lt;p&gt;Then, yesterday, I started migrating most of my blog posts from vimwiki to markdown and Zola.

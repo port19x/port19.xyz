@@ -35,7 +35,7 @@ Actually usable documentation.
 A non-moronic directory structure.
 No theme required by default, you write the templates yourself.
 Unpolluted search results when checking for details.
-Thats where left off.  Convinced of zola but not yet applying it.
+Thats where I left off.  Convinced of zola but not yet applying it.
 
 So the better answer to "Using Hugo without a theme" would have been "Use zola"
 
