@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <meta charset="utf-8">
+  <title>Port19's Webpage</title>
+  <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/82055622?v=4">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="vimwiki">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="what could it be?">
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<h1 class="title">
+  💻 Hugo is inexcusably bad
+</h1>
+
+<i>First Published: 2022-12-24</i>
+
+<hr>
+<h1 id="why-this-blog-uses-zola-instead-of-hugo">Why this blog uses Zola instead of Hugo</h1>
+<p>Before I get started, I should note that hugo is still less horrible than most of the crimes committed by javascript devs and pushed as static site generators.</p>
+<h2 id="hugo-onboarding-is-a-nightmare">Hugo onboarding is a nightmare</h2>
+<p>I spent several hours across a few days trying to get hugo to suit my needs.
+As with every static site generator, getting the first piece of html served is no problem and I got through the basics fast.
+Getting just a little further, I really enjoyed luke smiths video and followed <a href="https://www.youtube.com/watch?v=ZFL09qhKi5I">his tutorial</a> with his theme, <a href="https://github.com/LukeSmithxyz/lugo">lugo</a>.
+Aside from some things not looking as expected because of some recent commits that I rolled back things somewhat worked.
+But now I wanted to customize and get the directory structure to make sense.</p>
+<h2 id="what-the-fuck-is-a-theme">What the fuck is a theme</h2>
+<p>Essentially defaults. Defaults that hugo seems to not have out of the box.
+You can overwrite anything set in the themes directory in your own directories.
+The themes directory and it's contents just mimic the directory structure at the root of your project.
+&quot;Using Hugo without a theme&quot; spit out pretty garbage search results.
+But one forum post stuck out and actually managed to answer the simple question of wether it's possible.
+<a href="https://discourse.gohugo.io/t/solved-is-a-theme-a-requirement/2154">It is</a>, by just copying the themes files directly into the projects local folder.
+That ship has sailed for me, then and there.
+I want to write my own templates and craft my own website.
+The vast majority of hugo users prefers precrafted templates and layouts and only customizes those sporadically.</p>
+<h2 id="towards-a-less-cringe-alternative">Towards a less cringe alternative</h2>
+<p>I stopped for the day and browsed some of <a href="https://www.youtube.com/@bugswriter_">bugswriters</a> videos.
+His <a href="https://www.youtube.com/watch?v=V_qy1BnEMCc">introduction to zola</a> quickly had me sold.
+Actually usable documentation.
+A non-moronic directory structure.
+No theme required by default, you write the templates yourself.
+Unpolluted search results when checking for details.
+Thats where left off.  Convinced of zola but not yet applying it.</p>
+<p>So the better answer to &quot;Using Hugo without a theme&quot; would have been &quot;Use zola&quot;</p>
+<h2 id="migration">Migration</h2>
+<p>Then, yesterday, I started migrating most of my blog posts from vimwiki to markdown and Zola.
+After having ported 2 articles I made sure to spice up my landing page, which I did for a few hours.
+Understanding how to generate sorted sections was a matter of understanding the templating language.
+But luckily <a href="https://tera.netlify.app/docs/#getting-started">Tera</a> is just as well documented as <a href="https://www.getzola.org/documentation/getting-started/overview/">Zola</a> itself.
+I rewrote my css, being inspired by <a href="https://lukesmith.xyz/">lukesmiths webpage</a> in many details.
+To get back the categories I used by convention in vimwiki, I just prepended the site title with a unicode character and then filtered by those.
+Taxonomies/tags are inherently hard to work with, zola makes it somewhat accessible but I don't want to deal with them until I have a real need.
+After several hours of crafting my webpage it has become what you see now.
+I'm sure I'll hack away at the css some more and my index.html will grow organically.
+But it's mostly done and I'm very happy I went with zola over hugo.</p>
+
+<hr>
+
+    </div>
+  </section>
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/email.gif" style="height:31px;width:88px;max-height:none;max-width:none;"></a>
+    <a href="https://wiby.me"><img src="https://port19.xyz/wiby.gif" style="height:31px;width:88px;max-height:none;max-width:none;"></a>
+    <a href="https://based.cooking"><img src="https://port19.xyz/basedcooking.gif" style="height:31px;width:88px;max-height:none;max-width:none;"></a>
+    <a href="https://www.emulatorgames.net/roms/gameboy-advance/"><img src="https://port19.xyz/gameboy_advance.gif" style="height:31px;width:88px;max-height:none;max-width:none;"></a>
+  </footer>
+</body>
+
+</html>
