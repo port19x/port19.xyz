@@ -2,6 +2,9 @@ body {
   text-align: center;
   background-color: #1d2021;
   color: #ebdbb2;
+  max-width: 48em;
+  margin: auto;
+  padding: 0.825em;
 }
 
 a:link {
