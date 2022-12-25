@@ -1,0 +1,3 @@
+[submodule "external/dvd-animation"]
+	path = external/dvd-animation
+	url = https://github.com/port19x/dvd-animation
