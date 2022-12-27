@@ -7,7 +7,7 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://port19.xyz/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Sat, 24 Dec 2022 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 27 Dec 2022 00:00:00 +0000</lastBuildDate>
         <item>
             <title>💻 On FOSS Licenses</title>
             <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
@@ -593,6 +593,7 @@ Flavors of Youth &lt;&#x2F;p&gt;
 &lt;tr&gt;&lt;td&gt;Is this a Zombie?&lt;&#x2F;td&gt;&lt;td&gt;5&lt;&#x2F;td&gt;&lt;td&gt;12&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;ODDTAXI&lt;&#x2F;td&gt;&lt;td&gt;5&lt;&#x2F;td&gt;&lt;td&gt;13&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Paranoia Agent&lt;&#x2F;td&gt;&lt;td&gt;5&lt;&#x2F;td&gt;&lt;td&gt;13&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Perfect Blue&lt;&#x2F;td&gt;&lt;td&gt;5&lt;&#x2F;td&gt;&lt;td&gt;1&lt;&#x2F;td&gt;&lt;td&gt;Movie&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;The Night is Short, Walk on Girl&lt;&#x2F;td&gt;&lt;td&gt;5&lt;&#x2F;td&gt;&lt;td&gt;1&lt;&#x2F;td&gt;&lt;td&gt;Movie&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Toradora!&lt;&#x2F;td&gt;&lt;td&gt;5&lt;&#x2F;td&gt;&lt;td&gt;25&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Tsukigakirei&lt;&#x2F;td&gt;&lt;td&gt;5&lt;&#x2F;td&gt;&lt;td&gt;12&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
@@ -611,6 +612,7 @@ Flavors of Youth &lt;&#x2F;p&gt;
 &lt;tr&gt;&lt;td&gt;FLCL Progressive&lt;&#x2F;td&gt;&lt;td&gt;4&lt;&#x2F;td&gt;&lt;td&gt;6&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Gantz&lt;&#x2F;td&gt;&lt;td&gt;4&lt;&#x2F;td&gt;&lt;td&gt;13&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Ghost in the Shell&lt;&#x2F;td&gt;&lt;td&gt;4&lt;&#x2F;td&gt;&lt;td&gt;1&lt;&#x2F;td&gt;&lt;td&gt;Movie&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Grave of the Fireflies&lt;&#x2F;td&gt;&lt;td&gt;4&lt;&#x2F;td&gt;&lt;td&gt;1&lt;&#x2F;td&gt;&lt;td&gt;Movie&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Himouto! Umaru-chan&lt;&#x2F;td&gt;&lt;td&gt;4&lt;&#x2F;td&gt;&lt;td&gt;12&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Kiss x Sis&lt;&#x2F;td&gt;&lt;td&gt;4&lt;&#x2F;td&gt;&lt;td&gt;12&lt;&#x2F;td&gt;&lt;td&gt;OVA&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;PUPARIA&lt;&#x2F;td&gt;&lt;td&gt;4&lt;&#x2F;td&gt;&lt;td&gt;1&lt;&#x2F;td&gt;&lt;td&gt;ONA&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
@@ -662,6 +664,7 @@ Flavors of Youth &lt;&#x2F;p&gt;
 &lt;tr&gt;&lt;td&gt;Fullmetal Alchemist: Brotherhood&lt;&#x2F;td&gt;&lt;td&gt;5&lt;&#x2F;td&gt;&lt;td&gt;?&#x2F;64&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Nichijou - My Ordinary Life&lt;&#x2F;td&gt;&lt;td&gt;4&lt;&#x2F;td&gt;&lt;td&gt;17&#x2F;26&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Nisekoi&lt;&#x2F;td&gt;&lt;td&gt;3&lt;&#x2F;td&gt;&lt;td&gt;?&#x2F;20&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;One Piece&lt;&#x2F;td&gt;&lt;td&gt;3&lt;&#x2F;td&gt;&lt;td&gt;30&#x2F;&amp;gt;1000&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Sonny Boy&lt;&#x2F;td&gt;&lt;td&gt;2&lt;&#x2F;td&gt;&lt;td&gt;8&#x2F;12&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Toradora! SOS! Hurray for Gourmands&lt;&#x2F;td&gt;&lt;td&gt;2&lt;&#x2F;td&gt;&lt;td&gt;2&#x2F;4&lt;&#x2F;td&gt;&lt;td&gt;Special&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Dorei-ku The Animation&lt;&#x2F;td&gt;&lt;td&gt;1&lt;&#x2F;td&gt;&lt;td&gt;6&#x2F;12&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
@@ -669,13 +672,17 @@ Flavors of Youth &lt;&#x2F;p&gt;
 &lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
 &lt;h2 id=&quot;planning&quot;&gt;Planning&lt;&#x2F;h2&gt;
 &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Title&lt;&#x2F;th&gt;&lt;th&gt;Format&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
-&lt;tr&gt;&lt;td&gt;I Want to Eat Your Pancreas&lt;&#x2F;td&gt;&lt;td&gt;Movie&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
-&lt;tr&gt;&lt;td&gt;Josee, the Tiger and the Fish&lt;&#x2F;td&gt;&lt;td&gt;Movie&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
-&lt;tr&gt;&lt;td&gt;Clannad&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
-&lt;tr&gt;&lt;td&gt;Dr Stone&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;A Place Further Than The Universe&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;After The Rain&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Anohana: The Flower We Saw That Day&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Cowboy Bebop&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Cowboy Bebop - Knockin&#x27; On Heaven&#x27;s Door&lt;&#x2F;td&gt;&lt;td&gt;Movie&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Durarara!!&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Girls Last Tour&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Haibaane Renmei&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;Non Non Biyori&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
-&lt;tr&gt;&lt;td&gt;A whisker away&lt;&#x2F;td&gt;&lt;td&gt;Movie&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Ping Pong the Animation&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Welcome to the N.H.K.&lt;&#x2F;td&gt;&lt;td&gt;TV&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
 &lt;h2 id=&quot;sourcing&quot;&gt;Sourcing&lt;&#x2F;h2&gt;
 &lt;ul&gt;
