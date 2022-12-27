@@ -1,7 +1,7 @@
 +++
 title = "Anime List"
 date = 2022-03-17
-updated = 2022-12-12
+updated = 2022-12-27
 +++
 
 ## Favorites
@@ -37,6 +37,7 @@ Flavors of Youth \
 | Is this a Zombie?                             |       5 |     12 | TV      |
 | ODDTAXI                                       |       5 |     13 | TV      |
 | Paranoia Agent                                |       5 |     13 | TV      |
+| Perfect Blue                                  |       5 |      1 | Movie   |
 | The Night is Short, Walk on Girl              |       5 |      1 | Movie   |
 | Toradora!                                     |       5 |     25 | TV      |
 | Tsukigakirei                                  |       5 |     12 | TV      |
@@ -55,6 +56,7 @@ Flavors of Youth \
 | FLCL Progressive                              |       4 |      6 | TV      |
 | Gantz                                         |       4 |     13 | TV      |
 | Ghost in the Shell                            |       4 |      1 | Movie   |
+| Grave of the Fireflies                        |       4 |      1 | Movie   |
 | Himouto! Umaru-chan                           |       4 |     12 | TV      |
 | Kiss x Sis                                    |       4 |     12 | OVA     |
 | PUPARIA                                       |       4 |      1 | ONA     |
@@ -108,6 +110,7 @@ Flavors of Youth \
 | Fullmetal Alchemist: Brotherhood    |     5 | ?/64     | TV      |
 | Nichijou - My Ordinary Life         |     4 | 17/26    | TV      |
 | Nisekoi                             |     3 | ?/20     | TV      |
+| One Piece                           |     3 | 30/>1000 | TV      |
 | Sonny Boy                           |     2 | 8/12     | TV      |
 | Toradora! SOS! Hurray for Gourmands |     2 | 2/4      | Special |
 | Dorei-ku The Animation              |     1 | 6/12     | TV      |
@@ -115,15 +118,19 @@ Flavors of Youth \
 
 ## Planning
 
-| Title                            | Format |
-|----------------------------------|--------|
-| I Want to Eat Your Pancreas      | Movie  |
-| Josee, the Tiger and the Fish    | Movie  |
-| Clannad                          | TV     |
-| Dr Stone                         | TV     |
-| Durarara!!                       | TV     |
-| Non Non Biyori                   | TV     |
-| A whisker away                   | Movie  |
+| Title                                    | Format |
+|------------------------------------------|--------|
+| A Place Further Than The Universe        | TV     |
+| After The Rain                           | TV     |
+| Anohana: The Flower We Saw That Day      | TV     |
+| Cowboy Bebop                             | TV     |
+| Cowboy Bebop - Knockin' On Heaven's Door | Movie  |
+| Durarara!!                               | TV     |
+| Girls Last Tour                          | TV     |
+| Haibaane Renmei                          | TV     |
+| Non Non Biyori                           | TV     |
+| Ping Pong the Animation                  | TV     |
+| Welcome to the N.H.K.                    | TV     |
 
 ## Sourcing
 
