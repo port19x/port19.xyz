@@ -1,7 +1,9 @@
 +++
-title = "💻 Programming Skill: Tactics, Strategy and Management"
+title = "💻 On Programming Skill"
 date = 2023-01-04
 +++
+
+# Tactics, Strategy and Project Management"
 
 ## It's language agnostic
 

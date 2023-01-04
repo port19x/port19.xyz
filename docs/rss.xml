@@ -9,11 +9,12 @@
         <atom:link href="https://port19.xyz/rss.xml" rel="self" type="application/rss+xml"/>
         <lastBuildDate>Wed, 04 Jan 2023 00:00:00 +0000</lastBuildDate>
         <item>
-            <title>💻 Programming Skill: Tactics, Strategy and Management</title>
+            <title>💻 On Programming Skill</title>
             <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/tactics-strategy-management/</link>
-            <guid>https://port19.xyz/tactics-strategy-management/</guid>
-            <description>&lt;h2 id=&quot;it-s-language-agnostic&quot;&gt;It&#x27;s language agnostic&lt;&#x2F;h2&gt;
+            <link>https://port19.xyz/on-programming-skill/</link>
+            <guid>https://port19.xyz/on-programming-skill/</guid>
+            <description>&lt;h1 id=&quot;tactics-strategy-and-project-management&quot;&gt;Tactics, Strategy and Project Management&amp;quot;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;it-s-language-agnostic&quot;&gt;It&#x27;s language agnostic&lt;&#x2F;h2&gt;
 &lt;p&gt;One mistake common in new and&#x2F;or bad programmers is to measure programming skill in language proficiency.
 This might make sense for a first programming language, but any half decent programmer should quickly ascend beyond this level.
 Programming skill is at most bound to paradigms, not languages. 
