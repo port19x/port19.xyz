@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <meta charset="utf-8">
+  <title>Port19's Webpage</title>
+  <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/82055622?v=4">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="vimwiki">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="what could it be?">
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<h1 class="title">
+  💻 Hardlinks are underrated
+</h1>
+
+<i>First Published: 2023-01-10</i>
+
+<hr>
+<h1 id="hardlinks-symlinks-stow-for-dotfiles">Hardlinks &gt; Symlinks + Stow (for dotfiles)</h1>
+<p>Let's just get a quick overview over our options to duplicate files from A to B</p>
+<table><thead><tr><th></th><th>Copy</th><th>Hardlink</th><th>Symlink</th></tr></thead><tbody>
+<tr><td>Command</td><td><code>cp a b</code></td><td><code>ln a b</code></td><td><code>ln -s a b</code></td></tr>
+<tr><td>Storage requirement</td><td>2a</td><td>a</td><td>a</td></tr>
+<tr><td>b &quot;survives&quot; rm a</td><td>y</td><td>y</td><td>n</td></tr>
+</tbody></table>
+<p>Copying is pretty straight forward, no surprises here. <br />
+Symlinks are the go-to solution if you want to reference a file from somewhere else. <br />
+It's what makes my config files appear to be in <code>~/.config</code> when they're actually in <code>~/dotfiles</code>. <br />
+This happens via the usage of <code>stow</code>, an age old program for these sorts of things.</p>
+<p>I'll probably replace my <code>stow</code> usage with self scripted hardlinks.<br />
+The reason for this is twofold.<br />
+I don't want to clean up broken symlinks when I switch programs / decide a config file doesn't deserve a spot in the git repo.<br />
+Second, I may actually want to have residual configuration. Let me elaborate.</p>
+<p>Let's say I configure neofetch and put that into my git repo only to, after a few commits, realise that such a minor program with it's unimportant config file doesn't deserve a spot in my dotfiles repo.<br />
+In that case I'd get rid of it in my dotfiles folder, leaving the broken symlink.<br />
+Equally bad, the config is now lost. Or at least obscured in the git history.<br />
+I'd much prefer to have it still lying around, taking up the kilobyte that it is taking up in my git history anyway.</p>
+<p>Kinda sad that stow doesn't come with a hardlink option :/</p>
+
+<hr>
+
+    </div>
+  </section>
+  <footer >
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/email.gif" alt="Mailto link" style="height:31px;width:88px;max-height:none;max-width:none;"></a>
+    <a href="https://creativecommons.org/share-your-work/"><img src="https://port19.xyz/cc-by-sa.gif" alt="Webbutton displaying license" style="height:31px;width:88px;max-height:none;max-width:none;"></a>
+    <a href="https://wiby.me"><img src="https://port19.xyz/wiby.gif" alt="Webbutton to wiby.me" style="height:31px;width:88px;max-height:none;max-width:none;"></a>
+    <a href="https://based.cooking"><img src="https://port19.xyz/basedcooking.gif" alt="Webbutton to based.cooking" style="height:31px;width:88px;max-height:none;max-width:none;"></a>
+    <a href="https://github.com/port19x/"><img src="https://port19.xyz/github.gif" alt="Webbutton to github" style="height:31px;width:88px;max-height:none;max-width:none;"></a>
+    <a href="https://port19.xyz/"><img src="https://port19.xyz/port19.gif" alt="Webbutton to myself" style="height:31px;width:88px;max-height:none;max-width:none;"></a>
+  </footer>
+</body>
+
+</html>

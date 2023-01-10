@@ -7,7 +7,34 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://port19.xyz/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 10 Jan 2023 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>💻 Hardlinks are underrated</title>
+            <pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate>
+            <link>https://port19.xyz/hardlinks/</link>
+            <guid>https://port19.xyz/hardlinks/</guid>
+            <description>&lt;h1 id=&quot;hardlinks-symlinks-stow-for-dotfiles&quot;&gt;Hardlinks &amp;gt; Symlinks + Stow (for dotfiles)&lt;&#x2F;h1&gt;
+&lt;p&gt;Let&#x27;s just get a quick overview over our options to duplicate files from A to B&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;th&gt;Copy&lt;&#x2F;th&gt;&lt;th&gt;Hardlink&lt;&#x2F;th&gt;&lt;th&gt;Symlink&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Command&lt;&#x2F;td&gt;&lt;td&gt;&lt;code&gt;cp a b&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;code&gt;ln a b&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;code&gt;ln -s a b&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Storage requirement&lt;&#x2F;td&gt;&lt;td&gt;2a&lt;&#x2F;td&gt;&lt;td&gt;a&lt;&#x2F;td&gt;&lt;td&gt;a&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;b &amp;quot;survives&amp;quot; rm a&lt;&#x2F;td&gt;&lt;td&gt;y&lt;&#x2F;td&gt;&lt;td&gt;y&lt;&#x2F;td&gt;&lt;td&gt;n&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;Copying is pretty straight forward, no surprises here. &lt;br &#x2F;&gt;
+Symlinks are the go-to solution if you want to reference a file from somewhere else. &lt;br &#x2F;&gt;
+It&#x27;s what makes my config files appear to be in &lt;code&gt;~&#x2F;.config&lt;&#x2F;code&gt; when they&#x27;re actually in &lt;code&gt;~&#x2F;dotfiles&lt;&#x2F;code&gt;. &lt;br &#x2F;&gt;
+This happens via the usage of &lt;code&gt;stow&lt;&#x2F;code&gt;, an age old program for these sorts of things.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ll probably replace my &lt;code&gt;stow&lt;&#x2F;code&gt; usage with self scripted hardlinks.&lt;br &#x2F;&gt;
+The reason for this is twofold.&lt;br &#x2F;&gt;
+I don&#x27;t want to clean up broken symlinks when I switch programs &#x2F; decide a config file doesn&#x27;t deserve a spot in the git repo.&lt;br &#x2F;&gt;
+Second, I may actually want to have residual configuration. Let me elaborate.&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s say I configure neofetch and put that into my git repo only to, after a few commits, realise that such a minor program with it&#x27;s unimportant config file doesn&#x27;t deserve a spot in my dotfiles repo.&lt;br &#x2F;&gt;
+In that case I&#x27;d get rid of it in my dotfiles folder, leaving the broken symlink.&lt;br &#x2F;&gt;
+Equally bad, the config is now lost. Or at least obscured in the git history.&lt;br &#x2F;&gt;
+I&#x27;d much prefer to have it still lying around, taking up the kilobyte that it is taking up in my git history anyway.&lt;&#x2F;p&gt;
+&lt;p&gt;Kinda sad that stow doesn&#x27;t come with a hardlink option :&#x2F;&lt;&#x2F;p&gt;
+</description>
+        </item>
         <item>
             <title>📚 Frustrations with college</title>
             <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
