@@ -7,7 +7,72 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://port19.xyz/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Tue, 10 Jan 2023 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>💻 Emacs: One year later</title>
+            <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+            <link>https://port19.xyz/emacs1y/</link>
+            <guid>https://port19.xyz/emacs1y/</guid>
+            <description>&lt;h1 id=&quot;a-love-hate-relationship&quot;&gt;A love-hate Relationship&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;brief-history&quot;&gt;Brief history&lt;&#x2F;h2&gt;
+&lt;p&gt;On the 7th of January 2022 I decided to install Doom Emacs. 
+I toyed with the basics that night and continued to do so the next day.
+After two months, I wrote a first blog post on it. That being the oldest post hosted on this site today &lt;a href=&quot;https:&#x2F;&#x2F;port19.xyz&#x2F;emacs&#x2F;&quot;&gt;(check it out)&lt;&#x2F;a&gt;.
+I stayed on Emacs for a while, switched back to Neovim for a few months and then came back again.
+I even wrote my first scientific paper in some org-latex hybrid.
+Orgmode, not Emacs, has given me great power which comes with great responsibility that I&#x27;m getting tired off.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;reasons-to-love-emacs&quot;&gt;Reasons to love Emacs&lt;&#x2F;h2&gt;
+&lt;p&gt;When people talk about Emacs, they often mention some &amp;quot;killer features&amp;quot;. Here are mine:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;magit&quot;&gt;Magit&lt;&#x2F;h3&gt;
+&lt;p&gt;Magit is a git client that empowers you greatly.
+It&#x27;s different from any other git client I have seen or used previously.
+Magit doesn&#x27;t dumb things down for you, but rather empowers you and shows you options you might not have known to exist.
+Magit makes large rebases about twice as fast and half as daunting. It&#x27;s the best way to interact with git and will make you better at git, even if you revert to using the command line.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;orgmode&quot;&gt;Orgmode&lt;&#x2F;h3&gt;
+&lt;p&gt;Orgmode is a major mode and document format that has about as many features as my entire linux setup combined.
+Markdown, tables, executable code blocks are all neat.
+Rich export options make my life a lot easier.
+Basic outlining and outline folding is great and makes plain text documents scalable to dozens of kilobytes.
+Todo, scheduling and agenda are kinda meh compared to something like a bullet journal or smartphone productivity setup, but are nice to have, especially for project management.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;lisp&quot;&gt;Lisp&lt;&#x2F;h3&gt;
+&lt;p&gt;Lisp support also makes the list. The overwhelming majority of lisp programmers use Emacs.
+This is not very surprising, seeing as Emacs is primarily an elisp interpreter that has a long history within the lisp family of languages.
+Clojure has been my primary programming language for some time now. Using Doom Emacs made the transition a lot easier than it could have been otherwise.&lt;&#x2F;p&gt;
+&lt;p&gt;Other notable things: rapid theme switching, elfeed (rss), erc (irc)&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;reasons-to-hate-emacs&quot;&gt;Reasons to hate Emacs&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;it-s-slow-it-just-is&quot;&gt;It&#x27;s slow. It just is.&lt;&#x2F;h3&gt;
+&lt;p&gt;Compared to Neovim, and especially it&#x27;s gpu accelerated frontends like Neovide, Emacs feels sluggish.
+Doom Emacs ameliorates this, but it&#x27;s really emacs-nativecomp with ahead of time compilation that makes Emacs tolerable.
+But you still feel the slowness on many occasions.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;it-s-large-very-large&quot;&gt;It&#x27;s large, very large.&lt;&#x2F;h3&gt;
+&lt;p&gt;My &lt;code&gt;~&#x2F;.config&#x2F;emacs&lt;&#x2F;code&gt;, where Doom is installed, is 490 megabytes large.
+For reference, this is 90% of my &lt;code&gt;~&#x2F;.config&lt;&#x2F;code&gt; with another 9% being used by signal-desktop, an electron app.
+Coupled with native compilation of that whole setup taking a few minutes, this significantly increases my recovery time from backups.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;it-s-a-shaky-foundation-that-is-going-downhill&quot;&gt;It&#x27;s a shaky foundation that is going downhill.&lt;&#x2F;h3&gt;
+&lt;p&gt;Since emacs is very old, it has enjoyed a massive first movers advantage. 
+I&#x27;m sure that when it was first released in 1976, it was superior to anything else at the time.
+For reference, the same year vi was released.
+Since then emacs has certainly improved. Slowly and steadily.
+&amp;quot;Killer features&amp;quot; chose emacs as their platform of choice.
+But...&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-competition-has-catched-up&quot;&gt;The competition has catched up&lt;&#x2F;h2&gt;
+&lt;p&gt;It&#x27;s not 1976 anymore. I&#x27;m writing this article in 2023.
+Vi got superseded by Vim in 1991.
+Vim got then superseded by Neovim in 2015.
+A vast package selection exists today for Neovim. Even a few attempting the herculean task that is porting Orgmode&lt;&#x2F;p&gt;
+&lt;p&gt;Emacs users have largely given up on the foundations of the editor, staying either because of sunk cost, ideological alignment with lisp or because they are bound by one of the few killer features. People use evilmode because they know that vim keybindings are vastly superior. They use distributions like Doom to make Emacs be Neovim when it was never meant to be.
+I&#x27;m on emacs today because of Orgmode and this has never been different.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;where-do-we-go-from-here&quot;&gt;Where do we go from here&lt;&#x2F;h2&gt;
+&lt;p&gt;As part of my vacation I have planned to try a move back to Neovim, tho keeping around my emacs install just in case and to write my next paper in.&lt;&#x2F;p&gt;
+&lt;p&gt;Conjure on Neovim has great Clojure support and it&#x27;s UX suits me even better than cider on emacs. I tried it today to great success.&lt;&#x2F;p&gt;
+&lt;p&gt;Nvim-orgmode on the other hand isn&#x27;t very promising, as it&#x27;s reducing Orgmode to some markdown plus Todo and scheduling.
+So for Orgmode I&#x27;ll just have to slowly wean myself off of it.&lt;&#x2F;p&gt;
+&lt;p&gt;Magit is neat, but very optional for me. I don&#x27;t rebase every day, I can deal with a time penalty for doing things with aliases on the command line.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;I may get that lean and fast environment once more. &lt;br &#x2F;&gt;
+I only have to sacrifice this little bit of power. &lt;br &#x2F;&gt;
+I shall make it, but it will take a while.&lt;&#x2F;em&gt; &lt;&#x2F;p&gt;
+</description>
+        </item>
         <item>
             <title>💻 Hardlinks are underrated</title>
             <pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate>
