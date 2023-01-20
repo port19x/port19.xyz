@@ -8,10 +8,9 @@ body {
   background-repeat: no-repeat;
 }
 </style>
-<header><h1 class="title"> Port19's Webpage </h1></header>
-<hr>
 
-<h2> Lists </h2>
+<header><h1 class="title"> Port19's Webpage </h1></header>
+
 <span>
     {% for post in section.pages %}
     {% if post.updated %}
@@ -20,22 +19,20 @@ body {
     {% endfor %}
  </span>
 
+<hr>
+
+<h2> Projects </h2>
+    <span>
+    <a class="lists" href="https://github.com/pystardust/ani-cli/">ani-cli</a>
+    <a class="lists" href="https://port19.xyz/dvd-animation/">dvd-animation</a>
+    <a class="lists" href="https://github.com/port19x/redqu/">redqu</a>
+    </span>
+    <p></p>
+
 <h2> Tech </h2>
     <ul>
     {% for post in section.pages %}
     {% if "💻" in post.title %}
-    <li>
-      <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash; 
-      <a href="{{ post.permalink | safe }}">{{ post.title }}</a></li>
-    {% endif %}
-    {% endfor %}
-    </ul>
-
-
-<h2> Recipes </h2>
-    <ul>
-    {% for post in section.pages %}
-    {% if "🍽" in post.title %}
     <li>
       <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash; 
       <a href="{{ post.permalink | safe }}">{{ post.title }}</a></li>
@@ -53,6 +50,16 @@ body {
     {% endif %}
     {% endfor %}
     </ul>
+
+<h2> Recipes </h2>
+    <span>
+    {% for post in section.pages %}
+    {% if "🍽" in post.title %}
+    <a class="lists" href="{{ post.permalink | safe }}">{{ post.title }}</a>
+    {% endif %}
+    {% endfor %}
+    </span>
+ 
 
 <hr>
 
