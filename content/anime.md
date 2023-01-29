@@ -1,7 +1,7 @@
 +++
 title = "Anime List"
 date = 2022-03-17
-updated = 2022-12-31
+updated = 2023-01-29
 +++
 
 ## Favorites
@@ -27,7 +27,6 @@ updated = 2022-12-31
 
 | Title                   | Progress | Format |
 |-------------------------|----------|--------|
-| Neon Genesis Evangelion | 2/26     | TV     |
 
 ## Completed
 
@@ -90,6 +89,7 @@ updated = 2022-12-31
 | Himouto! Umaru-chanS                          | 3     | 12     | Special |
 | Is the Order a Rabbit?                        | 3     | 12     | TV      |
 | Last Exile                                    | 3     | 26     | TV      |
+| Neon Genesis Evangelion                       | 3     | 26     | TV      |
 | One-Punch Man                                 | 3     | 12     | TV      |
 | The Pet Girl of Sakurasou                     | 3     | 24     | TV      |
 | The Tatami Galaxy                             | 3     | 11     | TV      |
@@ -137,6 +137,7 @@ updated = 2022-12-31
 | Cowboy Bebop - Knockin' On Heaven's Door | Movie  |
 | Durarara!!                               | TV     |
 | Girls Last Tour                          | TV     |
+| K-On!                                    | TV     |
 | Non Non Biyori                           | TV     |
 | Ping Pong the Animation                  | TV     |
 | Welcome to the N.H.K.                    | TV     |
