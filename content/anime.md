@@ -1,7 +1,7 @@
 +++
 title = "Anime List"
 date = 2022-03-17
-updated = 2023-01-29
+updated = 2023-02-05
 +++
 
 ## Favorites
@@ -25,8 +25,9 @@ updated = 2023-01-29
 ## Watching
 
 
-| Title                   | Progress | Format |
-|-------------------------|----------|--------|
+| Title        | Progress | Format |
+|--------------|----------|--------|
+| Cowboy Bebop | 2/26     | TV     |
 
 ## Completed
 
@@ -133,7 +134,6 @@ updated = 2023-01-29
 | A Place Further Than The Universe        | TV     |
 | After The Rain                           | TV     |
 | Anohana: The Flower We Saw That Day      | TV     |
-| Cowboy Bebop                             | TV     |
 | Cowboy Bebop - Knockin' On Heaven's Door | Movie  |
 | Durarara!!                               | TV     |
 | Girls Last Tour                          | TV     |
