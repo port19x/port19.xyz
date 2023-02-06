@@ -7,7 +7,60 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://port19.xyz/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Mon, 06 Feb 2023 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>💻 Reviewing all Terminal Emulators</title>
+            <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+            <link>https://port19.xyz/terminals/</link>
+            <guid>https://port19.xyz/terminals/</guid>
+            <description>&lt;h1 id=&quot;not-all-terminals-are-created-equally&quot;&gt;Not all Terminals are created equally&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;consider-the-native-one-first&quot;&gt;Consider the native one first&lt;&#x2F;h2&gt;
+&lt;p&gt;If you&#x27;re using a full desktop environment like gnome or kde, using the builtin terminal might be a good starting point.
+That way you get consistent themeing out of the box and benefit from a consistent user experience.
+These terminals are pretty basic, but they get the job done.
+If you use the terminal often or even &amp;quot;live in the terminal&amp;quot;, consider a more sophisticated product.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;special-purpose-terminals&quot;&gt;Special purpose terminals&lt;&#x2F;h2&gt;
+&lt;p&gt;If you, for whatever reason, like suckless software and believe that patching source code is an acceptable way of configuring software, use st. 
+The suckless terminal st, will take the least disk space and lacks basic functionality out of the box, making it very attractive to the average suckless enthusiast.&lt;&#x2F;p&gt;
+&lt;p&gt;If you use wayland and want &amp;quot;speed&amp;quot; above all else, you can&#x27;t beat foot. The foo terminal.
+Foot has the lowest latency of any terminal I&#x27;ve tested.&lt;&#x2F;p&gt;
+&lt;p&gt;If neither of those two are appealing to you, but you own an nvidia or arm gpu, consider some old terminal.
+Test the gpu accelerated options and compare speeds with those old terminals.
+Depending on how bad the drivers are, urxvt might be a better choice than the following options.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;intermezzo-how-to-benchmark-terminals&quot;&gt;Intermezzo: How to benchmark terminals&lt;&#x2F;h2&gt;
+&lt;p&gt;This is often subject to controversial debates. Below I&#x27;ll give you some benchmarks I use. &lt;br &#x2F;&gt;
+How fast the terminal feels is more important than these metrics anyway. &lt;br &#x2F;&gt;
+Also consider &lt;code&gt;hyperfine&lt;&#x2F;code&gt; for multi-run benchmarks. &lt;&#x2F;p&gt;
+&lt;p&gt;Graphical throughput: &lt;code&gt;time ( tree &#x2F; )&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Redirection: &lt;code&gt;time ( find &#x2F; -type f -iname &amp;quot;*.md&amp;quot; 2&amp;gt; &#x2F;dev&#x2F;null; )&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Latency: &lt;code&gt;time ( ls )&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Images: &lt;code&gt;time ( wezterm imgcat sample.jpg)&lt;&#x2F;code&gt; or equivalent&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;gpu-accelerated-terminals&quot;&gt;GPU accelerated terminals&lt;&#x2F;h2&gt;
+&lt;p&gt;GPU accelerated terminals have been hyped up for a while now. 
+Alacritty has been hyped because of the rust hype but with it&#x27;s two competitors I can&#x27;t in good conscience recommend it.
+The speed debate between alacritty and kitty is childish at best.
+Pay as little attention to it as you can.&lt;&#x2F;p&gt;
+&lt;p&gt;Kitty is a neat terminal with an image viewer and some other small utilities like a diff viewer.
+Kitty is pretty fast and has the highest graphical bandwidth&#x2F;throughput I&#x27;ve tested.
+The kitty dev however is pretty delusional and rude, so don&#x27;t choose this one if you&#x27;re the kind of person that tries to contribute upstream.&lt;&#x2F;p&gt;
+&lt;p&gt;My favorite terminal then is wezterm.
+Wezterm is incredibly feature rich, supporting 3 image protocols, asciinema recording and shipping with hundreds of themes.
+It&#x27;s configured in lua, giving it some hypothetical programmability.
+Wezterm imgcat is about 10x faster than kitty icat, so if you regularly use the terminal as an image viewer, I recommend you use wezterm.
+Wezterm, once you disable the tab bar, isn&#x27;t noticeably slower than kitty or alacritty in my testing.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;simplified-decision-tree&quot;&gt;Simplified decision tree&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Do you use a desktop environment? → Use the native terminal&lt;&#x2F;li&gt;
+&lt;li&gt;Do you enjoy suckless software? → Use st&lt;&#x2F;li&gt;
+&lt;li&gt;Do you use wayland? → Use foot&lt;&#x2F;li&gt;
+&lt;li&gt;Do you have bad gpu drivers? → Use urxvt&lt;&#x2F;li&gt;
+&lt;li&gt;Do you like a featureful experience? → Use wezterm&lt;&#x2F;li&gt;
+&lt;li&gt;Do you want gpu acceleration but can&#x27;t afford 100MB of disk space? → Flip a coin&lt;&#x2F;li&gt;
+&lt;li&gt;Heads → Use kitty&lt;&#x2F;li&gt;
+&lt;li&gt;Tails → Use alacritty&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</description>
+        </item>
         <item>
             <title>💻 Neovim customization is inexcusably bad</title>
             <pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate>

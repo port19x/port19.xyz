@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <meta charset="utf-8">
+  <title>Port19's Webpage</title>
+  <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/82055622?v=4">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="vimwiki">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="what could it be?">
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<h1 class="title">
+  💻 Reviewing all Terminal Emulators
+</h1>
+
+<i>First Published: 2023-02-06</i>
+
+<hr>
+<h1 id="not-all-terminals-are-created-equally">Not all Terminals are created equally</h1>
+<h2 id="consider-the-native-one-first">Consider the native one first</h2>
+<p>If you're using a full desktop environment like gnome or kde, using the builtin terminal might be a good starting point.
+That way you get consistent themeing out of the box and benefit from a consistent user experience.
+These terminals are pretty basic, but they get the job done.
+If you use the terminal often or even &quot;live in the terminal&quot;, consider a more sophisticated product.</p>
+<h2 id="special-purpose-terminals">Special purpose terminals</h2>
+<p>If you, for whatever reason, like suckless software and believe that patching source code is an acceptable way of configuring software, use st. 
+The suckless terminal st, will take the least disk space and lacks basic functionality out of the box, making it very attractive to the average suckless enthusiast.</p>
+<p>If you use wayland and want &quot;speed&quot; above all else, you can't beat foot. The foo terminal.
+Foot has the lowest latency of any terminal I've tested.</p>
+<p>If neither of those two are appealing to you, but you own an nvidia or arm gpu, consider some old terminal.
+Test the gpu accelerated options and compare speeds with those old terminals.
+Depending on how bad the drivers are, urxvt might be a better choice than the following options.</p>
+<h2 id="intermezzo-how-to-benchmark-terminals">Intermezzo: How to benchmark terminals</h2>
+<p>This is often subject to controversial debates. Below I'll give you some benchmarks I use. <br />
+How fast the terminal feels is more important than these metrics anyway. <br />
+Also consider <code>hyperfine</code> for multi-run benchmarks. </p>
+<p>Graphical throughput: <code>time ( tree / )</code></p>
+<p>Redirection: <code>time ( find / -type f -iname &quot;*.md&quot; 2&gt; /dev/null; )</code></p>
+<p>Latency: <code>time ( ls )</code></p>
+<p>Images: <code>time ( wezterm imgcat sample.jpg)</code> or equivalent</p>
+<h2 id="gpu-accelerated-terminals">GPU accelerated terminals</h2>
+<p>GPU accelerated terminals have been hyped up for a while now. 
+Alacritty has been hyped because of the rust hype but with it's two competitors I can't in good conscience recommend it.
+The speed debate between alacritty and kitty is childish at best.
+Pay as little attention to it as you can.</p>
+<p>Kitty is a neat terminal with an image viewer and some other small utilities like a diff viewer.
+Kitty is pretty fast and has the highest graphical bandwidth/throughput I've tested.
+The kitty dev however is pretty delusional and rude, so don't choose this one if you're the kind of person that tries to contribute upstream.</p>
+<p>My favorite terminal then is wezterm.
+Wezterm is incredibly feature rich, supporting 3 image protocols, asciinema recording and shipping with hundreds of themes.
+It's configured in lua, giving it some hypothetical programmability.
+Wezterm imgcat is about 10x faster than kitty icat, so if you regularly use the terminal as an image viewer, I recommend you use wezterm.
+Wezterm, once you disable the tab bar, isn't noticeably slower than kitty or alacritty in my testing.</p>
+<h2 id="simplified-decision-tree">Simplified decision tree</h2>
+<ol>
+<li>Do you use a desktop environment? → Use the native terminal</li>
+<li>Do you enjoy suckless software? → Use st</li>
+<li>Do you use wayland? → Use foot</li>
+<li>Do you have bad gpu drivers? → Use urxvt</li>
+<li>Do you like a featureful experience? → Use wezterm</li>
+<li>Do you want gpu acceleration but can't afford 100MB of disk space? → Flip a coin</li>
+<li>Heads → Use kitty</li>
+<li>Tails → Use alacritty</li>
+</ol>
+
+<hr>
+
+    </div>
+  </section>
+  <footer>
+	<a href="/rss.xml" target="_blank"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="left"></a>
+	<a href="https://emulatorgames.net/roms/gameboy-advance" target="_blank"><img src="https://port19.xyz/buttons/emulatorgames.gif" alt="Webbutton to emulatorgames.net" style="height:31px;width:88px;"></a>
+	<a href="https://darebee.com" target="_blank"><img src="https://port19.xyz/buttons/darebee.gif" alt="Webbutton to darebee.com" style="height:31px;width:88px;"></a>
+	<a href="https://nyaa.si" target="_blank"><img src="https://port19.xyz/buttons/nyaa.gif" alt="Webbutton to nyaa.si" style="height:31px;width:88px;"></a>
+	<a href="https://github.com/port19x/" target="_blank"><img src="https://port19.xyz/buttons/github.gif" alt="Webbutton to github" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
