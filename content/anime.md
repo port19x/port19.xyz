@@ -1,7 +1,7 @@
 +++
 title = "Anime List"
 date = 2022-03-17
-updated = 2023-02-08
+updated = 2023-02-09
 +++
 
 ## Favorites
@@ -27,7 +27,7 @@ updated = 2023-02-08
 
 | Title        | Progress | Format |
 |--------------|----------|--------|
-| Cowboy Bebop | 6/26     | TV     |
+| Cowboy Bebop | 8/26     | TV     |
 
 ## Completed
 
