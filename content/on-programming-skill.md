@@ -1,6 +1,7 @@
 +++
 title = "💻 On Programming Skill"
 date = 2023-01-04
+description = "Tactics, Strategy and Project Management"
 +++
 
 # Tactics, Strategy and Project Management"

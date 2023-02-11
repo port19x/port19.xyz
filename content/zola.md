@@ -1,6 +1,7 @@
 +++
 title = "💻 Hugo is inexcusably bad"
 date = 2022-12-24
+description = "Why this blog uses Zola instead of Hugo"
 +++
 
 # Why this blog uses Zola instead of Hugo

@@ -1,6 +1,7 @@
 +++
 title = "💻 Cool Searx Bangs"
 date = 2022-06-02
+description = "Cool Searx Bangs"
 +++
 
 # Cool Searx Bangs

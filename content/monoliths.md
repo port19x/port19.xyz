@@ -1,6 +1,7 @@
 +++
 title = "💻 Why I like Monoliths"
 date = 2022-12-01
+description = "On Monoliths"
 +++
 
 # On Monoliths

@@ -1,9 +1,8 @@
 +++
 title = "📚 Floor Sleeping Review"
 date = 2022-06-30
+description = "tldr: not worth it"
 +++
-
-# Floor Sleeping Review
 
 _tldr: not worth it_
 

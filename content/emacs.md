@@ -1,6 +1,7 @@
 +++
 title = "💻 Why Emacs?"
 date = 2022-03-19
+description = "Thoughts 2 months in"
 +++
 
 ## Keep those vim bindings

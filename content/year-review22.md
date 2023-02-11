@@ -1,6 +1,7 @@
 +++
 title = "💻 2022 year review"
 date = 2022-12-31
+description = "Looking back on the past year"
 +++
 
 # Looking back on the past year

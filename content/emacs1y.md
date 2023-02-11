@@ -1,6 +1,7 @@
 +++
 title = "💻 Emacs: One year later"
 date = 2023-01-15
+description = "A love-hate Relationship"
 +++
 
 # A love-hate Relationship

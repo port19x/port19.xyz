@@ -1,6 +1,7 @@
 +++
 title = "💻 Reviewing all Terminal Emulators"
 date = 2023-02-06
+description = "Not all Terminals are created equally"
 +++
 
 # Not all Terminals are created equally

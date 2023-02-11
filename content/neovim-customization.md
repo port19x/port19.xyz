@@ -1,6 +1,7 @@
 +++
 title = "💻 Neovim customization is inexcusably bad"
 date = 2023-01-27
+description = "And I though Emacs was complicated"
 +++
 
 # And I though Emacs was complicated

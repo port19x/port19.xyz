@@ -1,6 +1,7 @@
 +++
 title = "💻 Hardlinks are underrated"
 date = 2023-01-10
+description = "Hardlinks > Symlinks + Stow (for dotfiles)"
 +++
 
 # Hardlinks > Symlinks + Stow (for dotfiles)

@@ -1,6 +1,7 @@
 +++
 title = "💻 On FOSS Licenses"
 date = 2022-12-24
+description = "How I choose Open Source Licenses"
 +++
 
 # How I choose Open Source Licenses

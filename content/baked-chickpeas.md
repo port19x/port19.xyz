@@ -1,6 +1,7 @@
 +++
 title = "🍽 Baked Chickpeas"
 date = 2022-06-15
+description = "Baked Chickpeas Recipe"
 +++
 
 # Baked Chickpeas Recipe

@@ -1,9 +1,8 @@
 +++
 title = "📚 2022 Jog Log"
 date = 2022-11-28
+description = "Oversharing much? Always!"
 +++
-
-# Jog Log
 
 I like to jog for about 20-30 minutes and aim for twice a week
 

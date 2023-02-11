@@ -1,6 +1,7 @@
 +++
 title = "📚 3 weeks without a smartphone"
 date = 2022-06-17
+description = "Becoming the 1%"
 +++
 
 ## How it happened

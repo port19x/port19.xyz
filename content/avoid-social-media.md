@@ -1,6 +1,7 @@
 +++
 title = "📚 Avoid Social Media"
 date = 2022-07-09
+description = "social media wastes your time"
 +++
 
 # social media wastes your time

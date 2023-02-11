@@ -1,6 +1,7 @@
 +++
 title = "📚 Frustrations with college"
 date = 2023-01-05
+description = "Don't study CS for administration"
 +++
 
 # Don't study CS for administration

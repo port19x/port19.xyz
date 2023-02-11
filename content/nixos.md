@@ -1,6 +1,7 @@
 +++
 title = "💻 NixOS ain't worth it"
 date = 2022-07-09
+description = "Why I don't use nix os"
 +++
 
 # Why I don't use nix os

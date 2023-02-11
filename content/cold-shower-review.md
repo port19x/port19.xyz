@@ -1,9 +1,8 @@
 +++
 title = "📚 Cold Shower Review"
 date = 2023-02-11
+description = "tldr: very worth it"
 +++
-
-# Cold Shower Review
 
 _tldr: very worth it_
 
