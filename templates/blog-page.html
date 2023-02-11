@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block meta %}
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+{% endblock meta %}
+
 {% block content %}
 <h1 class="title">
   {{ page.title }}
