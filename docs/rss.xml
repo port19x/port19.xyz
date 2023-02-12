@@ -7,7 +7,51 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://port19.xyz/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 12 Feb 2023 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>💻 Performance is a Software Problem</title>
+            <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
+            <link>https://port19.xyz/performance-software/</link>
+            <guid>https://port19.xyz/performance-software/</guid>
+            <description>&lt;h1 id=&quot;how-my-pinebook-pro-is-faster-than-your-m1-mac&quot;&gt;How my pinebook pro is faster than your m1 mac&lt;&#x2F;h1&gt;
+&lt;p&gt;Let me open this post with an anecdote: 
+About half a year ago, after a lot of hype surrounding the product, I got curious and bought an entry level m1 macbook air.
+I unwrapped the immaculate packaging, connected it to the power and booted it up.
+After some initial setup, I installed homebrew and got my suite of applications installed.
+Since I like tiling window managers, I installed &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ianyh&#x2F;Amethyst&quot;&gt;amethyst&lt;&#x2F;a&gt;, tho &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;koekeishiya&#x2F;yabai&quot;&gt;yabai&lt;&#x2F;a&gt; is another great option.
+I played around for a few hours, trying to replicate my linux environment, to get the mac feeling snappy.
+Eventually I gave up, repackaged the mac again, and refunded it the next day, returning to my linux setup on the pinebook pro.&lt;&#x2F;p&gt;
+&lt;p&gt;Another anecdote:
+About one year ago, as you might know from &lt;a href=&quot;https:&#x2F;&#x2F;port19.xyz&#x2F;emacs&#x2F;&quot;&gt;my&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;port19.xyz&#x2F;emacs1y&#x2F;&quot;&gt;other&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;port19.xyz&#x2F;neovim-customization&#x2F;&quot;&gt;writings&lt;&#x2F;a&gt;, I switched to emacs.
+I put as much of my desktop usage as possible into it and eventually figured that, since I used emacs for everything, I could switch back to some entry level linux distro, like linux mint.
+This was on a beefy tower PC: Ryzen 7 3700x CPU, Vega 64 GPU, nvme SSD and 16 gigabytes of RAM.
+Despite the PCs power, the environment felt heavy and even sluggish at times.
+After a few weeks, I switched back to arch linux.&lt;&#x2F;p&gt;
+&lt;p&gt;Now there are a few obvious limitations to my thesis that I want to acknowledge.
+No, I can&#x27;t play 3D games like Rise of the Tombraider on my current laptop, the tuxedo aura 15, much less at 4k.
+No, the pinebook pro will not play minecraft as the tuxedo aura will.
+Transcoding stuff and compiling software does scale with raw processing power.
+And I&#x27;m sure even some heavy websites might be slower to load on the pinebook pro.&lt;&#x2F;p&gt;
+&lt;p&gt;This however says little about general responsiveness.
+Just like you should choose an SSD based on random reads instead of sequential bandwidth, 
+you should measure your computers speed, it&#x27;s snappiness if you will, in latency and not in throughput.
+It does not matter to me whether ffmpeg takes 5 or 50 seconds to transcode an hour long m4a to mp3,
+I do not care if recompiling my emacs packages takes 2 minutes or 20.
+Either way I&#x27;m afk making a tea, or maybe I&#x27;m just switching to my web browser and continuing my work there for a few minutes.
+As long as you&#x27;re not a gamer, or you can appreciate retro games, performance is no reason to buy a new or even recent computer.&lt;&#x2F;p&gt;
+&lt;p&gt;So what can you do in software to speed things up?
+Disable animations, or at least make them very fast.
+If I&#x27;m switching windows I don&#x27;t wanna wait 200 milliseconds for some animation.
+Decrease your number of background processes as much as possible.
+Cups and bluez do not need to be running all the time.
+Start more systemd services on-demand to decrease resource consumption and possibly avoid a couple of rare bugs along the way.
+Build your own &lt;a href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;title&#x2F;Desktop_environment#Custom_environments&quot;&gt;desktop environment&lt;&#x2F;a&gt; by handpicking the applications you run and installing only what you need on top of a minimal base.
+This alone should be enough to turn even 15 year old business laptops, like a thinkpad x200, into capable workhorses again.
+Two bonus tips: Use wayland if you can, it&#x27;s always xorg that&#x27;s &amp;quot;slow&amp;quot;, never the window manager.
+And keep your computer on for longer, or use hibernate, so that the linux caching systems can do their job.&lt;&#x2F;p&gt;
+&lt;p&gt;With all that being said, I hope you&#x27;ll now think twice before buying new, expensive hardware.&lt;&#x2F;p&gt;
+</description>
+        </item>
         <item>
             <title>📚 Cold Shower Review</title>
             <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
