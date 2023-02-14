@@ -7,14 +7,80 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://port19.xyz/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Sun, 12 Feb 2023 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 14 Feb 2023 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>💻 Farewell Qutebrowser</title>
+            <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
+            <link>https://port19.xyz/bye-qutebrowser/</link>
+            <guid>https://port19.xyz/bye-qutebrowser/</guid>
+            <description>&lt;h1 id=&quot;notes-after-migrating-from-qutebrowser-to-librewolf&quot;&gt;Notes after migrating from Qutebrowser to Librewolf&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;&#x2F;h2&gt;
+&lt;p&gt;So for the past 2 years I&#x27;ve been using Qutebrowser to browse the web, sponsoring the project for the past year.
+It&#x27;s the best keyboard-driven browser currently in existence and is very actively maintained.
+I originally switched to Qutebrowser back when I first learned about tiling window managers and wanted to use my keyboard for more and more things.
+What now urged me to reconsider this browser choice was the continued lack of per-site cookie persistence in Qutebrowser.
+This resulted in me having to log into every account (except discord for some reason) on each new browser session.
+And since some issues with hand pain have resurfaced recently, repetitive unnecessary keystrokes are the last thing I need right now.
+Librewolf has been my secondary browser for a while, being well known for it&#x27;s state of the art security and privacy.
+Librewolf is basically a heavily patched Firefox and is what you&#x27;d get after configuring Firefox for privacy for a week.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;mouse-keyboard&quot;&gt;Mouse &amp;gt; Keyboard&lt;&#x2F;h2&gt;
+&lt;p&gt;In text editors it makes sense to have a keyboard-driven interface.
+This is due to the nature of text editing: you primarily insert text, occasionally correcting mistakes, copying and pasting parts and moving around your body of text.
+Web Browser are different: Your involvement is a lot more passive. You primarily navigate the web and only occasionally answer short text-prompts and rarely write longer content.
+Using a two-handed input device provides no benefit for this activity.
+It&#x27;s a lot simpler, a lot more precise to use some pointing device like a mouse, or a track point.
+With minimal practice you can even switch hands.
+I sometimes browse the web with my left hand when I&#x27;m experiencing hand pain from long typing sessions.
+But the ergonomics go further than just halving the amount of required hands:
+Mice buttons have a shorter travel distance and a lighter actuation weight than most keyboards.
+Mice are shaped to fit and support your palm, or at least not require the hovered hands that constitute correct typing form.
+They are lighter and allow for a wider, more natural range of motion.
+I may go into more depth on the ergonomics of mice in a separate article, but you get the broad picture.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;accessibility&quot;&gt;Accessibility&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;uBlock Origin:&lt;&#x2F;strong&gt; &lt;br &#x2F;&gt;
+Librewolf supports addons and therefore provides true, state of the art adblocking via uBlock Origin.
+This is vastly superior to brave style adblocking provided to Qutebrowser by python-adblock.
+Additionally, uBlock Origin provides optional filters to hide cookie banners and let&#x27;s you control what javascript gets executed.
+Many people dismiss Qutebrowser on this merit alone, but since I mostly browse high-quality websites it was tolerable.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Dark Reader:&lt;&#x2F;strong&gt; &lt;br &#x2F;&gt;
+Most of the web is stuck in light mode, which contributes greatly to eye strain.
+The Dark Reader extension helps with that in ways Qutebrowser simply can&#x27;t.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Reader View:&lt;&#x2F;strong&gt; &lt;br &#x2F;&gt;
+Reader View shows only the content you care about and provides a better interface to read most articles posted on the web by content factories that inevitably float to the top of search results.
+This greatly reduces visual noise and allows me to waste less focus while consuming web content.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;quality-of-life&quot;&gt;Quality of Life&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Tabliss:&lt;&#x2F;strong&gt; &lt;br &#x2F;&gt;
+A new-tab extension that is pretty easy to set up.
+To be fair, you could set up something equivalent in Qutebrowser by using a proper webpage for such a task.
+Bento is one project that comes to mind and has been on my bucket list for a while.
+Well, tabliss is a lot more accessible and involves 0 code, so I&#x27;ll take that over Bento any day.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Auto-hiding Tab Bar on full screen:&lt;&#x2F;strong&gt; &lt;br &#x2F;&gt;
+On Qutebrowser I had a key binding to hide both the status bar as well as the url bar for when I was reading something or just didn&#x27;t need it for a while.
+On Librewolf, when I fullscreen the window, the tab bar automatically hides itself and reveals itself again when I hover near the top of the screen.
+This is peak ux.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Content aware screenshots:&lt;&#x2F;strong&gt; &lt;br &#x2F;&gt;
+When you screenshot something in Librewolf, it automatically shows you selectable regions while hovering across the page.
+Since you often want to capture exactly one paragraph or one div or some other form of content container, this is immensely helpful and marginally improves the quality of your screenshots.
+Qutebrowser doesn&#x27;t even do screenshots on it&#x27;s own!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;privacy-and-security&quot;&gt;Privacy and Security&lt;&#x2F;h2&gt;
+&lt;p&gt;While many care little about privacy, I&#x27;ve been going above and beyond to harden my security and minimize my digital footprint.
+Having suboptimal browser privacy was in stark contradiction to this, as the web browser covers the majority of your datas surface area, especially on desktop computers.
+I can now rest assured that I have state of the art protection that is more in line with the drastic precautions I take in other areas of my digital life, such as using a feature phone and closing old accounts among other robust opsec habits.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;farewell&quot;&gt;Farewell&lt;&#x2F;h2&gt;
+&lt;p&gt;So to round things off: Is Qutebrowser a good browser? Yes, for sure.
+It is by far the best keyboard-driven web browser released today and has one of the most competent and active maintainers I&#x27;ve seen in any open source project.
+It is great for the specific target audience it caters to.
+It&#x27;s just that now I no longer fit into that target audience and am glad to have adopted a different product that caters to my needs.
+I hope you found this piece insightful and gained some appreciation for the tools at your disposal.&lt;&#x2F;p&gt;
+</description>
+        </item>
         <item>
             <title>💻 Performance is a Software Problem</title>
             <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
             <link>https://port19.xyz/performance-software/</link>
             <guid>https://port19.xyz/performance-software/</guid>
             <description>&lt;h1 id=&quot;how-my-pinebook-pro-is-faster-than-your-m1-mac&quot;&gt;How my pinebook pro is faster than your m1 mac&lt;&#x2F;h1&gt;
-&lt;p&gt;Let me open this post with an anecdote: 
+&lt;p&gt;Let me open this post with an anecdote:
 About half a year ago, after a lot of hype surrounding the product, I got curious and bought an entry level m1 macbook air.
 I unwrapped the immaculate packaging, connected it to the power and booted it up.
 After some initial setup, I installed homebrew and got my suite of applications installed.
@@ -33,7 +99,7 @@ No, the pinebook pro will not play minecraft as the tuxedo aura will.
 Transcoding stuff and compiling software does scale with raw processing power.
 And I&#x27;m sure even some heavy websites might be slower to load on the pinebook pro.&lt;&#x2F;p&gt;
 &lt;p&gt;This however says little about general responsiveness.
-Just like you should choose an SSD based on random reads instead of sequential bandwidth, 
+Just like you should choose an SSD based on random reads instead of sequential bandwidth,
 you should measure your computers speed, it&#x27;s snappiness if you will, in latency and not in throughput.
 It does not matter to me whether ffmpeg takes 5 or 50 seconds to transcode an hour long m4a to mp3,
 I do not care if recompiling my emacs packages takes 2 minutes or 20.
