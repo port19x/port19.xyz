@@ -1,7 +1,7 @@
 +++
 title = "Anime List"
 date = 2022-03-17
-updated = 2023-02-09
+updated = 2023-02-15
 description = "Port19's selfhosted anime list"
 +++
 
@@ -28,7 +28,7 @@ description = "Port19's selfhosted anime list"
 
 | Title        | Progress | Format |
 |--------------|----------|--------|
-| Cowboy Bebop | 8/26     | TV     |
+| Cowboy Bebop | 13/26    | TV     |
 
 ## Completed
 
