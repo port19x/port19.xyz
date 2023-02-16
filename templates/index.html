@@ -56,9 +56,9 @@ body {
     </ul>
 
 <h2> Recipes </h2>
-    <span>
+    <span class="🍳">
     {% for post in section.pages %}
-    {% if "🍽" in post.title %}
+    {% if "🍚" in post.title %}
     <a class="lists" href="{{ post.permalink | safe }}">{{ post.title }}</a>
     {% endif %}
     {% endfor %}

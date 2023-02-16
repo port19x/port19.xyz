@@ -1,5 +1,5 @@
 +++
-title = "🍽 Overnight Oats"
+title = "🍚 Overnight Oats"
 date = 2022-06-15
 description = "Overnight Oats Recipe"
 +++
