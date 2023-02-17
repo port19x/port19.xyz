@@ -8,10 +8,12 @@ body {
 }
 
 a:link {
+  text-decoration: none;
   color: #83a598;
 }
 
 a:visited {
+  text-decoration: none;
   color: #d3869b;
 }
 
