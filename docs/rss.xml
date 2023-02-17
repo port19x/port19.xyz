@@ -7,7 +7,46 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://port19.xyz/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 17 Feb 2023 00:00:00 +0000</lastBuildDate>
+        <item>
+            <title>📚 Overcoming the bullshit job fallacy</title>
+            <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
+            <link>https://port19.xyz/bullshit-job-fallacy/</link>
+            <guid>https://port19.xyz/bullshit-job-fallacy/</guid>
+            <description>&lt;h1 id=&quot;earn-to-give-and-finding-purpose-in-it&quot;&gt;Earn to Give, and finding purpose in IT&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;&#x2F;h2&gt;
+&lt;p&gt;As a student studying computer science in his third semester, I&#x27;ve had my fair share of setbacks and subsequent doubts regarding my career choice.
+I won&#x27;t go into detail on the challenges I face, since I&#x27;ve already aired out &lt;a href=&quot;https:&#x2F;&#x2F;port19.xyz&#x2F;frustrations-with-college&#x2F;&quot;&gt;my frustrations with college&lt;&#x2F;a&gt; in a different article.
+What I want to do today is dispel a lie I tend to tell myself whenever things get tough.
+The lie goes something like this: &amp;quot;You won&#x27;t make any positive impact on society as a programmer&#x2F;sysadmin. Become a &lt;em&gt;&amp;gt;insert social job here&amp;lt;&lt;&#x2F;em&gt; instead, that job makes sense and helps people.&amp;quot;
+Let me, for your amusement, list some of the jobs I&#x27;ve considered in such times of adversity: Nurse, prison guard, mortician, roofer, plumber.
+Don&#x27;t get me wrong, every one of these jobs has self-evident purpose and wouldn&#x27;t be pointless to pursue.
+But taking into account my large sunk cost in IT and my overall better fitness to this technical field, it quickly becomes a silly daydream.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bullshit-jobs&quot;&gt;Bullshit Jobs&lt;&#x2F;h2&gt;
+&lt;p&gt;The idea of a bullshit job, in it&#x27;s most narrow definition, is a job that is completely superfluous and achieves nothing.
+Think receptionists, corporate lawyers, telemarketers, diversity managers and most middle management.
+Problems arise when you extrapolate and extend the idea to encompass any job that contributes nothing to society at large.
+Such an exaggeration quickly turns into a fruitless critique of modernity and capitalism.
+Sure, the entire field of marketing has a large net-negative impact on society, but they do achieve something.
+It would be equally ridiculous to dismiss the entire IT industry just because facebook spies on it&#x27;s users.
+&lt;em&gt;If you find yourself in a job with net negative impact, as opposed to a net zero impact, you don&#x27;t have a bullshit job, you have a bullshit employer.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;earn-to-give&quot;&gt;Earn to Give&lt;&#x2F;h2&gt;
+&lt;p&gt;Now let me introduce you to the concept of &lt;em&gt;Earn to Give&lt;&#x2F;em&gt;.
+I&#x27;ve stumbled upon it on &lt;a href=&quot;https:&#x2F;&#x2F;80000hours.org&#x2F;career-reviews&#x2F;earning-to-give-in-a-high-paying-role&#x2F;&quot;&gt;80000hours&lt;&#x2F;a&gt;, but in hindsight I&#x27;m a bit embarrassed to not have thought of this much sooner.
+The idea acknowledges that each social worker has some positive social impact, but notes that a high paying job can yield an even higher net-positive impact.
+This gives an alternative path to meaningful contribution for those of us who are better suited to a job that happens to pay well.
+Practitioners will consistently donate a large portion, often 10% or more, of their net income to charity. &lt;br &#x2F;&gt;
+Let&#x27;s face it: As a programmer or sysadmin I&#x27;ll likely be payed a handsome check and since I&#x27;m already donating about 5% of my net-income each month as a student it will be trivial to scale up.&lt;&#x2F;p&gt;
+&lt;p&gt;At this point I&#x27;d like to encourage you to throw a couple of bucks to maintainers of open source software you use, especially if their product would be hard for you to replace.
+Additionally, I find the following nonprofits to be particularly valuable:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;darebee.com&#x2F;&quot;&gt;darebee&lt;&#x2F;a&gt;: a creative commons fitness website&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.eff.org&#x2F;&quot;&gt;the electronic frontier foundation&lt;&#x2F;a&gt;: free software foundation, but competent&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;signalfoundation.org&#x2F;&quot;&gt;the signal foundation&lt;&#x2F;a&gt;: the only realistic whatsapp competitor &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I hope you found this insightful and that, should you face similar challenges, you at least come up with better excuses for your lack of perseverance.&lt;&#x2F;p&gt;
+</description>
+        </item>
         <item>
             <title>💻 Farewell Qutebrowser</title>
             <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
