@@ -2,18 +2,19 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>Port19&#x27;s Webpage</title>
-        <link>https://port19.xyz</link>
-        <description></description>
-        <generator>Zola</generator>
-        <language>en</language>
-        <atom:link href="https://port19.xyz/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Fri, 17 Feb 2023 00:00:00 +0000</lastBuildDate>
-        <item>
-            <title>📚 Overcoming the bullshit job fallacy</title>
-            <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/bullshit-job-fallacy/</link>
-            <guid>https://port19.xyz/bullshit-job-fallacy/</guid>
-            <description>&lt;h1 id=&quot;earn-to-give-and-finding-purpose-in-it&quot;&gt;Earn to Give, and finding purpose in IT&lt;&#x2F;h1&gt;
+      <link>https://port19.xyz</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://port19.xyz/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 17 Feb 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>📚 Overcoming the bullshit job fallacy</title>
+          <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/bullshit-job-fallacy/</link>
+          <guid>https://port19.xyz/bullshit-job-fallacy/</guid>
+          <description>&lt;h1 id=&quot;earn-to-give-and-finding-purpose-in-it&quot;&gt;Earn to Give, and finding purpose in IT&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;background&quot;&gt;Background&lt;&#x2F;h2&gt;
 &lt;p&gt;As a student studying computer science in his third semester, I&#x27;ve had my fair share of setbacks and subsequent doubts regarding my career choice.
 I won&#x27;t go into detail on the challenges I face, since I&#x27;ve already aired out &lt;a href=&quot;https:&#x2F;&#x2F;port19.xyz&#x2F;frustrations-with-college&#x2F;&quot;&gt;my frustrations with college&lt;&#x2F;a&gt; in a different article.
@@ -46,13 +47,14 @@ Additionally, I find the following nonprofits to be particularly valuable:&lt;&#
 &lt;&#x2F;ul&gt;
 &lt;p&gt;I hope you found this insightful and that, should you face similar challenges, you at least come up with better excuses for your lack of perseverance.&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 Farewell Qutebrowser</title>
-            <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/bye-qutebrowser/</link>
-            <guid>https://port19.xyz/bye-qutebrowser/</guid>
-            <description>&lt;h1 id=&quot;notes-after-migrating-from-qutebrowser-to-librewolf&quot;&gt;Notes after migrating from Qutebrowser to Librewolf&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>💻 Farewell Qutebrowser</title>
+          <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/bye-qutebrowser/</link>
+          <guid>https://port19.xyz/bye-qutebrowser/</guid>
+          <description>&lt;h1 id=&quot;notes-after-migrating-from-qutebrowser-to-librewolf&quot;&gt;Notes after migrating from Qutebrowser to Librewolf&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;background&quot;&gt;Background&lt;&#x2F;h2&gt;
 &lt;p&gt;So for the past 2 years I&#x27;ve been using Qutebrowser to browse the web, sponsoring the project for the past year.
 It&#x27;s the best keyboard-driven browser currently in existence and is very actively maintained.
@@ -112,13 +114,14 @@ It is great for the specific target audience it caters to.
 It&#x27;s just that now I no longer fit into that target audience and am glad to have adopted a different product that caters to my needs.
 I hope you found this piece insightful and gained some appreciation for the tools at your disposal.&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 Performance is a Software Problem</title>
-            <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/performance-software/</link>
-            <guid>https://port19.xyz/performance-software/</guid>
-            <description>&lt;h1 id=&quot;how-my-pinebook-pro-is-faster-than-your-m1-mac&quot;&gt;How my pinebook pro is faster than your m1 mac&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>💻 Performance is a Software Problem</title>
+          <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/performance-software/</link>
+          <guid>https://port19.xyz/performance-software/</guid>
+          <description>&lt;h1 id=&quot;how-my-pinebook-pro-is-faster-than-your-m1-mac&quot;&gt;How my pinebook pro is faster than your m1 mac&lt;&#x2F;h1&gt;
 &lt;p&gt;Let me open this post with an anecdote:
 About half a year ago, after a lot of hype surrounding the product, I got curious and bought an entry level m1 macbook air.
 I unwrapped the immaculate packaging, connected it to the power and booted it up.
@@ -156,13 +159,14 @@ Two bonus tips: Use wayland if you can, it&#x27;s always xorg that&#x27;s &amp;q
 And keep your computer on for longer, or use hibernate, so that the linux caching systems can do their job.&lt;&#x2F;p&gt;
 &lt;p&gt;With all that being said, I hope you&#x27;ll now think twice before buying new, expensive hardware.&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>📚 Cold Shower Review</title>
-            <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/cold-shower-review/</link>
-            <guid>https://port19.xyz/cold-shower-review/</guid>
-            <description>&lt;p&gt;&lt;em&gt;tldr: very worth it&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+      </item>
+      <item>
+          <title>📚 Cold Shower Review</title>
+          <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/cold-shower-review/</link>
+          <guid>https://port19.xyz/cold-shower-review/</guid>
+          <description>&lt;p&gt;&lt;em&gt;tldr: very worth it&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;So after many months of this rotting on my bucket list and the many contrast showers I had taken in the past, yesterday I finally took a proper cold shower.
 To get the terminology out of the way: A contrast shower is when you start the shower hot and end it cold, possibly flicking back and forth between the two a few times.
 A cold shower means turning the handle all the way to it&#x27;s coldest setting before jumping in.&lt;&#x2F;p&gt;
@@ -181,13 +185,14 @@ When I went to bed a few minutes later, I fell asleep right away.&lt;&#x2F;p&gt;
 &lt;p&gt;If you&#x27;re afraid, great, that&#x27;s the point, everyone is. &lt;br &#x2F;&gt;
 Read up on this &lt;a href=&quot;https:&#x2F;&#x2F;libreddit.de&#x2F;r&#x2F;coldshowers&#x2F;comments&#x2F;eyoiol&#x2F;faq_read_this_thread_if_you_are_new_to_cold&#x2F;&quot;&gt;FAQ&lt;&#x2F;a&gt; and then just do it.&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 Reviewing all Terminal Emulators</title>
-            <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/terminals/</link>
-            <guid>https://port19.xyz/terminals/</guid>
-            <description>&lt;h1 id=&quot;not-all-terminals-are-created-equally&quot;&gt;Not all Terminals are created equally&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>💻 Reviewing all Terminal Emulators</title>
+          <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/terminals/</link>
+          <guid>https://port19.xyz/terminals/</guid>
+          <description>&lt;h1 id=&quot;not-all-terminals-are-created-equally&quot;&gt;Not all Terminals are created equally&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;consider-the-native-one-first&quot;&gt;Consider the native one first&lt;&#x2F;h2&gt;
 &lt;p&gt;If you&#x27;re using a full desktop environment like gnome or kde, using the builtin terminal might be a good starting point.
 That way you get consistent themeing out of the box and benefit from a consistent user experience.
@@ -234,13 +239,14 @@ Wezterm, once you disable the tab bar, isn&#x27;t noticeably slower than kitty o
 &lt;li&gt;Tails → Use alacritty&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 Neovim customization is inexcusably bad</title>
-            <pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/neovim-customization/</link>
-            <guid>https://port19.xyz/neovim-customization/</guid>
-            <description>&lt;h1 id=&quot;and-i-though-emacs-was-complicated&quot;&gt;And I though Emacs was complicated&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>💻 Neovim customization is inexcusably bad</title>
+          <pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/neovim-customization/</link>
+          <guid>https://port19.xyz/neovim-customization/</guid>
+          <description>&lt;h1 id=&quot;and-i-though-emacs-was-complicated&quot;&gt;And I though Emacs was complicated&lt;&#x2F;h1&gt;
 &lt;p&gt;In my previous post I looked back on one year of Emacs and it&#x27;s occasional sluggishness, announcing I would try to move to Neovim once more.
 Today I want to give an update on how said attempted migration is coming along: it&#x27;s pretty bad.
 I would have preferred customizing my Neovim in lua, but gave up after about two hours of every single plugin being documented for setup in an init.vim file instead.
@@ -272,13 +278,14 @@ Let me reiterate my prior point: Neovim is primarily a set of keybindings. To ma
 I want and need a whole lot more than just some keybindings to do what I do effectively.&lt;&#x2F;p&gt;
 &lt;p&gt;Suffice to say I&#x27;m going back to Emacs.&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 Emacs: One year later</title>
-            <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/emacs1y/</link>
-            <guid>https://port19.xyz/emacs1y/</guid>
-            <description>&lt;h1 id=&quot;a-love-hate-relationship&quot;&gt;A love-hate Relationship&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>💻 Emacs: One year later</title>
+          <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/emacs1y/</link>
+          <guid>https://port19.xyz/emacs1y/</guid>
+          <description>&lt;h1 id=&quot;a-love-hate-relationship&quot;&gt;A love-hate Relationship&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;brief-history&quot;&gt;Brief history&lt;&#x2F;h2&gt;
 &lt;p&gt;On the 7th of January 2022 I decided to install Doom Emacs. 
 I toyed with the basics that night and continued to do so the next day.
@@ -337,13 +344,14 @@ So for Orgmode I&#x27;ll just have to slowly wean myself off of it.&lt;&#x2F;p&g
 I only have to sacrifice this little bit of power. &lt;br &#x2F;&gt;
 I shall make it, but it will take a while.&lt;&#x2F;em&gt; &lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 Hardlinks are underrated</title>
-            <pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/hardlinks/</link>
-            <guid>https://port19.xyz/hardlinks/</guid>
-            <description>&lt;h1 id=&quot;hardlinks-symlinks-stow-for-dotfiles&quot;&gt;Hardlinks &amp;gt; Symlinks + Stow (for dotfiles)&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>💻 Hardlinks are underrated</title>
+          <pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/hardlinks/</link>
+          <guid>https://port19.xyz/hardlinks/</guid>
+          <description>&lt;h1 id=&quot;hardlinks-symlinks-stow-for-dotfiles&quot;&gt;Hardlinks &amp;gt; Symlinks + Stow (for dotfiles)&lt;&#x2F;h1&gt;
 &lt;p&gt;Let&#x27;s just get a quick overview over our options to duplicate files from A to B&lt;&#x2F;p&gt;
 &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;th&gt;Copy&lt;&#x2F;th&gt;&lt;th&gt;Hardlink&lt;&#x2F;th&gt;&lt;th&gt;Symlink&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
 &lt;tr&gt;&lt;td&gt;Command&lt;&#x2F;td&gt;&lt;td&gt;&lt;code&gt;cp a b&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;code&gt;ln a b&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;code&gt;ln -s a b&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
@@ -364,13 +372,14 @@ Equally bad, the config is now lost. Or at least obscured in the git history.&lt
 I&#x27;d much prefer to have it still lying around, taking up the kilobyte that it is taking up in my git history anyway.&lt;&#x2F;p&gt;
 &lt;p&gt;Kinda sad that stow doesn&#x27;t come with a hardlink option :&#x2F;&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>📚 Frustrations with college</title>
-            <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/frustrations-with-college/</link>
-            <guid>https://port19.xyz/frustrations-with-college/</guid>
-            <description>&lt;h1 id=&quot;don-t-study-cs-for-administration&quot;&gt;Don&#x27;t study CS for administration&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>📚 Frustrations with college</title>
+          <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/frustrations-with-college/</link>
+          <guid>https://port19.xyz/frustrations-with-college/</guid>
+          <description>&lt;h1 id=&quot;don-t-study-cs-for-administration&quot;&gt;Don&#x27;t study CS for administration&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;i-m-not-a-software-developer&quot;&gt;I&#x27;m not a Software Developer&lt;&#x2F;h2&gt;
 &lt;p&gt;So I, as some of my readers may know, am a dual student studying computer science in my 3rd semester.&lt;&#x2F;p&gt;
 &lt;p&gt;I&#x27;m also a sysadmin. Someone who plays with infrastructure. 
@@ -421,13 +430,14 @@ And who says this gold rush will never end? What guarantees that you&#x27;ll be 
 &lt;p&gt;Try out the IT field, but don&#x27;t go in with the assumption that enjoying IT as a hobby will guarantee or even correlate with you enjoying IT as a job.
 Have realistic expectations and stay as far away from institutionalised science as you can.&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 On Programming Skill</title>
-            <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/on-programming-skill/</link>
-            <guid>https://port19.xyz/on-programming-skill/</guid>
-            <description>&lt;h1 id=&quot;tactics-strategy-and-project-management&quot;&gt;Tactics, Strategy and Project Management&amp;quot;&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>💻 On Programming Skill</title>
+          <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/on-programming-skill/</link>
+          <guid>https://port19.xyz/on-programming-skill/</guid>
+          <description>&lt;h1 id=&quot;tactics-strategy-and-project-management&quot;&gt;Tactics, Strategy and Project Management&amp;quot;&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;it-s-language-agnostic&quot;&gt;It&#x27;s language agnostic&lt;&#x2F;h2&gt;
 &lt;p&gt;One mistake common in new and&#x2F;or bad programmers is to measure programming skill in language proficiency.
 This might make sense for a first programming language, but any half decent programmer should quickly ascend beyond this level.
@@ -477,13 +487,14 @@ Learn to be proud of your work, even if it isn&#x27;t much in the grand scheme o
 We programmers are blessed with the ability to move mountains through our keyboards and screens.
 Appreciate that.&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 2022 year review</title>
-            <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/year-review22/</link>
-            <guid>https://port19.xyz/year-review22/</guid>
-            <description>&lt;h1 id=&quot;looking-back-on-the-past-year&quot;&gt;Looking back on the past year&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>💻 2022 year review</title>
+          <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/year-review22/</link>
+          <guid>https://port19.xyz/year-review22/</guid>
+          <description>&lt;h1 id=&quot;looking-back-on-the-past-year&quot;&gt;Looking back on the past year&lt;&#x2F;h1&gt;
 &lt;p&gt;This year has been my first full year as a CS student.
 I&#x27;ve learned a lot and made a ton of progress as a programmer.
 I tried many programming languages and learned many tools that will help me in the future.
@@ -655,13 +666,14 @@ I&#x27;m proud of my work this year and want to take a few minutes to reflect it
 &lt;li&gt;distributing clojure is a pain due to lack of native binaries&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 On FOSS Licenses</title>
-            <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/licenses/</link>
-            <guid>https://port19.xyz/licenses/</guid>
-            <description>&lt;h1 id=&quot;how-i-choose-open-source-licenses&quot;&gt;How I choose Open Source Licenses&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>💻 On FOSS Licenses</title>
+          <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/licenses/</link>
+          <guid>https://port19.xyz/licenses/</guid>
+          <description>&lt;h1 id=&quot;how-i-choose-open-source-licenses&quot;&gt;How I choose Open Source Licenses&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;the-four-freedoms&quot;&gt;The Four Freedoms&lt;&#x2F;h2&gt;
 &lt;p&gt;The four freedoms are what makes free software free.
 They are defined by the &lt;a href=&quot;https:&#x2F;&#x2F;www.fsf.org&#x2F;&quot;&gt;Free Software Foundation&lt;&#x2F;a&gt;, pioneered by Richard Stallman.&lt;&#x2F;p&gt;
@@ -719,13 +731,14 @@ Then I&#x27;ll license it under the CC0 and dedicate it under the public domain.
 &lt;p&gt;CC0 and GPLv3 are polar opposites, yet I use both. I hope I was able to explain why.&lt;&#x2F;p&gt;
 &lt;p&gt;If you hold different views and want to explore the alternatives, check out &lt;a href=&quot;https:&#x2F;&#x2F;choosealicense.com&#x2F;&quot;&gt;choosalicense.com&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 Hugo is inexcusably bad</title>
-            <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/zola/</link>
-            <guid>https://port19.xyz/zola/</guid>
-            <description>&lt;h1 id=&quot;why-this-blog-uses-zola-instead-of-hugo&quot;&gt;Why this blog uses Zola instead of Hugo&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>💻 Hugo is inexcusably bad</title>
+          <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/zola/</link>
+          <guid>https://port19.xyz/zola/</guid>
+          <description>&lt;h1 id=&quot;why-this-blog-uses-zola-instead-of-hugo&quot;&gt;Why this blog uses Zola instead of Hugo&lt;&#x2F;h1&gt;
 &lt;p&gt;Before I get started, I should note that hugo is still less horrible than most of the crimes committed by javascript devs and pushed as static site generators.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;hugo-onboarding-is-a-nightmare&quot;&gt;Hugo onboarding is a nightmare&lt;&#x2F;h2&gt;
 &lt;p&gt;I spent several hours across a few days trying to get hugo to suit my needs.
@@ -764,13 +777,14 @@ After several hours of crafting my webpage it has become what you see now.
 I&#x27;m sure I&#x27;ll hack away at the css some more and my index.html will grow organically.
 But it&#x27;s mostly done and I&#x27;m very happy I went with zola over hugo.&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 Why I like Monoliths</title>
-            <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/monoliths/</link>
-            <guid>https://port19.xyz/monoliths/</guid>
-            <description>&lt;h1 id=&quot;on-monoliths&quot;&gt;On Monoliths&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>💻 Why I like Monoliths</title>
+          <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/monoliths/</link>
+          <guid>https://port19.xyz/monoliths/</guid>
+          <description>&lt;h1 id=&quot;on-monoliths&quot;&gt;On Monoliths&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;why-do-people-gravitate-to-modular-architectures&quot;&gt;Why do people gravitate to modular architectures&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;em&gt;&amp;quot;Scalability&amp;quot;: both in terms of performance and project size&lt;&#x2F;em&gt;
 I may choose to write another article about this phenomena, but for some reason developers fear performance issues more than anything else.
@@ -807,13 +821,14 @@ Is your website capable of running purely on the clientside? Yes? Write some js 
 &lt;p&gt;You have enough problems as is. You have a product to develop. A project to hack on.
 You gain nothing from preparing yourself for an unlikely future.&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>📚 2022 Jog Log</title>
-            <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/joglog22/</link>
-            <guid>https://port19.xyz/joglog22/</guid>
-            <description>&lt;p&gt;I like to jog for about 20-30 minutes and aim for twice a week&lt;&#x2F;p&gt;
+      </item>
+      <item>
+          <title>📚 2022 Jog Log</title>
+          <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/joglog22/</link>
+          <guid>https://port19.xyz/joglog22/</guid>
+          <description>&lt;p&gt;I like to jog for about 20-30 minutes and aim for twice a week&lt;&#x2F;p&gt;
 &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;ID&lt;&#x2F;th&gt;&lt;th&gt;Date&lt;&#x2F;th&gt;&lt;th&gt;Minutes&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
 &lt;tr&gt;&lt;td&gt;01&lt;&#x2F;td&gt;&lt;td&gt;03.1.&lt;&#x2F;td&gt;&lt;td&gt;21&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;02&lt;&#x2F;td&gt;&lt;td&gt;20.1.&lt;&#x2F;td&gt;&lt;td&gt;22&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
@@ -869,13 +884,14 @@ You gain nothing from preparing yourself for an unlikely future.&lt;&#x2F;p&gt;
 &lt;tr&gt;&lt;td&gt;52&lt;&#x2F;td&gt;&lt;td&gt;28.11.&lt;&#x2F;td&gt;&lt;td&gt;22&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
 </description>
-        </item>
-        <item>
-            <title>📚 Avoid Social Media</title>
-            <pubDate>Sat, 09 Jul 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/avoid-social-media/</link>
-            <guid>https://port19.xyz/avoid-social-media/</guid>
-            <description>&lt;h1 id=&quot;social-media-wastes-your-time&quot;&gt;social media wastes your time&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>📚 Avoid Social Media</title>
+          <pubDate>Sat, 09 Jul 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/avoid-social-media/</link>
+          <guid>https://port19.xyz/avoid-social-media/</guid>
+          <description>&lt;h1 id=&quot;social-media-wastes-your-time&quot;&gt;social media wastes your time&lt;&#x2F;h1&gt;
 &lt;p&gt;Are you short on time? Always busy? Rarely get a full nights sleep?
 Consider quitting youtube and other video content.
 Especially if you&#x27;re trying to learn something new, keep up with news or genuinely have time to kill.&lt;&#x2F;p&gt;
@@ -886,13 +902,14 @@ Thats one 144th of your day of which a third is sleeping and most of the remaind
 One more isn&#x27;t much of a waste after all.&lt;&#x2F;p&gt;
 &lt;p&gt;Seek and carefully select the media you consume to serve you, be it for entertainment or for education.&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 NixOS ain&#x27;t worth it</title>
-            <pubDate>Sat, 09 Jul 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/nixos/</link>
-            <guid>https://port19.xyz/nixos/</guid>
-            <description>&lt;h1 id=&quot;why-i-don-t-use-nix-os&quot;&gt;Why I don&#x27;t use nix os&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>💻 NixOS ain&#x27;t worth it</title>
+          <pubDate>Sat, 09 Jul 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/nixos/</link>
+          <guid>https://port19.xyz/nixos/</guid>
+          <description>&lt;h1 id=&quot;why-i-don-t-use-nix-os&quot;&gt;Why I don&#x27;t use nix os&lt;&#x2F;h1&gt;
 &lt;p&gt;Nix OS is a reproducible linux distribution where system state is declaratively stored in a version controllable configuration.nix file.&lt;&#x2F;p&gt;
 &lt;p&gt;Even today it already has significantly more packages than arch + aur and due to the boot setup you can always roll back your system, making it practically unbreakable.&lt;&#x2F;p&gt;
 &lt;p&gt;But nix os is very different. &lt;&#x2F;p&gt;
@@ -907,13 +924,14 @@ One more isn&#x27;t much of a waste after all.&lt;&#x2F;p&gt;
 &lt;p&gt;If you&#x27;re unsure, stay away from nix os.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hlissner&#x2F;dotfiles&quot;&gt;doom emacs maintainer agrees&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>📚 Floor Sleeping Review</title>
-            <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/floor-sleeping-review/</link>
-            <guid>https://port19.xyz/floor-sleeping-review/</guid>
-            <description>&lt;p&gt;&lt;em&gt;tldr: not worth it&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+      </item>
+      <item>
+          <title>📚 Floor Sleeping Review</title>
+          <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/floor-sleeping-review/</link>
+          <guid>https://port19.xyz/floor-sleeping-review/</guid>
+          <description>&lt;p&gt;&lt;em&gt;tldr: not worth it&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;I&#x27;ve been a minimalist for several years now, so when a few months ago after a sleepover at a friends house I had already slept on the flor for two days, I decided to extend the experiment.&lt;&#x2F;p&gt;
 &lt;p&gt;Sleeping in a sleeping bag got better up until day 4 or 5 where comfort plateaued. I then had 2 weeks of back and fourth between bed and floor before giving up my first real attempt.&lt;&#x2F;p&gt;
 &lt;p&gt;I then tried again recently, but it&#x27;s still not very restful.
@@ -922,13 +940,14 @@ I can sleep and I&#x27;m functioning well the next morning, but the whole night 
 &lt;p&gt;It wasn&#x27;t all bad though, getting out of bed was easier and it saves space. You also give your body a workout while you sleep and will inevitably do 30+ minutes of various stretchy positions before you give laying still your first shot.&lt;&#x2F;p&gt;
 &lt;p&gt;Maybe with a thicker yoga mat and some more tactical coushins I can remedy the disadvantages, but for the time being the floor can have it&#x27;s 2:0 win.&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>📚 3 weeks without a smartphone</title>
-            <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/no-smartphone/</link>
-            <guid>https://port19.xyz/no-smartphone/</guid>
-            <description>&lt;h2 id=&quot;how-it-happened&quot;&gt;How it happened&lt;&#x2F;h2&gt;
+      </item>
+      <item>
+          <title>📚 3 weeks without a smartphone</title>
+          <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/no-smartphone/</link>
+          <guid>https://port19.xyz/no-smartphone/</guid>
+          <description>&lt;h2 id=&quot;how-it-happened&quot;&gt;How it happened&lt;&#x2F;h2&gt;
 &lt;p&gt;For the past 2 years I have been using the Google Pixel 3a and really liked it.
 Since I greatly value my Privacy and Security I used it with Graphene OS and installed mostly open source software from Fdroid.
 The days were numbered for the Pixel 3a, at first predictably, because the Pixel 3a would not recieve further security updates from Google after May 2022.
@@ -975,13 +994,14 @@ If you&#x27;re considering a feature phone, don&#x27;t lie to yourself and say i
 I&#x27;m sure it will make a difference, but it won&#x27;t be lifechanging.&lt;&#x2F;p&gt;
 &lt;p&gt;This has been incredibly rambly, but I hope you enjoyed seeing my perspective on things.&lt;&#x2F;p&gt;
 </description>
-        </item>
-        <item>
-            <title>🍚 Baked Chickpeas</title>
-            <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/baked-chickpeas/</link>
-            <guid>https://port19.xyz/baked-chickpeas/</guid>
-            <description>&lt;h1 id=&quot;baked-chickpeas-recipe&quot;&gt;Baked Chickpeas Recipe&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>🍚 Baked Chickpeas</title>
+          <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/baked-chickpeas/</link>
+          <guid>https://port19.xyz/baked-chickpeas/</guid>
+          <description>&lt;h1 id=&quot;baked-chickpeas-recipe&quot;&gt;Baked Chickpeas Recipe&lt;&#x2F;h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Prep time: 10 min&lt;&#x2F;li&gt;
 &lt;li&gt;Baking time: 35 min&lt;&#x2F;li&gt;
@@ -1025,13 +1045,14 @@ I&#x27;m sure it will make a difference, but it won&#x27;t be lifechanging.&lt;&
 &lt;li&gt;Enjoy&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </description>
-        </item>
-        <item>
-            <title>🍚 Overnight Oats</title>
-            <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/overnight-oats/</link>
-            <guid>https://port19.xyz/overnight-oats/</guid>
-            <description>&lt;h1 id=&quot;overnight-oats-recipe&quot;&gt;Overnight Oats Recipe&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>🍚 Overnight Oats</title>
+          <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/overnight-oats/</link>
+          <guid>https://port19.xyz/overnight-oats/</guid>
+          <description>&lt;h1 id=&quot;overnight-oats-recipe&quot;&gt;Overnight Oats Recipe&lt;&#x2F;h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Prep time: 5 min&lt;&#x2F;li&gt;
 &lt;li&gt;Fridge time: 6-12 hours&lt;&#x2F;li&gt;
@@ -1063,13 +1084,14 @@ I&#x27;m sure it will make a difference, but it won&#x27;t be lifechanging.&lt;&
 &lt;li&gt;Enjoy with a healthy breakfast&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </description>
-        </item>
-        <item>
-            <title>🍚 Roasted Broccoli</title>
-            <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/roasted-broccoli/</link>
-            <guid>https://port19.xyz/roasted-broccoli/</guid>
-            <description>&lt;h1 id=&quot;roasted-broccoli-recipe&quot;&gt;Roasted Broccoli Recipe&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>🍚 Roasted Broccoli</title>
+          <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/roasted-broccoli/</link>
+          <guid>https://port19.xyz/roasted-broccoli/</guid>
+          <description>&lt;h1 id=&quot;roasted-broccoli-recipe&quot;&gt;Roasted Broccoli Recipe&lt;&#x2F;h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Prep time: 5 min&lt;&#x2F;li&gt;
 &lt;li&gt;Cooking time: 10 min&lt;&#x2F;li&gt;
@@ -1101,13 +1123,14 @@ I&#x27;m sure it will make a difference, but it won&#x27;t be lifechanging.&lt;&
 &lt;li&gt;Enjoy with chopsticks&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 Cool Searx Bangs</title>
-            <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/searx/</link>
-            <guid>https://port19.xyz/searx/</guid>
-            <description>&lt;h1 id=&quot;cool-searx-bangs&quot;&gt;Cool Searx Bangs&lt;&#x2F;h1&gt;
+      </item>
+      <item>
+          <title>💻 Cool Searx Bangs</title>
+          <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/searx/</link>
+          <guid>https://port19.xyz/searx/</guid>
+          <description>&lt;h1 id=&quot;cool-searx-bangs&quot;&gt;Cool Searx Bangs&lt;&#x2F;h1&gt;
 &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Category&lt;&#x2F;th&gt;&lt;th&gt;Bang&lt;&#x2F;th&gt;&lt;th&gt;Site&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
 &lt;tr&gt;&lt;td&gt;serch engines&lt;&#x2F;td&gt;&lt;td&gt;ddg&lt;&#x2F;td&gt;&lt;td&gt;duckduckgo&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;tr&gt;&lt;td&gt;serch engines&lt;&#x2F;td&gt;&lt;td&gt;brave&lt;&#x2F;td&gt;&lt;td&gt;brave&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
@@ -1131,13 +1154,14 @@ I&#x27;m sure it will make a difference, but it won&#x27;t be lifechanging.&lt;&
 &lt;tr&gt;&lt;td&gt;other&lt;&#x2F;td&gt;&lt;td&gt;wa&lt;&#x2F;td&gt;&lt;td&gt;wolframalpha&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
 &lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
 </description>
-        </item>
-        <item>
-            <title>💻 Why Emacs?</title>
-            <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/emacs/</link>
-            <guid>https://port19.xyz/emacs/</guid>
-            <description>&lt;h2 id=&quot;keep-those-vim-bindings&quot;&gt;Keep those vim bindings&lt;&#x2F;h2&gt;
+      </item>
+      <item>
+          <title>💻 Why Emacs?</title>
+          <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/emacs/</link>
+          <guid>https://port19.xyz/emacs/</guid>
+          <description>&lt;h2 id=&quot;keep-those-vim-bindings&quot;&gt;Keep those vim bindings&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;em&gt;Emacs: Escape Meta Alt Control Shift&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Trying to choose between vim and emacs is pointless. Vim has far superior keybindings, while emacs is far more powerful.
 &lt;em&gt;Evil mode&lt;&#x2F;em&gt; allows you to keep your beloved vim bindings making text editing inside emacs not just familiar, but nearly identical to text editing in vim with only a few rare edge cases.&lt;&#x2F;p&gt;
@@ -1207,13 +1231,14 @@ Hopping to emacs from vscode is like ging from crawling to running without ever 
 &lt;li&gt;[[https:&#x2F;&#x2F;github.com&#x2F;syl20bnr&#x2F;spacemacs|Spacemacs]]&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </description>
-        </item>
-        <item>
-            <title>Anime List</title>
-            <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
-            <link>https://port19.xyz/anime/</link>
-            <guid>https://port19.xyz/anime/</guid>
-            <description>&lt;h2 id=&quot;favorites&quot;&gt;Favorites&lt;&#x2F;h2&gt;
+      </item>
+      <item>
+          <title>Anime List</title>
+          <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/anime/</link>
+          <guid>https://port19.xyz/anime/</guid>
+          <description>&lt;h2 id=&quot;favorites&quot;&gt;Favorites&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;movies&quot;&gt;Movies&lt;&#x2F;h3&gt;
 &lt;ol&gt;
 &lt;li&gt;A silent Voice&lt;&#x2F;li&gt;
@@ -1349,6 +1374,6 @@ Hopping to emacs from vscode is like ging from crawling to running without ever 
 &lt;li&gt;Avoid using a web browser to watch anime. It&#x27;s highly cringe&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </description>
-        </item>
+      </item>
     </channel>
 </rss>
