@@ -9,9 +9,7 @@
 
 <span>
     {% for post in section.pages %}
-    {% if post.updated %}
     <a class="lists" href="{{ post.permalink | safe }}">{{ post.title }}</a>
-    {% endif %}
     {% endfor %}
  </span>
 
@@ -25,38 +23,18 @@
     </span>
     <p></p>
 
-<h2> Tech </h2>
-    <ul>
-    {% for post in section.pages %}
-    {% if "💻" in post.title %}
-    <li>
-      <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash; 
-      <a href="{{ post.permalink | safe }}">{{ post.title }}</a></li>
-    {% endif %}
+{% for path in section.subsections %}
+    {% set subsection = get_section(path=path) %}
+        <h2><a href="{{ subsection.permalink | safe }}"> {{ subsection.title }} </a></h2>
+        <ul>
+        {% for post in subsection.pages %}
+            <li>
+                <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash;
+                <a href="{{ post.permalink | safe }}">{{ post.title }} </a>
+            </li>
+        {% endfor %}
+        </ul>
     {% endfor %}
-    </ul>
-
-<h2> Lifestyle </h2>
-    <ul>
-    {% for post in section.pages %}
-    {% if "📚" in post.title %}
-    <li>
-      <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash; 
-      <a href="{{ post.permalink | safe }}">{{ post.title }}</a></li>
-    {% endif %}
-    {% endfor %}
-    </ul>
-
-<h2> Recipes </h2>
-    <span class="🍳">
-    {% for post in section.pages %}
-    {% if "🍚" in post.title %}
-    <a class="lists" href="{{ post.permalink | safe }}">{{ post.title }}</a>
-    {% endif %}
-    {% endfor %}
-    </span>
- 
-
 <hr>
 
 {% endblock content %}

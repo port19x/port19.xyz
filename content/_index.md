@@ -1,5 +1,6 @@
 +++
-title = "no"
+title = "Archive"
+description = "A comprehensive list of all my writings"
 sort_by = "date"
-page_template = "blog-page.html"
+transparent = true
 +++

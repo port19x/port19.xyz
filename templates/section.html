@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block meta %}
+<title>{{ section.title }}</title>
+<meta name="description" content="{{ section.description }}">
+{% endblock meta %}
+{% block content %}
+
+<h1> {{ section.title }} </h1>
+<i>{{ section.description }}</i>
+<hr>
+
+    <ul>
+    {% for post in section.pages %}
+    <li>
+      <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash;
+      <a href="{{ post.permalink | safe }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+
+<hr>
+
+{% endblock content %}
