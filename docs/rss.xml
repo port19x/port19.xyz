@@ -7,7 +7,70 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://port19.xyz/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 17 Feb 2023 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>💻 Clojure: 6 months later</title>
+          <pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://port19.xyz/tech/clojure/</link>
+          <guid>https://port19.xyz/tech/clojure/</guid>
+          <description>&lt;h1 id=&quot;not-everything-is-a-nail&quot;&gt;Not everything is a nail&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;background-projects&quot;&gt;Background &amp;amp; Projects&lt;&#x2F;h2&gt;
+&lt;p&gt;Half a year ago, after spending about a month learning haskell, I eventually switched to clojure because I had trouble actually making programs with it.
+I picked up the language quite quickly, largely thanks to that previous exposure to functional programming, but also because &lt;a href=&quot;https:&#x2F;&#x2F;www.braveclojure.com&#x2F;clojure-for-the-brave-and-true&#x2F;&quot;&gt;clojure for the brave and the true&lt;&#x2F;a&gt; is awesome.
+After reading the first couple of chapters I jumped into my &lt;a href=&quot;https:&#x2F;&#x2F;port19.xyz&#x2F;kicklistbot2&#x2F;data-processing-with-clojure.html&quot;&gt;first project&lt;&#x2F;a&gt; and reimplemented the ranking logic of a discord bot I had used more than a year prior for clash royale clan management.
+Then I wrote a &lt;a href=&quot;https:&#x2F;&#x2F;port19.xyz&#x2F;dvd-animation&#x2F;&quot;&gt;dvd-animation&lt;&#x2F;a&gt; with quil, a 2D graphics library.
+I even did my best to keep up with advent of code, doing the &lt;a href=&quot;https:&#x2F;&#x2F;port19.xyz&#x2F;aoc-2022-week-1&#x2F;&quot;&gt;first week&lt;&#x2F;a&gt; and documenting it via orgmode.
+Then things slowed down and after &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;port19x&#x2F;redqu&quot;&gt;redqu&lt;&#x2F;a&gt;, a reddit rss media scraper leveraging babashka, I only published some &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;port19x&#x2F;clj-template-repo&quot;&gt;template repo&lt;&#x2F;a&gt; and did some stuff on codewars I guess.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;i-m-not-a-programmer&quot;&gt;I&#x27;m not a programmer&lt;&#x2F;h2&gt;
+&lt;p&gt;Then, last weekend, it hit me. 
+It was something so obvious and important, yet obscured by my tunnel vision on functional programming:
+&lt;em&gt;I&#x27;m primarily a sysadmin.&lt;&#x2F;em&gt;
+The programs I write are short and achieve simple goals.
+They are used through the terminal and often use network connections.
+They run and then they exit.
+I&#x27;m not a &amp;quot;software developer&amp;quot;, building large applications that run on some server for all eternity.
+Me being decent at coding is merely an accident, and should no longer stop me from growing the relevant skills for administration.
+This alone made me discard clojure as a viable language, but further problems with it quickly became obvious.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;application-domains&quot;&gt;Application domains&lt;&#x2F;h2&gt;
+&lt;p&gt;One of the primary problems that frustrated me throughout my clojure journey was its platform.
+My scripts run ad-hoc, remember? Why the heck would I want a jvm or javascript platform for those.
+Ideally, I could just distribute a binary, which is possible if you spend an evening setting up graalvm and praying that stuff works, but it&#x27;s clearly not intended.
+And even an interpreter, like babashka, only solves half of the problem. With babashka I can run stuff more easily, but if I actually want to distribute my application, I have to tell people to install some very obscure dependency, that is far from being included in most linux distros repositories.&lt;&#x2F;p&gt;
+&lt;p&gt;Another problem is clojures poor fitness for CLI applications.
+Parsing arguments... does not spark joy.
+Sure, it&#x27;s doable and it&#x27;s better than in many bad corporate languages of old, but it doesn&#x27;t remotely compete with the default admin languages that I&#x27;ll mention later.
+And forget about terminal user interfaces. 
+There exists a gum wrapper for babashka, but at that point you might as well leave.&lt;&#x2F;p&gt;
+&lt;p&gt;Now another domain I like to toy around with on occasion is 2D graphics.
+And quil is actually somewhat usable for that, and probably a really good library if you want to create generative art.
+But for games it&#x27;s lackluster at best, because thanks to how clojure and functional programming works, managing state is a huge chore. 
+This is hardly quils fault, but noteworthy enough for me to include it.&lt;&#x2F;p&gt;
+&lt;p&gt;So since clojure is a hosted language that&#x27;s hard to distribute, is mediocre at networking and cli apps as well as being not great at 2D graphics, I&#x27;m moving on.
+I&#x27;ll miss my pipes, my higher order functions, multi-arity and the repl, but they are all sacrifices I&#x27;m willing to make to have a language that is actually good at the things I&#x27;m trying to do.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;so-what-now&quot;&gt;So what now?&lt;&#x2F;h2&gt;
+&lt;p&gt;Well, first of all, I&#x27;ll be shifting some focus away from programming to infrastructure administration.
+For that purpose I opened an account with &lt;a href=&quot;https:&#x2F;&#x2F;m.do.co&#x2F;c&#x2F;e3fad703cc9b&quot;&gt;digital ocean&lt;&#x2F;a&gt; and started playing with &lt;a href=&quot;https:&#x2F;&#x2F;docs.ansible.com&#x2F;ansible&#x2F;latest&#x2F;getting_started&#x2F;index.html&quot;&gt;ansible&lt;&#x2F;a&gt;, which I plan on continuing.
+Some things I plan on setting up on that VPS through ansible:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;security hardening&lt;&#x2F;li&gt;
+&lt;li&gt;firewall&lt;&#x2F;li&gt;
+&lt;li&gt;web server, preferably nginx&lt;&#x2F;li&gt;
+&lt;li&gt;monitoring, preferably with prometheus and grafana&lt;&#x2F;li&gt;
+&lt;li&gt;a git server&lt;&#x2F;li&gt;
+&lt;li&gt;docker&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;In terms of programming languages: Shell, Go, Python, in that order.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shell is perfect for automation of system tasks and a must have for linux users.&lt;&#x2F;li&gt;
+&lt;li&gt;Go is by far the best for terminal user interfaces, while also being awesome at network programming and capable at 2D graphics with &lt;a href=&quot;https:&#x2F;&#x2F;ebitengine.org&#x2F;&quot;&gt;ebiten&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Python has by far the most libraries, is best at webscraping and is also pretty good with networks and automation.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Clojure is perhaps the best programming language out today in terms of good language design and power.
+But even with the best hammer I had to realize at some point that not everything is a nail.
+I&#x27;ll keep you guys updated on further developments, especially once the VPS is set up with most of the things mentioned above.&lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>📚 Overcoming the bullshit job fallacy</title>
           <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
