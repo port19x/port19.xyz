@@ -1,10 +1,7 @@
 ## My Blog
 
-[![License](https://img.shields.io/github/license/port19x/port19.xyz)](https://creativecommons.org/share-your-work/)
-[![License](https://img.shields.io/github/commit-activity/m/port19x/port19.xyz)](https://creativecommons.org/share-your-work/)
-[![License](https://img.shields.io/github/deployments/port19x/port19.xyz/github-pages)](https://creativecommons.org/share-your-work/)
-
-
+[![Zola on GitHub Pages](https://github.com/port19x/port19.xyz/actions/workflows/master.yml/badge.svg)](https://github.com/port19x/port19.xyz/actions/workflows/master.yml)
+[![Zola on GitHub Pages](https://github.com/port19x/port19.xyz/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/port19x/port19.xyz/actions/workflows/pages/pages-build-deployment)
 
 This is my personal website, built using [zola](https://github.com/getzola/zola) and hosted on github pages.
 

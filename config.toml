@@ -1,6 +1,5 @@
 base_url = "https://port19.xyz"
 title = "Port19's Webpage"
-output_dir = "docs"
 generate_feed = true
 feed_filename = "rss.xml"
 
