@@ -17,7 +17,7 @@ Then things slowed down and after [redqu](https://github.com/port19x/redqu), a r
 
 ## I'm not a programmer
 
-Then, last weekend, it hit me. 
+Then, last weekend, it hit me.
 It was something so obvious and important, yet obscured by my tunnel vision on functional programming:
 *I'm primarily a sysadmin.*
 The programs I write are short and achieve simple goals.
@@ -37,12 +37,12 @@ And even an interpreter, like babashka, only solves half of the problem. With ba
 Another problem is clojures poor fitness for CLI applications.
 Parsing arguments... does not spark joy.
 Sure, it's doable and it's better than in many bad corporate languages of old, but it doesn't remotely compete with the default admin languages that I'll mention later.
-And forget about terminal user interfaces. 
+And forget about terminal user interfaces.
 There exists a gum wrapper for babashka, but at that point you might as well leave.
 
 Now another domain I like to toy around with on occasion is 2D graphics.
 And quil is actually somewhat usable for that, and probably a really good library if you want to create generative art.
-But for games it's lackluster at best, because thanks to how clojure and functional programming works, managing state is a huge chore. 
+But for games it's lackluster at best, because thanks to how clojure and functional programming works, managing state is a huge chore.
 This is hardly quils fault, but noteworthy enough for me to include it.
 
 So since clojure is a hosted language that's hard to distribute, is mediocre at networking and cli apps as well as being not great at 2D graphics, I'm moving on.

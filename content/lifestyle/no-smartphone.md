@@ -62,7 +62,7 @@ I'm not afraid to miss out.
 Secondarily, the phone is an entertainment device.
 I don't think my time spent watching youtube has dramatically decreased since my switch, I just entertain myself on my laptop instead.
 Yesterday I watched the office for 8 hours in procrastination.
-If you're considering a feature phone, don't lie to yourself and say it will miracolously cure your bad media consumption habits. 
+If you're considering a feature phone, don't lie to yourself and say it will miracolously cure your bad media consumption habits.
 I'm sure it will make a difference, but it won't be lifechanging.
 
 This has been incredibly rambly, but I hope you enjoyed seeing my perspective on things.

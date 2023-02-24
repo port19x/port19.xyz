@@ -8,7 +8,7 @@ description = "A love-hate Relationship"
 
 ## Brief history
 
-On the 7th of January 2022 I decided to install Doom Emacs. 
+On the 7th of January 2022 I decided to install Doom Emacs.
 I toyed with the basics that night and continued to do so the next day.
 After two months, I wrote a first blog post on it. That being the oldest post hosted on this site today [(check it out)](https://port19.xyz/emacs/).
 I stayed on Emacs for a while, switched back to Neovim for a few months and then came back again.
@@ -41,20 +41,18 @@ Other notable things: rapid theme switching, elfeed (rss), erc (irc)
 
 ## Reasons to hate Emacs
 
-
-
-### It's slow. It just is. 
+### It's slow. It just is
 Compared to Neovim, and especially it's gpu accelerated frontends like Neovide, Emacs feels sluggish.
 Doom Emacs ameliorates this, but it's really emacs-nativecomp with ahead of time compilation that makes Emacs tolerable.
 But you still feel the slowness on many occasions.
 
-### It's large, very large.
+### It's large, very large
 My `~/.config/emacs`, where Doom is installed, is 490 megabytes large.
 For reference, this is 90% of my `~/.config` with another 9% being used by signal-desktop, an electron app.
 Coupled with native compilation of that whole setup taking a few minutes, this significantly increases my recovery time from backups.
 
-### It's a shaky foundation that is going downhill.
-Since emacs is very old, it has enjoyed a massive first movers advantage. 
+### It's a shaky foundation that is going downhill
+Since emacs is very old, it has enjoyed a massive first movers advantage.
 I'm sure that when it was first released in 1976, it was superior to anything else at the time.
 For reference, the same year vi was released.
 Since then emacs has certainly improved. Slowly and steadily.
@@ -85,4 +83,3 @@ Magit is neat, but very optional for me. I don't rebase every day, I can deal wi
 *I may get that lean and fast environment once more. \
 I only have to sacrifice this little bit of power. \
 I shall make it, but it will take a while.* \
-

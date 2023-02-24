@@ -28,4 +28,3 @@ description = "Cool Searx Bangs"
 | social media   | re    | reddit        |
 | other          | du    | duden         |
 | other          | wa    | wolframalpha  |
-

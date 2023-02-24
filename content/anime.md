@@ -25,7 +25,6 @@ description = "Port19's selfhosted anime list"
 
 ## Watching
 
-
 | Title        | Progress | Format |
 |--------------|----------|--------|
 | Cowboy Bebop | 13/26    | TV     |

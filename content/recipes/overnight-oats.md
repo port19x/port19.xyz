@@ -9,7 +9,7 @@ description = "Overnight Oats Recipe"
 - Fridge time: 6-12 hours
 
 ## Ingredients
-- 200 ml oatmeal 
+- 200 ml oatmeal
 - handful of raspberries
 - 150-200 ml of milk
 - (optional) 1 heaping teaspoon of flavored protein powder

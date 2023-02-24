@@ -16,7 +16,6 @@ Let me, for your amusement, list some of the jobs I've considered in such times 
 Don't get me wrong, every one of these jobs has self-evident purpose and wouldn't be pointless to pursue.
 But taking into account my large sunk cost in IT and my overall better fitness to this technical field, it quickly becomes a silly daydream.
 
-
 ## Bullshit Jobs
 
 The idea of a bullshit job, in it's most narrow definition, is a job that is completely superfluous and achieves nothing.

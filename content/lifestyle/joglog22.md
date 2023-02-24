@@ -60,5 +60,3 @@ I like to jog for about 20-30 minutes and aim for twice a week
 | 50 | 25.11. | 22      |
 | 51 | 26.11. | 22      |
 | 52 | 28.11. | 22      |
-
-

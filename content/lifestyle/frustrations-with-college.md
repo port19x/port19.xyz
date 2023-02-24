@@ -10,9 +10,9 @@ description = "Don't study CS for administration"
 
 So I, as some of my readers may know, am a dual student studying computer science in my 3rd semester.
 
-I'm also a sysadmin. Someone who plays with infrastructure. 
+I'm also a sysadmin. Someone who plays with infrastructure.
 I'm not a software developer, despite coding as a hobby and finding that quite enjoyable.
-I don't even want to become a software developer either. 
+I don't even want to become a software developer either.
 If by some magical circumstance I get offered a dream job writing clojure at cognitect or by an even more substantial miracle I get to live off donations received for my work on open source I wouldn't reject the idea of coding as my primary job.
 But I find general corporate software development and associated practices repulsive and wouldn't want to consciously risk putting myself in such an environment.
 
@@ -64,7 +64,7 @@ My large ego won't prevent me from pursuing jobs that get less recognition by th
 
 I see many young folks flocking towards IT as a goldmine of an employment opportunity.
 In Germany we recommend avoiding a career as a cook to people who like cooking, so as to not ruin the fun of their hobby.
-Why? 
+Why?
 
 How is IT any different? Sure you get a ridiculous amount of money shoved up there but at it's core you're likely working for a stupid and/or evil company doing meaningless labour and doing it very poorly at that because everything is legacy.
 And who says this gold rush will never end? What guarantees that you'll be paid well by the time you get to call yourself senior?

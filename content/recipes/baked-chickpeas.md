@@ -26,7 +26,7 @@ description = "Baked Chickpeas Recipe"
 - strainer
 
 ## Directions
-- (optionally) preheat the oven at 220°C top-bottom 
+- (optionally) preheat the oven at 220°C top-bottom
 - Put the can of chickpeas into the strainer and rinse thoroughly
 - Using some kitchen towels, dry the chickpeas
 - During the drying, remove any loose shells or broken chickpeas

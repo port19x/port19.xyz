@@ -10,7 +10,7 @@ description = "Tactics, Strategy and Project Management"
 
 One mistake common in new and/or bad programmers is to measure programming skill in language proficiency.
 This might make sense for a first programming language, but any half decent programmer should quickly ascend beyond this level.
-Programming skill is at most bound to paradigms, not languages. 
+Programming skill is at most bound to paradigms, not languages.
 If you're a god at C you won't suck at python, but you might suck at haskell.
 But even the association of skill with a paradigm doesn't sit quite right.
 There is a way to assess programming skill independent the proficiency with tools.
@@ -30,13 +30,13 @@ Advent of Code is the high end of tactical practice. Don't feel bad if you can o
 
 ## Strategy
 
-Strategy is about the broader ecosystem. 
+Strategy is about the broader ecosystem.
 It's also about knowing your tools and getting comfortable with them.
 It's about being able to modularize your code in a sensible way, to scale it from 100 to 1000 lines and beyond.
 Strategy enables you to build powerful applications without being wasteful in the process.
 Importing 10 python libraries that do the heavy lifting and writing 100 lines of uninspired glue code to hold it together is a sign of good strategy.
 Build applications and get to know one or more languages in more depth to get better at this.
-You learn over time what to delegate to a library and what to write yourself. 
+You learn over time what to delegate to a library and what to write yourself.
 You learn to read documentation and search for information online.
 You learn what kind of modularization works for you.
 Perhaps you can start by writing a discord bot. Maybe host a dynamic website or an api.

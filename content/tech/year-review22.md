@@ -10,7 +10,7 @@ This year has been my first full year as a CS student.
 I've learned a lot and made a ton of progress as a programmer.
 I tried many programming languages and learned many tools that will help me in the future.
 My linux setup and software selection has been continously refined to where it is now.
-I'm proud of my work this year and want to take a few minutes to reflect it. 
+I'm proud of my work this year and want to take a few minutes to reflect it.
 
 My top 3 good descisions this year:
 1. learning emacs

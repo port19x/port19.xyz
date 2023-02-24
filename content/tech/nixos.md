@@ -10,7 +10,7 @@ Nix OS is a reproducible linux distribution where system state is declaratively 
 
 Even today it already has significantly more packages than arch + aur and due to the boot setup you can always roll back your system, making it practically unbreakable.
 
-But nix os is very different. 
+But nix os is very different.
 
 If you google an issue, the solutions you find will likely not apply.
 

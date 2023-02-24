@@ -15,7 +15,7 @@ If you use the terminal often or even "live in the terminal", consider a more so
 
 ## Special purpose terminals
 
-If you, for whatever reason, like suckless software and believe that patching source code is an acceptable way of configuring software, use st. 
+If you, for whatever reason, like suckless software and believe that patching source code is an acceptable way of configuring software, use st.
 The suckless terminal st, will take the least disk space and lacks basic functionality out of the box, making it very attractive to the average suckless enthusiast.
 
 If you use wayland and want "speed" above all else, you can't beat foot. The foo terminal.
@@ -41,7 +41,7 @@ Images: `time ( wezterm imgcat sample.jpg)` or equivalent
 
 ## GPU accelerated terminals
 
-GPU accelerated terminals have been hyped up for a while now. 
+GPU accelerated terminals have been hyped up for a while now.
 Alacritty has been hyped because of the rust hype but with it's two competitors I can't in good conscience recommend it.
 The speed debate between alacritty and kitty is childish at best.
 Pay as little attention to it as you can.

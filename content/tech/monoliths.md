@@ -25,12 +25,12 @@ I believe I can sell you the upsides of developing a monolith far better than th
 A monolith, in the way I use the term, is any one self contained programm that is not strongly separated into pieces on a conceptual level.
 You may still have different files where you write code in, but at it's core the system is interdependent and tightly coupled.
 A monolith
- - Encourages minimalism / discourages feature creep
- - Leaves complexity to be tackled head on in code, rather than to be abstracted away
- - Is easy to grasp and reason about
- - Is easy to deploy / package
- - Is easy to finish
- - Can reach a high degree of polish
+- Encourages minimalism / discourages feature creep
+- Leaves complexity to be tackled head on in code, rather than to be abstracted away
+- Is easy to grasp and reason about
+- Is easy to deploy / package
+- Is easy to finish
+- Can reach a high degree of polish
 
 ## The design process
 
