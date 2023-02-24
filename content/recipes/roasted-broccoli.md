@@ -5,10 +5,12 @@ description = "Roasted Broccoli Recipe"
 +++
 
 # Roasted Broccoli Recipe
+
 - Prep time: 5 min
 - Cooking time: 10 min
 
 ## Ingredients
+
 - 1 unit of broccoli
 - some chili oil (or olive oil)
 - 1 trunk
@@ -16,12 +18,14 @@ description = "Roasted Broccoli Recipe"
 - (optional) spices (curry fits very well)
 
 ## Tools
+
 - frying pan
 - cooking spoon
 - cutting board
 - bowl
 
 ## Directions
+
 - briefly rinse the broccoli under cold water
 - cut the brocolli to get only the flowering heads
 - heat some oil in the pan so that the bottom is covered, no more than necessary

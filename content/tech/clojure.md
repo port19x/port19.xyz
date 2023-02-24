@@ -53,6 +53,7 @@ I'll miss my pipes, my higher order functions, multi-arity and the repl, but the
 Well, first of all, I'll be shifting some focus away from programming to infrastructure administration.
 For that purpose I opened an account with [digital ocean](https://m.do.co/c/e3fad703cc9b) and started playing with [ansible](https://docs.ansible.com/ansible/latest/getting_started/index.html), which I plan on continuing.
 Some things I plan on setting up on that VPS through ansible:
+
 - security hardening
 - firewall
 - web server, preferably nginx
@@ -61,6 +62,7 @@ Some things I plan on setting up on that VPS through ansible:
 - docker
 
 In terms of programming languages: Shell, Go, Python, in that order.
+
 - Shell is perfect for automation of system tasks and a must have for linux users.
 - Go is by far the best for terminal user interfaces, while also being awesome at network programming and capable at 2D graphics with [ebiten](https://ebitengine.org/).
 - Python has by far the most libraries, is best at webscraping and is also pretty good with networks and automation.

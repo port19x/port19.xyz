@@ -13,11 +13,13 @@ My linux setup and software selection has been continously refined to where it i
 I'm proud of my work this year and want to take a few minutes to reflect it.
 
 My top 3 good descisions this year:
+
 1. learning emacs
 2. learning git
 3. learning clojure
 
 My top 3 mistakes this year:
+
 1. vimwiki / my attempt to go back to neovim
 2. coding very little over the summer
 3. an overemphasis on tools over competence
@@ -25,18 +27,21 @@ My top 3 mistakes this year:
 ## Languages
 
 ### Shell
+
 - easy to read, hard to write
 - domain specific
 - well suited for system task automation and string processing
 - very intuitive for experienced linux terminal users
 
 ### Prolog
+
 - conditional unification and variable binding are interesting concepts
 - swi prolog sucks a bit less than other dialects
 - maybe revisit in the future
 - book: "logic programming with prolog"
 
 ### Lua
+
 - one indexed arrays are cancer
 - syntax is meh
 - ecosystem is rather small
@@ -45,6 +50,7 @@ My top 3 mistakes this year:
 - löve2d not worth it on it's own
 
 ### Java
+
 - massive pain in the ass
 - unjustifiable to learn for intellectual progress
 - not just unenlightening: it makes you a worse programmer
@@ -52,12 +58,14 @@ My top 3 mistakes this year:
 - swing just makes things more frustrating
 
 ### Go
+
 - simplicity
 - almost all basic list utilities missing
 - unreasonably hard to juggle data with
 - suprisingly vast ecosystem
 
 ### Haskell
+
 - good for artificial coding problems/wrangling data
 - extremely powerful for lists
 - recursion thinking
@@ -66,6 +74,7 @@ My top 3 mistakes this year:
 - steep onboarding if you want to make actual programs with it
 
 ### Clojure
+
 - new main language
 - extremely fast feedback loop
 - nice syntax after you get used to it
@@ -76,6 +85,7 @@ My top 3 mistakes this year:
 - very tasteful language design
 
 ### Common Lisp
+
 - archaeic function names
 - clojure has better ux
 - common lisp may still be worth it for vast builtins and native compilation
@@ -83,6 +93,7 @@ My top 3 mistakes this year:
 ## Tooling
 
 ### Emacs
+
 - org mode is huge
 - evil mode is a must
 - magit is pretty neat
@@ -95,6 +106,7 @@ My top 3 mistakes this year:
 - emacs native comp greatly mitigates performance problems
 
 ### Git
+
 - rebases
 - tags, stashes
 - multiple remotes
@@ -102,6 +114,7 @@ My top 3 mistakes this year:
 - writing good release notes
 
 ### Dotfiles
+
 - two git remotes
 - semantic commits
 - refining software selection
@@ -111,12 +124,14 @@ My top 3 mistakes this year:
 - more zsh functions
 
 ### Latex
+
 - beautiful for papers
 - hard to get a good org+latex setup up and running
 - bad syntax by default. Solution: org-mode + latex
 - good bibliography management and citations
 
 ### Zola
+
 - timestamped posts list
 - decent landing page
 - decent css
@@ -126,6 +141,7 @@ My top 3 mistakes this year:
 - rss feed
 
 ### Others
+
 - ffmpeg
 - imagemagick
 - sourcehut
@@ -133,6 +149,7 @@ My top 3 mistakes this year:
 ## Projects
 
 ### Lead ani-cli (shell)
+
 - people will contribute if you make it easy
 - issue tags are a must have
 - learning git is worth it
@@ -143,17 +160,20 @@ My top 3 mistakes this year:
 - managing outages
 
 ### Kicklistbot2 (clojure)
+
 - leiningen
 - clj-http, cheshire
 - first application of clojures awesome data processing
   
 ### Dvd Animation (clojure)
+
 - collisions can be tough
 - functional state management via elm architecture
 - first contact with cljs
 - made a video tutorial series with it
 
 ### Redqu (clojure)
+
 - never climb the tree when you can shoot down the apple
 - reddit rss is counterintuitively easier to parse than json
 - nix-clj has bad ux and doesn't really work + has huge build times

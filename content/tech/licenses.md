@@ -10,6 +10,7 @@ description = "How I choose Open Source Licenses"
 
 The four freedoms are what makes free software free.
 They are defined by the [Free Software Foundation](https://www.fsf.org/), pioneered by Richard Stallman.
+
 1. Use: Free Software can be used for any purpose and is free of restrictions such as licence expiry or geographic limitations.
 2. Study: Free Software and its code can be studied by anyone, without non-disclosure agreements or similar restrictions.
 3. Share: Free Software can be shared and copied at virtually no cost.
@@ -31,11 +32,13 @@ In the following I'll treat public domain licenses as permissive licenses.
 I call less restrictive licenses weak and more restrictive licenses strong.
 
 ### Permissive Licenses
+
 1. CC0: The best public domain dedication
 2. MIT/BSD: License copy must be included
 3. Apache: License copy + changes must be documented
 
 ### Copyleft Licenses
+
 1. Mozilla: Modifications of existing files have same license
 2. GPLv2: Actual full copyleft
 3. LGPLv3: GPLv3 unless used as a library, if used as a library no copyleft.
@@ -43,11 +46,13 @@ I call less restrictive licenses weak and more restrictive licenses strong.
 5. AGPLv3: GPLv3 + network use is distribution. protects back end software. [reasoning by the fsf](https://www.gnu.org/licenses/why-affero-gpl.en.html)
 
 ### Choosing between Apache, Mit and CC0
+
 - Don't care at all? Use CC0
 - Need license copy on distribution? Use MIT
 - Also want changes to be listed? Use Apache
 
 ### Choosing between The GPLs
+
 - Writing a library? Use the LGPLv3
 - Writing a backend service? Use the AGPLv3
 - Otherwise use the GPLv3

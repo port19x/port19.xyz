@@ -37,6 +37,7 @@ Let's face it: As a programmer or sysadmin I'll likely be payed a handsome check
 
 At this point I'd like to encourage you to throw a couple of bucks to maintainers of open source software you use, especially if their product would be hard for you to replace.
 Additionally, I find the following nonprofits to be particularly valuable:
+
 - [darebee](https://darebee.com/): a creative commons fitness website
 - [the electronic frontier foundation](https://www.eff.org/): free software foundation, but competent
 - [the signal foundation](https://signalfoundation.org/): the only realistic whatsapp competitor \

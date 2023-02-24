@@ -20,12 +20,14 @@ Orgmode, not Emacs, has given me great power which comes with great responsibili
 When people talk about Emacs, they often mention some "killer features". Here are mine:
 
 ### Magit
+
 Magit is a git client that empowers you greatly.
 It's different from any other git client I have seen or used previously.
 Magit doesn't dumb things down for you, but rather empowers you and shows you options you might not have known to exist.
 Magit makes large rebases about twice as fast and half as daunting. It's the best way to interact with git and will make you better at git, even if you revert to using the command line.
 
 ### Orgmode
+
 Orgmode is a major mode and document format that has about as many features as my entire linux setup combined.
 Markdown, tables, executable code blocks are all neat.
 Rich export options make my life a lot easier.
@@ -33,6 +35,7 @@ Basic outlining and outline folding is great and makes plain text documents scal
 Todo, scheduling and agenda are kinda meh compared to something like a bullet journal or smartphone productivity setup, but are nice to have, especially for project management.
 
 ### Lisp
+
 Lisp support also makes the list. The overwhelming majority of lisp programmers use Emacs.
 This is not very surprising, seeing as Emacs is primarily an elisp interpreter that has a long history within the lisp family of languages.
 Clojure has been my primary programming language for some time now. Using Doom Emacs made the transition a lot easier than it could have been otherwise.
@@ -42,16 +45,19 @@ Other notable things: rapid theme switching, elfeed (rss), erc (irc)
 ## Reasons to hate Emacs
 
 ### It's slow. It just is
+
 Compared to Neovim, and especially it's gpu accelerated frontends like Neovide, Emacs feels sluggish.
 Doom Emacs ameliorates this, but it's really emacs-nativecomp with ahead of time compilation that makes Emacs tolerable.
 But you still feel the slowness on many occasions.
 
 ### It's large, very large
+
 My `~/.config/emacs`, where Doom is installed, is 490 megabytes large.
 For reference, this is 90% of my `~/.config` with another 9% being used by signal-desktop, an electron app.
 Coupled with native compilation of that whole setup taking a few minutes, this significantly increases my recovery time from backups.
 
 ### It's a shaky foundation that is going downhill
+
 Since emacs is very old, it has enjoyed a massive first movers advantage.
 I'm sure that when it was first released in 1976, it was superior to anything else at the time.
 For reference, the same year vi was released.

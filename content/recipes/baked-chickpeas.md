@@ -5,10 +5,12 @@ description = "Baked Chickpeas Recipe"
 +++
 
 # Baked Chickpeas Recipe
+
 - Prep time: 10 min
 - Baking time: 35 min
 
 ## Ingredients
+
 - 1 can of chickpeas
 - 1 Spoon Spicemix (customize to your taste)
   - 3 parts curry
@@ -18,6 +20,7 @@ description = "Baked Chickpeas Recipe"
 - 1 Spoon Olive oil (or chili oil)
 
 ## Tools
+
 - baking pan
 - baking paper
 - deep plate
@@ -26,6 +29,7 @@ description = "Baked Chickpeas Recipe"
 - strainer
 
 ## Directions
+
 - (optionally) preheat the oven at 220°C top-bottom
 - Put the can of chickpeas into the strainer and rinse thoroughly
 - Using some kitchen towels, dry the chickpeas
