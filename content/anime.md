@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-02-15
+updated = 2023-03-06
 description = "Port19's selfhosted anime list"
 +++
 
@@ -25,9 +25,9 @@ description = "Port19's selfhosted anime list"
 
 ## Watching
 
-| Title        | Progress | Format |
-|--------------|----------|--------|
-| Cowboy Bebop | 13/26    | TV     |
+| Title           | Progress | Format |
+|-----------------|----------|--------|
+| Girls Last Tour | 1/12       | TV     |
 
 ## Completed
 
@@ -77,6 +77,7 @@ description = "Port19's selfhosted anime list"
 | BLEND-S                                       | 3     | 12     | TV      |
 | Gabriel Dropout                               | 3     | 12     | TV      |
 | Children of the Sea                           | 3     | 1      | Movie   |
+| Cowboy Bebop                                  | 3     | 26     | TV      |
 | Demon Slayer Infinity Train                   | 3     | 1      | Movie   |
 | Divine Gate                                   | 3     | 12     | TV      |
 | Elfen Lied                                    | 3     | 13     | TV      |
@@ -136,7 +137,6 @@ description = "Port19's selfhosted anime list"
 | Anohana: The Flower We Saw That Day      | TV     |
 | Cowboy Bebop - Knockin' On Heaven's Door | Movie  |
 | Durarara!!                               | TV     |
-| Girls Last Tour                          | TV     |
 | K-On!                                    | TV     |
 | Non Non Biyori                           | TV     |
 | Ping Pong the Animation                  | TV     |
