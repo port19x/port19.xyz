@@ -27,7 +27,6 @@ description = "Port19's selfhosted anime list"
 
 | Title           | Progress | Format |
 |-----------------|----------|--------|
-| Girls Last Tour | 1/12       | TV     |
 
 ## Completed
 
@@ -62,6 +61,7 @@ description = "Port19's selfhosted anime list"
 | FLCL Progressive                              | 4     | 6      | TV      |
 | Gantz                                         | 4     | 13     | TV      |
 | Ghost in the Shell                            | 4     | 1      | Movie   |
+| Girls Last Tour                               | 4     | 12     | TV      |
 | Grave of the Fireflies                        | 4     | 1      | Movie   |
 | Himouto! Umaru-chan                           | 4     | 12     | TV      |
 | Kiss x Sis                                    | 4     | 12     | OVA     |
