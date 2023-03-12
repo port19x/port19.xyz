@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-12-22 Thu 14:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Formale Sprachen</title>
+<meta name="author" content="port19 &amp; dvg" />
+<meta name="description" content="Eine strukturierte Zusammenfassung" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Formale Sprachen</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org36a6143">1. Chomsky Hierarchie (18P)</a></li>
+<li><a href="#org1bd8b14">2. Sprach &amp; Grammatik Bullshit (8P)</a>
+<ul>
+<li><a href="#orgf1e7b7b">2.1. Kleiner Refresher</a></li>
+<li><a href="#org56f1239">2.2. a) L1</a></li>
+<li><a href="#org1bccdfa">2.3. b) L2</a></li>
+<li><a href="#org339f646">2.4. c) Lp := L1 U L2 (U =&gt; vereinigt), alle Worte mit |w| &lt; 5</a></li>
+<li><a href="#org2124d49">2.5. d) Gp</a></li>
+<li><a href="#org70552e1">2.6. e) Sprachtypen L1, L2, Lp</a></li>
+</ul>
+</li>
+<li><a href="#org24aa375">3. Sprach &amp; Grammatik Bullshit (8P)</a>
+<ul>
+<li><a href="#org6ac4c74">3.1. a) Regulärer Ausdruck</a></li>
+<li><a href="#org2120224">3.2. b) Grammatik</a></li>
+<li><a href="#orgb6f19db">3.3. c) Typ</a></li>
+</ul>
+</li>
+<li><a href="#org7607760">4. ENA -&gt; EDA (14P)</a>
+<ul>
+<li><a href="#orgd58f77c">4.1. Input</a></li>
+<li><a href="#orga498166">4.2. Übergangsdiagramm</a></li>
+<li><a href="#org2dd07ae">4.3. Übergänge auf ein Symbol reduzieren</a></li>
+<li><a href="#org38c79a4">4.4. Epsilon Übergänge eliminieren</a></li>
+<li><a href="#org5154afb">4.5. Zustände zusammenfassen</a></li>
+</ul>
+</li>
+<li><a href="#orgf93d0a9">5. Bottom Up Syntaxanalyse (15P)</a>
+<ul>
+<li><a href="#org71c600f">5.1. a) wesentliche Aktionen</a></li>
+<li><a href="#orgf7d14b0">5.2. b) Tabelle</a></li>
+<li><a href="#org12f651a">5.3. c) was ist die berechnete Ableitung</a></li>
+<li><a href="#orgea05bff">5.4. d) Rechts oder Links Ableitung</a></li>
+<li><a href="#org55bcee4">5.5. e) Wann ist eine Grammatik eindeutig</a></li>
+<li><a href="#org193a5a0">5.6. f) Ist die gegebene Grammatik eindeutig?</a></li>
+</ul>
+</li>
+<li><a href="#orga4f3fd5">6. CYK Algo für CNK: die Pyramide (7P)</a></li>
+<li><a href="#orgf7bbe33">7. Entscheidbarkeit (6P)</a>
+<ul>
+<li><a href="#org3ba657b">7.1. Frage</a></li>
+<li><a href="#orga1f19bd">7.2. Antwort</a></li>
+</ul>
+</li>
+<li><a href="#org4205be9">8. <span class="todo WAIT">WAIT</span> Extra: Pumping</a></li>
+<li><a href="#org6d7fe34">9. <span class="todo WAIT">WAIT</span> Extra: Äquivalenzrelation</a></li>
+</ul>
+</div>
+</div>
+<p>
+Diese Zusammenfassung basiert auf der 2016er Freudmann Klausur, sowie dem Pumping Lemma als Extraaufgabe unseres Jahrgangs.<br />
+Ich bin spätestens seit Alinas Hinweis Eisenbiegler nutze Freudmanns Aufgaben zuversichtlich dass dies an Umfang ausreichend ist.<br />
+</p>
+
+<div id="outline-container-org36a6143" class="outline-2">
+<h2 id="org36a6143"><span class="section-number-2">1.</span> Chomsky Hierarchie (18P)</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<i>n ∈ ℕ</i><br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Chomsky Typ</th>
+<th scope="col" class="org-left">Bezeichnung</th>
+<th scope="col" class="org-left">Maschinenmodel</th>
+<th scope="col" class="org-left">Maximalbeispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Typ 3</td>
+<td class="org-left">reguläre Sprachen</td>
+<td class="org-left">Endlicher Automat</td>
+<td class="org-left">L = {a<sup>n</sup>}</td>
+</tr>
+
+<tr>
+<td class="org-left">Typ 2</td>
+<td class="org-left">kontextfreie Sprachen</td>
+<td class="org-left">deterministischer Kellerautomat</td>
+<td class="org-left">L = {a<sup>n</sup> b<sup>n</sup>}</td>
+</tr>
+
+<tr>
+<td class="org-left">Typ 1</td>
+<td class="org-left">kontextsensitive Sprachen</td>
+<td class="org-left">linear beschränkter Automat</td>
+<td class="org-left">L = {a<sup>n</sup> b<sup>n</sup> c<sup>n</sup>}</td>
+</tr>
+
+<tr>
+<td class="org-left">Typ 0</td>
+<td class="org-left">rekursiv (aufzählbare) Sprachen</td>
+<td class="org-left">Turing Maschinenmodel</td>
+<td class="org-left">L = {a<sup>n</sup><sup>2</sup>}</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<i>aus typographischen Gründen keine Produktionen, siehe <a href="https://cdn.discordapp.com/attachments/1026753349699239956/1055143676612968489/2022-12-21_16-23.png">Quelltabelle</a></i><br />
+<i>Props an Mr Methfessel</i><br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1bd8b14" class="outline-2">
+<h2 id="org1bd8b14"><span class="section-number-2">2.</span> Sprach &amp; Grammatik Bullshit (8P)</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+G1 := {{X}, {a}, X, {X -&gt; aX | a}} und G2 := {{X}, {a,b}, X, {X -&gt; abX | b}}<br />
+</p>
+</div>
+
+<div id="outline-container-orgf1e7b7b" class="outline-3">
+<h3 id="orgf1e7b7b"><span class="section-number-3">2.1.</span> Kleiner Refresher</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+G = (N, T, S, P)<br />
+G := Grammatik<br />
+N := Nichtterminale<br />
+T := Terminale<br />
+S := Startwert<br />
+P := Produktionen<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org56f1239" class="outline-3">
+<h3 id="org56f1239"><span class="section-number-3">2.2.</span> a) L1</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+L1 = {a<sup>n</sup> | N ∈ ℕ<sub>0</sub>} = &lt;a*&gt;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org1bccdfa" class="outline-3">
+<h3 id="org1bccdfa"><span class="section-number-3">2.3.</span> b) L2</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+L2 = &lt;(ab)*b&gt;<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org339f646" class="outline-3">
+<h3 id="org339f646"><span class="section-number-3">2.4.</span> c) Lp := L1 U L2 (U =&gt; vereinigt), alle Worte mit |w| &lt; 5</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+a ,aa ,aaa ,aaaa ,b ,abb<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org2124d49" class="outline-3">
+<h3 id="org2124d49"><span class="section-number-3">2.5.</span> d) Gp</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+Gp = ({a,b}, {S, X, Y}, {S}, {S -&gt; X|Y, X -&gt; aX|a; Y -&gt; abY|Y})<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org70552e1" class="outline-3">
+<h3 id="org70552e1"><span class="section-number-3">2.6.</span> e) Sprachtypen L1, L2, Lp</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+L1 Typ 3<br />
+L2 Typ 3<br />
+Lp Typ 3 <i>(sus)</i><br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org24aa375" class="outline-2">
+<h2 id="org24aa375"><span class="section-number-2">3.</span> Sprach &amp; Grammatik Bullshit (8P)</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+<i>Notiz: wir dürfen uns hier auf a bis d upper und lowercase beschränken</i><br />
+<i>leerzeichen ignorieren</i><br />
+</p>
+
+<p>
+Beispiele der Grammatik die wir modellieren sollen:<br />
+</p>
+<ul class="org-ul">
+<li>worker.shiish.getFactory(balls)<br /></li>
+<li>horse.setMood(angry)<br /></li>
+</ul>
+</div>
+
+<div id="outline-container-org6ac4c74" class="outline-3">
+<h3 id="org6ac4c74"><span class="section-number-3">3.1.</span> a) Regulärer Ausdruck</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>R<sub>k</sub> = &lt; a | b | c | d &gt;<br /></li>
+<li>R<sub>g</sub> = &lt; A | B | C | D &gt;<br /></li>
+<li>R<sub>n</sub> = &lt; R<sub>k</sub> + &gt;<br /></li>
+<li>R<sub>N</sub> = &lt; R<sub>g</sub> R<sub>k</sub> * &gt;<br /></li>
+<li>R<sub>bo</sub> = (<br /></li>
+<li>R<sub>bc</sub> = )<br /></li>
+<li>R<sub>p</sub> = .<br /></li>
+<li>R<sub>set</sub> = &lt; set R<sub>N</sub> R<sub>bo</sub> R<sub>n</sub> R<sub>bc</sub> &gt;<br /></li>
+<li>R<sub>get</sub> = &lt; get R<sub>N</sub> R<sub>bo</sub> R<sub>bc</sub> &gt;<br /></li>
+<li>R = &lt; (R<sub>n</sub> R<sub>p</sub>)* R<sub>set</sub> | R<sub>get</sub> &gt;<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2120224" class="outline-3">
+<h3 id="org2120224"><span class="section-number-3">3.2.</span> b) Grammatik</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+G = ({R<sub>obj</sub> , R<sub>N</sub> , R<sub>n</sub> , R<sub>k</sub> , R<sub>g</sub>}, {R<sub>set</sub> , R<sub>get</sub>}, S,<br />
+                {S -&gt; R<sub>obj</sub> R<sub>get</sub> R<sub>N</sub> | R<sub>obj</sub> R<sub>set</sub> R<sub>N</sub> (R<sub>n</sub>)<br />
+                R<sub>obj</sub> -&gt; R<sub>n</sub> . R<sub>obj</sub> | R<sub>n</sub> .<br />
+                R<sub>N</sub> -&gt; R<sub>g</sub> R<sub>n</sub><br />
+                R<sub>n</sub> -&gt; R<sub>k</sub> R<sub>n</sub> | R<sub>k</sub><br />
+                R<sub>k</sub> -&gt; a | b | c | d<br />
+                R<sub>g</sub> -&gt; A | B | C | D<br />
+                R<sub>set</sub> -&gt; R<sub>obj</sub> set R<sub>N</sub>(R<sub>n</sub>)<br />
+                R<sub>get</sub> -&gt; R<sub>obj</sub> get R<sub>N</sub>()})<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgb6f19db" class="outline-3">
+<h3 id="orgb6f19db"><span class="section-number-3">3.3.</span> c) Typ</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+Typ 2 / kontextfrei<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7607760" class="outline-2">
+<h2 id="org7607760"><span class="section-number-2">4.</span> ENA -&gt; EDA (14P)</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgd58f77c" class="outline-3">
+<h3 id="orgd58f77c"><span class="section-number-3">4.1.</span> Input</h3>
+<div class="outline-text-3" id="text-4-1">
+
+<div id="org2087b75" class="figure">
+<p><img src="./formal-input.png" alt="formal-input.png" /><br />
+</p>
+</div>
+
+<p>
+Wichtig rauszulesen:<br />
+</p>
+<ul class="org-ul">
+<li>Anfangszustand (-&gt; A)<br /></li>
+<li>Akzeptierender Zustand (-&gt; C)<br /></li>
+<li>Übergangstypen (erste Spalte)<br /></li>
+<li>Zustände<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga498166" class="outline-3">
+<h3 id="orga498166"><span class="section-number-3">4.2.</span> Übergangsdiagramm</h3>
+<div class="outline-text-3" id="text-4-2">
+
+<div id="org27a3fba" class="figure">
+<p><img src="./formal-step1.png" alt="formal-step1.png" /><br />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>Zustände sind kreise<br /></li>
+<li>Übergänge sind Pfeile<br /></li>
+<li>Anfangspfeil für Anfangszustand<br /></li>
+<li>Doppelter Kreis für Terminierender Zustand<br /></li>
+</ul>
+
+<p>
+Nachdem die Zustände aufgemalt sind die Tabelle abarbeiten.<br />
+z.B. die Zelle oben links: A geht nach C bei epsilon.<br />
+&ldquo;{}&rdquo; Zellen sind <i>keine</i> Übergänge.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2dd07ae" class="outline-3">
+<h3 id="org2dd07ae"><span class="section-number-3">4.3.</span> Übergänge auf ein Symbol reduzieren</h3>
+<div class="outline-text-3" id="text-4-3">
+
+<div id="org839cf8c" class="figure">
+<p><img src="./formal-step2.png" alt="formal-step2.png" /><br />
+</p>
+</div>
+
+<p>
+Hier führen wir neue Zwischenzustände ein um die zweisymboligen Übergänge aufzubrechen was später noch wichtig wird<br />
+Kleiner Fehler in der Grafik: Der Pfeil von F zu B sollte eine weitere 0 enthalten.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org38c79a4" class="outline-3">
+<h3 id="org38c79a4"><span class="section-number-3">4.4.</span> Epsilon Übergänge eliminieren</h3>
+<div class="outline-text-3" id="text-4-4">
+
+<div id="orgb56ca6b" class="figure">
+<p><img src="./formal-step3.png" alt="formal-step3.png" /><br />
+</p>
+</div>
+
+<p>
+A hat einen Epsilonübergang der uns den Determinismus kaputt macht.<br />
+Das fixen wir schnell.<br />
+A springt manchmal spontan zu C, also ziehen wir die terminierende Eigenschaft in A hinein.<br />
+Anschließende Übergänge von C aus fügen wir bie A ein.<br />
+Dies ist hier nur der Übergang von C zu G bei 0, den wir als von A zu G bei null kopieren.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5154afb" class="outline-3">
+<h3 id="org5154afb"><span class="section-number-3">4.5.</span> Zustände zusammenfassen</h3>
+<div class="outline-text-3" id="text-4-5">
+
+<div id="orgea1513f" class="figure">
+<p><img src="./formal-step4.png" alt="formal-step4.png" /><br />
+</p>
+</div>
+
+<p>
+In diesem Schritt fassen wir nun Gabelungen zusammen.<br />
+So ist es augenscheinlich egal ob wir über D oder G von A nach B gelangen.<br />
+Nach ähnlichem Prinzip, welches durch die Grafik besser dargestellt wird als ich es in Worte fassen kann und will, wird dedupliziert und konkateniert.<br />
+Ein Hinweiß zum Übergang EH -1-&gt; AC, da dieser nicht direkt offensichtlich ist:<br />
+Man könnte ja aus den anderen Zustandszusammenfassungen davon ausgehen das eine Gabelung über beide Seiten konsisten sein muss.<br />
+Hier ist allerdings eine Oder-Beziehnung maßgeblich.<br />
+Wenn J zu K und L geht, K zu M und N geht und L zu N und O geht.<br />
+Dann geht J zu KL zu MNO.<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf93d0a9" class="outline-2">
+<h2 id="orgf93d0a9"><span class="section-number-2">5.</span> Bottom Up Syntaxanalyse (15P)</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org71c600f" class="outline-3">
+<h3 id="org71c600f"><span class="section-number-3">5.1.</span> a) wesentliche Aktionen</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+Einkellern, Produktionsregel anwenden<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf7d14b0" class="outline-3">
+<h3 id="orgf7d14b0"><span class="section-number-3">5.2.</span> b) Tabelle</h3>
+<div class="outline-text-3" id="text-5-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Keller</th>
+<th scope="col" class="org-left">Zustand</th>
+<th scope="col" class="org-left">Einzulesen</th>
+<th scope="col" class="org-left">Produktion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">*</td>
+<td class="org-left">z<sub>0</sub></td>
+<td class="org-left">abcdb</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">*a</td>
+<td class="org-left">z</td>
+<td class="org-left">bcdb</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">*A</td>
+<td class="org-left">z</td>
+<td class="org-left">bcdb</td>
+<td class="org-left">A -&gt; a</td>
+</tr>
+
+<tr>
+<td class="org-left">*B</td>
+<td class="org-left">z</td>
+<td class="org-left">bcdb</td>
+<td class="org-left">B -&gt; A</td>
+</tr>
+
+<tr>
+<td class="org-left">*Bb</td>
+<td class="org-left">z</td>
+<td class="org-left">cdb</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">*BB</td>
+<td class="org-left">z</td>
+<td class="org-left">cdb</td>
+<td class="org-left">B -&gt; b</td>
+</tr>
+
+<tr>
+<td class="org-left">*BBc</td>
+<td class="org-left">z</td>
+<td class="org-left">db</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">*BB</td>
+<td class="org-left">z</td>
+<td class="org-left">db</td>
+<td class="org-left">B -&gt; Bc</td>
+</tr>
+
+<tr>
+<td class="org-left">*A</td>
+<td class="org-left">z</td>
+<td class="org-left">db</td>
+<td class="org-left">A -&gt; BB</td>
+</tr>
+
+<tr>
+<td class="org-left">*Ad</td>
+<td class="org-left">z</td>
+<td class="org-left">b</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">*Adb</td>
+<td class="org-left">z</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">*AdB</td>
+<td class="org-left">z</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">B -&gt; b</td>
+</tr>
+
+<tr>
+<td class="org-left">*AS</td>
+<td class="org-left">z</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">S -&gt; dB</td>
+</tr>
+
+<tr>
+<td class="org-left">*S</td>
+<td class="org-left">z</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">S -&gt; AS</td>
+</tr>
+
+<tr>
+<td class="org-left">*S</td>
+<td class="org-left">z+</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org12f651a" class="outline-3">
+<h3 id="org12f651a"><span class="section-number-3">5.3.</span> c) was ist die berechnete Ableitung</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+Konkatenation von Spalte 0 und 2, aber nur wenn sich was ändert.<br />
+Den NT fett machen / unterstreichen der bei der Produktionsspalte links vom Pfeil ist.<br />
+</p>
+
+<p>
+<b>S</b> A*S* Ad*B* *A*db B*B*db B*B*cdb *B*bcdb *A*bcdb abcdb<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgea05bff" class="outline-3">
+<h3 id="orgea05bff"><span class="section-number-3">5.4.</span> d) Rechts oder Links Ableitung</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+Ist hier ne Rechtsableitung: es wird immer der rechteste Teil des Kellers abgeleitet<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org55bcee4" class="outline-3">
+<h3 id="org55bcee4"><span class="section-number-3">5.5.</span> e) Wann ist eine Grammatik eindeutig</h3>
+<div class="outline-text-3" id="text-5-5">
+<p>
+Wenn es für jedes Wort w  L(G) genau eine Linksableitung gibt<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org193a5a0" class="outline-3">
+<h3 id="org193a5a0"><span class="section-number-3">5.6.</span> f) Ist die gegebene Grammatik eindeutig?</h3>
+<div class="outline-text-3" id="text-5-6">
+<p>
+Ja, da keine Schleife und kein Epsilon<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga4f3fd5" class="outline-2">
+<h2 id="orga4f3fd5"><span class="section-number-2">6.</span> CYK Algo für CNK: die Pyramide (7P)</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Pyramide von unten nach oben dachweise links nach rechts an x achse überkreuz kombinieren.<br />
+Klingt kompliziert, ist es auch.<br />
+Siehe folgende von mir produzierte videos:<br />
+</p>
+
+<ul class="org-ul">
+<li><a href="https://odysee.com/@port19:7/formale-sprachen-cyk-algorithmus:7?r=Hz2worDgecwmjYgArgtFZv945fYXrCYX&amp;t=0">Formale Sprachen: CYK Algorithmus</a><br /></li>
+<li><a href="https://odysee.com/@port19:7/out3:e?r=Hz2worDgecwmjYgArgtFZv945fYXrCYX&amp;t=0">Formale Sprachen: CYK Algorithmus (continued)</a><br /></li>
+</ul>
+
+<p>
+(Wäre eins geworden aber ich bin zum video editen zu inkompetent)<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf7bbe33" class="outline-2">
+<h2 id="orgf7bbe33"><span class="section-number-2">7.</span> Entscheidbarkeit (6P)</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Läuft aufs Halteproblem zurück, im Zweifelsfall von &ldquo;nicht entscheidbar&rdquo; ausgehen und aufs Halteproblem verweisen.<br />
+</p>
+</div>
+
+<div id="outline-container-org3ba657b" class="outline-3">
+<h3 id="org3ba657b"><span class="section-number-3">7.1.</span> Frage</h3>
+<div class="outline-text-3" id="text-7-1">
+<blockquote>
+<p>
+Das Problem Z bestehe darin, zu entscheiden, ob für eine gegebene Turingmaschine T<sub>i</sub> mit vier Zuständen, Eingabealphabet{0,1} und Bandalphabet {0,1,_} gilt L(T<sub>i</sub>) = {}.<br />
+</p>
+
+<p>
+Ist Z entscheidbar? Begründen Sie ihre Antwort kurz!<br />
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orga1f19bd" class="outline-3">
+<h3 id="orga1f19bd"><span class="section-number-3">7.2.</span> Antwort</h3>
+<div class="outline-text-3" id="text-7-2">
+<blockquote>
+<p>
+Z ist nicht entscheidbar, da du um das Problem zu entscheiden jede Eingabe der Turing-Maschine simulieren müsstest. Damit kannst du das Problem dann auf das Halteproblem zurückführen. Das Halteproblem besagt das man nicht entscheiden kann ob ne Turing-Maschine für beliebige Eingaben hält. Da des nicht entscheidbar ist, ist damit Z nicht entscheidbar. Wäre es entscheidbar könnte man damit nämlich auch beweisen das das Halteproblem entscheidbar ist.<br />
+</p>
+</blockquote>
+
+<p>
+<i>credit an Paul</i><br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4205be9" class="outline-2">
+<h2 id="org4205be9"><span class="section-number-2">8.</span> <span class="todo WAIT">WAIT</span> Extra: Pumping</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Wird morgen nach Betriebssysteme in Präsenz erarbeitet<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6d7fe34" class="outline-2">
+<h2 id="org6d7fe34"><span class="section-number-2">9.</span> <span class="todo WAIT">WAIT</span> Extra: Äquivalenzrelation</h2>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: port19 &amp; dvg</p>
+<p class="date">Created: 2022-12-22 Thu 14:25</p>
+</div>
+</body>
+</html>

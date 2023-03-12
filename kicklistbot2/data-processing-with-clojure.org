@@ -1,0 +1,314 @@
+#+TITLE: Data Processing with Clojure
+#+AUTHOR: port19
+#+Descritpion: add later
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: \n:t
+
+* Problem Definition
+
+A class of application that I quite enjoy writing is pulling data from some api endpoint and processing it to my benefit
+About two years ago I wrote a discord bot that pulled data from the Clash Royale API and based on that data displayed clan members to be promoted / demoted / kicked based on different thresholds for some performance / engagement indicators
+Clojure claims to be very good with data. Let's see that in action by rewriting that old code (minus the discord integration)
+
+A note on setup: I use doom emacs and cider for development and emacs org mode with code blocks and html export to write this document
+
+* Project Setup and Dependencies
+
+There are two main things we're gonna outsource to dependencies: json processing and http requests
+After a short period of searching on github I found the following two candidates
+
+- [[https://github.com/dakrone/clj-http#installation][clj-http]]
+- [[https://github.com/dakrone/cheshire#usage][cheshire]]
+
+Here is how my project.clj looks with both installed
+
+#+begin_src clojure
+(defproject kicklistbot2 "0.1.0-SNAPSHOT"
+  :description "FIXME: write description"
+  :url "http://example.com/FIXME"
+  :license {:name "GPL-3.0"
+            :url "https://www.eclipse.org/legal/epl-2.0/"}
+  :dependencies [[org.clojure/clojure "1.11.1"]
+                [clj-http "3.12.3"]
+                [cheshire "5.11.0"]]
+  :repl-options {:init-ns kicklistbot2.core})
+#+end_src
+
+* The raw data
+
+The test clan is called B Kindom and has the clan tag #JGLJR8L
+A full clan has 50 members, in the following I'll replace the repeating pattern with ... except for the first and last item in the large list
+For this to work we need to pull data from two enpoints of the clash royale api:
+
+** /members
+
+Relevant fields: "name" "role" "donations"
+
+#+begin_src json
+{
+  "items": [
+    {
+      "tag": "#PQLPVJPJG",
+      "name": "つば。",
+      "role": "elder",
+      "lastSeen": "20220917T120523.000Z",
+      "expLevel": 14,
+      "trophies": 6153,
+      "arena": {
+        "id": 54000015,
+        "name": "Master I"
+      },
+      "clanRank": 1,
+      "previousClanRank": 1,
+      "donations": 585,
+      "donationsReceived": 424,
+      "clanChestPoints": 0
+    },
+      ...
+    {
+      "tag": "#RJCUGJU",
+      "name": "~wonderland~",
+      "role": "member",
+      "lastSeen": "20220910T111416.000Z",
+      "expLevel": 14,
+      "trophies": 4214,
+      "arena": {
+        "id": 54000055,
+        "name": "Arena 13"
+      },
+      "clanRank": 50,
+      "previousClanRank": 50,
+      "donations": 0,
+      "donationsReceived": 0,
+      "clanChestPoints": 0
+    }
+  ],
+  "paging": {
+    "cursors": {}
+  }
+}
+#+end_src
+
+** /currentriverrace
+
+Relevant fields: "name" "decksUsed" (within "participants")
+
+#+begin_src json
+{
+  "state": "full",
+  "clan": {
+    "tag": "#JGLJR8L",
+    "name": "b kindom",
+    "badgeId": 16000010,
+    "fame": 1952,
+    "repairPoints": 0,
+    "participants": [
+      {
+        "tag": "#8PULQQVL",
+        "name": "SakeBRSP",
+        "fame": 0,
+        "repairPoints": 0,
+        "boatAttacks": 0,
+        "decksUsed": 0,
+        "decksUsedToday": 0
+      },
+        ...
+      {
+        "tag": "#98LQCGL0",
+        "name": "rweavere",
+        "fame": 2150,
+        "repairPoints": 0,
+        "boatAttacks": 2,
+        "decksUsed": 13,
+        "decksUsedToday": 4
+      }
+    ],
+    "periodPoints": 5275,
+    "clanScore": 2570
+  },
+  "clans": [
+      _not interesting to us_
+  ],
+  "sectionIndex": 1,
+  "periodIndex": 12,
+  "periodType": "warDay",
+  "periodLogs": [
+      _also not interesting to us_
+  ]
+}
+#+end_src
+
+* Requesting and decoding the data
+
+** Grabbing donations
+
+#+begin_src clojure
+(def don
+    (->> (:body (client/get "https://api.clashroyale.com/v1/clans/%23JGLJR8L/members" {:headers {:Authorization (str "Bearer " (slurp "token"))}}))
+         (#(decode % true))
+         (:items)
+         (map #(map % [:name :role :donations]))
+    ))
+#+end_src
+
+Let's walk through this code snippet.
+- ~(def don (...))~ binds whatever we do next to the variable don, which we will continue to use later
+- ~(->> (x) (y) (z))~ is called threadlast. It acts like a pipe, providing the output of (x) as the input of (y) and so forth.
+  This can be seen as a more elegant shorthand to avoid ugly )))))))s
+  ~(->> (x) (y) (z)~ is equivalent to ~(z (y (x)))~
+- ~(:body (client/get "https://api.clashroyale.com/v1/clans/%23JGLJR8L/members") ...)~ is executing a get request on the members api endpoint and extracting the body of that request.
+  Note we're not checking for the status. Good design would dictate checking it, but that can be done way later.
+- ~(... {:headers {:Authorization (str "Bearer" (slurp "token"))}}))~ Is setting up authorizaiton for the api. This is very specific per api, so check the api docs.
+  Note ~(slurp "token")~. This is a useful pattern for dealing with secrets on server side code. Just put the token into a file and read it at runtime. ~slurp~ reads the file ~token~, which resides at the top level of our project directory
+- ~(#(decode % true))~ applies a lambda function to the input. we need to use a lambda function because the input should not be appended to the argument list but needs to squeeze between the "decode" and "true".
+  This is cheshire! And it's probably the only thing we're gonna use of it.
+- ~(:items)~ as you might guess, this returns the ~(:items)~ list from the now decoded json. These are our clan members.
+- ~(map #(map % [:name :role :donations]))~ This line of code took me embarassingly long to write. It makes sure to strip each members of his uninteresting properties, leaving only "name", "role" and "donations".
+  This is why we have a double map. we map for each of the members.
+
+** Grabbing riverrace (aka war) stats
+
+#+begin_src clojure
+(def war
+   (->> (:body (client/get "https://api.clashroyale.com/v1/clans/%23JGLJR8L/currentriverrace" {:headers {:Authorization (str "Bearer " (slurp "token"))}}))
+        (#(decode % true))
+        (:clan)
+        (:participants)
+        (map #(map % [:name :decksUsed]))
+   ))
+#+end_src
+
+Knowing what you know from the last section you should be able to figure out what this does on your own.
+
+* Merging the data
+
+Great! We can now conveniently check war statistics and donation statistics.
+But we want more! We want to check both at the same time. Time to get them into a more useful data structure.
+
+** Getting our keys back
+
+#+begin_src clojure
+(def dondic (sort-by :name (map #(hash-map :name (first %) :role (second %) :donations (last %)) don)))
+#+end_src
+
+Why don't we use a threadlast here?
+Well, because then it would be 3 lines: def, sort-by and mapping to hash-map.
+If we did one or two more things to it we would use threadlast, but in this case as oneliner is more ergonomic.
+
+When we reduced the dataset to just the relevant fields earlier, we lost the fields and now we can't elegantly index our data. To fix this we use ~(map #(hash-map :name (first %) :role (second %) :donations (last %)) don)~
+
+Then we sort by the name, just so output is less confusing when we check the repl later, and bind to dondic
+
+The war data suffers from the same problem and is fixed very similarly:
+
+#+begin_src clojure
+(def wardic (sort-by :name (map #(hash-map :name (first %) :decks (second %)) war)))
+#+end_src
+
+** Merging
+
+Since the two hashmaps are sorted by name you may be tempted to just merge dondic and wardic.
+With this api, especially due to new clan members, it sometimes happens that someone appears in the members endpoint but not yet in the riverrace endpoint. So instead we use an alternative workaround:
+
+#+begin_src clojure
+(def finally (group-by :name (concat dondic wardic)))
+#+end_src
+
+But we're not done. Now our data looks a bit weird.
+
+#+begin_src clojure
+{"jj" [{:role elder, :name "jj", :donations 20} {:decks 0, :name "jj"}], ...}
+#+end_src
+
+** Making the data prettier
+
+Sidenote: when working with such large sequences of data it can, especially when programming with a lisp, be very beneficial to first extract a sample entry to construct a working lambda function.
+So here I extracted my specimen and after a few different ideas I got one that worked for the normal case and didn't freak out about the non-standard cases.
+
+#+begin_src clojure
+(def specimen (second finally))
+(def speciale(#(merge (first (second %)) (second (second %))) specimen))
+#+end_src
+
+Specimen after his fabolous operation: ~{:role member, :decks 0, :name Twerk Lala, :donations 0}~
+
+** Catching the edge case
+
+Now the keen eye may have noticed that I picked the second entry as my specimen.
+Choosing the first just gives me this: ~{:role member, :name Beluga, :donations 76}~
+
+Let's fix this guy up
+
+#+begin_src clojure
+(merge-with #(max %1 %2) speciale {:donations 0, :decks 0})
+#+end_src
+
+Note that we can't simply merge because that may overwrite the fabolous record of more upstanding citizens!
+Instead we want to only set the respective keywords to zero if not already present, which this line achieves.
+
+** Tadaa
+
+Now let's bring it all together
+
+#+begin_src clojure
+(def forge (map #(merge-with (fn [ra osiris] (max ra osiris)) % {:donations 0, :decks 0}) (map #(merge (first (second %)) (second (second %))) finally)))
+#+end_src
+
+* Wrapping up
+
+Now we can have rather convenient kicklist generation:
+Consider we want to kick all members with less than 100 donations and less than 4 decks used.
+
+#+begin_src clojure
+(println (map :name (filter #(and (= "member" (:role %)) (> 100 (:donations %)) (> 8 (:decks %))) forge)))
+#+end_src
+
+Alternatively we may want to promote anyone who has used at least 8 decks and has 300 donations.
+
+#+begin_src clojure
+(println (map :name (filter #(and (= "member" (:role %)) (< 300 (:donations %)) (<= 8  (:decks %))) forge)))
+#+end_src
+
+I hope this gave you a nice overview over clojure data processing or at least sparked your motivation to go crunch your own numbers
+
+* Full code
+/Note how I omitted the println from the last two lines so you can run the code block in org-mode/
+
+#+begin_src clojure
+(ns kicklistbot2.core
+  (:require [cheshire.core :refer :all])
+  (:require [clj-http.client :as client]))
+
+(def don
+    (->> (:body (client/get "https://api.clashroyale.com/v1/clans/%23JGLJR8L/members" {:headers {:Authorization (str "Bearer " (slurp "token"))}}))
+         (#(decode % true))
+         (:items)
+         (map #(map % [:name :role :donations]))
+    ))
+
+  (def war
+   (->> (:body (client/get "https://api.clashroyale.com/v1/clans/%23JGLJR8L/currentriverrace" {:headers {:Authorization (str "Bearer " (slurp "token"))}}))
+        (#(decode % true))
+        (:clan)
+        (:participants)
+        (map #(map % [:name :decksUsed]))
+   ))
+
+(def dondic (sort-by :name (map #(hash-map :name (first %) :role (second %) :donations (last %)) don)))
+(def wardic (sort-by :name (map #(hash-map :name (first %) :decks (second %)) war)))
+(def finally (group-by :name (concat dondic wardic)))
+(def forge (map #(merge-with (fn [ra osiris] (max ra osiris)) % {:donations 0, :decks 0}) (map #(merge (first (second %)) (second (second %))) finally)))
+
+(map :name (filter #(and (= "member" (:role %)) (> 100 (:donations %)) (> 8 (:decks %))) forge))
+(map :name (filter #(and (= "member" (:role %)) (< 300 (:donations %)) (<= 8  (:decks %))) forge))
+#+end_src
+
+#+RESULTS:
+| #'kicklistbot2.core/don                                                                                                                                                                                                                                     |
+| #'kicklistbot2.core/war                                                                                                                                                                                                                                     |
+| #'kicklistbot2.core/dondic                                                                                                                                                                                                                                  |
+| #'kicklistbot2.core/wardic                                                                                                                                                                                                                                  |
+| #'kicklistbot2.core/finally                                                                                                                                                                                                                                 |
+| #'kicklistbot2.core/forge                                                                                                                                                                                                                                   |
+| ("Beluga" "Twerk Lala" "FREE FIRE" "skuutmrs" "digoreidelas" "Aiden" "the KING" ">Bladymir22<" "Roman.1" "¥LEAFAR¥" "Loïc" "Hamza ATA" "Betsy" "o tiozão" "k'ruto" "Mughal" "lou" "~wonderland~" "⚜️Cou²²⚜️" "Basti" "SakeBRSP" "ja€obo $" "xXDeadShootXx") |
+| ("usta" "CSparksGamingYT")                                                                                                                                                                                                                                  |

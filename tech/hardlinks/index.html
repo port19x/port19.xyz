@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/82055622?v=4">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="vimwiki">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<title>💻 Hardlinks are underrated</title>
+<meta name="description" content="Hardlinks &gt; Symlinks + Stow (for dotfiles)">
+
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19's Webpage">
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<h1 class="title">
+  💻 Hardlinks are underrated
+</h1>
+
+<i>First Published: 2023-01-10</i>
+
+<hr>
+<h1 id="hardlinks-symlinks-stow-for-dotfiles">Hardlinks &gt; Symlinks + Stow (for dotfiles)</h1>
+<p>Let's just get a quick overview over our options to duplicate files from A to B</p>
+<table><thead><tr><th></th><th>Copy</th><th>Hardlink</th><th>Symlink</th></tr></thead><tbody>
+<tr><td>Command</td><td><code>cp a b</code></td><td><code>ln a b</code></td><td><code>ln -s a b</code></td></tr>
+<tr><td>Storage requirement</td><td>2a</td><td>a</td><td>a</td></tr>
+<tr><td>b &quot;survives&quot; rm a</td><td>y</td><td>y</td><td>n</td></tr>
+</tbody></table>
+<p>Copying is pretty straight forward, no surprises here. <br />
+Symlinks are the go-to solution if you want to reference a file from somewhere else. <br />
+It's what makes my config files appear to be in <code>~/.config</code> when they're actually in <code>~/dotfiles</code>. <br />
+This happens via the usage of <code>stow</code>, an age old program for these sorts of things.</p>
+<p>I'll probably replace my <code>stow</code> usage with self scripted hardlinks.<br />
+The reason for this is twofold.<br />
+I don't want to clean up broken symlinks when I switch programs / decide a config file doesn't deserve a spot in the git repo.<br />
+Second, I may actually want to have residual configuration. Let me elaborate.</p>
+<p>Let's say I configure neofetch and put that into my git repo only to, after a few commits, realise that such a minor program with it's unimportant config file doesn't deserve a spot in my dotfiles repo.<br />
+In that case I'd get rid of it in my dotfiles folder, leaving the broken symlink.<br />
+Equally bad, the config is now lost. Or at least obscured in the git history.<br />
+I'd much prefer to have it still lying around, taking up the kilobyte that it is taking up in my git history anyway.</p>
+<p>Kinda sad that stow doesn't come with a hardlink option :/</p>
+
+<hr>
+
+  <div class="post-nav" style="width:100%">
+    
+      <a class="previous" style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;emacs1y&#x2F;">💻 Emacs: One year later ›</a>
+    
+    
+      <a class="next" style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;on-programming-skill&#x2F;">‹ 💻 On Programming Skill</a>
+    
+  </div>
+  <br>
+
+<hr>
+
+    </div>
+  </section>
+  <footer>
+    <a href="/rss.xml" target="_blank"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="left"></a>
+    <a href="https://emulatorgames.net/roms/gameboy-advance" target="_blank"><img src="https://port19.xyz/buttons/emulatorgames.gif" alt="Webbutton to emulatorgames.net" style="height:31px;width:88px;"></a>
+    <a href="https://darebee.com" target="_blank"><img src="https://port19.xyz/buttons/darebee.gif" alt="Webbutton to darebee.com" style="height:31px;width:88px;"></a>
+    <a href="https://nyaa.si" target="_blank"><img src="https://port19.xyz/buttons/nyaa.gif" alt="Webbutton to nyaa.si" style="height:31px;width:88px;"></a>
+    <a href="https://github.com/port19x/port19.xyz" target="_blank"><img src="https://port19.xyz/buttons/github.gif" alt="Webbutton to github" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>

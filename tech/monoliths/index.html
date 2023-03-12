@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/82055622?v=4">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="vimwiki">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<title>💻 Why I like Monoliths</title>
+<meta name="description" content="On Monoliths">
+
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19's Webpage">
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<h1 class="title">
+  💻 Why I like Monoliths
+</h1>
+
+<i>First Published: 2022-12-01</i>
+
+<hr>
+<h1 id="on-monoliths">On Monoliths</h1>
+<h2 id="why-do-people-gravitate-to-modular-architectures">Why do people gravitate to modular architectures</h2>
+<p><em>&quot;Scalability&quot;: both in terms of performance and project size</em>
+I may choose to write another article about this phenomena, but for some reason developers fear performance issues more than anything else.
+For this article it's enough to say that your pet project will likely never have any issues regarding performance.
+Even a raspberry pi will handle the traffic of several thousands of daily users for most scenarios.</p>
+<p>More important to most developers, they allow for a more rigid separation of concerns, useful for scaling a development team to more than 2-3 devs.
+If your scope becomes large enough you can no longer have a whole team work on one closely coupled set of classes / modules / files with code.
+It is also worth noting that some applications inherently benefit from some form of modularization: a website without backend is, through technical means, limited in what it can accomplish.
+The point I'm trying to make in this, admittedly, ranty article is not that a microservice architecture is <em>never</em> a good idea for anything.
+My point is that it's almost always a bad idea for small projects.</p>
+<h2 id="the-beauty-of-the-monolith">The beauty of the monolith</h2>
+<p>I believe I can sell you the upsides of developing a monolith far better than the downsides of everything else.
+A monolith, in the way I use the term, is any one self contained programm that is not strongly separated into pieces on a conceptual level.
+You may still have different files where you write code in, but at it's core the system is interdependent and tightly coupled.
+A monolith</p>
+<ul>
+<li>Encourages minimalism / discourages feature creep</li>
+<li>Leaves complexity to be tackled head on in code, rather than to be abstracted away</li>
+<li>Is easy to grasp and reason about</li>
+<li>Is easy to deploy / package</li>
+<li>Is easy to finish</li>
+<li>Can reach a high degree of polish</li>
+</ul>
+<h2 id="the-design-process">The design process</h2>
+<p>As a matter of product design, let's return to the example of a website.
+After answering the basic questions, what it is and who it's for, ask yourself wether it needs a backend.
+Do you need to dynamically change contents on the page? No? Maybe don't use a backend.
+Do you need to store and/or process user data? No? Why use a backend.
+Is your website just a pile of documents to be viewed in a browser? Yes? Use html, css and maybe a static site generator. No backend.
+Is your website capable of running purely on the clientside? Yes? Write some js and don't dare to phone home to a backend.</p>
+<p><em>Modularize as little as possible, but as much as necessary</em></p>
+<p>If one minor feature would require modularization, but it doesn't contribute much to the overall value: <em>just don't include it</em></p>
+<h2 id="don-t-solve-problems-you-don-t-have">Don't solve problems you don't have</h2>
+<p>You have enough problems as is. You have a product to develop. A project to hack on.
+You gain nothing from preparing yourself for an unlikely future.</p>
+
+<hr>
+
+  <div class="post-nav" style="width:100%">
+    
+      <a class="previous" style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;zola&#x2F;">💻 Hugo is inexcusably bad ›</a>
+    
+    
+      <a class="next" style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;nixos&#x2F;">‹ 💻 NixOS ain&#x27;t worth it</a>
+    
+  </div>
+  <br>
+
+<hr>
+
+    </div>
+  </section>
+  <footer>
+    <a href="/rss.xml" target="_blank"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="left"></a>
+    <a href="https://emulatorgames.net/roms/gameboy-advance" target="_blank"><img src="https://port19.xyz/buttons/emulatorgames.gif" alt="Webbutton to emulatorgames.net" style="height:31px;width:88px;"></a>
+    <a href="https://darebee.com" target="_blank"><img src="https://port19.xyz/buttons/darebee.gif" alt="Webbutton to darebee.com" style="height:31px;width:88px;"></a>
+    <a href="https://nyaa.si" target="_blank"><img src="https://port19.xyz/buttons/nyaa.gif" alt="Webbutton to nyaa.si" style="height:31px;width:88px;"></a>
+    <a href="https://github.com/port19x/port19.xyz" target="_blank"><img src="https://port19.xyz/buttons/github.gif" alt="Webbutton to github" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
