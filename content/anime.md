@@ -134,12 +134,12 @@ description = "Port19's selfhosted anime list"
 |------------------------------------------|--------|
 | A Place Further Than The Universe        | TV     |
 | After The Rain                           | TV     |
-| Anohana: The Flower We Saw That Day      | TV     |
 | Cowboy Bebop - Knockin' On Heaven's Door | Movie  |
 | Durarara!!                               | TV     |
 | K-On!                                    | TV     |
+| Konosuba                                 | TV     |
+| Mushoku Tensei: Jobless Reincarnation    | TV     |
 | Non Non Biyori                           | TV     |
-| Ping Pong the Animation                  | TV     |
 | Welcome to the N.H.K.                    | TV     |
 
 ## Sourcing
