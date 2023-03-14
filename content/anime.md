@@ -29,6 +29,19 @@ description = "Port19's selfhosted anime list"
 |----------|----------|--------|
 | Konosuba | 5/~30    | TV     |
 
+## Planning
+
+| Title                                    | Format |
+|------------------------------------------|--------|
+| A Place Further Than The Universe        | TV     |
+| After The Rain                           | TV     |
+| Cowboy Bebop - Knockin' On Heaven's Door | Movie  |
+| Durarara!!                               | TV     |
+| K-On!                                    | TV     |
+| Mushoku Tensei: Jobless Reincarnation    | TV     |
+| Non Non Biyori                           | TV     |
+| Welcome to the N.H.K.                    | TV     |
+
 ## Completed
 
 | Title                                         | Score | Length | Format  |
@@ -128,19 +141,6 @@ description = "Port19's selfhosted anime list"
 | Toradora! SOS! Hurray for Gourmands | 2     | 2/4      | Special |
 | Dorei-ku The Animation              | 1     | 6/12     | TV      |
 | Food Wars! Shokugeki no Soma        | 1     | 2/24     | TV      |
-
-## Planning
-
-| Title                                    | Format |
-|------------------------------------------|--------|
-| A Place Further Than The Universe        | TV     |
-| After The Rain                           | TV     |
-| Cowboy Bebop - Knockin' On Heaven's Door | Movie  |
-| Durarara!!                               | TV     |
-| K-On!                                    | TV     |
-| Mushoku Tensei: Jobless Reincarnation    | TV     |
-| Non Non Biyori                           | TV     |
-| Welcome to the N.H.K.                    | TV     |
 
 ## Sourcing
 
