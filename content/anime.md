@@ -25,8 +25,9 @@ description = "Port19's selfhosted anime list"
 
 ## Watching
 
-| Title           | Progress | Format |
-|-----------------|----------|--------|
+| Title    | Progress | Format |
+|----------|----------|--------|
+| Konosuba | 5/~30    | TV     |
 
 ## Completed
 
@@ -137,7 +138,6 @@ description = "Port19's selfhosted anime list"
 | Cowboy Bebop - Knockin' On Heaven's Door | Movie  |
 | Durarara!!                               | TV     |
 | K-On!                                    | TV     |
-| Konosuba                                 | TV     |
 | Mushoku Tensei: Jobless Reincarnation    | TV     |
 | Non Non Biyori                           | TV     |
 | Welcome to the N.H.K.                    | TV     |
