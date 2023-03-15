@@ -27,7 +27,7 @@ description = "Port19's selfhosted anime list"
 
 | Title    | Progress | Format |
 |----------|----------|--------|
-| Konosuba | 5/~30    | TV     |
+| Konosuba | 7/~30    | TV     |
 
 ## Planning
 
