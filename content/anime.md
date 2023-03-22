@@ -27,7 +27,6 @@ description = "Port19's selfhosted anime list"
 
 | Title    | Progress | Format |
 |----------|----------|--------|
-| Konosuba | 7/~30    | TV     |
 
 ## Planning
 
@@ -137,6 +136,7 @@ description = "Port19's selfhosted anime list"
 | Nichijou - My Ordinary Life         | 4     | 17/26    | TV      |
 | Nisekoi                             | 3     | ?/20     | TV      |
 | One Piece                           | 3     | 30/>1000 | TV      |
+| Konosuba                            | 2     | 15/20    | TV      |
 | Sonny Boy                           | 2     | 8/12     | TV      |
 | Toradora! SOS! Hurray for Gourmands | 2     | 2/4      | Special |
 | Dorei-ku The Animation              | 1     | 6/12     | TV      |
