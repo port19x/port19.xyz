@@ -25,8 +25,9 @@ description = "Port19's selfhosted anime list"
 
 ## Watching
 
-| Title    | Progress | Format |
-|----------|----------|--------|
+| Title | Progress | Format |
+|-------|----------|--------|
+| K-On! | 2/50     | TV     |
 
 ## Planning
 
@@ -36,7 +37,6 @@ description = "Port19's selfhosted anime list"
 | After The Rain                           | TV     |
 | Cowboy Bebop - Knockin' On Heaven's Door | Movie  |
 | Durarara!!                               | TV     |
-| K-On!                                    | TV     |
 | Mushoku Tensei: Jobless Reincarnation    | TV     |
 | Non Non Biyori                           | TV     |
 | Welcome to the N.H.K.                    | TV     |
