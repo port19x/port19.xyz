@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-03-06
+updated = 2023-04-06
 description = "Port19's selfhosted anime list"
 +++
 
@@ -27,7 +27,7 @@ description = "Port19's selfhosted anime list"
 
 | Title | Progress | Format |
 |-------|----------|--------|
-| K-On! | 2/50     | TV     |
+| K-On! | 4/50     | TV     |
 
 ## Planning
 
