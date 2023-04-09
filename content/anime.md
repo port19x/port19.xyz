@@ -21,13 +21,13 @@ description = "Port19's selfhosted anime list"
 2. Serial Experiments Lain
 3. Highschool of the Dead
 4. Tsukigakirei
-5. ODD Taxi
+5. Girls Last Tour
 
 ## Watching
 
 | Title | Progress | Format |
 |-------|----------|--------|
-| K-On! | 4/50     | TV     |
+| K-On! | 6/50     | TV     |
 
 ## Planning
 
@@ -48,6 +48,7 @@ description = "Port19's selfhosted anime list"
 | 5 Centimeters per Second                      | 5     | 1      | Movie   |
 | A Silent Voice                                | 5     | 1      | Movie   |
 | FLCL Alternative                              | 5     | 6      | TV      |
+| Girls Last Tour                               | 4     | 12     | TV      |
 | Highschool of the Dead                        | 5     | 12     | TV      |
 | Into the Forest of Fireflies Light            | 5     | 1      | Movie   |
 | Is this a Zombie?                             | 5     | 12     | TV      |
@@ -74,7 +75,6 @@ description = "Port19's selfhosted anime list"
 | FLCL Progressive                              | 4     | 6      | TV      |
 | Gantz                                         | 4     | 13     | TV      |
 | Ghost in the Shell                            | 4     | 1      | Movie   |
-| Girls Last Tour                               | 4     | 12     | TV      |
 | Grave of the Fireflies                        | 4     | 1      | Movie   |
 | Himouto! Umaru-chan                           | 4     | 12     | TV      |
 | Kiss x Sis                                    | 4     | 12     | OVA     |
