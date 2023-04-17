@@ -1,5 +1,5 @@
 +++
-title = "📚 Text is vastly superior than video for content"
+title = "📚 Text is vastly superior to video for content"
 date = 2023-04-16
 description = "unpublished post from january I found in my desk"
 +++
