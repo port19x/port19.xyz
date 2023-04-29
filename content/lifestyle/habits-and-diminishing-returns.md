@@ -8,10 +8,10 @@ _From the other side of self-improvement_
 
 I discovered the online genre of self-improvement videos in my late teens.
 Now I'm in my early 20s.
-One of the main things that self-improvement gurus lament about is that habits are really important and I'm not here to disagree with them.
+One of the main things that self-improvement gurus lament about is the importance of habits and I'm not here to disagree with them.
 But there comes a point of diminishing returns.
 A point where you've implemented most of the easy routines as well as several of the larger, more impactful habits.
-Once you hit that point, building more habits ironically becomes a form of procrastination.
+Once you hit that point, building more habits becomes a form of procrastination.
 Being promised gains in productivity, well-being, or some other metric of a desirable life, you chase after the next increment.
 
 Let me illustrate with the example of cold showers.
