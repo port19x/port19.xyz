@@ -1,6 +1,11 @@
 /*************************/
 /* general look and feel */
 /*************************/
+@font-face {
+  font-family: 'Noto Color Emoji';
+  src: url(/NotoColorEmoji.ttf);
+}
+
 body {
   text-align: center;
   background-color: #1d2021;
@@ -8,6 +13,7 @@ body {
   max-width: 48em;
   margin: auto;
   padding: 0.825em;
+  font-family: serif, 'Noto Color Emoji';
 }
 h2 {
   background-color:#282828;

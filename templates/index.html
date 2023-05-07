@@ -7,7 +7,8 @@
 
 <header><h1 class="title"> Port19's Webpage </h1></header>
 <span>
-    <a class="lists" href="{{ get_page(path="anime.md") | safe }}">🌸Anime List🌸</a>
+  {% set anime = get_page(path="anime.md") %}
+  <a class="lists" href="{{ anime.permalink | safe }}">🌸Anime List🌸</a>
 </span>
 <hr>
 
