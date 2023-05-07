@@ -1,5 +1,5 @@
 +++
-title = "🍚 Roasted Broccoli"
+title = "🍽 Roasted Broccoli"
 date = 2022-06-15
 description = "Roasted Broccoli Recipe"
 +++
