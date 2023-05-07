@@ -6,35 +6,108 @@
 {% block content %}
 
 <header><h1 class="title"> Port19's Webpage </h1></header>
-
 <span>
-    {% for post in section.pages %}
-    <a class="lists" href="{{ post.permalink | safe }}">{{ post.title }}</a>
-    {% endfor %}
- </span>
-
+    <a class="lists" href="{{ get_page(path="anime.md") | safe }}">🌸Anime List🌸</a>
+</span>
 <hr>
 
-<h2> Projects </h2>
-    <span>
-    <a class="lists" href="https://github.com/pystardust/ani-cli/">🇯🇵 ani-cli</a>
-    <a class="lists" href="https://port19.xyz/dvd-animation/">🖼️ dvd-animation</a>
-    <a class="lists" href="https://github.com/port19x/redqu/">🐱 redqu</a>
-    </span>
-    <p></p>
+{% set lifestyle = get_section(path="lifestyle/_index.md") %}
+{% set tech = get_section(path="tech/_index.md") %}
+{% set recipes = get_section(path="recipes/_index.md") %}
 
-{% for path in section.subsections %}
-    {% set subsection = get_section(path=path) %}
-        <h2><a href="{{ subsection.permalink | safe }}"> {{ subsection.title }} </a></h2>
-        <ul>
-        {% for post in subsection.pages %}
-            <li>
-                <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash;
-                <a href="{{ post.permalink | safe }}">{{ post.title }} </a>
-            </li>
-        {% endfor %}
-        </ul>
-    {% endfor %}
+<h2> Posts by Category </h2>
+<span>
+<a class="lists" href="{{ lifestyle.permalink | safe }}">📚 lifestyle</a>
+<a class="lists" href="{{ tech.permalink | safe }}">💻 tech</a>
+<a class="lists" href="{{ recipes.permalink | safe }}">🍚 recipes</a>
+</span>
+
+<h2> Recent Posts </h2>
+<ul>
+{% set feed = lifestyle.pages | concat(with=tech.pages) | concat(with=recipes.pages) %}
+{% for post in feed | sort(attribute="date") | reverse | slice(end=10) %}
+  <li>
+    <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash;
+    <a href="{{ post.permalink | safe }}">{{ post.title }} </a>
+  </li>
+{% endfor %}
+</ul>
+
+<details> <summary><i>see all</i></summary> <ul>
+{% for post in feed | sort(attribute="date") | reverse | slice(start=10) %}
+  <li>
+    <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash;
+    <a href="{{ post.permalink | safe }}">{{ post.title }} </a>
+  </li>
+{% endfor %}
+</ul> </details>
+
+<h2> Noteable Projects </h2>
+<i> Click the triangles for previews </i>
+<ul>
+  <details>
+      <summary>
+	<a class="lists" href="https://github.com/pystardust/ani-cli/">🇯🇵 ani-cli</a>
+	A cli tool to browse and play anime
+      </summary>
+      <video controls="controls" width="500" alt="Video preview for ani-cli">
+	<source type="video/mp4" src="https://user-images.githubusercontent.com/44473782/224679247-0856e652-f187-4865-bbcf-5a8e5cf830da.webm">
+      </video>
+  </details>
+  
+  <details>
+    <summary>
+      <a class="lists" href="https://github.com/port19x/redqu/">🐱 redqu</a>
+      A media centric reddit client
+    </summary>
+    <img src="https://user-images.githubusercontent.com/82055622/209588571-310b3e87-a39f-4baf-b2bd-7a9348dccd44.png" width="500" alt="Image preview for redqu">
+  </details>
+
+  <details>
+    <summary>
+      <a class="lists" href="https://github.com/port19x/bbyt">📺 bbyt</a>
+      A search centric youtube client
+    </summary>
+    <img src="https://user-images.githubusercontent.com/82055622/229316275-04fb8de6-50e9-4d7e-a435-418c2d1230cd.png" width="500" alt="Image preview for bbyt">
+  </details>
+
+  <details>
+    <summary>
+      <a class="lists" href="https://github.com/port19x/dvd-animation">🖼️ dvd-animation</a>
+      A quil sketch reminicent of the iconic dvd screensaver
+    </summary>
+    <iframe width="500" height="500" src="https://port19.xyz/dvd-animation"></iframe>
+  </details>
+
+  <details>
+    <summary>
+    <a class="lists" href="https://github.com/clj-commons/hickory">🌲 hickory</a>
+    The de-facto html parsing library for clojure
+    </summary>
+    <pre><code>
+      user=> (use 'hickory.core)
+      nil
+      user=> (require '[hickory.select :as s])
+      nil
+      user=> (require '[clj-http.client :as client])
+      nil
+      user=> (require '[clojure.string :as string])
+      nil
+      user=> (def site-htree (-> (client/get "http://formula1.com/default.html") :body parse as-hickory))
+      #'user/site-htree
+      user=> (-> (s/select (s/child (s/class "subCalender") ; sic
+                                    (s/tag :div)
+                                    (s/id :raceDates)
+                                    s/first-child
+                                    (s/tag :b))
+                           site-htree)
+                 first :content first string/trim)
+      "10, 11, 12 May 2013"
+    </code></pre>
+  </details>
+
+</ul>
 <hr>
-
 {% endblock content %}
+
+    <details> <summary><i>preview</i></summary> </details>
