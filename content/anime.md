@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-04-06
+updated = 2023-05-24
 description = "Port19's selfhosted anime list"
 +++
 
@@ -25,9 +25,9 @@ description = "Port19's selfhosted anime list"
 
 ## Watching
 
-| Title | Progress | Format |
-|-------|----------|--------|
-| K-On! | 6/50     | TV     |
+| Title                 | Progress | Format |
+|-----------------------|----------|--------|
+| Welcome to the N.H.K. | 1/24     | TV     |
 
 ## Planning
 
@@ -35,11 +35,9 @@ description = "Port19's selfhosted anime list"
 |------------------------------------------|--------|
 | A Place Further Than The Universe        | TV     |
 | After The Rain                           | TV     |
-| Cowboy Bebop - Knockin' On Heaven's Door | Movie  |
 | Durarara!!                               | TV     |
 | Mushoku Tensei: Jobless Reincarnation    | TV     |
 | Non Non Biyori                           | TV     |
-| Welcome to the N.H.K.                    | TV     |
 
 ## Completed
 
@@ -67,6 +65,7 @@ description = "Port19's selfhosted anime list"
 | Akira                                         | 4     | 1      | TV      |
 | Asobi Asobase                                 | 4     | 12     | TV      |
 | Bakemonogatari                                | 4     | 15     | TV      |
+| Cowboy Bebop - Knockin' On Heaven's Door      | 4     | 1      | Movie   |
 | Death Note                                    | 4     | 37     | TV      |
 | Death Parade                                  | 4     | 12     | TV      |
 | Eroge! H mo Game mo Kaihatsu Zanmai           | 4     | 6      | OVA     |
@@ -128,12 +127,13 @@ description = "Port19's selfhosted anime list"
 | Sword Art Online                              | 1     | 25     | TV      |
 | The Future Diary                              | 1     | 26     | TV      |
 
-## Dropped
+## Dropped/Paused
 
 | Title                               | Score | Progress | Format  |
 |-------------------------------------|-------|----------|---------|
 | Fullmetal Alchemist: Brotherhood    | 5     | ?/64     | TV      |
 | Nichijou - My Ordinary Life         | 4     | 17/26    | TV      |
+| K-On!                               | 4     | 9/50     | TV      |
 | Nisekoi                             | 3     | ?/20     | TV      |
 | One Piece                           | 3     | 30/>1000 | TV      |
 | Konosuba                            | 2     | 15/20    | TV      |
