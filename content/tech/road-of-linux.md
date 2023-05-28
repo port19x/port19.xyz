@@ -1,5 +1,5 @@
 +++
-title = "💻 The Road Of Linux"
+title = "💻 Road of linux"
 date = 2023-05-28
 description = "In Linux, we all travel a similar road"
 +++
