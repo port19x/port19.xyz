@@ -1,10 +1,10 @@
 +++
 title = "💻 The Road Of Linux"
 date = 2023-05-28
-description = "In Linux, we all travel on a similar road"
+description = "In Linux, we all travel a similar road"
 +++
 
-# In Linux, we all travel on a similar road
+# In Linux, we all travel a similar road
 
 ## Layer 1: distrohopping
 
