@@ -7,6 +7,3 @@
 [submodule "external/kicklistbot2"]
 	path = external/kicklistbot2
 	url = git@github.com:port19x/kicklistbot2
-[submodule "external/compnotes"]
-	path = external/compnotes
-	url = git@github.com:port19x/compnotes
