@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-05-24
+updated = 2023-06-06
 description = "Port19's selfhosted anime list"
 +++
 
@@ -25,19 +25,21 @@ description = "Port19's selfhosted anime list"
 
 ## Watching
 
-| Title                 | Progress | Format |
-|-----------------------|----------|--------|
-| Welcome to the N.H.K. | 1/24     | TV     |
+| Title                                 | Progress | Format |
+|---------------------------------------|----------|--------|
+| Durarara                              | 6/78     | TV     |
+| Demon Slayer - Swordsmith Village Arc | 9/?      | TV     |
+| Welcome to the N.H.K.                 | 1/24     | TV     |
+| K-On!                                 | 13/39    | TV     |
 
 ## Planning
 
-| Title                                    | Format |
-|------------------------------------------|--------|
-| A Place Further Than The Universe        | TV     |
-| After The Rain                           | TV     |
-| Durarara!!                               | TV     |
-| Mushoku Tensei: Jobless Reincarnation    | TV     |
-| Non Non Biyori                           | TV     |
+| Title                                 | Format |
+|---------------------------------------|--------|
+| A Place Further Than The Universe     | TV     |
+| After The Rain                        | TV     |
+| Mushoku Tensei: Jobless Reincarnation | TV     |
+| Non Non Biyori                        | TV     |
 
 ## Completed
 
@@ -133,7 +135,6 @@ description = "Port19's selfhosted anime list"
 |-------------------------------------|-------|----------|---------|
 | Fullmetal Alchemist: Brotherhood    | 5     | ?/64     | TV      |
 | Nichijou - My Ordinary Life         | 4     | 17/26    | TV      |
-| K-On!                               | 4     | 9/50     | TV      |
 | Nisekoi                             | 3     | ?/20     | TV      |
 | One Piece                           | 3     | 30/>1000 | TV      |
 | Konosuba                            | 2     | 15/20    | TV      |
