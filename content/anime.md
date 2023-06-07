@@ -27,7 +27,7 @@ description = "Port19's selfhosted anime list"
 
 | Title                                 | Progress | Format |
 |---------------------------------------|----------|--------|
-| Durarara                              | 6/78     | TV     |
+| Durarara                              | 7/78     | TV     |
 | Demon Slayer - Swordsmith Village Arc | 9/?      | TV     |
 | Welcome to the N.H.K.                 | 1/24     | TV     |
 | K-On!                                 | 13/39    | TV     |
