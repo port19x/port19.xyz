@@ -84,3 +84,21 @@ time {
   color: #888 ;
   font-size: 10pt ;
 }
+/***********************/
+/* ! silly animation ! */
+/***********************/
+@keyframes move
+{
+    from {
+        left: calc(50% - 24em);
+    }
+    to {
+        left: calc(50% + 24em - 88px);
+    }
+}
+
+a.animate {
+    position: absolute;
+    left: calc(50% + 24em - 88px);
+    animation: move 5s;
+}
