@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-06-06
+updated = 2023-06-13
 description = "Port19's selfhosted anime list"
 +++
 
@@ -28,7 +28,7 @@ description = "Port19's selfhosted anime list"
 | Title                                 | Progress | Format |
 |---------------------------------------|----------|--------|
 | Durarara                              | 7/78     | TV     |
-| Demon Slayer - Swordsmith Village Arc | 9/?      | TV     |
+| Demon Slayer - Swordsmith Village Arc | 10/?      | TV     |
 | Welcome to the N.H.K.                 | 1/24     | TV     |
 | K-On!                                 | 13/39    | TV     |
 
