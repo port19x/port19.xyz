@@ -1,9 +1,0 @@
-[submodule "external/dvd-animation"]
-	path = external/dvd-animation
-	url = https://github.com/port19x/dvd-animation
-[submodule "external/aoc-2022-week-1"]
-	path = external/aoc-2022-week-1
-	url = git@github.com:port19x/aoc-2022-week-1
-[submodule "external/kicklistbot2"]
-	path = external/kicklistbot2
-	url = git@github.com:port19x/kicklistbot2
