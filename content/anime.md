@@ -27,8 +27,7 @@ description = "Port19's selfhosted anime list"
 
 | Title                                 | Progress | Format |
 |---------------------------------------|----------|--------|
-| Durarara                              | 7/78     | TV     |
-| Demon Slayer - Swordsmith Village Arc | 10/?      | TV     |
+| Durarara                              | 9/78     | TV     |
 | Welcome to the N.H.K.                 | 1/24     | TV     |
 | K-On!                                 | 13/39    | TV     |
 
@@ -70,6 +69,7 @@ description = "Port19's selfhosted anime list"
 | Cowboy Bebop - Knockin' On Heaven's Door      | 4     | 1      | Movie   |
 | Death Note                                    | 4     | 37     | TV      |
 | Death Parade                                  | 4     | 12     | TV      |
+| Demon Slayer - Swordsmith Village Arc         | 4     | 11     | TV      |
 | Eroge! H mo Game mo Kaihatsu Zanmai           | 4     | 6      | OVA     |
 | Flavors of Youth                              | 4     | 1      | Movie   |
 | FLCL                                          | 4     | 6      | OVA     |
