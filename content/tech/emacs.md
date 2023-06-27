@@ -92,7 +92,7 @@ Hopping to emacs from vscode is like ging from crawling to running without ever 
 
 ## Links
 
-- Official feature preview: [[https://orgmode.org/features.html|org mode]]
-- Introductory video by DistroTube: [[https://www.youtube.com/watch?v=dr_iBj91eeI&list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&index=2|Getting started with Doom Emacs]]
-- [[https://github.com/hlissner/doom-emacs|Doom emacs]]
-- [[https://github.com/syl20bnr/spacemacs|Spacemacs]]
+- Official feature preview: [org mode](https://orgmode.org/features.html)
+- Introductory video by DistroTube: [Getting started with Doom Emacs](https://www.youtube.com/watch?v=dr_iBj91eeI&list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&index=2)
+- [Doom emacs](https://github.com/hlissner/doom-emacs)
+- [Spacemacs](https://github.com/syl20bnr/spacemacs)
