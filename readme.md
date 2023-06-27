@@ -1,9 +1,9 @@
 # My Blog
 
 [![Zola on GitHub Pages](https://github.com/port19x/port19.xyz/actions/workflows/master.yml/badge.svg)](https://github.com/port19x/port19.xyz/actions/workflows/master.yml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/14c58f2f-6d3e-479a-9d13-99db63d3be45/deploy-status)](https://app.netlify.com/sites/port19xyz/deploys)
+[![Zola on GitHub Pages](https://github.com/port19x/port19.xyz/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/port19x/port19.xyz/actions/workflows/pages/pages-build-deployment)
 
-This is my personal website, built using [zola](https://github.com/getzola/zola) and hosted on netlify.
+This is my personal website, built using [zola](https://github.com/getzola/zola) and hosted on github pages.
 
 ## Linkback?
 
