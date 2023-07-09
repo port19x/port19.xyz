@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-06-13
+updated = 2023-07-09
 description = "Port19's selfhosted anime list"
 +++
 
@@ -25,20 +25,19 @@ description = "Port19's selfhosted anime list"
 
 ## Watching
 
-| Title                                 | Progress | Format |
-|---------------------------------------|----------|--------|
-| Durarara                              | 10/78     | TV     |
-| Welcome to the N.H.K.                 | 1/24     | TV     |
-| K-On!                                 | 13/39    | TV     |
+| Title                 | Progress | Format |
+|-----------------------|----------|--------|
+| Durarara              | 13/78    | TV     |
+| K-On!                 | 13/39    | TV     |
 
 ## Planning
 
 | Title                                 | Format |
-|---------------------------------------|--------|
+|---------------------------------------+--------|
 | A Place Further Than The Universe     | TV     |
 | After The Rain                        | TV     |
 | Mushoku Tensei: Jobless Reincarnation | TV     |
-| Non Non Biyori                        | TV     |
+| Welcome to the N.H.K.                 | TV     |
 
 ## Completed
 
