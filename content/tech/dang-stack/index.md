@@ -67,3 +67,4 @@ These four components lay a powerful foundation for an infrastructure that can g
 Each component excels at it's job while not impeding any of the other components.
 Check out [my repo](https://github.com/port19x/rapture) for a demonstration of what is possible and to follow where I'm going with this.
 If you have any suggestions of software that might be fun for me to self-host, please let me know.
+I'll also be publishing more focussed tutorials on how to achieve specific things with the components mentioned, as related resources can be dry sometimes.
