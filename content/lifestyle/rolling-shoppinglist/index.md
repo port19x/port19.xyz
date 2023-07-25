@@ -7,7 +7,7 @@ description = "Wait before you buy"
 # Wait before you buy
 
 My impulse purchases have been frequent cause for frustration in the past few years.
-Only recently have I spent near 500€ for a 48 core arm cluster without even sleeping on the purchase, only to realize my lack of adequate cooling to keep the cluster running for prolonged periods of time.
+Only recently have I spent near 500€ for an all inclusive 48 core arm cluster without even sleeping on the purchase, only to realize my lack of adequate cooling to keep the cluster running for prolonged periods of time.
 
 <figure>
 <img src="./cluster.jpg" height="300vw">
