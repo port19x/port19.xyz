@@ -22,14 +22,16 @@ Whenever you desire a certain product, you note it down, together with the curre
 When you later decide you don't want it anymore, you strike it through.
 If a predetermined amount of time has passed and you still want it, you buy it.
 Once you ordered it, you strike it through with a different pen, I like to use a green one for this.
+If you want to keep things digital, I suggest bold plus strikethrough.
 
 Example:
 
-| Date      | Item                                | Price    |
-|-----------|-------------------------------------|----------|
-| ~~21.7.~~ | ~~Sandisk Extreme Pro 1TB microSD~~ | ~~120€~~ |
-| ~~23.7.~~ | ~~Anker Nano 2 65W~~                | ~~40€~~  |
-| 23.7.     | Anker 735 Charger 65W               | 50€      |
+| Date          | Item                                   | Price       |
+|---------------|----------------------------------------|-------------|
+| ~~16.7.~~     | ~~Sandisk Extreme Pro 1TB microSD~~    | ~~120€~~    |
+| ~~**18.7.**~~ | ~~**Samsung Evo Plus 256GB microSD**~~ | ~~**15€**~~ |
+| ~~22.7.~~     | ~~Anker Nano 2 65W~~                   | ~~40€~~     |
+| 24.7.         | 8BitDo Wireless USB Adapter 2          | 22€         |
 
 ## How long to wait
 
@@ -49,4 +51,4 @@ Technicalities:
 
 For me, price refers to the price of the product plus shipping, rounded up.
 If I'm shopping in person, I'll buy items under 30€ right away.
-Purchases above 100€ are pretty rare for me, and they should stay rare, explaining the larger wait time.
+Purchases above 100€ are, and should stay, pretty rare for me.
