@@ -2,15 +2,19 @@
 title = "📚 The rolling shopping list"
 date = 2023-07-25
 description = "Wait before you buy"
-draft = true
 +++
 
 # Wait before you buy
 
 My impulse purchases have been frequent cause for frustration in the past few years.
-Only recently have I spent near 500€ for a 40 core arm cluster without even sleeping on the purchase, only to realize my lack of adequate cooling to keep the cluster running for prolonged periods of time.
+Only recently have I spent near 500€ for a 48 core arm cluster without even sleeping on the purchase, only to realize my lack of adequate cooling to keep the cluster running for prolonged periods of time.
 
-IMAGE
+<figure>
+<img src="./cluster.jpg" height="300vw">
+<figcaption><i>
+270€ of impulse purchase
+</i></figcaption>
+</figure>
 
 Plenty of methods exist to cope with impulse purchasing, from plain frugality to budgeting, tho I have found it difficult to adhere to those.
 Today I want to introduce to you my current method of avoiding overindulgence: by writing a shopping list.
