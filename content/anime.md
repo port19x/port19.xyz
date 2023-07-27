@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-07-09
+updated = 2023-07-27
 description = "Port19's selfhosted anime list"
 +++
 
@@ -25,19 +25,20 @@ description = "Port19's selfhosted anime list"
 
 ## Watching
 
-| Title                 | Progress | Format |
-|-----------------------|----------|--------|
-| Durarara              | 13/78    | TV     |
-| K-On!                 | 13/39    | TV     |
+| Title      | Progress | Format |
+|------------|----------|--------|
+| Durarara   | 13/24    | TV     |
+| Konosuba 2 | 5/10     | TV     |
 
 ## Planning
 
 | Title                                 | Format |
-|---------------------------------------+--------|
+|---------------------------------------|--------|
 | A Place Further Than The Universe     | TV     |
 | After The Rain                        | TV     |
 | Mushoku Tensei: Jobless Reincarnation | TV     |
 | Welcome to the N.H.K.                 | TV     |
+| K-On!!                                | TV     |
 
 ## Completed
 
@@ -50,6 +51,7 @@ description = "Port19's selfhosted anime list"
 | Highschool of the Dead                          | 5     | 12     | TV      |
 | Into the Forest of Fireflies Light              | 5     | 1      | Movie   |
 | Is this a Zombie?                               | 5     | 12     | TV      |
+| K-On!                                           | 5     | 13     | TV      |
 | ODDTAXI                                         | 5     | 13     | TV      |
 | Paranoia Agent                                  | 5     | 13     | TV      |
 | Perfect Blue                                    | 5     | 1      | Movie   |
@@ -78,6 +80,7 @@ description = "Port19's selfhosted anime list"
 | Grave of the Fireflies                          | 4     | 1      | Movie   |
 | Himouto! Umaru-chan                             | 4     | 12     | TV      |
 | Kiss x Sis                                      | 4     | 12     | OVA     |
+| Konosuba                                        | 4     | 10     | TV      |
 | Neon Genisis Evangelion - The End of Evangelion | 4     | 1      | Movie   |
 | PUPARIA                                         | 4     | 1      | ONA     |
 | Spirited Away                                   | 4     | 1      | Movie   |
@@ -137,7 +140,6 @@ description = "Port19's selfhosted anime list"
 | Nichijou - My Ordinary Life         | 4     | 17/26    | TV      |
 | Nisekoi                             | 3     | ?/20     | TV      |
 | One Piece                           | 3     | 30/>1000 | TV      |
-| Konosuba                            | 2     | 15/20    | TV      |
 | Sonny Boy                           | 2     | 8/12     | TV      |
 | Toradora! SOS! Hurray for Gourmands | 2     | 2/4      | Special |
 | Dorei-ku The Animation              | 1     | 6/12     | TV      |
