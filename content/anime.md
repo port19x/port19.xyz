@@ -136,9 +136,7 @@ description = "Port19's selfhosted anime list"
 
 | Title                               | Score | Progress | Format  |
 |-------------------------------------|-------|----------|---------|
-| Fullmetal Alchemist: Brotherhood    | 5     | ?/64     | TV      |
 | Nichijou - My Ordinary Life         | 4     | 17/26    | TV      |
-| Nisekoi                             | 3     | ?/20     | TV      |
 | One Piece                           | 3     | 30/>1000 | TV      |
 | Sonny Boy                           | 2     | 8/12     | TV      |
 | Toradora! SOS! Hurray for Gourmands | 2     | 2/4      | Special |
