@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-07-27
+updated = 2023-07-28
 description = "Port19's selfhosted anime list"
 +++
 
@@ -28,7 +28,6 @@ description = "Port19's selfhosted anime list"
 | Title      | Progress | Format |
 |------------|----------|--------|
 | Durarara   | 13/24    | TV     |
-| Konosuba 2 | 5/10     | TV     |
 
 ## Planning
 
@@ -81,6 +80,7 @@ description = "Port19's selfhosted anime list"
 | Himouto! Umaru-chan                             | 4     | 12     | TV      |
 | Kiss x Sis                                      | 4     | 12     | OVA     |
 | Konosuba                                        | 4     | 10     | TV      |
+| Konosuba 2                                      | 4     | 10     | TV      |
 | Neon Genisis Evangelion - The End of Evangelion | 4     | 1      | Movie   |
 | PUPARIA                                         | 4     | 1      | ONA     |
 | Spirited Away                                   | 4     | 1      | Movie   |
