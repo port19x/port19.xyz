@@ -9,7 +9,7 @@ description = "Port19's selfhosted anime list"
 
 ### Movies
 
-1. A silent Voice
+1. A Silent Voice
 2. Perfect Blue
 3. 5 Centimeters per Second
 4. Weathering With You
