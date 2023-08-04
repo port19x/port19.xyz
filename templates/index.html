@@ -58,54 +58,18 @@
   
   <details>
     <summary>
+      <a href="https://github.com/port19x/rapture">📺 rapture</a>
+      A sophisticated server setup
+    </summary>
+    <img src="{{ get_url(path="prev-rapture.jpg") }}" width="480" height="480" alt="Image preview for redqu">
+  </details>
+
+  <details>
+    <summary>
       <a href="https://github.com/port19x/redqu/">🐱 redqu</a>
       A media centric reddit client
     </summary>
     <img src="{{ get_url(path="prev-redqu.jpg") }}" width="480" height="270" alt="Image preview for redqu">
-  </details>
-
-  <details>
-    <summary>
-      <a href="https://github.com/port19x/bbyt">📺 bbyt</a>
-      A search centric youtube client
-    </summary>
-    <img src="{{ get_url(path="prev-bbyt.jpg") }}" width="480" height="270" alt="Image preview for bbyt">
-  </details>
-
-  <details>
-    <summary>
-      <a href="https://github.com/port19x/dvd-animation">🖼️ dvd-animation</a>
-      Graphics programming is fun sometimes
-      <a href="https://port19.xyz/dvd-animation"> (rendered) </a>
-    </summary>
-    <img src="{{ get_url(path="prev-dvd.jpg") }}" width="500" height="500" alt="Image preview for dvd-animation">
-  </details>
-
-  <details>
-    <summary>
-    <a href="https://github.com/clj-commons/hickory">🌲 hickory</a>
-    The de-facto html parsing library for clojure
-    </summary>
-    <pre><code>
-      user=> (use 'hickory.core)
-      nil
-      user=> (require '[hickory.select :as s])
-      nil
-      user=> (require '[clj-http.client :as client])
-      nil
-      user=> (require '[clojure.string :as string])
-      nil
-      user=> (def site-htree (-> (client/get "http://formula1.com/default.html") :body parse as-hickory))
-      #'user/site-htree
-      user=> (-> (s/select (s/child (s/class "subCalender") ; sic
-                                    (s/tag :div)
-                                    (s/id :raceDates)
-                                    s/first-child
-                                    (s/tag :b))
-                           site-htree)
-                 first :content first string/trim)
-      "10, 11, 12 May 2013"
-    </code></pre>
   </details>
 
 </div>
