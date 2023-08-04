@@ -140,6 +140,6 @@ Seeing this error message indicates your api token has expired.
 
 To dive further into ansible, I recommend Jeff Geerlings book [Ansible for Devops](https://www.ansiblefordevops.com/) \
 You can also check out [my vps setup](https://github.com/port19x/rapture) \
-The code for this article is available [here](https://github.com/port19x/ansible-digitalocean-create-destroy-example)
+The code for this article is available [here](https://github.com/port19x/digitalocean-provisioning-with-ansible)
 
 If you run into any problems, feel free to reach out.
