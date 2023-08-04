@@ -30,6 +30,11 @@ a:visited {
 hr {
   border: 1px dashed #8ec07c;
 }
+pre{
+  text-align: left;
+  margin-left: 8em;
+  margin-right: 8em;
+}
 
 /*******************************/
 /* for the rare h3s and lists  */
