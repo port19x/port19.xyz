@@ -8,7 +8,7 @@
 <header><h1 class="title"> Port19's Webpage </h1></header>
 <span>
   {% set anime = get_page(path="anime.md") %}
-  <a class="lists" href="{{ anime.permalink | safe }}">🌸Anime List🌸</a>
+  <a href="{{ anime.permalink | safe }}">🌸Anime List🌸</a>
 </span>
 <hr>
 
@@ -18,9 +18,9 @@
 
 <h2> Posts by Category </h2>
 <span>
-<a class="lists" href="{{ lifestyle.permalink | safe }}">📚 lifestyle</a>
-<a class="lists" href="{{ tech.permalink | safe }}">💻 tech</a>
-<a class="lists" href="{{ recipes.permalink | safe }}">🍚 recipes</a>
+<a style="margin-left:1rem; margin-right:1rem;" href="{{ lifestyle.permalink | safe }}">📚 lifestyle</a>
+<a style="margin-left:1rem; margin-right:1rem;" href="{{ tech.permalink | safe }}">💻 tech</a>
+<a style="margin-left:1rem; margin-right:1rem;" href="{{ recipes.permalink | safe }}">🍚 recipes</a>
 </span>
 
 <h2> Recent Posts </h2>
@@ -45,7 +45,7 @@
 
 <h2> Noteable Projects </h2>
 <i> Click the triangles for previews </i>
-<div class="center">
+<div style="text-align: left; margin-left: 7.5em; margin-top: 1rem">
   <details>
       <summary>
 	<a href="https://github.com/pystardust/ani-cli/">🇯🇵 ani-cli</a>
