@@ -1,11 +1,4 @@
-/*
-https://www.reddit.com/r/css/comments/kzkthl/what_units_do_you_use_px_vw_and_vh_em_rem/
-px = borders and box shadows / decoration
-em = font size
-vw = general layout
-rem = padding and margin
-ch = paragraph width, monospace containers
-*/
+/* For unit choice guidance: https://www.reddit.com/r/css/comments/kzkthl/what_units_do_you_use_px_vw_and_vh_em_rem/ */
 
 @font-face {
   font-family: 'Noto Color Emoji';
@@ -17,37 +10,23 @@ body {
   text-align: center;
   background-color: #1d2021;
   color: #ebdbb2;
-  max-width: 48em; /* TODO */
+  max-width: 48em;
   margin: auto;
   padding: 0.825rem;
   font-family: serif, 'Noto Color Emoji';
 }
 
-h2        { background-color:#282828; }
-hr        { border: 1px dashed #8ec07c; }
-a         { text-decoration: none; }
-a:link    { color: #83a598; }
-a:visited { color: #d3869b; }
-th, td    { border: 1px solid; }
-thead, th { border-bottom-style: double; }
-
-ol, ul, p, h3 {
-  list-style-position: inside;
-  text-align: left;
-  margin-left: 5em; /* TODO */
-}
-
-pre {
-  text-align: left;
-  margin-left: 8em; /* TODO */
-  margin-right: 8em; /* TODO */
-}
-
-table {
-  margin: auto;
-  border-collapse: collapse;
-}
-time {
-  font-family: monospace ;
-  color: #888 ;
-}
+/* TODO Make layouting more mobile friendly */ 
+/* p and h3 come with +1em margin ootb, therefore 5em to normalize*/
+h2          { background-color:#282828; }
+hr          { border: 1px dashed #8ec07c; }
+time        { font-family: monospace; color: #888; }
+a           { text-decoration: none; }
+a:link      { color: #83a598; }
+a:visited   { color: #d3869b; }
+th, td      { border: 1px solid; }
+thead, th   { border-bottom-style: double; }
+table       { border-collapse: collapse; margin: auto; }
+p, h3       { text-align: left; margin-left: 5em; }
+ol, ul, pre { text-align: left; margin-left: 6em; }
+pre         { margin-right: 6em; }
