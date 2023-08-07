@@ -23,23 +23,13 @@ body {
   font-family: serif, 'Noto Color Emoji';
 }
 
-h2 {
-  background-color:#282828;
-}
-
-a:link {
-  text-decoration: none;
-  color: #83a598;
-}
-
-a:visited {
-  text-decoration: none;
-  color: #d3869b;
-}
-
-hr {
-  border: 1px dashed #8ec07c;
-}
+h2        { background-color:#282828; }
+hr        { border: 1px dashed #8ec07c; }
+a         { text-decoration: none; }
+a:link    { color: #83a598; }
+a:visited { color: #d3869b; }
+th, td    { border: 1px solid; }
+thead, th { border-bottom-style: double; }
 
 ol, ul, p, h3 {
   list-style-position: inside;
@@ -57,13 +47,6 @@ table {
   margin: auto;
   border-collapse: collapse;
 }
-th, td {
-  border: 1px solid;
-}
-thead, th {
-  border-bottom-style: double;
-}
-
 time {
   font-family: monospace ;
   color: #888 ;
