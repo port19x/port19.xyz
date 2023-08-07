@@ -5,7 +5,9 @@
 {% endblock meta %}
 {% block content %}
 
-<header><h1 class="title"> Port19's Webpage </h1></header>
+<header style="font-family:Fira Sans,sans; padding-bottom:1.25rem;">
+  <h1 style="font-size:2.5em; margin-bottom:0;"> Port19's Webpage </h1>
+</header>
 <span>
   {% set anime = get_page(path="anime.md") %}
   <a href="{{ anime.permalink | safe }}">🌸Anime List🌸</a>

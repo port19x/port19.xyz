@@ -64,17 +64,6 @@ thead, th {
   border-bottom-style: double;
 }
 
-/**********************/
-/* landing page stuff */
-/**********************/
-header {
-  font-family: "Fira Sans",sans ;
-  padding-bottom: 1.25rem ;
-}
-header h1 {
-  font-size: 2.5em ;
-  margin-bottom: 0 ;
-}
 time {
   font-family: monospace ;
   color: #888 ;
