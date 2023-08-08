@@ -2,24 +2,22 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="{{ get_url(path="style.css") }}" />
-  <link rel="preload" href="{{ get_url(path="NotoColorEmojiSubfont.woff2") }}" as="font" type="font/woff2">
   <meta charset="utf-8">
-  <link rel="icon" type="image/x-icon" href="{{ get_url(path="favicon.ico")}}">
-  <link rel="apple-touch-icon" href="{{ get_url(path="apple-touch-icon.png")}}">
   <meta http-equiv="Content-Language" content="en">
   <meta name="author" content="port19">
-  <meta name="generator" content="vimwiki">
+  <meta name="generator" content="zola">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% block meta %} {% endblock %}
+  <link rel="icon" type="image/x-icon" href="{{ get_url(path="favicon.ico")}}">
+  <link rel="apple-touch-icon" href="{{ get_url(path="apple-touch-icon.png")}}">
+  <link rel="stylesheet" type="text/css" href="{{ get_url(path="style.css") }}" />
+  <link rel="preload" href="{{ get_url(path="NotoColorEmojiSubfont.woff2") }}" as="font" type="font/woff2">
   <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19's Webpage">
+  {% block meta %} {% endblock %}
 </head>
 
 <body>
-  <section class="section">
-    <div class="container">
+  <section>
       {% block content %} {% endblock %}
-    </div>
   </section>
   <footer>
     <a href="mailto:port19@port19.xyz"><img src="{{ get_url(path="buttons/email.gif") }}" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
