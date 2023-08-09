@@ -164,7 +164,7 @@ My top 3 mistakes this year:
 - leiningen
 - clj-http, cheshire
 - first application of clojures awesome data processing
-  
+
 ### Dvd Animation (clojure)
 
 - collisions can be tough

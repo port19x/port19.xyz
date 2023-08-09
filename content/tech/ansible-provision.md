@@ -6,7 +6,7 @@ description = "Because clicking through a web interface is highly cringe"
 
 ## Prerequisites
 
-- Have ansible installed [(docs)](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) 
+- Have ansible installed [(docs)](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 - Have a digital ocean account [(ref link)](https://m.do.co/c/e3fad703cc9b)
 - Create an API token [(docs)](https://docs.digitalocean.com/reference/api/create-personal-access-token/)
 - Save the API token in a file with the name `.token`

@@ -11,7 +11,7 @@ description = "In Linux, we all travel a similar road"
 At first, sometime late 2019, there was a blue screen of death and some instability with windows on my first self-built pc.
 As I started getting into [CTFs](https://youtu.be/8ev9ZX9J45A) at the time, I took the opportunity and installed [parrot](https://www.parrotsec.org/) as my first linux distro.
 In the following year, like many of you I hopped distros a lot.
-The details of what distros I used when are both lost to time and irrelevant, tho I can say that it was important. 
+The details of what distros I used when are both lost to time and irrelevant, tho I can say that it was important.
 
 Getting to know many slightly different ways of using a computer as well as numerous different linux programs helps laying a foundation.
 You discover properties in software that you like and dislike, but don't consciously reason about them yet.
@@ -36,7 +36,7 @@ You browse the web for inspiration and get inspired by posts on [r/unixporn](htt
 Late 2021, my customizations slowed down a bit and I no longer swapped out different terminal programs on a near daily basis.
 In this time my most notable change was from qtile to [awesome](https://github.com/awesomeWM/awesome) as my window manager, as I grew frustrated with qtile's maintainers.
 I still tried out new stuff from time to time, I lived a few months in wayland with sway for example, but some components began to stabilize.
-Throughout 2022 I also started to work on improving my bootstrapping: 
+Throughout 2022 I also started to work on improving my bootstrapping:
 While many prefer to write an installation script, I chose to put that into an arch pkgbuild so my package list could be managed alongside my dotfiles.
 I also started using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) for my dotfiles repo.
 
@@ -59,7 +59,7 @@ Adjustments to your other configurations become smaller with 1 line changes now 
 Testing new software becomes the exception.
 
 I'll link 2 particularly insightful videos on the topic of vim vs emacs here:
-- [luke smith - why I don't use emacs](https://youtu.be/1mr3issv79s) 
+- [luke smith - why I don't use emacs](https://youtu.be/1mr3issv79s)
 - [protesilaos stavrou - emacs mindset and unix philosophy](https://youtu.be/qTncc2lI6OI)
 
 ## Layer 5(?): regression

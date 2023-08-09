@@ -34,7 +34,7 @@ I integrated habit tracking into the week spreads and also had some custom colle
 Bullet journaling excels at making you reflect, by purposely increasing the friction of adding tasks to your todo-list, while also making you consciously migrate or eliminate any uncompleted tasks.
 With the future log being great for scheduling, BuJo always gave me a great overview over my life.
 
-## Project Management with Org Mode 
+## Project Management with Org Mode
 
 Orthogonal to both of these systems, I like to use emacs org mode for managing ongoing projects that have little contact to the rest of my life.
 Such things can be individual classes in college, or one-off investigations into topics of interest, such as exercise or nutrition.
