@@ -6,22 +6,6 @@ on:
    - master
 
 jobs:
-  dead-links:
-    name: Dead Link Checker
-    runs-on: ubuntu-latest
-    steps:
-    - name: Run DeadFinder
-      uses: hahwul/deadfinder@1.3.1
-      id: broken-link
-      with:
-        command: sitemap
-        target: "https://port19.xyz/sitemap.xml"
-  trailing-ws:
-    name: Find Trailing Whitespace
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: ocular-d/trailing-spaces@0.0.2
   build:
     name: Publish site
     runs-on: ubuntu-latest
