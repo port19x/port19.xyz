@@ -10,10 +10,10 @@ description = "Not everything is a nail"
 
 Half a year ago, after spending about a month learning haskell, I eventually switched to clojure because I had trouble actually making programs with it.
 I picked up the language quite quickly, largely thanks to that previous exposure to functional programming, but also because [clojure for the brave and the true](https://www.braveclojure.com/clojure-for-the-brave-and-true/) is awesome.
-After reading the first couple of chapters I jumped into my [first project](https://port19.xyz/kicklistbot2/data-processing-with-clojure.html) and reimplemented the ranking logic of a discord bot I had used more than a year prior for clash royale clan management.
-Then I wrote a [dvd-animation](https://port19.xyz/dvd-animation/) with quil, a 2D graphics library.
-I even did my best to keep up with advent of code, doing the [first week](https://port19.xyz/aoc-2022-week-1/) and documenting it via orgmode.
-Then things slowed down and after [redqu](https://github.com/port19x/redqu), a reddit rss media scraper leveraging babashka, I only published some [template repo](https://github.com/port19x/clj-template-repo) and did some stuff on codewars I guess.
+After reading the first couple of chapters I jumped into my first project and reimplemented the ranking logic of a discord bot I had used more than a year prior for clash royale clan management.
+Then I wrote a dvd-animation with quil, a 2D graphics library.
+I even did my best to keep up with advent of code, doing the first week and documenting it via orgmode.
+Then things slowed down and after [redqu](https://github.com/port19x/redqu), a reddit rss media scraper leveraging babashka, I only published some template repo and did some stuff on codewars I guess.
 
 ## I'm not a programmer
 
