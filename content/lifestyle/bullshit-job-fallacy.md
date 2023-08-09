@@ -9,7 +9,7 @@ description = "Earn to give, and finding purpose in IT"
 ## Background
 
 As a student studying computer science in his third semester, I've had my fair share of setbacks and subsequent doubts regarding my career choice.
-I won't go into detail on the challenges I face, since I've already aired out [my frustrations with college](https://port19.xyz/frustrations-with-college/) in a different article.
+I won't go into detail on the challenges I face, since I've already aired out [my frustrations with college](https://port19.xyz/lifestyle/frustrations-with-college/) in a different article.
 What I want to do today is dispel a lie I tend to tell myself whenever things get tough.
 The lie goes something like this: "You won't make any positive impact on society as a programmer/sysadmin. Become a _>insert social job here<_ instead, that job makes sense and helps people."
 Let me, for your amusement, list some of the jobs I've considered in such times of adversity: Nurse, prison guard, mortician, roofer, plumber.

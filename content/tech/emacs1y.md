@@ -10,7 +10,7 @@ description = "A love-hate Relationship"
 
 On the 7th of January 2022 I decided to install Doom Emacs.
 I toyed with the basics that night and continued to do so the next day.
-After two months, I wrote a first blog post on it. That being the oldest post hosted on this site today [(check it out)](https://port19.xyz/emacs/).
+After two months, I wrote a first blog post on it. That being the oldest post hosted on this site today [(check it out)](https://port19.xyz/tech/emacs/).
 I stayed on Emacs for a while, switched back to Neovim for a few months and then came back again.
 I even wrote my first scientific paper in some org-latex hybrid.
 Orgmode, not Emacs, has given me great power which comes with great responsibility that I'm getting tired off.

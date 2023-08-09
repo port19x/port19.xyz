@@ -15,7 +15,7 @@ I played around for a few hours, trying to replicate my linux environment, to ge
 Eventually I gave up, repackaged the mac again, and refunded it the next day, returning to my linux setup on the pinebook pro.
 
 Another anecdote:
-About one year ago, as you might know from [my](https://port19.xyz/emacs/) [other](https://port19.xyz/emacs1y/) [writings](https://port19.xyz/neovim-customization/), I switched to emacs.
+About one year ago, as you might know from [my](https://port19.xyz/tech/emacs/) [other](https://port19.xyz/tech/emacs1y/) [writings](https://port19.xyz/tech/neovim-customization/), I switched to emacs.
 I put as much of my desktop usage as possible into it and eventually figured that, since I used emacs for everything, I could switch back to some entry level linux distro, like linux mint.
 This was on a beefy tower PC: Ryzen 7 3700x CPU, Vega 64 GPU, nvme SSD and 16 gigabytes of RAM.
 Despite the PCs power, the environment felt heavy and even sluggish at times.
