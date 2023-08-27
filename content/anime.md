@@ -9,10 +9,10 @@ description = "Port19's selfhosted anime list"
 
 ### Movies
 
-1. A Silent Voice
-2. Perfect Blue
-3. 5 Centimeters per Second
-4. Weathering With You
+1. Josee, the Tiger and the Fish
+2. A Silent Voice
+3. Perfect Blue
+4. 5 Centimeters per Second
 5. The Garden of Words
 
 ### TV
@@ -50,6 +50,7 @@ description = "Port19's selfhosted anime list"
 | Highschool of the Dead                          | 5     | 12     | TV      |
 | Into the Forest of Fireflies Light              | 5     | 1      | Movie   |
 | Is this a Zombie?                               | 5     | 12     | TV      |
+| Josee, the Tiger and the Fish                   | 5     | 1      | Movie   |
 | K-On!                                           | 5     | 13     | TV      |
 | ODDTAXI                                         | 5     | 13     | TV      |
 | Paranoia Agent                                  | 5     | 13     | TV      |
@@ -63,7 +64,7 @@ description = "Port19's selfhosted anime list"
 | Weathering With You                             | 5     | 1      | Movie   |
 |                                                 |       |        |         |
 | AJIN: Demi-Human                                | 4     | 13     | TV      |
-| Akira                                           | 4     | 1      | TV      |
+| Akira                                           | 4     | 1      | Movie   |
 | Asobi Asobase                                   | 4     | 12     | TV      |
 | Bakemonogatari                                  | 4     | 15     | TV      |
 | Cowboy Bebop - Knockin' On Heaven's Door        | 4     | 1      | Movie   |
