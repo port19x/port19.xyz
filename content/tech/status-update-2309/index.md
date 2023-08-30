@@ -1,7 +1,7 @@
 +++
 title = "💻 Status Update and Q4 Goals"
 date = 2023-08-30
-description = ""
+description = "(Pr|R)eview"
 +++
 
 ## It's been a while
