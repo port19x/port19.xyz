@@ -7,7 +7,7 @@ description = ""
 ## It's been a while
 
 So my last post talking about what I'm doing and where I'm headed has been a while. \
-I hinted at my server tech stack back in July in my post on the [Dang Stack](https://port19.xyz/tech/dang-stack/), 
+I hinted at my server tech stack back in July in my post on the [Dang Stack](https://port19.xyz/tech/dang-stack/),
 but the last time I actually talked about what I'm learning and future plans was in February with my post [Clojure: 6 months later](https://port19.xyz/tech/clojure/). \
 Time for another update!
 
