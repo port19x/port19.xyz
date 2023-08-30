@@ -22,7 +22,7 @@ One notable deviation from the "DANG Stack" I initially revealed in July is my m
 It is a lot nicer to configure and interfaces more seamlessly with my monitoring stack.
 It is also a major component in the tech stack of my next department at work, where I'll spend my third year.
 
-<img src="./out.jpg">
+<img src="./dashboard.jpg">
 
 The server can be explored [here](https://hsnipe.moe). \
 Note the [`git`](https://git.hsnipe.moe) and [`status`](https://status.hsnipe.moe) subdomains for Gitea and Grafana respectively. \
