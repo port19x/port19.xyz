@@ -26,7 +26,7 @@ Along the way I got reminded why I initially discarded the language when I spent
 This is primarily regarding slices, but my very short time trying to leverage maps and then resorting to a switch case statement was no highlight either.
 Slices are variable sized arrays. Go calls slices what would be lists in python or java.
 
-Say you want to save a sorted copy of your slice. I python you just do `b = sorted(a)`. Let's see what we need to do in Go and how we need to adapt the semantics.
+Say you want to save a sorted copy of your slice. In python you just do `b = sorted(a)`. Let's see what we need to do in Go and how we need to adapt the semantics.
 Well, let's figure out how to copy an array first, because `b := a` does not work and instead links to the same memory as a. \
 Instead you have to do a `b := make([]int, len(a))` before doing a `copy(b, a)`. \
 Now you may import the sort package from the standard library. \
