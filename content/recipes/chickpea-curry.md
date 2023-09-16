@@ -18,19 +18,19 @@ description = "Yoinked from BBC"
 - 1 large white onion
 - 2 cloves of garlic
 - 100ml water
-- ~50ml Rapeseed oil (sub: sunflower oil)
-- 1 tsp garam masala (sub: curry powder)
-- 1 tsp tumeric (sub: curry powder)
-- 1 tsp white pepper (optional)
-- 1 tsp cumin seeds (optional)
-- 1 tsp white pepper (optional)
-- 1/2 lemon (optional)
-- 1/2 fresh chili (optional)
-- some ginger (optional)
+- ~50ml Rapeseed oil *(sub: sunflower oil)*
+- 1 tsp garam masala *(sub: curry powder)*
+- 1 tsp tumeric *(sub: curry powder)*
+- 1 tsp white pepper *(opt)*
+- 1 tsp cumin seeds *(opt)*
+- 1 tsp white pepper *(opt)*
+- 1/2 lemon *(opt)*
+- 1/2 fresh chili *(opt)*
+- some ginger *(opt)*
 
 ## Tools
 
-- rice cooker (buy one, it's worth it)
+- rice cooker *(buy one, it's worth it)*
 - pan
 - cooking spoon
 - cutting board
@@ -52,4 +52,4 @@ description = "Yoinked from BBC"
 - Simmer until it's almost at the desired viscosity
 - Add lemon juice (or chunks) and spinach
 - Leave for another 2-5 minutes until spinach wilks
-- Done. Serves 2 (when serving, have the rice below the curry)
+- Done. Serves 2 *(when serving, have the rice below the curry)*
