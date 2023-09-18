@@ -2,6 +2,7 @@
 {% block meta %}
 <title>Port19's Webpage</title>
 <meta name="description" content="My Writings on Linux, Tech and Lifestyle">
+<script src="//unpkg.com/alpinejs" defer></script>
 {% endblock meta %}
 {% block content %}
 
@@ -18,27 +19,41 @@
 {% set tech = get_section(path="tech/_index.md") %}
 {% set recipes = get_section(path="recipes/_index.md") %}
 
-<h2> Posts by Category </h2>
-<span>
-<a style="margin-left:1rem; margin-right:1rem;" href="{{ lifestyle.permalink | safe }}">📚 lifestyle</a>
-<a style="margin-left:1rem; margin-right:1rem;" href="{{ tech.permalink | safe }}">💻 tech</a>
-<a style="margin-left:1rem; margin-right:1rem;" href="{{ recipes.permalink | safe }}">🍚 recipes</a>
+<div x-cloak>
+  <script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('filter', {
+            filter: '',
+
+            check(el) {
+                return this.filter === '' || el.textContent.includes(this.filter)
+            }
+        })
+    })
+</script>
+<h2> Filter Categories </h2>
+<span x-data>
+<button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = ''">reset</button>
+<button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = '📚'">📚 lifestyle</button>
+<button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = '💻'">💻 tech</button>
+<button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = '🍚'">🍚 recipes</button>
 </span>
+</div>
 
 <h2> Recent Posts </h2>
-<ul>
+<ul x-data>
 {% set feed = lifestyle.pages | concat(with=tech.pages) | concat(with=recipes.pages) %}
-{% for post in feed | sort(attribute="date") | reverse | slice(end=10) %}
-  <li>
+{% for post in feed | sort(attribute="date") | reverse | slice(end=15) %}
+  <li x-show="$store.filter.check($el)">
     <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash;
-    <a href="{{ post.permalink | safe }}">{{ post.title }} </a>
+    <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
   </li>
 {% endfor %}
 </ul>
 
-<details> <summary><i>see all</i></summary> <ul>
-{% for post in feed | sort(attribute="date") | reverse | slice(start=10) %}
-  <li>
+<details> <summary><i>see all</i></summary> <ul x-data>
+{% for post in feed | sort(attribute="date") | reverse | slice(start=15) %}
+  <li x-show="$store.filter.check($el)">
     <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash;
     <a href="{{ post.permalink | safe }}">{{ post.title }} </a>
   </li>
