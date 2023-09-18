@@ -29,6 +29,7 @@
                 return this.filter === '' || el.textContent.includes(this.filter)
             }
         })
+        Alpine.store('expand', false)
     })
 </script>
 <h2> Filter Categories </h2>
@@ -41,24 +42,20 @@
 </div>
 
 <h2> Recent Posts </h2>
-<ul x-data>
+<ul x-data="{ id : 0 }">
+<!-- id starts at 40 for some reason. Probably a two pass render cycle -->
 {% set feed = lifestyle.pages | concat(with=tech.pages) | concat(with=recipes.pages) %}
-{% for post in feed | sort(attribute="date") | reverse | slice(end=15) %}
-  <li x-show="$store.filter.check($el)">
+{% for post in feed | sort(attribute="date") | reverse %}
+  <li x-show="$store.filter.check($el) && ( id < 49 || $store.expand )">
     <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash;
-    <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
+    <a x-effect="id++" href="{{ post.permalink | safe }}">{{ post.title }}</a>
   </li>
 {% endfor %}
 </ul>
 
-<details> <summary><i>see all</i></summary> <ul x-data>
-{% for post in feed | sort(attribute="date") | reverse | slice(start=15) %}
-  <li x-show="$store.filter.check($el)">
-    <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash;
-    <a href="{{ post.permalink | safe }}">{{ post.title }} </a>
-  </li>
-{% endfor %}
-</ul> </details>
+<span x-data>
+<button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.expand = ! $store.expand">toggle all</button>
+</span>
 
 <h2> Noteable Projects </h2>
 <i> Click the triangles for previews </i>
