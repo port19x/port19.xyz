@@ -52,6 +52,7 @@ description = "Port19's selfhosted anime list"
 | Is this a Zombie?                               | 5     | 12     | TV      |
 | Josee, the Tiger and the Fish                   | 5     | 1      | Movie   |
 | K-On!                                           | 5     | 13     | TV      |
+| K-On! Movie                                     | 5     | 1      | Movie   |
 | ODDTAXI                                         | 5     | 13     | TV      |
 | Paranoia Agent                                  | 5     | 13     | TV      |
 | Perfect Blue                                    | 5     | 1      | Movie   |
