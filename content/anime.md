@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-07-28
+updated = 2023-10-03
 description = "Port19's selfhosted anime list"
 +++
 
@@ -25,16 +25,15 @@ description = "Port19's selfhosted anime list"
 
 ## Watching
 
-| Title      | Progress | Format |
-|------------|----------|--------|
-| Durarara   | 13/24    | TV     |
+| Title          | Progress | Format |
+|----------------|----------|--------|
+| After The Rain | 2/12     | TV     |
 
 ## Planning
 
 | Title                                 | Format |
 |---------------------------------------|--------|
 | A Place Further Than The Universe     | TV     |
-| After The Rain                        | TV     |
 | Mushoku Tensei: Jobless Reincarnation | TV     |
 | Welcome to the N.H.K.                 | TV     |
 | K-On!!                                | TV     |
@@ -139,6 +138,7 @@ description = "Port19's selfhosted anime list"
 | Title                               | Score | Progress | Format  |
 |-------------------------------------|-------|----------|---------|
 | Nichijou - My Ordinary Life         | 4     | 17/26    | TV      |
+| Durarara                            | 3     | 13/24    | TV      |
 | One Piece                           | 3     | 30/>1000 | TV      |
 | Sonny Boy                           | 2     | 8/12     | TV      |
 | Toradora! SOS! Hurray for Gourmands | 2     | 2/4      | Special |
