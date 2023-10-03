@@ -27,7 +27,7 @@ description = "Port19's selfhosted anime list"
 
 | Title          | Progress | Format |
 |----------------|----------|--------|
-| After The Rain | 2/12     | TV     |
+| After The Rain | 3/12     | TV     |
 
 ## Planning
 
