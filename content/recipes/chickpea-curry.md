@@ -21,7 +21,6 @@ description = "Yoinked from BBC"
 - ~50ml Rapeseed oil *(sub: sunflower oil)*
 - 1 tsp garam masala *(sub: curry powder)*
 - 1 tsp tumeric *(sub: curry powder)*
-- 1 tsp white pepper *(opt)*
 - 1 tsp cumin seeds *(opt)*
 - 1 tsp white pepper *(opt)*
 - 1/2 lemon *(opt)*
