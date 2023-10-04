@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-10-03
+updated = 2023-10-04
 description = "Port19's selfhosted anime list"
 +++
 
@@ -27,7 +27,7 @@ description = "Port19's selfhosted anime list"
 
 | Title          | Progress | Format |
 |----------------|----------|--------|
-| After The Rain | 3/12     | TV     |
+| After The Rain | 5/12     | TV     |
 
 ## Planning
 
