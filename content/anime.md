@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-10-04
+updated = 2023-10-06
 description = "Port19's selfhosted anime list"
 +++
 
@@ -27,7 +27,6 @@ description = "Port19's selfhosted anime list"
 
 | Title          | Progress | Format |
 |----------------|----------|--------|
-| After The Rain | 5/12     | TV     |
 
 ## Planning
 
@@ -44,6 +43,7 @@ description = "Port19's selfhosted anime list"
 |-------------------------------------------------|-------|--------|---------|
 | 5 Centimeters per Second                        | 5     | 1      | Movie   |
 | A Silent Voice                                  | 5     | 1      | Movie   |
+| After The Rain                                  | 5     | 12     | TV      |
 | FLCL Alternative                                | 5     | 6      | TV      |
 | Girls Last Tour                                 | 5     | 12     | TV      |
 | Highschool of the Dead                          | 5     | 12     | TV      |
