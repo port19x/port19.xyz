@@ -25,17 +25,30 @@ description = "Port19's selfhosted anime list"
 
 ## Watching
 
-| Title          | Progress | Format |
-|----------------|----------|--------|
+| Title                                 | Progress | Format |
+|---------------------------------------|----------|--------|
+| Mushoku Tensei: Jobless Reincarnation | 0/11     | TV     |
 
 ## Planning
 
-| Title                                 | Format |
-|---------------------------------------|--------|
-| A Place Further Than The Universe     | TV     |
-| Mushoku Tensei: Jobless Reincarnation | TV     |
-| Welcome to the N.H.K.                 | TV     |
-| K-On!!                                | TV     |
+| Title                                   | Format |
+|-----------------------------------------|--------|
+| 91 Days                                 | TV     |
+| A Place Further Than The Universe       | TV     |
+| Baccano!                                | TV     |
+| Blast of Tempest                        | TV     |
+| Code Geass: Lelouch of the Rebellion    | TV     |
+| Fate/Zero                               | TV     |
+| Hamatora THE ANIMATION                  | TV     |
+| Maquia: When the Promised Flower Blooms | Moive  |
+| Mob Psycho 100                          | TV     |
+| Nanbaka                                 | TV     |
+| No Game No Life                         | TV     |
+| Orange                                  | TV     |
+| Suzume                                  | Movie  |
+| That Time I Got Reincarnated as a Slime | TV     |
+| Welcome to the N.H.K.                   | TV     |
+| K-On!!                                  | TV     |
 
 ## Completed
 
