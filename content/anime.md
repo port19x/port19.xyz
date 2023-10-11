@@ -39,6 +39,7 @@ description = "Port19's selfhosted anime list"
 | Blast of Tempest                        | TV     |
 | Code Geass: Lelouch of the Rebellion    | TV     |
 | Fate/Zero                               | TV     |
+| Girls und Panzer                        | TV     |
 | Hamatora THE ANIMATION                  | TV     |
 | Maquia: When the Promised Flower Blooms | Moive  |
 | Mob Psycho 100                          | TV     |
