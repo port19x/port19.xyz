@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-10-06
+updated = 2023-10-19
 description = "Port19's selfhosted anime list"
 +++
 
@@ -44,8 +44,6 @@ description = "Port19's selfhosted anime list"
 | Mob Psycho 100                          | TV     |
 | Nanbaka                                 | TV     |
 | No Game No Life                         | TV     |
-| Orange                                  | TV     |
-| Suzume                                  | Movie  |
 | That Time I Got Reincarnated as a Slime | TV     |
 | Welcome to the N.H.K.                   | TV     |
 | K-On!!                                  | TV     |
