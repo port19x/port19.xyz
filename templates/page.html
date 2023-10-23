@@ -20,10 +20,11 @@
 {% if page.lower or page.higher %}
   <div class="post-nav" style="width:100%">
     {% if page.lower %}
-      <a class="previous" style="float:right" href="{{ page.lower.permalink }}">{{ page.lower.title }} ›</a>
+      <a style="float:right" href="{{ page.lower.permalink }}">{{ page.lower.title }} ›</a>
     {% endif %}
+      <a class="float:middle" href="https://port19.xyz">⌂</a>
     {% if page.higher %}
-      <a class="next" style="float:left" href="{{ page.higher.permalink }}">‹ {{ page.higher.title }}</a>
+      <a style="float:left" href="{{ page.higher.permalink }}">‹ {{ page.higher.title }}</a>
     {% endif %}
   </div>
   <br>
