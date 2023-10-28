@@ -147,15 +147,16 @@ description = "Port19's selfhosted anime list"
 
 ## Dropped/Paused
 
-| Title                               | Score | Progress | Format  |
-|-------------------------------------|-------|----------|---------|
-| Nichijou - My Ordinary Life         | 4     | 17/26    | TV      |
-| Durarara                            | 3     | 13/24    | TV      |
-| One Piece                           | 3     | 30/>1000 | TV      |
-| Sonny Boy                           | 2     | 8/12     | TV      |
-| Toradora! SOS! Hurray for Gourmands | 2     | 2/4      | Special |
-| Dorei-ku The Animation              | 1     | 6/12     | TV      |
-| Food Wars! Shokugeki no Soma        | 1     | 2/24     | TV      |
+| Title                                            | Score | Progress | Format  |
+|--------------------------------------------------|-------|----------|---------|
+| Nichijou - My Ordinary Life                      | 4     | 17/26    | TV      |
+| Mushoku Tensei: Jobless Reincarnation - Season 2 | 4     | 13/tba   | TV      |
+| Durarara                                         | 3     | 13/24    | TV      |
+| One Piece                                        | 3     | 30/>1000 | TV      |
+| Sonny Boy                                        | 2     | 8/12     | TV      |
+| Toradora! SOS! Hurray for Gourmands              | 2     | 2/4      | Special |
+| Dorei-ku The Animation                           | 1     | 6/12     | TV      |
+| Food Wars! Shokugeki no Soma                     | 1     | 2/24     | TV      |
 
 ## Sourcing
 
