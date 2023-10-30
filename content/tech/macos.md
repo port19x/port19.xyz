@@ -6,7 +6,6 @@ description = "Initial review of Mac OS in the context of the M1 MacBook Air "
 
 # M1 Mac Review
 
-
 Last Friday I rented an m1 Mac for a month to give it a thorough test drive.
 Here are my thoughts.
 
