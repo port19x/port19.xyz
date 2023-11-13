@@ -1,6 +1,6 @@
 name: Push built docker image straight over the wire
 on:
-  deployment:
+  page_build
 
 jobs:
   docker_catapult:
