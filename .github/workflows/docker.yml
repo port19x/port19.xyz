@@ -1,8 +1,6 @@
 name: Push built docker image straight over the wire
 on:
-  push:
-    branches:
-    - gh-pages
+  deployment:
 
 jobs:
   docker_catapult:
