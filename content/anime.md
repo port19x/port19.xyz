@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-10-19
+updated = 2023-12-30
 description = "Port19's selfhosted anime list"
 +++
 
@@ -25,8 +25,9 @@ description = "Port19's selfhosted anime list"
 
 ## Watching
 
-| Title                                 | Progress | Format |
-|---------------------------------------|----------|--------|
+| Title    | Progress | Format |
+|----------|----------|--------|
+| Hamatora | 2/24     | TV     |
 
 ## Planning
 
@@ -39,7 +40,6 @@ description = "Port19's selfhosted anime list"
 | Code Geass: Lelouch of the Rebellion    | TV     |
 | Fate/Zero                               | TV     |
 | Girls und Panzer                        | TV     |
-| Hamatora THE ANIMATION                  | TV     |
 | Maquia: When the Promised Flower Blooms | Moive  |
 | Mob Psycho 100                          | TV     |
 | Nanbaka                                 | TV     |
