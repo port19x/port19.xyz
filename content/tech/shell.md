@@ -4,7 +4,7 @@ date = 2024-01-14
 description = "Shoutout to my fellow ani-cli devs"
 +++
 
-Shell is an untyped, interpreted programming language ubiquitous since the 80s.
+Shell is an untyped, interpreted "programming language" ubiquitous since the 80s.
 It comes with no package manager of its own and is weak in isolation.
 It hinges on the operating system to do what the language can't: almost everything.
 When I'm talking about shell scripting I'm assuming a gnu (or busybox) environment to go along with it.
