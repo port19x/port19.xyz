@@ -12,7 +12,7 @@ When I'm talking about shell scripting I'm assuming a gnu (or busybox) environme
 My authority on the matter comes primarily from two years leading ani-cli development.
 [Ani-cli](https://github.com/pystardust/ani-cli) is an incredibly cross-plattform and featureful cli tool to browse and play anime.
 
-## When not to use shell
+## When Not To Use Shell
 
 If your application needs to do math, use python instead.
 Sure you can do some basic math in shell scripts, but when you can anticipate in advance that a lot of your program data will consist of numbers, pick sth else.
@@ -53,7 +53,7 @@ For advanced debugging and profiling, [strace](https://strace.io/) can be useful
 - [`socat`](https://copyconstruct.medium.com/socat-29453e9fc8a6) - socket relay
 - [`zstd`](https://github.com/facebook/zstd) - nice compression at `-19`
 
-## Further reading
+## Further Reading
 
 Read through the lists of all the available programs in the [GNU Coreutils](https://wiki.gentoo.org/wiki/GNU_Coreutils) and [util-linux](https://wiki.gentoo.org/wiki/Util-linux). \
 If you want to deploy via docker, [busybox](https://busybox.net/downloads/BusyBox.html) too. \
