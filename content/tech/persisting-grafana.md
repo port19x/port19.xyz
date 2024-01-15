@@ -4,6 +4,9 @@ date = 2024-01-15
 description = "4 whole config files 😠"
 +++
 
+Grafana is a visualization frontend for many metrics based monitoring solutions like prometheus.
+Persisting its dashboards is far from trivial, so I thought I'd share how I'm doing it.
+
 ## Prerequisites
 
 - install [`grafana`](https://grafana.com/docs/grafana/latest/setup-grafana/installation/)
