@@ -4,7 +4,7 @@ date = 2024-01-16
 description = "Almost doxxed myself"
 +++
 
-Yesterday I accidentally committed to my public dotfiles repository with my work email, temporarily exposing both my full government name as well as my employer.
+Yesterday I accidentally committed to my public [dotfiles repository](https://github.com/port19x/dotfiles) with my work email, temporarily exposing both my full government name as well as my employer.
 I rebased those commits away as fast as I could, temporarily loosing the changes of those two commits in the process.
 
 It's not implausible that I need to recover git commits again in the future,
