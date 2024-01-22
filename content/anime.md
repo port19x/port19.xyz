@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-12-30
+updated = 2023-01-22
 description = "Port19's selfhosted anime list"
 +++
 
@@ -36,16 +36,10 @@ description = "Port19's selfhosted anime list"
 | 91 Days                                 | TV     |
 | A Place Further Than The Universe       | TV     |
 | Baccano!                                | TV     |
-| Blast of Tempest                        | TV     |
-| Code Geass: Lelouch of the Rebellion    | TV     |
-| Fate/Zero                               | TV     |
-| Girls und Panzer                        | TV     |
 | Maquia: When the Promised Flower Blooms | Moive  |
 | Mob Psycho 100                          | TV     |
 | Nanbaka                                 | TV     |
 | No Game No Life                         | TV     |
-| That Time I Got Reincarnated as a Slime | TV     |
-| Welcome to the N.H.K.                   | TV     |
 | K-On!!                                  | TV     |
 
 ## Completed
@@ -153,6 +147,7 @@ description = "Port19's selfhosted anime list"
 | Mushoku Tensei: Jobless Reincarnation - Season 2 | 4     | 13/tba   | TV      |
 | Durarara                                         | 3     | 13/24    | TV      |
 | One Piece                                        | 3     | 30/>1000 | TV      |
+| Blast of Tempest                                 | 2     | 2/24     | TV      |
 | Sonny Boy                                        | 2     | 8/12     | TV      |
 | Toradora! SOS! Hurray for Gourmands              | 2     | 2/4      | Special |
 | Dorei-ku The Animation                           | 1     | 6/12     | TV      |
