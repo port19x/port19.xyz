@@ -27,7 +27,7 @@ description = "Port19's selfhosted anime list"
 
 | Title    | Progress | Format |
 |----------|----------|--------|
-| Hamatora | 2/24     | TV     |
+| Hamatora | 3/24     | TV     |
 
 ## Planning
 
