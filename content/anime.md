@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2023-01-22
+updated = 2023-01-30
 description = "Port19's selfhosted anime list"
 +++
 
@@ -27,7 +27,7 @@ description = "Port19's selfhosted anime list"
 
 | Title    | Progress | Format |
 |----------|----------|--------|
-| Hamatora | 3/24     | TV     |
+| Hamatora | 5/24     | TV     |
 
 ## Planning
 
