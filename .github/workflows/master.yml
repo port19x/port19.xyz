@@ -32,3 +32,15 @@ jobs:
       uses: shalzz/zola-deploy-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Checkout gh-pages
+      uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+    - name: rsync deployments
+      uses: burnett01/rsync-deployments@6.0.0
+      with:
+        switches: -avzr --delete
+        remote_path: /root/port19.xyz/
+        remote_host: ansible.how
+        remote_user: root
+        remote_key: ${{ secrets.SSH_KEY }}
