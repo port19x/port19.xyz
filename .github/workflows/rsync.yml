@@ -1,7 +1,7 @@
 name: Zola on Nginx
 
 on:
-  page_build
+  deployment
 
 jobs:
   rsync:
