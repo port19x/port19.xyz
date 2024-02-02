@@ -1,9 +1,7 @@
 name: Zola on Nginx
 
 on:
- push:
-  branches:
-   - gh-pages
+  page_build
 
 jobs:
   rsync:
