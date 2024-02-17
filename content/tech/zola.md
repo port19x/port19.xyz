@@ -45,7 +45,7 @@ So the better answer to "Using Hugo without a theme" would have been "Use zola"
 Then, yesterday, I started migrating most of my blog posts from vimwiki to markdown and Zola.
 After having ported 2 articles I made sure to spice up my landing page, which I did for a few hours.
 Understanding how to generate sorted sections was a matter of understanding the templating language.
-But luckily [Tera](https://tera.netlify.app/docs/#getting-started) is just as well documented as [Zola](https://www.getzola.org/documentation/getting-started/overview/) itself.
+But luckily [Tera](https://keats.github.io/tera/) is just as well documented as [Zola](https://www.getzola.org/documentation/getting-started/overview/) itself.
 I rewrote my css, being inspired by [lukesmiths webpage](https://lukesmith.xyz/) in many details.
 To get back the categories I used by convention in vimwiki, I just prepended the site title with a unicode character and then filtered by those.
 Taxonomies/tags are inherently hard to work with, zola makes it somewhat accessible but I don't want to deal with them until I have a real need.
