@@ -46,7 +46,7 @@ with
 ``` lisp
 (use-module (gnu)
             (nongnu packages linux)
-            (nongnu system initrd))
+            (nongnu system linux-initrd))
 ```
 
 ### `operating-system`
