@@ -13,12 +13,12 @@ This post will cover all of the technical aspects of what powers this blog.
 ## Static Site Generator
 
 My static site generator of choice is [Zola](https://github.com/getzola/zola).
-What makes zola special is that I retain full control over all the HTML[¹](https://github.com/port19x/port19.xyz/tree/master/templates) and CSS[²](https://github.com/port19x/port19.xyz/blob/master/static/style.css) that ends up on my page, no theme bullshit like with Hugo.
+What makes Zola special is that I retain full control over all the HTML[¹](https://github.com/port19x/port19.xyz/tree/master/templates) and CSS[²](https://github.com/port19x/port19.xyz/blob/master/static/style.css) that ends up on my page, no theme bullshit like with Hugo.
 It's written in rust and thus reasonably fast, building my whole website in <100ms.
 
 The documentation is okay-ish.
 My gripe with it is that the hard part, how to effectively leverage the templating engine, is almost entirely undocumented.
-Also it's difficult to find large sites written in zola to copy-paste things from.
+Also it's difficult to find large sites written in Zola to copy-paste things from.
 I'll claim mine is the biggest until proven otherwise.
 
 I've previously written on Zola and my dislike for Hugo [here](https://port19.xyz/tech/zola/). \
