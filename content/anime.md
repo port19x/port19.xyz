@@ -1,7 +1,7 @@
 +++
 title = "📺 Anime List"
 date = 2022-03-17
-updated = 2024-03-07
+updated = 2024-03-13
 description = "Port19's selfhosted anime list"
 +++
 
@@ -25,9 +25,9 @@ description = "Port19's selfhosted anime list"
 
 ## Watching
 
-| Title    | Progress | Format |
-|----------|----------|--------|
-| Hamatora | 12/24    | TV     |
+| Title          | Progress | Format |
+|----------------|----------|--------|
+| Mob Psycho 100 | 1/37     | TV     |
 
 ## Planning
 
@@ -37,7 +37,6 @@ description = "Port19's selfhosted anime list"
 | A Place Further Than The Universe       | TV     |
 | Baccano!                                | TV     |
 | Maquia: When the Promised Flower Blooms | Moive  |
-| Mob Psycho 100                          | TV     |
 | Nanbaka                                 | TV     |
 | No Game No Life                         | TV     |
 | K-On!!                                  | TV     |
@@ -146,6 +145,7 @@ description = "Port19's selfhosted anime list"
 | Nichijou - My Ordinary Life                      | 4     | 17/26    | TV      |
 | Mushoku Tensei: Jobless Reincarnation - Season 2 | 4     | 13/tba   | TV      |
 | Durarara                                         | 3     | 13/24    | TV      |
+| Hamatora                                         | 3     | 12/24    | TV      |
 | One Piece                                        | 3     | 30/>1000 | TV      |
 | Blast of Tempest                                 | 2     | 2/24     | TV      |
 | Sonny Boy                                        | 2     | 8/12     | TV      |
