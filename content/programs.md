@@ -11,7 +11,7 @@ description = "and recommend"
 
 Arch Linux has been my linux distribution of choice since early 2021.
 It has been a reliable and trusty companion over the years, being less fragile than several of the allegedly stable distros I've used prior, such as debian.
-I tightly integrate my dotfiles with arch, having a [PKGBUILD](https://github.com/port19x/dotfiles/blob/master/PKGBUILD) to automate my dotfiles bootstrapping.
+I tightly integrate my [dotfiles](https://github.com/port19x/dotfiles) with arch, having a [PKGBUILD](https://github.com/port19x/dotfiles/blob/master/PKGBUILD) to automate my dotfiles bootstrapping.
 I believe this approach to be superior to a post-install script, since it allows me to more explicitly track the packages I use and keep the list of explicitly installed packages low. \
 
 My recovery time from a backup, including a full reinstall, is less than one hour.
