@@ -1,5 +1,5 @@
 +++
-title = "📺 Anime List"
+title = "🌸Anime List🌸"
 date = 2022-03-17
 updated = 2024-03-13
 description = "Port19's selfhosted anime list"
