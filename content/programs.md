@@ -1,7 +1,7 @@
 +++
 title = "💻Programs I use💻"
-date = 2024-03-14
-updated = 2024-03-14
+date = 2024-03-16
+updated = 2024-03-16
 description = "and recommend"
 +++
 
@@ -131,8 +131,7 @@ My modeline is the [doom-modeline](https://github.com/seagle0128/doom-modeline),
 [Evil-goggles](https://github.com/edkolev/evil-goggles) flashes a selected region upon an action: visual feedback on stuff like `yw`. \
 [Org-modern](https://github.com/minad/org-modern) improves the look of org-mode significantly. \
 [Nerd-icons-dired](https://github.com/rainstormstudio/nerd-icons-dired) adds file type icons to dired. \
-[Dired-filter](https://github.com/Fuco1/dired-hacks) is what I use to hide dotfiles by default. \
-[Rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters) highlights parenthesis. I'm unsure about how useful that is but keep it around.
+[Dired-filter](https://github.com/Fuco1/dired-hacks) is what I use to hide dotfiles by default.
 
 ### Misc
 
