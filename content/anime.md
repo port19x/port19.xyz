@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-03-13
+updated = 2024-03-17
 description = "Port19's selfhosted anime list"
 +++
 
@@ -27,7 +27,7 @@ description = "Port19's selfhosted anime list"
 
 | Title          | Progress | Format |
 |----------------|----------|--------|
-| Mob Psycho 100 | 1/37     | TV     |
+| Mob Psycho 100 | 2/37     | TV     |
 
 ## Planning
 
