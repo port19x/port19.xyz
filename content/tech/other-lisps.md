@@ -12,7 +12,7 @@ So, in september, I started learning clojure and then had a very productive few 
 An archive of my clojure projects is available [here](https://github.com/port19x/clojure-era).
 
 What eventually made me depart from clojure was a combination of platform pains with the jvm, as well as poor alignment of it's strengths and my needs.
-I wrote about it in a post looking back on [6 months with clojure](http://127.0.0.1:1111/tech/clojure/), but it took a few more for me to archive all the clojure projects and look back no more.
+I wrote about it in a post looking back on [6 months with clojure](https://port19.xyz/tech/clojure/), but it took a few more for me to archive all the clojure projects and look back no more.
 
 ## Emacs Lisp
 
