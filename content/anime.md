@@ -27,7 +27,7 @@ description = "Port19's selfhosted anime list"
 
 | Title          | Progress | Format |
 |----------------|----------|--------|
-| Mob Psycho 100 | 2/37     | TV     |
+| Mob Psycho 100 | 3/37     | TV     |
 
 ## Planning
 
