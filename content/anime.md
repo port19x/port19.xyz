@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-04-09
+updated = 2024-04-10
 description = "Port19's selfhosted anime list"
 +++
 
@@ -28,7 +28,7 @@ description = "Port19's selfhosted anime list"
 | Title                                            | Progress | Format |
 |--------------------------------------------------|----------|--------|
 | Mob Psycho 100                                   | 8/37     | TV     |
-| Mushoku Tensei: Jobless Reincarnation - Season 2 | 13/25    | TV     |
+| Mushoku Tensei: Jobless Reincarnation - Season 2 | 14/25    | TV     |
 
 ## Planning
 
@@ -41,6 +41,8 @@ description = "Port19's selfhosted anime list"
 | Nanbaka                                 | TV     |
 | No Game No Life                         | TV     |
 | K-On!!                                  | TV     |
+| Konosuba 3                              | TV     |
+| Konosuba - Legend of Crimson            | Movie  |
 
 ## Completed
 
