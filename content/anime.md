@@ -29,6 +29,7 @@ description = "Port19's selfhosted anime list"
 |--------------------------------------------------|----------|--------|
 | Mob Psycho 100                                   | 8/37     | TV     |
 | Mushoku Tensei: Jobless Reincarnation - Season 2 | 14/25    | TV     |
+| Konosuba 3                                       | 1/11     | TV     |
 
 ## Planning
 
@@ -41,7 +42,6 @@ description = "Port19's selfhosted anime list"
 | Nanbaka                                 | TV     |
 | No Game No Life                         | TV     |
 | K-On!!                                  | TV     |
-| Konosuba 3                              | TV     |
 
 ## Completed
 
