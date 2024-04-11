@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-04-10
+updated = 2024-04-11
 description = "Port19's selfhosted anime list"
 +++
 
@@ -42,7 +42,6 @@ description = "Port19's selfhosted anime list"
 | No Game No Life                         | TV     |
 | K-On!!                                  | TV     |
 | Konosuba 3                              | TV     |
-| Konosuba - Legend of Crimson            | Movie  |
 
 ## Completed
 
@@ -89,6 +88,7 @@ description = "Port19's selfhosted anime list"
 | Kiss x Sis                                      | 4     | 12     | OVA     |
 | Konosuba                                        | 4     | 10     | TV      |
 | Konosuba 2                                      | 4     | 10     | TV      |
+| Konosuba - Legend of Crimson                    | 4     | 1      | Movie   |
 | Mushoku Tensei: Jobless Reincarnation           | 4     | 24     | TV      |
 | Neon Genisis Evangelion - The End of Evangelion | 4     | 1      | Movie   |
 | PUPARIA                                         | 4     | 1      | ONA     |
