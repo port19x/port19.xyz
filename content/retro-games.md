@@ -12,10 +12,10 @@ No planning, no scores!
 ## Playing
 
 <img src="/retrocovers/drill-dozer.jpg">
-<img src="/retrocovers/pokemon-leafgreen.jpg">
 
 ## Completed
 
+<img src="/retrocovers/pokemon-leafgreen.jpg">
 <img src="/retrocovers/final-fantasy-1-2.jpg" title="only 1, 2 sucks">
 <img src="/retrocovers/tetris.jpg">
 <img src="/retrocovers/kirbys-adventure.jpg">
