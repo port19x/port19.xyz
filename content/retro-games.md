@@ -17,11 +17,12 @@ No planning, no scores!
 
 <img src="/retrocovers/pokemon-leafgreen.jpg">
 <img src="/retrocovers/final-fantasy-1-2.jpg" title="only 1, 2 sucks">
-<img src="/retrocovers/tetris.jpg">
-<img src="/retrocovers/kirbys-adventure.jpg">
 <br>
 <img src="/retrocovers/super-mario-64.jpg">
 <img src="/retrocovers/super-mario-all-stars.jpg">
+<br>
+<img src="/retrocovers/tetris.jpg">
+<img src="/retrocovers/kirbys-adventure.jpg">
 
 
 ## Played Before, Didn't Finish
