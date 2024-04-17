@@ -12,7 +12,7 @@ Here are my thoughts.
 ## DejaVu
 
 This is not the first time that I try out Mac OS.
-Last time I tried it about a year ago, ending with me returning the unit within 24 hours of purchase.
+Last time I tried it in july of 2022, ending with me returning the unit within 24 hours of purchase.
 Back then I was still very adamant about customisation and when my misguided attempt to shoehorn my arch ricer setup into Mac OS failed, I gave up.
 This time I’m a lot more accommodating.
 I’m trying out Mac OS as intended this time, no shoe-horning!
