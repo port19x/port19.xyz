@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-04-17
+updated = 2024-04-21
 description = "Port19's selfhosted retrogame list"
 +++
 
@@ -11,6 +11,7 @@ No planning, no scores!
 
 ## Playing
 
+<img src="/retrocovers/flying-hero.jpg">
 <img src="/retrocovers/drill-dozer.jpg">
 
 ## Completed
@@ -21,6 +22,7 @@ No planning, no scores!
 <img src="/retrocovers/super-mario-64.jpg">
 <img src="/retrocovers/super-mario-all-stars.jpg">
 <br>
+<img src="/retrocovers/bubble-bobble.jpg">
 <img src="/retrocovers/tetris.jpg">
 <img src="/retrocovers/kirbys-adventure.jpg">
 
