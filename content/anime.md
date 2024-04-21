@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-04-14
+updated = 2024-04-21
 description = "Port19's selfhosted anime list"
 +++
 
@@ -28,7 +28,7 @@ description = "Port19's selfhosted anime list"
 | Title                                            | Progress | Format |
 |--------------------------------------------------|----------|--------|
 | Mob Psycho 100                                   | 8/37     | TV     |
-| Mushoku Tensei: Jobless Reincarnation - Season 2 | 15/25    | TV     |
+| Mushoku Tensei: Jobless Reincarnation - Season 2 | 16/25    | TV     |
 | Konosuba 3                                       | 2/11     | TV     |
 
 ## Planning
