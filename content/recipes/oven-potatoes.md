@@ -28,9 +28,9 @@ description = "Baked Potatoes with Ham Cubes & Cheese"
 
 ## Directions
 
-- preheat the oven at 200°C top-bottom
-- peel the potatoes
-- butter the baking pan
+- Preheat the oven at 200°C top-bottom
+- Peel the potatoes
+- Butter the baking pan
 - Slice the potatoes
 - Add half the potatoes to baking pan
 - Add half the ham cubes, cheese, salt, pepper and rosemary
