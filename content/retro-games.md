@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-04-21
+updated = 2024-04-27
 description = "Port19's selfhosted retrogame list"
 +++
 
@@ -11,11 +11,11 @@ No planning, no scores!
 
 ## Playing
 
-<img src="/retrocovers/flying-hero.jpg">
-<img src="/retrocovers/drill-dozer.jpg">
+<img src="/retrocovers/mario-vs-donkey-kong.jpg">
 
 ## Completed
 
+<img src="/retrocovers/drill-dozer.jpg">
 <img src="/retrocovers/pokemon-leafgreen.jpg">
 <img src="/retrocovers/final-fantasy-1-2.jpg" title="only 1, 2 sucks">
 <br>
@@ -37,11 +37,9 @@ Thanks to my ~bad memory~ *superior garbage collection* I can safely replay thes
 <br>
 <img src="/retrocovers/final-fantasy-tactics.jpg">
 <img src="/retrocovers/pokemon-emerald.jpg">
-<img src="/retrocovers/mario-vs-donkey-kong.jpg">
 <br>
 <img src="/retrocovers/zelda-ocarina-of-time.jpg">
 <img src="/retrocovers/secret-of-mana.jpg">
-<img src="/retrocovers/f-zero.jpg">
 
 ## Sourcing & Emulation
 
