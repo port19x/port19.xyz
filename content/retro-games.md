@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-04-27
+updated = 2024-04-28
 description = "Port19's selfhosted retrogame list"
 +++
 
@@ -43,11 +43,18 @@ Thanks to my ~bad memory~ *superior garbage collection* I can safely replay thes
 
 ## Sourcing & Emulation
 
-Pick games from [Metacritic](https://www.metacritic.com/), or better yet, ask your friends for recommendations.
+Pick games for one of the top100 lists on gamefaqs:
+[SNES](https://gamefaqs.gamespot.com/boards/916396-super-nintendo/76022917),
+[GBA](https://gamefaqs.gamespot.com/boards/916598-game-boy-advance/66659387),
+[N64](https://gamefaqs.gamespot.com/boards/916387-nintendo-64/78772770),
+[PS2](https://gamefaqs.gamespot.com/boards/915821-playstation-2/79518850) \
+That site is also by far the best to find walkthroughs if you get stuck. \
+[Metacritic](https://www.metacritic.com/) is a decent fallback for finding good games.
 
-- For older systems, go to [emulatorgames](https://www.emulatorgames.net/)
-- For torrents, [1337x](https://1337x.to/) is decent
-- [Vimm's Lair](https://vimm.net/) has some in-between stuff
+- Use archive.org nointro roms¹: [SNES](https://archive.org/download/nointro.snes), [GBA](https://archive.org/download/nointro.gba), [N64](https://archive.org/download/nointro.n64)
+- [Vimm's Lair](https://vimm.net/) for more recent stuff like PS2 and Gamecube
+- I used [emulatorgames](https://www.emulatorgames.net/) before I learned about nointro rom sets
+
 
 I use [Lakka](https://www.lakka.tv/) on my raspberry pi 4 with the following emulators:
 
@@ -55,4 +62,8 @@ I use [Lakka](https://www.lakka.tv/) on my raspberry pi 4 with the following emu
 - SNES: [snes9x](https://www.snes9x.com/)
 - N64: [mupen64plus-next](https://docs.libretro.com/library/mupen64plus/)
 
-Maybe I'll set up [PCSX2](https://pcsx2.net/) on my pc some day, or buy a used PS2 slim even
+[PCSX2](https://pcsx2.net/) runs like a charm on [my pc](https://port19.xyz/tech/new-pc/)
+
+<br>
+
+*¹that way they will be detected by retroarch, giving you the thumbnail*
