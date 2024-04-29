@@ -1,17 +1,16 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-04-28
+updated = 2024-04-29
 description = "Port19's selfhosted retrogame list"
 +++
 
-_GBA is the best system btw_
-
-No planning, no scores!
+*Also check my profile on [retroachievements](https://retroachievements.org/user/pork3)*
 
 ## Playing
 
 <img src="/retrocovers/mario-vs-donkey-kong.jpg">
+<img src="/retrocovers/super-mario-kart.jpg">
 
 ## Completed
 
@@ -40,6 +39,8 @@ Thanks to my ~bad memory~ *superior garbage collection* I can safely replay thes
 <br>
 <img src="/retrocovers/zelda-ocarina-of-time.jpg">
 <img src="/retrocovers/secret-of-mana.jpg">
+
+*TLOZ-OOT runs like shit, if you know how to make it run smoothly, email me.*
 
 ## Sourcing & Emulation
 
