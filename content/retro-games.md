@@ -19,7 +19,7 @@ description = "Port19's selfhosted retrogame list"
 <img src="/retrocovers/final-fantasy-1-2.jpg" title="only 1, 2 sucks">
 <br>
 <img src="/retrocovers/super-mario-64.jpg">
-<img src="/retrocovers/super-mario-all-stars.jpg">
+<img src="/retrocovers/super-mario-all-stars.jpg" title="only 1">
 <br>
 <img src="/retrocovers/bubble-bobble.jpg">
 <img src="/retrocovers/tetris.jpg">
