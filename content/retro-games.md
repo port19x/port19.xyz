@@ -47,12 +47,14 @@ Pick games for one of the top100 lists on gamefaqs:
 [GBA](https://gamefaqs.gamespot.com/boards/916598-game-boy-advance/66659387),
 [N64](https://gamefaqs.gamespot.com/boards/916387-nintendo-64/78772770),
 [PS2](https://gamefaqs.gamespot.com/boards/915821-playstation-2/79518850) \
-That site is also by far the best to find walkthroughs if you get stuck. \
+I tend to stick to the top 20, with some franchise / genre specific exceptions. \
 [Metacritic](https://www.metacritic.com/) is a decent fallback for finding good games.
 
 - Use archive.org nointro roms¹: [SNES](https://archive.org/download/nointro.snes), [GBA](https://archive.org/download/nointro.gba), [N64](https://archive.org/download/nointro.n64)
 - [Vimm's Lair](https://vimm.net/) for more recent stuff like PS2 and Gamecube
 - I used [emulatorgames](https://www.emulatorgames.net/) before I learned about nointro rom sets
+
+Gamefaqs is also by far the best to find walkthroughs if you get stuck.
 
 ## Emulation
 
