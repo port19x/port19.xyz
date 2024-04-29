@@ -40,9 +40,7 @@ Thanks to my ~bad memory~ *superior garbage collection* I can safely replay thes
 <img src="/retrocovers/zelda-ocarina-of-time.jpg">
 <img src="/retrocovers/secret-of-mana.jpg">
 
-*TLOZ-OOT runs like shit, if you know how to make it run smoothly, email me.*
-
-## Sourcing & Emulation
+## Sourcing
 
 Pick games for one of the top100 lists on gamefaqs:
 [SNES](https://gamefaqs.gamespot.com/boards/916396-super-nintendo/76022917),
@@ -56,12 +54,21 @@ That site is also by far the best to find walkthroughs if you get stuck. \
 - [Vimm's Lair](https://vimm.net/) for more recent stuff like PS2 and Gamecube
 - I used [emulatorgames](https://www.emulatorgames.net/) before I learned about nointro rom sets
 
+## Emulation
 
 I use [Lakka](https://www.lakka.tv/) on my raspberry pi 4 with the following emulators:
 
 - GBA: [mgba](https://mgba.io/)
 - SNES: [snes9x](https://www.snes9x.com/)
 - N64: [mupen64plus-next](https://docs.libretro.com/library/mupen64plus/)
+
+For (at least most) N64 games to run smoothly, I had to heavily OC the gpu:
+```
+over_voltage=6
+v3d_freq=800
+core_freq=850
+```
+TLOZ-OOT continues to run like shit, if you know how to make it run smoothly, please email me.
 
 [PCSX2](https://pcsx2.net/) runs like a charm on [my pc](https://port19.xyz/tech/new-pc/)
 
