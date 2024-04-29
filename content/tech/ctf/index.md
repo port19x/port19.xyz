@@ -63,7 +63,7 @@ Persevering through these challenges and netting the occasional flag has made me
 I know that the vast majority of programmers at least sometimes have the opportunity, the temptation, or perhaps the misfortune, to face the perceived impossible.
 Some will interpret their hardship and failure as evidence of their incompetence, their poor fitness for the field of IT. I don't.
 
-It has been a few years sine I participated in a CTF, but there is no doubt in my mind that they continue to show their influence on me.
+It has been a few years since I participated in a CTF, but there is no doubt in my mind that they continue to show their influence on me.
 Without my exposure to CTFs, I may not have persevered through the hardships along the way, and I wouldn't have been inspired to rise to the occasion every time an opportunity for growth presented itself.
 
 And thus, the grind goes on.
