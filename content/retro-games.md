@@ -9,7 +9,6 @@ description = "Port19's selfhosted retrogame list"
 
 ## Playing
 
-<img src="/retrocovers/mario-vs-donkey-kong.jpg">
 <img src="/retrocovers/super-mario-kart.jpg">
 
 ## Completed
