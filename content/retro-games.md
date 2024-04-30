@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-04-29
+updated = 2024-04-30
 description = "Port19's selfhosted retrogame list"
 +++
 
@@ -64,8 +64,9 @@ I use [Lakka](https://www.lakka.tv/) on my raspberry pi 4 with the following emu
 - SNES: [snes9x](https://www.snes9x.com/)
 - N64: [mupen64plus-next](https://docs.libretro.com/library/mupen64plus/)
 
-For (at least most) N64 games to run smoothly, I had to heavily OC the gpu:
+For (at least most) N64 games to run smoothly, I had to OC the gpu heavily and the cpu mildly:
 ```
+arm_boost=1
 over_voltage=6
 v3d_freq=800
 core_freq=850
