@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-04-30
+updated = 2024-05-01
 description = "Port19's selfhosted retrogame list"
 +++
 
@@ -10,6 +10,7 @@ description = "Port19's selfhosted retrogame list"
 ## Playing
 
 <img src="/retrocovers/super-mario-kart.jpg">
+<img src="/retrocovers/super-mario-all-stars.jpg" title="1 completed, playing 3 now">
 
 ## Completed
 
@@ -18,7 +19,6 @@ description = "Port19's selfhosted retrogame list"
 <img src="/retrocovers/final-fantasy-1-2.jpg" title="only 1, 2 sucks">
 <br>
 <img src="/retrocovers/super-mario-64.jpg">
-<img src="/retrocovers/super-mario-all-stars.jpg" title="only 1">
 <br>
 <img src="/retrocovers/bubble-bobble.jpg">
 <img src="/retrocovers/tetris.jpg">
