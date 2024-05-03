@@ -7,6 +7,8 @@ description = "Port19's selfhosted retrogame list"
 
 *Also check my profile on [retroachievements](https://retroachievements.org/user/pork3)*
 
+*focusing on snes right now*
+
 ## Playing
 
 <img src="/retrocovers/super-mario-rpg.jpg">
@@ -22,6 +24,20 @@ description = "Port19's selfhosted retrogame list"
 <img src="/retrocovers/super-mario-64.jpg">
 <br>
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
+
+## Planning
+
+<img src="/retrocovers/donkey-kong-country.jpg">
+<img src="/retrocovers/donkey-kong-country-2.jpg">
+<img src="/retrocovers/donkey-kong-country-3.jpg">
+<br>
+<img src="/retrocovers/chrono-trigger.jpg">
+<img src="/retrocovers/earthbound.jpg">
+<img src="/retrocovers/super-metroid.jpg">
+<br>
+<img src="/retrocovers/lufia-2.jpg">
+<img src="/retrocovers/terranigma.jpg">
+<img src="/retrocovers/secret-of-mana.jpg">
 
 ## Sourcing
 
