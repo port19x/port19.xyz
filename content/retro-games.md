@@ -21,9 +21,7 @@ description = "Port19's selfhosted retrogame list"
 <br>
 <img src="/retrocovers/super-mario-64.jpg">
 <br>
-<img src="/retrocovers/bubble-bobble.jpg">
-<img src="/retrocovers/tetris.jpg">
-<img src="/retrocovers/kirbys-adventure.jpg">
+<!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
 
 ## Sourcing
 
