@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-05-01
+updated = 2024-05-03
 description = "Port19's selfhosted retrogame list"
 +++
 
@@ -9,6 +9,7 @@ description = "Port19's selfhosted retrogame list"
 
 ## Playing
 
+<img src="/retrocovers/super-mario-rpg.jpg">
 <img src="/retrocovers/super-mario-kart.jpg">
 <img src="/retrocovers/super-mario-all-stars.jpg" title="1 completed, playing 3 now">
 
