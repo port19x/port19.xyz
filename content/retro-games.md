@@ -25,21 +25,6 @@ description = "Port19's selfhosted retrogame list"
 <img src="/retrocovers/tetris.jpg">
 <img src="/retrocovers/kirbys-adventure.jpg">
 
-
-## Played Before, Didn't Finish
-
-Thanks to my ~bad memory~ *superior garbage collection* I can safely replay these in a year or two :D
-
-<img src="/retrocovers/castlevania-aria-of-sorrow.jpg">
-<img src="/retrocovers/zelda-minish-cap.jpg">
-<img src="/retrocovers/zelda-a-link-to-the-past.jpg">
-<br>
-<img src="/retrocovers/final-fantasy-tactics.jpg">
-<img src="/retrocovers/pokemon-emerald.jpg">
-<br>
-<img src="/retrocovers/zelda-ocarina-of-time.jpg">
-<img src="/retrocovers/secret-of-mana.jpg">
-
 ## Sourcing
 
 Pick games for one of the top100 lists on gamefaqs:
