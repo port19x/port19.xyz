@@ -2,7 +2,7 @@
 title = "🌸Retro Games🌸"
 date = 2024-04-17
 updated = 2024-05-03
-description = "Port19's selfhosted retrogame list"
+description = "Port19s selfhosted retrogame list"
 +++
 
 *Also check my profile on [retroachievements](https://retroachievements.org/user/pork3)*

@@ -2,7 +2,7 @@
 title = "🌸Anime List🌸"
 date = 2022-03-17
 updated = 2024-04-28
-description = "Port19's selfhosted anime list"
+description = "Port19s selfhosted anime list"
 +++
 
 ## Favorites
