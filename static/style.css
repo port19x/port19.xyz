@@ -8,8 +8,8 @@
 
 body {
   text-align: center;
-  background-color: #1d2021;
-  color: #ebdbb2;
+  background-color: #000000;
+  color: #ffffff;
   max-width: 48em;
   margin: auto;
   padding: 0.825rem;
@@ -18,12 +18,12 @@ body {
 
 /* TODO Make layouting more mobile friendly */ 
 /* p and h3 come with +1em margin ootb, therefore 5em to normalize*/
-h2          { background-color:#282828; }
-hr          { border: 1px dashed #8ec07c; }
+h2          { background-color:#222222; }
+hr          { border: 1px dashed #008080; }
 time        { font-family: monospace; color: #888; }
 a           { text-decoration: none; }
-a:link      { color: #83a598; }
-a:visited   { color: #d3869b; }
+a:link      { color: #a9d9d9; }
+a:visited   { color: #d9a9a9; }
 th, td      { border: 1px solid; }
 thead, th   { border-bottom-style: double; }
 table       { border-collapse: collapse; margin: auto; }
