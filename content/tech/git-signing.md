@@ -11,7 +11,7 @@ In [a talk](https://blog.gitbutler.com/git-tips-and-tricks/) by GitButler I lear
 As a prerequisite I assume you already have your ssh key pair that you use for authenticating with github.
 If not, and you somehow still use access tokens to authenticate, check out the [github docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on the matter.
 
-Locally, run the command `git config --global config gpg.format ssh`. \
+Locally, run the command `git config --global gpg.format ssh`. \
 Then follow it up with `git config --global user.signingkey ~/.ssh/github.pub`. \
 You may omit `--global` if you only want to sign commits of a specific repository.
 Also keep in mind to replace `~/.ssh/github.pub` with the path to your public key.
