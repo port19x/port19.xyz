@@ -27,9 +27,9 @@ description = "Port19s selfhosted anime list"
 
 | Title                                            | Progress | Format |
 |--------------------------------------------------|----------|--------|
-| Mob Psycho 100                                   | 9/37     | TV     |
 | Mushoku Tensei: Jobless Reincarnation - Season 2 | 18/25    | TV     |
 | Konosuba 3                                       | 5/11     | TV     |
+| Demon Slayer - Hashira Training Arc              | 0/?      | TV     |
 
 ## Planning
 
@@ -150,6 +150,7 @@ description = "Port19s selfhosted anime list"
 | Durarara                                         | 3     | 13/24    | TV      |
 | Hamatora                                         | 3     | 12/24    | TV      |
 | One Piece                                        | 3     | 30/>1000 | TV      |
+| Mob Psycho 100                                   | 2     | 9/37     | TV      |
 | Blast of Tempest                                 | 2     | 2/24     | TV      |
 | Sonny Boy                                        | 2     | 8/12     | TV      |
 | Toradora! SOS! Hurray for Gourmands              | 2     | 2/4      | Special |
