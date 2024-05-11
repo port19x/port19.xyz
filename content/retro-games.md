@@ -11,7 +11,6 @@ description = "Port19s selfhosted retrogame list"
 
 ## Playing
 
-<img src="/retrocovers/super-mario-rpg.jpg">
 <img src="/retrocovers/super-mario-all-stars.jpg" title="1 completed, playing 3 now">
 
 ## Completed
@@ -21,6 +20,7 @@ description = "Port19s selfhosted retrogame list"
 <img src="/retrocovers/final-fantasy-1-2.jpg" title="only 1, 2 sucks">
 <br>
 <img src="/retrocovers/super-mario-64.jpg">
+<img src="/retrocovers/super-mario-rpg.jpg">
 <img src="/retrocovers/super-mario-kart.jpg" title="fuck that special cup! everything else gold!">
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
 
