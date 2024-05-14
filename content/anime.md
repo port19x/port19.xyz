@@ -39,7 +39,6 @@ description = "Port19s selfhosted anime list"
 | A Place Further Than The Universe       | TV     |
 | Baccano!                                | TV     |
 | Maquia: When the Promised Flower Blooms | Moive  |
-| Nanbaka                                 | TV     |
 | No Game No Life                         | TV     |
 | K-On!!                                  | TV     |
 
