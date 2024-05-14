@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-05-12
+updated = 2024-05-14
 description = "Port19s selfhosted anime list"
 +++
 
@@ -147,10 +147,10 @@ description = "Port19s selfhosted anime list"
 |--------------------------------------------------|-------|----------|---------|
 | Nichijou - My Ordinary Life                      | 4     | 17/26    | TV      |
 | Mushoku Tensei: Jobless Reincarnation - Season 2 | 4     | 13/tba   | TV      |
+| Mob Psycho 100                                   | 4     | 9/37     | TV      |
 | Durarara                                         | 3     | 13/24    | TV      |
 | Hamatora                                         | 3     | 12/24    | TV      |
 | One Piece                                        | 3     | 30/>1000 | TV      |
-| Mob Psycho 100                                   | 2     | 9/37     | TV      |
 | Blast of Tempest                                 | 2     | 2/24     | TV      |
 | Sonny Boy                                        | 2     | 8/12     | TV      |
 | Toradora! SOS! Hurray for Gourmands              | 2     | 2/4      | Special |
