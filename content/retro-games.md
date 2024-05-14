@@ -1,16 +1,18 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-05-12
+updated = 2024-05-14
 description = "Port19s selfhosted retrogame list"
 +++
 
 *Also check my profile on [retroachievements](https://retroachievements.org/user/pork3)*
 
-*focusing on snes right now*
+*Pi 5 coming soon*
 
 ## Playing
 
+<img src="/retrocovers/zelda-ocarina-of-time.jpg">
+<img src="/retrocovers/super-metroid.jpg">
 <img src="/retrocovers/super-mario-all-stars.jpg" title="1 completed, playing 3 now">
 
 ## Completed
@@ -32,7 +34,6 @@ description = "Port19s selfhosted retrogame list"
 <br>
 <img src="/retrocovers/chrono-trigger.jpg">
 <img src="/retrocovers/earthbound.jpg">
-<img src="/retrocovers/super-metroid.jpg">
 <br>
 <img src="/retrocovers/lufia-2.jpg">
 <img src="/retrocovers/terranigma.jpg">
