@@ -28,8 +28,8 @@ description = "Port19s selfhosted anime list"
 | Title                                            | Progress | Format |
 |--------------------------------------------------|----------|--------|
 | Mushoku Tensei: Jobless Reincarnation - Season 2 | 19/25    | TV     |
-| Konosuba 3                                       | 5/11     | TV     |
-| Demon Slayer - Hashira Training Arc              | 0/?      | TV     |
+| Konosuba 3                                       | 6/11     | TV     |
+| Demon Slayer - Hashira Training Arc              | 1/?      | TV     |
 
 ## Planning
 
