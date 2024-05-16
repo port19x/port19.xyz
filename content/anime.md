@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-05-14
+updated = 2024-05-16
 description = "Port19s selfhosted anime list"
 +++
 
@@ -145,7 +145,6 @@ description = "Port19s selfhosted anime list"
 | Title                                            | Score | Progress | Format  |
 |--------------------------------------------------|-------|----------|---------|
 | Nichijou - My Ordinary Life                      | 4     | 17/26    | TV      |
-| Mushoku Tensei: Jobless Reincarnation - Season 2 | 4     | 13/tba   | TV      |
 | Mob Psycho 100                                   | 4     | 9/37     | TV      |
 | Durarara                                         | 3     | 13/24    | TV      |
 | Hamatora                                         | 3     | 12/24    | TV      |
