@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-05-16
+updated = 2024-05-17
 description = "Port19s selfhosted anime list"
 +++
 
@@ -33,14 +33,10 @@ description = "Port19s selfhosted anime list"
 
 ## Planning
 
-| Title                                   | Format |
-|-----------------------------------------|--------|
-| 91 Days                                 | TV     |
-| A Place Further Than The Universe       | TV     |
-| Baccano!                                | TV     |
-| Maquia: When the Promised Flower Blooms | Moive  |
-| No Game No Life                         | TV     |
-| K-On!!                                  | TV     |
+| Title                             | Format |
+|-----------------------------------|--------|
+| A Place Further Than The Universe | TV     |
+| K-On!!                            | TV     |
 
 ## Completed
 
