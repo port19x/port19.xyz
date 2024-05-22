@@ -18,10 +18,10 @@ description = "Port19s selfhosted anime list"
 ### TV
 
 1. FLCL Alternative
-2. Serial Experiments Lain
-3. Highschool of the Dead
-4. Tsukigakirei
-5. Girls Last Tour
+2. Highschool of the Dead
+3. Tsukigakirei
+4. Girls Last Tour
+5. Is this a Zombie?
 
 ## Watching
 
@@ -114,6 +114,7 @@ description = "Port19s selfhosted anime list"
 | Last Exile                                      | 3     | 26     | TV      |
 | Neon Genesis Evangelion                         | 3     | 26     | TV      |
 | One-Punch Man                                   | 3     | 12     | TV      |
+| Serial Experiments Lain                         | 3     | 13     | TV      |
 | The Pet Girl of Sakurasou                       | 3     | 24     | TV      |
 | The Tatami Galaxy                               | 3     | 11     | TV      |
 | Tsubasa RESERVoir CHRoNiCLE                     | 3     | 26     | TV      |
