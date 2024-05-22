@@ -39,7 +39,7 @@ description = "Port19s selfhosted retrogame list"
 <img src="/retrocovers/terranigma.jpg">
 <img src="/retrocovers/secret-of-mana.jpg">
 
-## Sourcing
+## Sourcing & Emulation
 
 Pick games for one of the top100 lists on gamefaqs:
 [SNES](https://gamefaqs.gamespot.com/boards/916396-super-nintendo/76022917),
@@ -49,23 +49,28 @@ Pick games for one of the top100 lists on gamefaqs:
 I tend to stick to the top 20, with some franchise / genre specific exceptions. \
 [Metacritic](https://www.metacritic.com/) is a decent fallback for finding good games.
 
-- Use archive.org nointro roms¹: [SNES](https://archive.org/download/nointro.snes), [GBA](https://archive.org/download/nointro.gba), [N64](https://archive.org/download/nointro.n64)
+- Use archive.org nointro roms: [SNES](https://archive.org/download/nointro.snes), [GBA](https://archive.org/download/nointro.gba), [N64](https://archive.org/download/nointro.n64)
 - [Vimm's Lair](https://vimm.net/) for more recent stuff like PS2 and Gamecube
 - I used [emulatorgames](https://www.emulatorgames.net/) before I learned about nointro rom sets
 
 Gamefaqs is also by far the best to find walkthroughs if you get stuck.
 
-## Emulation
-
-I use [Batocera](https://batocera.org/) on my Raspberry Pi 5B 8GB with it's default emulators for the following systems:
-
-- GBA
-- SNES
-- N64
-- Gamecube
-
-[PCSX2](https://pcsx2.net/) runs like a charm on [my pc](https://port19.xyz/tech/new-pc/)
-
 <br>
 
-*¹that way they will be detected by retroarch, giving you the thumbnail*
+For GBA, SNES, N64 and Gamecube I use [Batocera](https://batocera.org/) on my Raspberry Pi 5B 8GB with it's default emulators.
+For PS2 [PCSX2](https://pcsx2.net/) runs like a charm on [my pc](https://port19.xyz/tech/new-pc/)
+
+## PC
+
+Since the beginning of 2024 I have largely dropped PC gaming in favour of retro games.
+However in the ~5 years before that I played a fair bit of PC, and as such my favourites deserve their fair mention on my site.
+The following 6 are games I can wholeheartedly recommend.
+They are well described and tagged on steam, you'll definitely know if you like them within the 2 hour steam return window.
+
+<a href="https://store.steampowered.com/app/49520/Borderlands_2/"><img src="/retrocovers/pc/borderlands2.jpg"></a>
+<a href="https://store.steampowered.com/app/200510/XCOM_Enemy_Unknown/"><img src="/retrocovers/pc/xcom-enemy-unknown.jpg"></a>
+<a href="https://store.steampowered.com/app/7670/BioShock/"><img src="/retrocovers/pc/bioshock.jpg"></a>
+<br>
+<a href="https://store.steampowered.com/app/311690/Enter_the_Gungeon/"><img src="/retrocovers/pc/enter-the-gungeon.jpg">
+<a href="https://store.steampowered.com/app/1868140/DAVE_THE_DIVER/"><img src="/retrocovers/pc/dave-the-diver.jpg"></a>
+<a href="https://store.steampowered.com/app/460950/Katana_ZERO/"><img src="/retrocovers/pc/katana-zero.jpg"></a>
