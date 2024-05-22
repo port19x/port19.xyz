@@ -1,13 +1,13 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-05-14
+updated = 2024-05-22
 description = "Port19s selfhosted retrogame list"
 +++
 
 *Also check my profile on [retroachievements](https://retroachievements.org/user/pork3)*
 
-*Pi 5 coming soon*
+*Now on Pi 5 :)*
 
 ## Playing
 
@@ -57,20 +57,12 @@ Gamefaqs is also by far the best to find walkthroughs if you get stuck.
 
 ## Emulation
 
-I use [Lakka](https://www.lakka.tv/) on my raspberry pi 4 with the following emulators:
+I use [Batocera](https://batocera.org/) on my Raspberry Pi 5B 8GB with it's default emulators for the following systems:
 
-- GBA: [mgba](https://mgba.io/)
-- SNES: [snes9x](https://www.snes9x.com/)
-- N64: [mupen64plus-next](https://docs.libretro.com/library/mupen64plus/)
-
-For (at least most) N64 games to run smoothly, I had to OC the gpu heavily and the cpu mildly:
-```
-arm_boost=1
-over_voltage=6
-v3d_freq=800
-core_freq=850
-```
-TLOZ-OOT continues to run like shit, if you know how to make it run smoothly, please email me.
+- GBA
+- SNES
+- N64
+- Gamecube
 
 [PCSX2](https://pcsx2.net/) runs like a charm on [my pc](https://port19.xyz/tech/new-pc/)
 
