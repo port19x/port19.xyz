@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-05-22
+updated = 2024-05-27
 description = "Port19s selfhosted retrogame list"
 +++
 
