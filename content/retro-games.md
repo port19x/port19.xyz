@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-05-28
+updated = 2024-05-30
 description = "Port19s selfhosted retrogame list"
 +++
 
@@ -21,7 +21,7 @@ description = "Port19s selfhosted retrogame list"
 <img src="/retrocovers/super-mario-kart.jpg" title="fuck that special cup! everything else gold!">
 <img src="/retrocovers/super-mario-all-stars.jpg" title="1 completed, quit 3 due to world 3">
 <br>
-<img src="/retrocovers/super-metroid.jpg">
+<img src="/retrocovers/super-metroid.jpg" title="played twice, back to back">
 <img src="/retrocovers/super-mario-64.jpg">
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
 
