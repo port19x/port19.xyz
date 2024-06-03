@@ -1,15 +1,14 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-05-30
+updated = 2024-06-03
 description = "Port19s selfhosted retrogame list"
 +++
 
-*Also check my profile on [retroachievements](https://retroachievements.org/user/pork3)*
-
 ## Playing
 
-<img src="/retrocovers/zelda-ocarina-of-time.jpg">
+<img src="/retrocovers/metroid-zero-mission.jpg">
+<!-- <img src="/retrocovers/zelda-ocarina-of-time.jpg"> -->
 
 ## Completed
 
