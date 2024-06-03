@@ -14,7 +14,7 @@ I consider myself to be a linux admin, or devops engineer as the kids say, so th
 
 Not cracking the first nine is bad, even for hobby projects. To dip below the first nine, you need to ban the term "best practice" from your vocabulary, make pervasive use of all available hipster technology and abstain from any monitoring of any kind. The only way for you to dip below 90% availability that I can empathise with is if you run your server at home in a country with bad internet, like Germany.
 
-If you follow your intuition and just throw your binary at a random VPS host, you'll get the first nine. \
+If you follow your intuition and just throw your binary at a random VPS host, you'll get the first nine.
 And even in the event of an outage, you can take a day off before addressing it without adverse effect.
 
 ## Second Nine - 99%
@@ -48,9 +48,9 @@ If the fourth nine requires hiring a couple of people, the fifth and beyond requ
 
 ## Before The First Nine
 
-Make backups of your code. A git repository is sufficient for that, so you're probably good already. \
-If you offer a stateful service, make regular backups of the application state, e.g. the customer data. \
+Make backups of your code. A git repository is sufficient for that, so you're probably good already.
+If you offer a stateful service, make regular backups of the application state, e.g. the customer data.
 This is why people are so conservative when it comes to storage: an outage is an inconvenience, loss of data is a company killer.
 
-I hope this was a nice read and I got someone motivated to at least slap uptimerobot onto their blog. \
+I hope this was a nice read and I got someone motivated to at least slap uptimerobot onto their blog.
 Maybe in a few years I'll have some snake oil to sell that promises that next nine, but for now this will do.
