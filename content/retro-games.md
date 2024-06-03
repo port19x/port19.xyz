@@ -26,16 +26,10 @@ description = "Port19s selfhosted retrogame list"
 
 ## Planning
 
-<img src="/retrocovers/donkey-kong-country.jpg">
-<img src="/retrocovers/donkey-kong-country-2.jpg">
-<img src="/retrocovers/donkey-kong-country-3.jpg">
-<br>
 <img src="/retrocovers/chrono-trigger.jpg">
 <img src="/retrocovers/earthbound.jpg">
 <br>
-<img src="/retrocovers/lufia-2.jpg">
-<img src="/retrocovers/terranigma.jpg">
-<img src="/retrocovers/secret-of-mana.jpg">
+<img src="/retrocovers/metroid-fusion.jpg">
 
 ## Sourcing & Emulation
 
