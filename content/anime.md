@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-06-14
+updated = 2024-06-16
 description = "Port19s selfhosted anime list"
 +++
 
@@ -27,9 +27,9 @@ description = "Port19s selfhosted anime list"
 
 | Title                                            | Progress | Format |
 |--------------------------------------------------|----------|--------|
-| Mushoku Tensei: Jobless Reincarnation - Season 2 | 22/25    | TV     |
+| Mushoku Tensei: Jobless Reincarnation - Season 2 | 23/25    | TV     |
 | Konosuba 3                                       | 10/11    | TV     |
-| Demon Slayer - Hashira Training Arc              | 5/?      | TV     |
+| Demon Slayer - Hashira Training Arc              | 6/?      | TV     |
 
 ## Planning
 
