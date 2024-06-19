@@ -28,7 +28,6 @@ description = "Port19s selfhosted anime list"
 | Title                                            | Progress | Format |
 |--------------------------------------------------|----------|--------|
 | Mushoku Tensei: Jobless Reincarnation - Season 2 | 23/25    | TV     |
-| Konosuba 3                                       | 10/11    | TV     |
 | Demon Slayer - Hashira Training Arc              | 6/?      | TV     |
 
 ## Planning
@@ -51,6 +50,7 @@ description = "Port19s selfhosted anime list"
 | Into the Forest of Fireflies Light              | 5     | 1      | Movie   |
 | Is this a Zombie?                               | 5     | 12     | TV      |
 | Josee, the Tiger and the Fish                   | 5     | 1      | Movie   |
+| Konosuba 3                                      | 5     | 11     | TV      |
 | K-On!                                           | 5     | 13     | TV      |
 | K-On! Movie                                     | 5     | 1      | Movie   |
 | ODDTAXI                                         | 5     | 13     | TV      |
