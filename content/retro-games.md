@@ -8,6 +8,7 @@ description = "Port19s selfhosted retrogame list"
 ## Playing
 
 <!-- <img src="/retrocovers/zelda-ocarina-of-time.jpg"> -->
+<img src="/retrocovers/metroid-fusion.jpg">
 
 ## Completed
 
@@ -28,8 +29,6 @@ description = "Port19s selfhosted retrogame list"
 
 <img src="/retrocovers/chrono-trigger.jpg">
 <img src="/retrocovers/earthbound.jpg">
-<br>
-<img src="/retrocovers/metroid-fusion.jpg">
 
 ## Sourcing & Emulation
 
