@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-06-23
+updated = 2024-06-24
 description = "Port19s selfhosted anime list"
 +++
 
@@ -36,6 +36,7 @@ description = "Port19s selfhosted anime list"
 |-----------------------------------|--------|
 | A Place Further Than The Universe | TV     |
 | K-On!!                            | TV     |
+| Nekopara                          | TV     |
 
 ## Completed
 
