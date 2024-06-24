@@ -6,6 +6,7 @@
 {% endblock meta %}
 
 {% block content %}
+<section>
 <h1 class="title">
   {{ page.title }}
 </h1>
@@ -17,17 +18,18 @@
 <hr>
 {{ page.content | safe }}
 <hr>
+</section>
 {% if page.lower or page.higher %}
-  <div class="post-nav" style="width:100%">
+  <nav class="post-nav" style="width:100%">
     {% if page.lower %}
-      <a style="float:right" href="{{ page.lower.permalink }}">{{ page.lower.title }} ›</a>
+    <a style="float:right" href="{{ page.lower.permalink }}">{{ page.lower.title }} ›</a>
     {% endif %}
-      <a class="float:middle" href="https://port19.xyz">⌂</a>
+    <a class="float:middle" href="https://port19.xyz">⌂</a>
+    <!-- 🏠-->
     {% if page.higher %}
-      <a style="float:left" href="{{ page.higher.permalink }}">‹ {{ page.higher.title }}</a>
+    <a style="float:left" href="{{ page.higher.permalink }}">‹ {{ page.higher.title }}</a>
     {% endif %}
-  </div>
-  <br>
-{% endif %}
+  </nav>
 <hr>
+{% endif %}
 {% endblock content %}
