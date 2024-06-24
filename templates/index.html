@@ -6,69 +6,68 @@
 {% endblock meta %}
 {% block content %}
 
-<header style="font-family:Fira Sans,sans; padding-bottom:1.25rem;">
-  <h1 style="font-size:2.5em; margin-bottom:0;"> Port19s Webpage </h1>
+<header style="">
+  <h1 style="font-family:Fira Sans,sans; padding-bottom:1.25rem; font-size:2.5em; margin-bottom:0;"> Port19s Webpage </h1>
+  <span>
+    {% set anime = get_page(path="anime.md") %}
+    {% set programs = get_page(path="programs.md") %}
+    <a href="{{ anime.permalink | safe }}">🌸Anime List🌸</a>
+    <br>
+    <a href="/retro-games">🌸Retro Games🌸</a>
+    <a style="float:right" href="{{ programs.permalink | safe }}">💻Programs I use💻</a>
+    <!--Coming Soon™-->
+    <a style="float:left; visibility:hidden" href="">📚About&Contact📚</a>
+  </span>
 </header>
-<span>
-  {% set anime = get_page(path="anime.md") %}
-  {% set programs = get_page(path="programs.md") %}
-  <a href="{{ anime.permalink | safe }}">🌸Anime List🌸</a>
-  <br>
-  <a href="/retro-games">🌸Retro Games🌸</a>
-  <a style="float:right" href="{{ programs.permalink | safe }}">💻Programs I use💻</a>
-  <!--Coming Soon™-->
-  <a style="float:left; visibility:hidden" href="">📚About&Contact📚</a>
-</span>
 <hr>
 
-{% set lifestyle = get_section(path="lifestyle/_index.md") %}
-{% set tech = get_section(path="tech/_index.md") %}
-{% set recipes = get_section(path="recipes/_index.md") %}
-
-<div x-cloak>
-  <script>
-    document.addEventListener('alpine:init', () => {
-        Alpine.store('filter', {
-            filter: '',
-
-            check(el) {
-                return this.filter === '' || el.textContent.includes(this.filter)
-            }
-        })
-    })
-</script>
-<h2> Filter Categories </h2>
-<span x-data>
-<button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = ''">reset</button>
-<button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = '📚'">📚 lifestyle</button>
-<button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = '💻'">💻 tech</button>
-<button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = '🍚'">🍚 recipes</button>
-</span>
-</div>
-
 <h2> Recent Posts </h2>
-<ul x-data>
-{% set feed = lifestyle.pages | concat(with=tech.pages) | concat(with=recipes.pages) %}
-{% for post in feed | sort(attribute="date") | reverse | slice(end=15) %}
-  <li x-show="$store.filter.check($el)">
-    <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash;
-    <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
-</ul>
+<main>
+  <div x-cloak>
+    <script>
+      document.addEventListener('alpine:init', () => {
+          Alpine.store('filter', {
+              filter: '',
 
-<details> <summary><i>see all</i></summary> <ul x-data>
-{% for post in feed | sort(attribute="date") | reverse | slice(start=15) %}
-  <li x-show="$store.filter.check($el)">
-    <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash;
-    <a href="{{ post.permalink | safe }}">{{ post.title }} </a>
-  </li>
-{% endfor %}
-</ul> </details>
+              check(el) {
+                  return this.filter === '' || el.textContent.includes(this.filter)
+              }
+          })
+      })
+    </script>
+    <span x-data>
+      <button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = '📚'">📚 lifestyle</button>
+      <button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = '💻'">💻 tech</button>
+      <button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = '🍚'">🍚 recipes</button>
+      <button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = ''">reset filters</button>
+    </span>
+  </div>
+
+  <ul x-data>
+  {% set lifestyle = get_section(path="lifestyle/_index.md") %}
+  {% set tech = get_section(path="tech/_index.md") %}
+  {% set recipes = get_section(path="recipes/_index.md") %}
+  {% set feed = lifestyle.pages | concat(with=tech.pages) | concat(with=recipes.pages) %}
+  {% for post in feed | sort(attribute="date") | reverse | slice(end=15) %}
+    <li x-show="$store.filter.check($el)">
+      <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash;
+      <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+
+  <details> <summary><i>see all</i></summary> <ul x-data>
+  {% for post in feed | sort(attribute="date") | reverse | slice(start=15) %}
+    <li x-show="$store.filter.check($el)">
+      <time>{{ post.date | date(format="%d.%m.%Y") }}</time>  &ndash;
+      <a href="{{ post.permalink | safe }}">{{ post.title }} </a>
+    </li>
+  {% endfor %}
+  </ul> </details>
+</main>
 
 <h2> Noteable Projects </h2>
-<i> Click the triangles for previews </i>
-<div style="text-align: left; margin-left: 7.5em; margin-top: 1rem">
+<section style="text-align: left; margin-left: 7.5em; margin-top: 1rem">
   <details>
       <summary>
 	<a href="https://github.com/pystardust/ani-cli/">🇯🇵 ani-cli</a>
@@ -102,7 +101,6 @@
     </summary>
     <img src="{{ get_url(path="previews/prev-redqu.jpg") }}" width="600" alt="Image preview for redqu">
   </details>
-
-</div>
+</section>
 <hr>
 {% endblock content %}
