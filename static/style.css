@@ -30,3 +30,4 @@ table       { border-collapse: collapse; margin: auto; }
 p, h3       { text-align: left; margin-left: 5em; }
 ol, ul, pre { text-align: left; margin-left: 6em; }
 pre         { margin-right: 6em; }
+.zola-anchor { opacity: 45%; }
