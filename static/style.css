@@ -12,22 +12,31 @@ body {
   color: #ffffff;
   max-width: 48em;
   margin: auto;
-  padding: 0.825rem;
   font-family: serif, 'Noto Color Emoji';
 }
 
-/* TODO Make layouting more mobile friendly */ 
 /* p and h3 come with +1em margin ootb, therefore 5em to normalize*/
-h2          { background-color:#222222; }
-hr          { border: 1px dashed #008080; }
-time        { font-family: monospace; color: #888; }
-a           { text-decoration: none; }
-a:link      { color: #a9d9d9; }
-a:visited   { color: #d9a9a9; }
-th, td      { border: 1px solid; }
-thead, th   { border-bottom-style: double; }
-table       { border-collapse: collapse; margin: auto; }
-p, h3       { text-align: left; margin-left: 5em; }
-ol, ul, pre { text-align: left; margin-left: 6em; }
-pre         { margin-right: 6em; }
+h2           { background-color:#222222; }
+hr           { border: 1px dashed #008080; }
+time         { font-family: monospace; color: #888; }
+a            { text-decoration: none; }
+a:link       { color: #a9d9d9; }
+a:visited    { color: #d9a9a9; }
+th, td       { border: 1px solid; }
+thead, th    { border-bottom-style: double; }
+table        { border-collapse: collapse; margin: auto; }
+p, h3        { text-align: left; margin-left: 5em; }
+ol, ul, pre  { text-align: left; margin-left: 6em; }
+pre          { margin-right: 6em; }
 .zola-anchor { opacity: 45%; }
+.projects    { text-align:left; margin-left: 7.5em; margin-top: 1rem }
+wbr          { display: none; }
+
+/* Responsive™ */
+@media (max-width: 767px) {
+  p, h3, ol, ul, pre { margin-left: 1em; }
+  .projects { margin-left: 2.5em; }
+  pre { margin-right: 1em; }
+  img { max-width: 100%; height: auto; }
+  wbr { display: inline; }
+}
