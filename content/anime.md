@@ -27,7 +27,6 @@ description = "Port19s selfhosted anime list"
 
 | Title                                            | Progress | Format |
 |--------------------------------------------------|----------|--------|
-| Mushoku Tensei: Jobless Reincarnation - Season 2 | 23/25    | TV     |
 | Demon Slayer - Hashira Training Arc              | 7/8      | TV     |
 
 ## Planning
@@ -86,6 +85,7 @@ description = "Port19s selfhosted anime list"
 | Konosuba 2                                      | 4     | 10     | TV      |
 | Konosuba - Legend of Crimson                    | 4     | 1      | Movie   |
 | Mushoku Tensei: Jobless Reincarnation           | 4     | 24     | TV      |
+| Mushoku Tensei: Jobless Reincarnation - Season2 | 4     | 25     | TV      |
 | Neon Genisis Evangelion - The End of Evangelion | 4     | 1      | Movie   |
 | PUPARIA                                         | 4     | 1      | ONA     |
 | Spirited Away                                   | 4     | 1      | Movie   |
