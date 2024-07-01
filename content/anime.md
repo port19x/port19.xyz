@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-06-24
+updated = 2024-07-01
 description = "Port19s selfhosted anime list"
 +++
 
@@ -27,7 +27,6 @@ description = "Port19s selfhosted anime list"
 
 | Title                                            | Progress | Format |
 |--------------------------------------------------|----------|--------|
-| Demon Slayer - Hashira Training Arc              | 7/8      | TV     |
 
 ## Planning
 
@@ -100,6 +99,7 @@ description = "Port19s selfhosted anime list"
 | Gabriel Dropout                                 | 3     | 12     | TV      |
 | Children of the Sea                             | 3     | 1      | Movie   |
 | Cowboy Bebop                                    | 3     | 26     | TV      |
+| Demon Slayer Hashira Training Arc               | 3     | 8      | TV      |
 | Demon Slayer Infinity Train                     | 3     | 1      | Movie   |
 | Divine Gate                                     | 3     | 12     | TV      |
 | Elfen Lied                                      | 3     | 13     | TV      |
