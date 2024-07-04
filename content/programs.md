@@ -1,7 +1,7 @@
 +++
 title = "💻Programs I use💻"
 date = 2024-03-16
-updated = 2024-03-16
+updated = 2024-07-04
 description = "and recommend"
 +++
 
@@ -24,9 +24,9 @@ My window manager is [exwm](https://github.com/emacs-exwm/exwm), the emacs x win
 My primary system font since late 2022 is Iosevka, but I've also used [Mononoki](https://madmalik.github.io/mononoki/) in the past. \
 My unicode fonts are googles [Noto](https://fonts.google.com/noto) and [Noto Emoji](https://fonts.google.com/noto/specimen/Noto+Emoji).
 
-### [Qutebrowser](https://qutebrowser.org/)
+### [Brave](https://brave.com/)
 
-I'm currently using qutebrowser as my primary web browser. I like it due to it's keyboard driven nature and config file. I've also extensively used both [Librewolf](https://librewolf.net/) and [Brave](https://brave.com/) in the past and can recommend them for enhanced privacy protection.
+I'm currently using brave as my primary web browser. I like it due to it's builtin adblock and speed. I've also extensively used both [Librewolf](https://librewolf.net/) and [Qutebrowser](https://qutebrowser.org/) in the past and can recommend them for enhanced privacy protection.
 
 ### [Emacs](https://www.gnu.org/savannah-checkouts/gnu/emacs/emacs.html)
 
@@ -105,7 +105,7 @@ It has it's flaws, if you know of something better on linux please let me know.
 
 ### Completion
 
-As a minibuffer completion framework I use the popular stack of [vertico](https://github.com/minad/vertico), [marginalia](https://github.com/minad/marginalia), [consult](https://github.com/minad/consult) and [orderless](https://github.com/oantolin/orderless). For in-buffer completion I use [corfu](https://github.com/minad/corfu). I do not use embark.
+As a minibuffer completion framework I use the popular stack of [vertico](https://github.com/minad/vertico), [marginalia](https://github.com/minad/marginalia), [consult](https://github.com/minad/consult) and [orderless](https://github.com/oantolin/orderless). For in-buffer completion I use [corfu](https://github.com/minad/corfu). I also added [embark](https://github.com/oantolin/embark) and [wgrep](https://github.com/mhayashi1120/Emacs-wgrep) recently.
 
 ### Key Bindings
 
