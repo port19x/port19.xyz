@@ -7,8 +7,6 @@ description = "Port19s selfhosted retrogame list"
 
 ## Playing
 
-<!-- <img src="/retrocovers/zelda-ocarina-of-time.jpg"> -->
-
 ## Completed
 
 <img src="/retrocovers/metroid-fusion.jpg">
