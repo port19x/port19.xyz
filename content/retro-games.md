@@ -1,11 +1,15 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-07-07
+updated = 2024-07-10
 description = "Port19s selfhosted retrogame list"
 +++
 
 ## Playing
+
+<img src="/retrocovers/rage.jpg">
+
+*(yes, the playstation 3 is a retro console. yes, you're that old)*
 
 ## Completed
 
@@ -51,6 +55,10 @@ Gamefaqs is also by far the best to find walkthroughs if you get stuck.
 
 For GBA, SNES, N64 and Gamecube I use [Batocera](https://batocera.org/) on my Raspberry Pi 5B 8GB with it's default emulators.
 For PS2 [PCSX2](https://pcsx2.net/) runs like a charm on [my pc](https://port19.xyz/tech/new-pc/)
+
+<br>
+
+I guess I also own a PS3
 
 ## PC
 
