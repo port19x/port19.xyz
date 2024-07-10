@@ -53,12 +53,8 @@ Gamefaqs is also by far the best to find walkthroughs if you get stuck.
 
 <br>
 
-For GBA, SNES, N64 and Gamecube I use [Batocera](https://batocera.org/) on my Raspberry Pi 5B 8GB with it's default emulators.
-For PS2 [PCSX2](https://pcsx2.net/) runs like a charm on [my pc](https://port19.xyz/tech/new-pc/)
-
-<br>
-
-I guess I also own a PS3
+I now emulate everything on my m1 macbook air. \
+The exception are PS3 games, I play those on original hardware.
 
 ## PC
 
