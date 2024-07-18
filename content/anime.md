@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-07-15
+updated = 2024-07-18
 description = "Port19s selfhosted anime list"
 +++
 
@@ -27,7 +27,7 @@ description = "Port19s selfhosted anime list"
 
 | Title                             | Progress | Format |
 |-----------------------------------|----------|--------|
-| Full Metal Alchemist: Brotherhood | 4/64     | TV     |
+| Full Metal Alchemist: Brotherhood | 5/64     | TV     |
 
 ## Planning
 
