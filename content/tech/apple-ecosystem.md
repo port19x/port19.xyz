@@ -1,6 +1,7 @@
 +++
 title = "💻 Apple Ecosystem Review"
 date = 2024-07-19
+updated = 2024-07-21
 description = "Now with iCloud™"
 +++
 
@@ -24,8 +25,10 @@ What I don't use in third-party apps I make up for in first-party apps.
 Synchronizing with the MacBook Air, I like to use Apple notes, reminders and the calendar.
 And also found it quite useful to have my photos synchronized between the devices.
 
-With iOS apps working natively on the MacBook, I plan on relegating the
-iPhone to the drawer and to continue using my dumb phone, as I've done for the past two years.
+~With iOS apps working natively on the MacBook, I plan on relegating the
+iPhone to the drawer and to continue using my dumb phone, as I've done for the past two years.~
+
+*Doesn't work nearly as well as it seems at first glance. Also, turns out old phone is starting to get battery issues. iPhone stays default.*
 
 ## Apple Watch
 
@@ -36,7 +39,9 @@ I did also test the sleep tracking, but find that to be kind of useless given my
 I think an Apple Watch is a poor fashion choice and not really worth over a hundred bucks unless you are a cyclist
 that will make frequent use of both the navigation feature and workout tracking.
 
-But for those two features it's useful enough to keep around and use occasionally.
+~But for those two features it's useful enough to keep around and use occasionally.~
+
+*I'll keep using it as my default and keep my analogue watches around for when I need to dress up.*
 
 ## Misc
 
@@ -49,5 +54,5 @@ Without having tried it, I'll recommend it to moms and startup techbros.[¹](htt
 
 Apple has some nice hardware available at decent prices on the used market.
 If you're the kind of guy who will make use of it, it surely isn't a bad choice.
-But for me, I think I'll refocus on the essentials and continue using a regular watch with a
-dumbphone while also leveraging the M1 MacBook Air to its fullest potential.
+~But for me, I think I'll refocus on the essentials and continue using a regular watch with a dumbphone while also leveraging the M1 MacBook Air to its fullest potential.~
+*Sike*
