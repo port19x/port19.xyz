@@ -1,15 +1,13 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-07-10
+updated = 2024-07-28
 description = "Port19s selfhosted retrogame list"
 +++
 
 ## Playing
 
-<img src="/retrocovers/rage.jpg">
-
-*(yes, the playstation 3 is a retro console. yes, you're that old)*
+<img src="/retrocovers/final-fantasy-12.jpg">
 
 ## Completed
 
