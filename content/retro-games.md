@@ -52,7 +52,7 @@ Gamefaqs is also by far the best to find walkthroughs if you get stuck.
 <br>
 
 I now emulate everything on my m1 macbook air. \
-The exception are PS3 games, I play those on original hardware.
+The exception are PS2 & PS3 games, I play those on original hardware.
 
 ## PC
 
