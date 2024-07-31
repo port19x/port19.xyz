@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-07-28
+updated = 2024-07-31
 description = "Port19s selfhosted retrogame list"
 +++
 
@@ -27,9 +27,6 @@ description = "Port19s selfhosted retrogame list"
 
 ## Planning
 
-<img src="/retrocovers/metroid-samus-returns.jpg">
-<img src="/retrocovers/castlevania-aria-of-sorrow.jpg">
-<br>
 <img src="/retrocovers/chrono-trigger.jpg">
 <img src="/retrocovers/earthbound.jpg">
 
