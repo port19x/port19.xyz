@@ -1,5 +1,5 @@
 +++
-title = "🍚 Irish Coodle"
+title = "🍚 Irish Coddle"
 date = 2024-04-10
 description = "My first stew"
 +++
