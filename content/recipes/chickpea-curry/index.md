@@ -4,7 +4,7 @@ date = 2023-09-16
 description = "Yoinked from BBC"
 +++
 
-# Chana masala (chickpea curry) with spinach
+<img src="./chana-masala.png" height="300vw">
 
 - Prep time: 10 min
 - Cook time: 30 min
