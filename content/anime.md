@@ -27,7 +27,7 @@ description = "Port19s selfhosted anime list"
 
 | Title                             | Progress | Format |
 |-----------------------------------|----------|--------|
-| Full Metal Alchemist: Brotherhood | 9/64     | TV     |
+| Full Metal Alchemist: Brotherhood | 10/64     | TV     |
 
 ## Planning
 
