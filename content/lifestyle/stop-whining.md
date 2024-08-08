@@ -17,7 +17,7 @@ At least for me it is.
 
 ## Yet, people complain
 
-Yet, I see *the majority* of my colleagues habitually complain about expected realities of large scale IT work.
+Yet, I see *several* of my colleagues habitually complain about expected realities of large scale IT work.
 Many things don't work, yes, and some systems fail in ways that seem incredibly stupid from our high horses.
 But in those cases I like to repeat the mantra that if everything worked we'd be out of a job.
 I have already grown at least somewhat aggravated by this constant negativity.
