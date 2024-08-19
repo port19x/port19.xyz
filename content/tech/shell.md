@@ -56,7 +56,7 @@ For advanced debugging and profiling, [strace](https://strace.io/) can be useful
 ## Further Reading
 
 Read through the lists of all the available programs in the [GNU Coreutils](https://wiki.gentoo.org/wiki/GNU_Coreutils) and [util-linux](https://wiki.gentoo.org/wiki/Util-linux). \
-If you want to deploy via docker, [busybox](https://busybox.net/downloads/BusyBox.html) too. \
+If you want to deploy via docker, busybox too. \
 Read the manuals for [find](https://www.gnu.org/software/findutils/manual/html_mono/find.html), [grep](https://www.gnu.org/software/grep/manual/grep.html) and [sed](https://www.gnu.org/software/sed/manual/sed.html) in depth. \
 I won't stop you from checking out [awk](https://www.gnu.org/software/gawk/manual/gawk.html) for sake of completeness, but haven't found it very fruitful myself.
 

@@ -24,9 +24,11 @@ It is also a major component in the tech stack of my next department at work, wh
 
 <img src="./dashboard.jpg">
 
-The server can be explored [here](https://hsnipe.moe). \
-Note the [`git`](https://git.hsnipe.moe) and [`status`](https://status.hsnipe.moe) subdomains for Gitea and Grafana respectively. \
+The server can be explored here.¹ \
+Note the `git` and `status` subdomains for Gitea and Grafana respectively. \
 The infrastructure code is hosted on github in [this repository](https://github.com/port19x/rapture).
+
+¹the site is no longer hosted
 
 ## Coding Status
 

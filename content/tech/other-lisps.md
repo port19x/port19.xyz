@@ -6,7 +6,7 @@ description = "Experiments since my departure from Clojure"
 
 ## Timeline
 
-My history with lisp and functional programming starts in august of '22 where I learned haskell[¹](https://www.learnyouahaskell.com/), doing a lot of coding puzzles with it.
+My history with lisp and functional programming starts in august of '22 where I learned haskell[¹](https://learnyouahaskell.github.io/chapters.html), doing a lot of coding puzzles with it.
 When I eventually wanted to make an actual project with it, I ran into a wall regarding the tooling and practical applicability of it. \
 So, in september, I started learning clojure and then had a very productive few months with the language.
 An archive of my clojure projects is available [here](https://github.com/port19x/clojure-era).
