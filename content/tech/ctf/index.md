@@ -22,7 +22,7 @@ These contests usually last 48 or 72 hours over a weekend and can be competed in
 Outside of regular competition hours, there are long standing websites where you can improve your skills in a specific category.
 These sites often host coherent paths that are called wargames, or may just have a loose collection of challenges. \
 [Bandit](https://overthewire.org/wargames/bandit/) on OverTheWire is often recommended for beginners and will leave you a very competent linux user.
-[cryptohack.org](https://cryptohack.org/) and [crackmes.one](https://crackmes.one/) are also notoriously good for the `crypto` and `rev` categories in particular.
+[cryptohack.org](https://cryptohack.org/) and ~crackmes.one~ [challenges.re](https://challenges.re/) are also notoriously good for the `crypto` and `rev` categories in particular.
 
 For more on CTFs I recommend you watch [this](https://www.youtube.com/watch?v=8ev9ZX9J45A) youtube video after you finish my post.
 
