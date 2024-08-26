@@ -26,4 +26,4 @@ When I went to bed a few minutes later, I fell asleep right away.
 **You can do it too**
 
 If you're afraid, great, that's the point, everyone is. \
-Read up on this [FAQ](https://libreddit.bus-hit.me/r/coldshowers/comments/eyoiol/faq_read_this_thread_if_you_are_new_to_cold/) and then just do it.
+Read up on this [FAQ](https://reddit.com/r/coldshowers/comments/eyoiol/faq_read_this_thread_if_you_are_new_to_cold/) and then just do it.

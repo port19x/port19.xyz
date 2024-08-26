@@ -29,7 +29,7 @@ At this stage you're no longer changing your base operating system, or at least 
 You start reading documentation. You actively pick some software and configure it via configuration files.
 You learn vim.
 You set up your dotfiles repo.
-You browse the web for inspiration and get inspired by posts on [r/unixporn](https://libreddit.bus-hit.me/r/unixporn/top?t=month).
+You browse the web for inspiration and get inspired by posts on [r/unixporn](https://reddit.com/r/unixporn/top?t=month).
 
 ## Layer 3: refinement
 

@@ -9,7 +9,7 @@ description = "How I choose Open Source Licenses"
 ## The Four Freedoms
 
 The four freedoms are what makes free software free.
-They are defined by the [Free Software Foundation](https://www.fsf.org/), pioneered by Richard Stallman.
+They are defined by the [Free Software Foundation](https://www.gnu.org/), pioneered by Richard Stallman.
 
 1. Use: Free Software can be used for any purpose and is free of restrictions such as licence expiry or geographic limitations.
 2. Study: Free Software and its code can be studied by anyone, without non-disclosure agreements or similar restrictions.
