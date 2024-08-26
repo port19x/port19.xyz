@@ -37,7 +37,7 @@ In 2021, after a good run of roughly two years and our joint interest in CTFs an
 
 ## The Mountain
 
-CTFs have taught me the sheer mountain of competence you can ascend as a hacker[¹](https://www.catb.org/~esr/faqs/hacker-howto.html#what_is).
+CTFs have taught me the sheer mountain of competence you can ascend as a hacker[¹](https://web.archive.org/web/20240824161944/https://www.catb.org/~esr/faqs/hacker-howto.html#what_is).
 Every cracked flag is a massive achievement with many hours of work behind it.
 And even in events with no flags I did not leave feeling disheartened, rather inspired by a newfound gap in my knowledge and skills.
 It has taught me that the journey doesn't have to end after you learn basic programming and that there is a whole other league of experts that will welcome you in their ranks if you put in the *years* required to get there.
