@@ -10,9 +10,9 @@ jobs:
     name: Run Deadsniper
     runs-on: ubuntu-latest
     steps:
-    - name: Run Deadsniper
-      run: |
-        wget -q "https://github.com/port19x/deadsniper/releases/download/v1.3/deadsniper" && chmod +x ./deadsniper && GOGC=off ./deadsniper https://port19.xyz/sitemap.xml
+      - uses: port19x/deadsniper@master
+        with:
+          sitemap: "https://port19.xyz/sitemap.xml"
   trailing-ws:
     name: Find Trailing Whitespace
     runs-on: ubuntu-latest
