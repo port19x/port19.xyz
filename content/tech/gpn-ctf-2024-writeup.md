@@ -122,4 +122,4 @@ While it worked locally to the extend testable, it did not yield a flag.
 Checking the chat logs, I came across the recommendation to use `patchelf`.
 So I thought to add `/catflag` as a dependency via `patchelf --add-needed "/catflag" a.out`, but that wasn't enough.
 What was actually necessary was to use `--set-interpreter` instead of `--add-needed`.
-The idea for that came from [this post](https://klamp.works/2016/04/15/code-exec-ldd.html), but I'm sure the patchelf hint would have been sufficient with a little more perseverance.
+The idea for that came from [this post](http://klamp.works/2016/04/15/code-exec-ldd.html), but I'm sure the patchelf hint would have been sufficient with a little more perseverance.
