@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-08-28
+updated = 2024-08-30
 description = "Port19s selfhosted anime list"
 +++
 
@@ -34,6 +34,8 @@ description = "Port19s selfhosted anime list"
 | Title                             | Format |
 |-----------------------------------|--------|
 | A Place Further Than The Universe | TV     |
+| Darker Than Black                 | TV     |
+| Gurren Lagann                     | TV     |
 | K-On!!                            | TV     |
 | Nekopara                          | TV     |
 
