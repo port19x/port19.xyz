@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-09-08
+updated = 2024-09-16
 description = "Port19s selfhosted anime list"
 +++
 
@@ -38,6 +38,8 @@ description = "Port19s selfhosted anime list"
 | Gurren Lagann                     | TV     |
 | K-On!!                            | TV     |
 | Nekopara                          | TV     |
+| Run With The                      | TV     |
+    
 
 ## Completed
 
