@@ -27,7 +27,7 @@ description = "Port19s selfhosted anime list"
 
 | Title                             | Progress | Format |
 |-----------------------------------|----------|--------|
-| Full Metal Alchemist: Brotherhood | 18/64    | TV     |
+| Full Metal Alchemist: Brotherhood | 22/64    | TV     |
 | Run With The Wind                 |  3/23    | TV     |
 
 ## Planning
