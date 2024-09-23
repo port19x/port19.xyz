@@ -13,7 +13,7 @@ In this post I want to give some running advice that I wish I had known in 2022.
 
 ## Heart Rate Zones
 
-If you're completely unfamiliar with the concept, watch a youtube video about it and then return.
+If you're completely unfamiliar with the concept, watch this [youtube short](https://www.youtube.com/shorts/c8gEsnbwPyY) and then read on.
 
 My primary mistake in my running throughout 2022 was that I never did any walking breaks.
 The result of this stubbornness was that I always ran at a pretty high effort.
@@ -64,6 +64,8 @@ Rhytmic breathing is nice, ideally breathing through the nose.
 Bring a tissue on the run, especially in colder weather.
 
 Binge watch running form tutorials for an afternoon and you should be good.
+
+Avoid GTN (Global Triathlon Network) on youtube, their vids are consistently underwhelming.
 
 A thorough warmup before a run and thorough stretching after help a lot in the beginning and for races.
 
