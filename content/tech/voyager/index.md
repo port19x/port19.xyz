@@ -62,7 +62,7 @@ The included carrying case seems to be of decent quality and I use it every day 
 
 If there is one major thing I'm going to complain about it's the pipe key and the crocodiles: <|>
 
-I use a german keyboard layout in my OS, with the moonlander actually needing an american layout in the OS for all the keys in the online configurator to correspond to the actual keys arriving in your text buffer.
+I use a german keyboard layout in my OS, with the voyager actually needing an american layout in the OS for all the keys in the online configurator to correspond to the actual keys arriving in your text buffer.
 Since (american) ANSI keyboards have one key less than the (european) ISO keyboards do, there is actually no key that corresponds to where <|> are on a german layout.
 I searched the web for like half an hour before giving up on the matter and instead binding keys in emacs for this purpose.
 
