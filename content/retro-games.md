@@ -1,11 +1,13 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-07-31
+updated = 2024-09-26
 description = "Port19s selfhosted retrogame list"
 +++
 
 ## Playing
+
+*will continue playing in the new appartment*
 
 <img src="/retrocovers/final-fantasy-12.jpg">
 
@@ -48,8 +50,8 @@ Gamefaqs is also by far the best to find walkthroughs if you get stuck.
 
 <br>
 
-I now emulate everything on my m1 macbook air. \
-The exception are PS2 & PS3 games, I play those on original hardware.
+[Batocera Linux](https://batocera.org/) is a nice retro emulation os that I plan to set up for everything except PS3. \
+I play PS3 games on original hardware.
 
 ## PC
 
