@@ -1,13 +1,13 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-09-26
+updated = 2024-10-01
 description = "Port19s selfhosted retrogame list"
 +++
 
 ## Playing
 
-*will continue playing in the new appartment*
+*I'm considering dropping ff12*
 
 <img src="/retrocovers/final-fantasy-12.jpg">
 
@@ -38,7 +38,8 @@ Pick games for one of the top100 lists on gamefaqs:
 [SNES](https://gamefaqs.gamespot.com/boards/916396-super-nintendo/76022917),
 [GBA](https://gamefaqs.gamespot.com/boards/916598-game-boy-advance/66659387),
 [N64](https://gamefaqs.gamespot.com/boards/916387-nintendo-64/78772770),
-[PS2](https://gamefaqs.gamespot.com/boards/915821-playstation-2/79518850) \
+[GC](https://gamefaqs.gamespot.com/boards/915781-gamecube/79516002),
+[PS2](https://gamefaqs.gamespot.com/boards/915821-playstation-2/79518850),
 I tend to stick to the top 20, with some franchise / genre specific exceptions. \
 [Metacritic](https://www.metacritic.com/) is a decent fallback for finding good games.
 
