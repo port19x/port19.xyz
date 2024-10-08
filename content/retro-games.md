@@ -1,15 +1,14 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-10-01
+updated = 2024-10-08
 description = "Port19s selfhosted retrogame list"
 +++
 
 ## Playing
 
-*I'm considering dropping ff12*
-
 <img src="/retrocovers/final-fantasy-12.jpg">
+<img src="/retrocovers/metroid-prime.jpg">
 
 ## Completed
 
