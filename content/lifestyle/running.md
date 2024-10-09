@@ -13,7 +13,7 @@ In this post I want to give some running advice that I wish I had known in 2022.
 
 ## Heart Rate Zones
 
-If you're completely unfamiliar with the concept, watch this [youtube short](https://www.youtube.com/shorts/c8gEsnbwPyY) and then read on.
+If you're completely unfamiliar with the concept, watch this [youtube short](https://youtube.com/shorts/IF0vEJwUAUA) and then read on.
 
 My primary mistake in my running throughout 2022 was that I never did any walking breaks.
 The result of this stubbornness was that I always ran at a pretty high effort.
