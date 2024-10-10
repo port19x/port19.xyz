@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Shell Scripting Advice</title>
+<meta name="description" content="Shoutout to my fellow ani-cli devs">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Shell Scripting Advice
+</h1>
+
+<i>First Published: 2024-01-14</i>
+
+<hr>
+<p>Shell is an untyped, interpreted "programming language" ubiquitous since the 80s.
+It comes with no package manager of its own and is weak in isolation.
+It hinges on the operating system to do what the language can't: almost everything.
+When I'm talking about shell scripting I'm assuming a gnu (or busybox) environment to go along with it.</p>
+<p>My authority on the matter comes primarily from two years leading ani-cli development.
+<a href="https://github.com/pystardust/ani-cli">Ani-cli</a> is an incredibly cross-plattform and featureful cli tool to browse and play anime.</p>
+<h2 id="when-not-to-use-shell">
+<a class="zola-anchor" href="#when-not-to-use-shell" aria-label="Anchor link for: when-not-to-use-shell">🔗</a>
+
+When Not To Use Shell</h2>
+<p>If your application needs to do math, use python instead.
+Sure you can do some basic math in shell scripts, but when you can anticipate in advance that a lot of your program data will consist of numbers, pick sth else.
+My heuristic: if it needs to do more than count, do it in python.</p>
+<p>Shell Scripts are manageable up to around a thousand LoC.
+Shell has significantly more footguns than Python.
+Use Python if you need to frequently collaborate with noobs.</p>
+<h2 id="dev-tools">
+<a class="zola-anchor" href="#dev-tools" aria-label="Anchor link for: dev-tools">🔗</a>
+
+Dev Tools</h2>
+<p><a href="https://github.com/koalaman/shellcheck">Shellcheck</a> is a linter for shell that catches many common pitfalls. <br />
+<a href="https://github.com/patrickvane/shfmt">Shfmt</a> is a formatter for shell.
+I like to use it with the <code>-i 4 -ci</code> options. <br />
+I don't use LSP, but a shell language server is available via <a href="https://github.com/bash-lsp/bash-language-server">bash lsp</a>. <br />
+For CI I like to use the <a href="https://github.com/luizm/action-sh-checker">sh-checker</a> by luizm. It combines shellcheck and shfmt.</p>
+<h2 id="debugging-profiling">
+<a class="zola-anchor" href="#debugging-profiling" aria-label="Anchor link for: debugging-profiling">🔗</a>
+
+Debugging &amp; Profiling</h2>
+<p>Just run your script with <code>sh -x</code> to get pretty verbose runtime output. <br />
+Ideally, cook up increments of your program in an interactive shell of your choice, this speeds up the feedback loop.
+For benchmarking, use <code>time</code> or <a href="https://github.com/sharkdp/hyperfine">hyperfine</a>. <br />
+For pinpointing bottlenecks it can be useful to put <code>date +%S:%N</code> statements near I/O areas or borders of code segments, this prints seconds and nanoseconds. <br />
+For advanced debugging and profiling, <a href="https://strace.io/">strace</a> can be useful.</p>
+<h2 id="useful-external-programs">
+<a class="zola-anchor" href="#useful-external-programs" aria-label="Anchor link for: useful-external-programs">🔗</a>
+
+Useful External Programs</h2>
+<ul>
+<li><a href="https://curl.se/"><code>curl</code></a> &gt; <a href="https://www.gnu.org/software/wget/"><code>wget</code></a> - sending network requests</li>
+<li><a href="https://ffmpeg.org/"><code>ffmpeg</code></a> - audio &amp; video processing</li>
+<li><a href="https://github.com/junegunn/fzf"><code>fzf</code></a> - fuzzy match inputs (useful for terminal UIs)</li>
+<li><a href="https://www.w3.org/Tools/HTML-XML-utils/README"><code>html-xml-utils</code></a> - html parsing</li>
+<li><a href="https://imagemagick.org/"><code>imagemagick</code></a> - image processing</li>
+<li><a href="https://jqlang.github.io/jq/"><code>jq</code></a> - json parsing</li>
+<li><a href="https://blog.ikuamike.io/posts/2021/netcat/"><code>netcat</code></a> - receiving network requests</li>
+<li><a href="https://www.openssl.org/"><code>openssl</code></a> - everything cryptography</li>
+<li><a href="https://www.gnu.org/software/parallel/"><code>parallel</code></a> - ... parallel processing</li>
+<li><a href="https://poppler.freedesktop.org/"><code>poppler</code></a> &amp; <a href="https://www.ghostscript.com/"><code>ghostscript</code></a> - pdf processing</li>
+<li><a href="https://copyconstruct.medium.com/socat-29453e9fc8a6"><code>socat</code></a> - socket relay</li>
+<li><a href="https://github.com/facebook/zstd"><code>zstd</code></a> - nice compression at <code>-19</code></li>
+</ul>
+<h2 id="further-reading">
+<a class="zola-anchor" href="#further-reading" aria-label="Anchor link for: further-reading">🔗</a>
+
+Further Reading</h2>
+<p>Read through the lists of all the available programs in the <a href="https://wiki.gentoo.org/wiki/GNU_Coreutils">GNU Coreutils</a> and <a href="https://wiki.gentoo.org/wiki/Util-linux">util-linux</a>. <br />
+If you want to deploy via docker, busybox too. <br />
+Read the manuals for <a href="https://www.gnu.org/software/findutils/manual/html_mono/find.html">find</a>, <a href="https://www.gnu.org/software/grep/manual/grep.html">grep</a> and <a href="https://www.gnu.org/software/sed/manual/sed.html">sed</a> in depth. <br />
+I won't stop you from checking out <a href="https://www.gnu.org/software/gawk/manual/gawk.html">awk</a> for sake of completeness, but haven't found it very fruitful myself.</p>
+<p>After picking up the tools of this article and reading the recommended manuals, you will soon write better shell scripts than 90% of shell programmers out there, you're welcome.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;persisting-grafana&#x2F;">💻 Persisting Grafana ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;exwm&#x2F;">‹ 💻 Emacs X Window Manager Review</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
