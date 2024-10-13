@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-10-10
+updated = 2024-10-13
 description = "Port19s selfhosted anime list"
 +++
 
@@ -27,7 +27,7 @@ description = "Port19s selfhosted anime list"
 
 | Title                             | Progress | Format |
 |-----------------------------------|----------|--------|
-| Full Metal Alchemist: Brotherhood | 22/64    | TV     |
+| Full Metal Alchemist: Brotherhood | 24/64    | TV     |
 | Run With The Wind                 |  6/23    | TV     |
 
 ## Planning
