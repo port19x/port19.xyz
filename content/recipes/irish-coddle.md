@@ -4,7 +4,7 @@ date = 2024-04-10
 description = "My first stew"
 +++
 
-# Irish Coodle Recipe
+# Irish Coddle Recipe
 
 - Prep time: 30 min
 - Cooking time: 10 min
