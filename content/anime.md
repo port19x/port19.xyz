@@ -25,9 +25,11 @@ description = "Port19s selfhosted anime list"
 
 ## Watching
 
+Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
+
 | Title                             | Progress | Format |
 |-----------------------------------|----------|--------|
-| Full Metal Alchemist: Brotherhood | 24/64    | TV     |
+| Full Metal Alchemist: Brotherhood | 27/64    | TV     |
 | Run With The Wind                 |  9/23    | TV     |
 
 ## Planning
