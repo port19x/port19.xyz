@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Status Update and Q4 Goals</title>
+<meta name="description" content="(Pr|R)eview">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Status Update and Q4 Goals
+</h1>
+
+<i>First Published: 2023-08-30</i>
+
+<hr>
+<h2 id="it-s-been-a-while">
+<a class="zola-anchor" href="#it-s-been-a-while" aria-label="Anchor link for: it-s-been-a-while">🔗</a>
+
+It's been a while</h2>
+<p>So my last post talking about what I'm doing and where I'm headed has been a while. <br />
+I hinted at my server tech stack back in July in my post on the <a href="https://port19.xyz/tech/dang-stack/">Dang Stack</a>,
+but the last time I actually talked about what I'm learning and future plans was in February with my post <a href="https://port19.xyz/tech/clojure/">Clojure: 6 months later</a>. <br />
+Time for another update!</p>
+<h2 id="server-status">
+<a class="zola-anchor" href="#server-status" aria-label="Anchor link for: server-status">🔗</a>
+
+Server Status</h2>
+<p>As foreshadowed in February I dove head-first into modern infrastructure development.
+I picked up a good bit of Ansible and spent time with Prometheus and Grafana.
+I also host a copy of this website on Nginx, and a Gitea instance.
+My involvement in docker has been as much by desire as by necessity, as I'm currently putting the finishing touches on a ~50 page paper on Kubernetes network monitoring. So it comes at no surprise that it is the fundamental runtime I host everything on. <em>(Docker not K8s)</em> <br />
+One notable deviation from the "DANG Stack" I initially revealed in July is my move to HAProxy as the load balancer.
+It is a lot nicer to configure and interfaces more seamlessly with my monitoring stack.
+It is also a major component in the tech stack of my next department at work, where I'll spend my third year.</p>
+<img src="./dashboard.jpg">
+<p>The server can be explored here.¹ <br />
+Note the <code>git</code> and <code>status</code> subdomains for Gitea and Grafana respectively. <br />
+The infrastructure code is hosted on github in <a href="https://github.com/port19x/rapture">this repository</a>.</p>
+<p>¹the site is no longer hosted</p>
+<h2 id="coding-status">
+<a class="zola-anchor" href="#coding-status" aria-label="Anchor link for: coding-status">🔗</a>
+
+Coding Status</h2>
+<p>It actually took me until mid June to really let go of Clojure as my primary programming language of choice. I archived all nine projects I wrote in my time with the language under a <a href="https://github.com/port19x/clojure-era">single github repo</a>. The archival was done in a way that keeps the git history intact: <a href="https://www.git-scm.com/docs/git-bundle">git bundles</a>
+Since then my programming has mostly been in posix shell again, with many small PRs as well as a proof of concept dockerized API <a href="https://github.com/port19x/foxproxy">(foxproxy)</a>.</p>
+<h2 id="server-goals">
+<a class="zola-anchor" href="#server-goals" aria-label="Anchor link for: server-goals">🔗</a>
+
+Server Goals</h2>
+<p>I would like to expand on the software I host on my server. In particular I'd like to host:</p>
+<ul>
+<li>Calibre Web (ebook library)</li>
+<li>Jitsi (video calls)</li>
+<li>Syncplay Instance</li>
+<li>A public Arch Linux Mirror</li>
+</ul>
+<p>This list will likely grow as I discover more cool software that would benefit me or my friends.</p>
+<p>I also want to modularize my current Ansible setup via the use of roles and prepare it for a multi-server setup.
+This entails the need to port some currently static config files to jinja templates.
+This is motivated by the cost efficiency of horizontal scaling on digital ocean.</p>
+<h2 id="coding-goals">
+<a class="zola-anchor" href="#coding-goals" aria-label="Anchor link for: coding-goals">🔗</a>
+
+Coding Goals</h2>
+<p>I'd like to code (yet another) Nginx log exporter for Prometheus, but with a stated focus on analytics.
+The current ones are more focused on health stats of Nginx, like quantile latencies and status codes.
+My exporter will focus on metrics of the requested paths and thus be a viable way to get server side page analytics.
+At that point I have enough reason to migrate this website from github pages to my own server.
+If you're worried about privacy intrusion because I'll see you in my access log, keep in mind that currently it's just logged out of my reach at microsoft. I hope I'm more trustworthy with benign data than microsoft. Besides, I'm only interested in page hits anyway.</p>
+<p>Another thing I'd like to develop is a docker image for arch linux mirrors, with the express goal of it becoming an officially endorsed standard.</p>
+<p>In terms of languages I'd like to hone in on a focused set of admin languages: shell, go, python.
+Within these I'll make sure to analyze their strengths and assign particular use-cases to the best respective programming language.
+See my preliminary use-case analysis from about a week ago:</p>
+<img src="./language-stack.png">
+<p>While I have extensive experience in python and shell already, go is something new. Its robust error handling, concurrency, pointers and static typing are foreign to me. I do of course have a rough understanding of the concepts, but I have never extensively used a language with said features.</p>
+<h2 id="general-outlook">
+<a class="zola-anchor" href="#general-outlook" aria-label="Anchor link for: general-outlook">🔗</a>
+
+General Outlook</h2>
+<p>Q4 is also the start of the 5th semester of my CS degree, so if push comes to shove I'll have to prioritize my formal education over these fun side projects.
+I'll try my best to at least stick to the somewhat frequent posts on this blog and keep you guys updated.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;go-review&#x2F;">💻 Go Language Review ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;va&#x2F;">‹ 💻 Why I prefer VA Monitors</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
