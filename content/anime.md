@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-10-20
+updated = 2024-10-22
 description = "Port19s selfhosted anime list"
 +++
 
@@ -41,6 +41,7 @@ Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
 | Gurren Lagann                     | TV     |
 | K-On!!                            | TV     |
 | Nekopara                          | TV     |
+| Ranma 1/2                         | TV     |
     
 
 ## Completed
