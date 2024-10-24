@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-10-22
+updated = 2024-10-24
 description = "Port19s selfhosted anime list"
 +++
 
@@ -30,7 +30,7 @@ Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
 | Title                             | Progress | Format |
 |-----------------------------------|----------|--------|
 | Full Metal Alchemist: Brotherhood | 27/64    | TV     |
-| Run With The Wind                 |  9/23    | TV     |
+| Run With The Wind                 | 10/23    | TV     |
 
 ## Planning
 
