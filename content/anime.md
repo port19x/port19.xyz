@@ -42,7 +42,6 @@ Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
 | K-On!!                            | TV     |
 | Nekopara                          | TV     |
 | Ranma 1/2                         | TV     |
-    
 
 ## Completed
 
