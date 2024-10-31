@@ -37,11 +37,8 @@ Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
 | Title                             | Format |
 |-----------------------------------|--------|
 | A Place Further Than The Universe | TV     |
-| Darker Than Black                 | TV     |
-| Gurren Lagann                     | TV     |
 | K-On!!                            | TV     |
 | Nekopara                          | TV     |
-| Ranma 1/2                         | TV     |
 
 ## Completed
 
