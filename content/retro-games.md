@@ -7,6 +7,8 @@ description = "Port19s selfhosted retrogame list"
 
 ## Playing
 
+<img src="/retrocovers/castlevania-aria-of-sorrow.jpg">
+
 ## Completed
 
 <img src="/retrocovers/metroid-prime.jpg">
@@ -29,6 +31,9 @@ description = "Port19s selfhosted retrogame list"
 
 <img src="/retrocovers/chrono-trigger.jpg">
 <img src="/retrocovers/earthbound.jpg">
+<br>
+<img src="/retrocovers/conkers-bad-fur-day.jpg">
+<img src="/retrocovers/paper-mario.jpg">
 
 ## Sourcing & Emulation
 
