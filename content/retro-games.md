@@ -1,18 +1,18 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-10-22
+updated = 2024-11-02
 description = "Port19s selfhosted retrogame list"
 +++
 
 ## Playing
 
-<img src="/retrocovers/metroid-prime.jpg">
-
 ## Completed
 
+<img src="/retrocovers/metroid-prime.jpg">
 <img src="/retrocovers/metroid-fusion.jpg">
 <img src="/retrocovers/metroid-zero-mission.jpg">
+<br>
 <img src="/retrocovers/drill-dozer.jpg">
 <img src="/retrocovers/pokemon-leafgreen.jpg">
 <img src="/retrocovers/final-fantasy-1-2.jpg" title="only 1, 2 sucks">
