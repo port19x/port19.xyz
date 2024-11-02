@@ -110,6 +110,7 @@ Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
 | GANGSTA.                                        | 3     | 12     | TV      |
 | Grimgar of Fantasy and Ash                      | 3     | 12     | TV      |
 | Gunslinger Girl                                 | 3     | 13     | TV      |
+| Gunsmith Cats                                   | 3     | 3      | OVA     |
 | Haibaane Renmei                                 | 3     | 13     | TV      |
 | HELLO WORLD                                     | 3     | 1      | Movie   |
 | High School of the Dead: Drifters of the Dead   | 3     | 1      | OVA     |
