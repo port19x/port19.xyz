@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-11-02
+updated = 2024-11-04
 description = "Port19s selfhosted retrogame list"
 +++
 
@@ -31,9 +31,10 @@ description = "Port19s selfhosted retrogame list"
 
 <img src="/retrocovers/chrono-trigger.jpg">
 <img src="/retrocovers/earthbound.jpg">
-<br>
-<img src="/retrocovers/conkers-bad-fur-day.jpg">
-<img src="/retrocovers/paper-mario.jpg">
+<img src="/retrocovers/metroid-samus-returns.jpg">
+<img src="/retrocovers/pokemon-emerald.jpg">
+<img src="/retrocovers/final-fantasy-tactics.jpg">
+
 
 ## Sourcing & Emulation
 
