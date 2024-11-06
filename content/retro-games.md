@@ -1,18 +1,19 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-11-04
+updated = 2024-11-06
 description = "Port19s selfhosted retrogame list"
 +++
 
 ## Playing
 
-<img src="/retrocovers/castlevania-aria-of-sorrow.jpg">
 
 ## Completed
 
 <img src="/retrocovers/metroid-prime.jpg">
+<br>
 <img src="/retrocovers/metroid-fusion.jpg">
+<img src="/retrocovers/castlevania-aria-of-sorrow.jpg">
 <img src="/retrocovers/metroid-zero-mission.jpg">
 <br>
 <img src="/retrocovers/drill-dozer.jpg">
