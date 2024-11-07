@@ -49,16 +49,15 @@ Pick games for one of the top100 lists on gamefaqs:
 I tend to stick to the top 20, with some franchise / genre specific exceptions. \
 [Metacritic](https://www.metacritic.com/) is a decent fallback for finding good games.
 
-- Use archive.org nointro roms: [SNES](https://archive.org/download/nointro.snes), [GBA](https://archive.org/download/nointro.gba), [N64](https://archive.org/download/nointro.n64)
-- [Vimm's Lair](https://vimm.net/) for more recent stuff like PS2 and Gamecube
+- ~Use archive.org nointro roms: [SNES](https://archive.org/download/nointro.snes), [GBA](https://archive.org/download/nointro.gba), [N64](https://archive.org/download/nointro.n64)~ *got zucced*
+- ~[Vimm's Lair](https://vimm.net/) for more recent stuff like PS2 and Gamecube~ *got zucced as well*
 - I used [emulatorgames](https://www.emulatorgames.net/) before I learned about nointro rom sets
 
-Gamefaqs is also by far the best to find walkthroughs if you get stuck.
+[Gamefaqs](https://gamefaqs.gamespot.com/) is also by far the best to find walkthroughs if you get stuck.
 
 <br>
 
-[Batocera Linux](https://batocera.org/) is a nice retro emulation os that I plan to set up for everything except PS3. \
-I play PS3 games on original hardware.
+I use [Batocera Linux](https://batocera.org/) as the OS for all my retro gaming needs.
 
 ## PC
 
