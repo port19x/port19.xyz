@@ -1,13 +1,12 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-11-07
+updated = 2024-11-12
 description = "Port19s selfhosted retrogame list"
 +++
 
 ## Playing
 
-<img src="/retrocovers/star-fox-64.jpg">
 
 ## Completed
 
@@ -27,6 +26,7 @@ description = "Port19s selfhosted retrogame list"
 <br>
 <img src="/retrocovers/super-metroid.jpg" title="played twice, back to back">
 <img src="/retrocovers/super-mario-64.jpg">
+<img src="/retrocovers/star-fox-64.jpg" title="only easy route tho">
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
 
 ## Planning
