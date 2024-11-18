@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-11-14
+updated = 2024-11-18
 description = "Port19s selfhosted anime list"
 +++
 
@@ -38,7 +38,6 @@ Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
 |-----------------------------------|--------|
 | A Place Further Than The Universe | TV     |
 | K-On!!                            | TV     |
-| Nekopara                          | TV     |
 
 ## Completed
 
@@ -153,6 +152,7 @@ Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
 | Hamatora                                         | 3     | 12/24    | TV      |
 | One Piece                                        | 3     | 30/>1000 | TV      |
 | Blast of Tempest                                 | 2     | 2/24     | TV      |
+| Nekopara                                         | 2     | 4/12     | TV      |
 | Sonny Boy                                        | 2     | 8/12     | TV      |
 | Toradora! SOS! Hurray for Gourmands              | 2     | 2/4      | Special |
 | Dorei-ku The Animation                           | 1     | 6/12     | TV      |
