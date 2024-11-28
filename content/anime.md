@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2024-11-24
+updated = 2024-11-28
 description = "Port19s selfhosted anime list"
 +++
 
@@ -17,10 +17,10 @@ description = "Port19s selfhosted anime list"
 
 ### TV
 
-1. FLCL Alternative
-2. Highschool of the Dead
-3. Tsukigakirei
-4. Girls Last Tour
+1. Run With The Wind
+2. FLCL Alternative
+3. Girls Last Tour
+4. K-On!
 5. Is this a Zombie?
 
 ## Watching
@@ -30,7 +30,6 @@ Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
 | Title                             | Progress | Format |
 |-----------------------------------|----------|--------|
 | Full Metal Alchemist: Brotherhood | 36/64    | TV     |
-| Run With The Wind                 | 20/23    | TV     |
 
 ## Planning
 
@@ -62,6 +61,7 @@ Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
 | The Night is Short, Walk on Girl                | 5     | 1      | Movie   |
 | Toradora!                                       | 5     | 25     | TV      |
 | Tsukigakirei                                    | 5     | 12     | TV      |
+| Run With The Wind                               | 5     | 23     | TV      |
 | Say "I Love You".                               | 5     | 13     | TV      |
 | Scum's Wish                                     | 5     | 12     | TV      |
 | Weathering With You                             | 5     | 1      | Movie   |
