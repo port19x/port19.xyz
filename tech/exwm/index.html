@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Emacs X Window Manager Review</title>
+<meta name="description" content="Refreshingly boring">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Emacs X Window Manager Review
+</h1>
+
+<i>First Published: 2023-12-03</i>
+
+<hr>
+<figure>
+<img src="./exwm.png" height="300vw">
+<figcaption><i>
+EXWM - ef-maris-dark theme
+</i></figcaption>
+</figure>
+<p>So one week ago I decided to scrap my <a href="https://github.com/awesomeWM/awesome">awesomewm</a> config in favor of <a href="https://github.com/ch11ng/exwm">EXWM</a>.
+This has resulted in an noticeably more unified and fluent computing environment.
+Now I can use my emacs bindings to launch and manipulate X windows!
+One necessary workaround to make all my keybindings work in X windows was to add the <code>global-prefix</code> of <a href="https://github.com/noctuid/general.el">general.el</a> to the <code>exwm-input-prefix-keys</code><a href="https://github.com/port19x/dotfiles/blob/0484857d344c00c9a15bbc9ee55664e55bdda278/init.el#L90">¹</a></p>
+<p>One thing I don't like is how EXWM handles workspaces, as buffers are not shared between them. <br />
+Because of this I currently only use one workspace, but I may look into <a href="https://github.com/nex3/perspective-el">perspective.el</a> to replicate workspace functionality with shared buffers</p>
+<p>One problem I didn't encounter nearly as much as expected was emacs locking up. <br />
+With emacs being single threaded, some EXWM reviews mention that you frequently have to spam escape or C-g to kill some blocking task.
+This has only happened to me once when viewing a ~20000x10000 pixel jpeg and once when I spawned mpv from dired synchronously via <code>!</code> instead of asynchronously via <code>&amp;</code></p>
+<p>EXWM, once set up, comes with zero learning curve for anyone already accustomed to emacs. <br />
+Since I do most of my computing in emacs anyway, the move to EXWM was a natural next step. <br />
+The only scenario in which I could see myself switching back to a separate window manager would be if multi-monitor support<a href="https://github.com/ch11ng/exwm/wiki#randr-multi-screen">²</a> turns out to be poor when I'll need it again in January</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;shell&#x2F;">💻 Shell Scripting Advice ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;subfont&#x2F;">‹ 💻 Optimizing Unicode Fonts with Subfont</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
