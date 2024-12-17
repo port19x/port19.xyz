@@ -30,12 +30,12 @@ Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
 | Title                             | Progress | Format |
 |-----------------------------------|----------|--------|
 | Full Metal Alchemist: Brotherhood | 43/64    | TV     |
+| A Place Further Than The Universe |  1/13    | TV     |
 
 ## Planning
 
 | Title                             | Format |
 |-----------------------------------|--------|
-| A Place Further Than The Universe | TV     |
 | K-On!!                            | TV     |
 
 ## Completed
