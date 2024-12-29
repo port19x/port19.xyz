@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Monitoring with Github Actions</title>
+<meta name="description" content="-">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Monitoring with Github Actions
+</h1>
+
+<i>First Published: 2024-06-21</i>
+
+<hr>
+<h2 id="why">
+<a class="zola-anchor" href="#why" aria-label="Anchor link for: why">🔗</a>
+
+Why</h2>
+<p>A little while ago I wrote rapture, a modern server setup, with the goal of covering a wide range of popular infrastructure tooling.
+It used what I call the <a href="https://port19.xyz/tech/dang-stack/">DANG Stack</a>, and birthed the two technical deep dives: <br />
+on <a href="https://port19.xyz/tech/persisting-grafana/">Persisting Grafana</a> and <a href="https://port19.xyz/tech/ansible-provision/">DigitalOcean Provisioning with Ansible</a>. <br />
+While these fancy tools have their place in professional use, the high memory consumtion of Prometheus and Grafana, as well as the overhead of docker made me put the project on hold and set me on the lookout for more integrated, actually lightweight, alternatives.</p>
+<figure>
+<img src="./theyatemyram.png" height="300vw">
+<figcaption><i>
+They ate my ram
+</i></figcaption>
+</figure>
+<h2 id="how">
+<a class="zola-anchor" href="#how" aria-label="Anchor link for: how">🔗</a>
+
+How</h2>
+<p>I like to make frequent and thorough use of advanced github features, especially github actions.
+So I got to work to implement monitoring of basic server vitals via github actions.</p>
+<p>Scheduling actions is pretty easy and uses the familiar cron syntax.</p>
+<pre style="background-color:#0f1419;color:#bfbab0;"><code><span>on:
+</span><span> schedule:
+</span><span>   - cron: &quot;15 * * * *&quot;
+</span></code></pre>
+<p>For ssh without a third-party action I came across <a href="https://blog.benoitblanchon.fr/github-action-run-ssh-commands/">this</a> informative post.</p>
+<pre style="background-color:#0f1419;color:#bfbab0;"><code><span>- name: Configure SSH
+</span><span>  run: |
+</span><span>    mkdir -p ~/.ssh/
+</span><span>    echo &quot;$SSH_KEY&quot; &gt; ~/.ssh/ssh.key
+</span><span>    chmod 600 ~/.ssh/ssh.key
+</span><span>    cat &gt;&gt;~/.ssh/config &lt;&lt;END
+</span><span>    Host monitoring
+</span><span>      HostName ansible.how
+</span><span>      User root
+</span><span>      IdentityFile ~/.ssh/ssh.key
+</span><span>      StrictHostKeyChecking no
+</span><span>    END
+</span><span>  env:
+</span><span>    SSH_KEY: ${{ secrets.SSH_KEY }}
+</span></code></pre>
+<p>Using this ssh access I managed to generate my desired csv line per poll.</p>
+<pre style="background-color:#0f1419;color:#bfbab0;"><code><span>- name: generate csv line
+</span><span>   run: |
+</span><span>     echo $(date +%H:%M-%D),\
+</span><span>          $(ssh monitoring free -m | grep -ow [0-9.]* | head -n 2 | tail -n 1),\
+</span><span>          $(ssh monitoring df -m / | grep -ow [0-9]* | head -n 2 | tail -n 1),\
+</span><span>          $(ssh monitoring uptime | cut -d &quot;:&quot; -f 5)\
+</span><span>     | tr -d &quot; &quot; &gt;&gt; stats.csv
+</span></code></pre>
+<p>Which then got appended to the already present csv and committed as an update.</p>
+<pre style="background-color:#0f1419;color:#bfbab0;"><code><span>- name: auwuto commit uwu
+</span><span>  uses: stefanzweifel/git-auto-commit-action@v5
+</span><span>  with:
+</span><span>    commit_message: bump stats.csv
+</span><span>    repository: .
+</span><span>    file_pattern: stats.csv
+</span><span>  env:
+</span><span>    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+</span></code></pre>
+<h2 id="results">
+<a class="zola-anchor" href="#results" aria-label="Anchor link for: results">🔗</a>
+
+Results</h2>
+<p>github actions are clearly not meant to adhere to the specified cron timing with most of my action runs being delayed for around 5 minutes. The most impressive delay way at 1am yesterday, where my run got delayed for a whole 23 minutes.</p>
+<p>I could have gone the extra mile and written a matplotlib visualisation of the stats, but chose not to.
+Plotting a csv with python is much less interesting and has been documented to death already.</p>
+<p>All the code and the csv for this proof of concept are <a href="https://github.com/port19x/github-actions-monitoring">here</a></p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;fonttools&#x2F;">💻 Optimizing Unicode Fonts with Fonttools ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;high-availability&#x2F;">‹ 💻 High Availability</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
