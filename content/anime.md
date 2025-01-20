@@ -37,6 +37,7 @@ Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
 | Title                             | Format |
 |-----------------------------------|--------|
 | K-On!!                            | TV     |
+| Frieren: Beyond Journey's End     | TV     |
 
 ## Completed
 
