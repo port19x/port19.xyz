@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2024-11-13
+updated = 2025-01-24
 description = "Port19s selfhosted retrogame list"
 +++
 
@@ -32,9 +32,12 @@ description = "Port19s selfhosted retrogame list"
 
 ## Planning
 
+<img src="/retrocovers/final-fantasy-7.jpg">
+<img src="/retrocovers/castlevania-symphony-of-the-night.jpg">
+<img src="/retrocovers/metal-gear-solid.jpg">
 <img src="/retrocovers/chrono-trigger.jpg">
 <img src="/retrocovers/earthbound.jpg">
-<img src="/retrocovers/metroid-samus-returns.jpg">
+<br>
 <img src="/retrocovers/pokemon-emerald.jpg">
 <img src="/retrocovers/final-fantasy-tactics.jpg">
 
@@ -46,6 +49,7 @@ Pick games for one of the top100 lists on gamefaqs:
 [GBA](https://gamefaqs.gamespot.com/boards/916598-game-boy-advance/66659387),
 [N64](https://gamefaqs.gamespot.com/boards/916387-nintendo-64/78772770),
 [GC](https://gamefaqs.gamespot.com/boards/915781-gamecube/79516002),
+[PS1](https://gamefaqs.gamespot.com/boards/916392-playstation/79518173),
 [PS2](https://gamefaqs.gamespot.com/boards/915821-playstation-2/79518850),
 I tend to stick to the top 20, with some franchise / genre specific exceptions. \
 [Metacritic](https://www.metacritic.com/) is a decent fallback for finding good games.
