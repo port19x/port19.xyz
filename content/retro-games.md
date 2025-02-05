@@ -2,8 +2,10 @@
 title = "🌸Retro Games🌸"
 date = 2024-04-17
 updated = 2025-02-05
-description = "Port19s selfhosted retrogame list"
+description = "action-adventure > rpg"
 +++
+
+*action-adventure > rpg*
 
 ## Playing
 
