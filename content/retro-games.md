@@ -12,6 +12,8 @@ description = "action-adventure > rpg"
 
 ## Completed
 
+<!-- NA Relese Dates: SNES 1991, PSX 1995, N64 1996, PS2 2000, GBA 2001, GC 2001-->
+
 <img src="/retrocovers/metroid-prime.jpg">
 <br>
 <img src="/retrocovers/metroid-fusion.jpg">
