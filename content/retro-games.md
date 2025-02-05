@@ -42,6 +42,7 @@ description = "action-adventure > rpg"
 <br>
 <img src="/retrocovers/pokemon-emerald.jpg">
 <img src="/retrocovers/final-fantasy-tactics.jpg">
+<img src="/retrocovers/final-fantasy-6.jpg">
 
 
 ## Sourcing & Emulation
