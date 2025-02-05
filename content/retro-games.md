@@ -1,13 +1,12 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-01-24
+updated = 2025-02-05
 description = "Port19s selfhosted retrogame list"
 +++
 
 ## Playing
 
-<img src="/retrocovers/paper-mario.jpg">
 
 ## Completed
 
@@ -24,10 +23,11 @@ description = "Port19s selfhosted retrogame list"
 <img src="/retrocovers/super-mario-rpg.jpg">
 <img src="/retrocovers/super-mario-kart.jpg" title="fuck that special cup! everything else gold!">
 <img src="/retrocovers/super-mario-all-stars.jpg" title="1 completed, quit 3 due to world 3">
-<br>
 <img src="/retrocovers/super-metroid.jpg" title="played twice, back to back">
+<br>
 <img src="/retrocovers/super-mario-64.jpg">
 <img src="/retrocovers/star-fox-64.jpg" title="only easy route tho">
+<img src="/retrocovers/paper-mario.jpg">
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
 
 ## Planning
