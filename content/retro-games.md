@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-02-05
+updated = 2025-02-06
 description = "action-adventure > rpg"
 +++
 
@@ -9,6 +9,7 @@ description = "action-adventure > rpg"
 
 ## Playing
 
+<img src="/retrocovers/devil-may-cry.jpg">
 
 ## Completed
 
