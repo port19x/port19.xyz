@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-02-06
+updated = 2025-02-09
 description = "action-adventure > rpg"
 +++
 
@@ -52,17 +52,16 @@ description = "action-adventure > rpg"
 
 Pick games for one of the top100 lists on gamefaqs:
 [SNES](https://gamefaqs.gamespot.com/boards/916396-super-nintendo/76022917),
-[GBA](https://gamefaqs.gamespot.com/boards/916598-game-boy-advance/66659387),
 [N64](https://gamefaqs.gamespot.com/boards/916387-nintendo-64/78772770),
-[GC](https://gamefaqs.gamespot.com/boards/915781-gamecube/79516002),
-[PS1](https://gamefaqs.gamespot.com/boards/916392-playstation/79518173),
+[PSX](https://gamefaqs.gamespot.com/boards/916392-playstation/79518173),
 [PS2](https://gamefaqs.gamespot.com/boards/915821-playstation-2/79518850),
+[GC](https://gamefaqs.gamespot.com/boards/915781-gamecube/79516002),
+[GBA](https://gamefaqs.gamespot.com/boards/916598-game-boy-advance/66659387),
 I tend to stick to the top 20, with some franchise / genre specific exceptions. \
 [Metacritic](https://www.metacritic.com/) is a decent fallback for finding good games.
 
-- ~Use archive.org nointro roms: [SNES](https://archive.org/download/nointro.snes), [GBA](https://archive.org/download/nointro.gba), [N64](https://archive.org/download/nointro.n64)~ *got zucced*
-- ~[Vimm's Lair](https://vimm.net/) for more recent stuff like PS2 and Gamecube~ *got zucced as well*
-- I used [emulatorgames](https://www.emulatorgames.net/) before I learned about nointro rom sets
+- [Romsfun](https://romsfun.com/) is currently the best site for PS2 and Gamecube
+- [Emulatorgames](https://www.emulatorgames.net/) is a decent site for older titles
 
 [Gamefaqs](https://gamefaqs.gamespot.com/) is also by far the best to find walkthroughs if you get stuck.
 
