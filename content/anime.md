@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2025-02-02
+updated = 2025-02-09
 description = "Port19s selfhosted anime list"
 +++
 
@@ -25,11 +25,8 @@ description = "Port19s selfhosted anime list"
 
 ## Watching
 
-Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
-
 | Title                             | Progress | Format |
 |-----------------------------------|----------|--------|
-| Full Metal Alchemist: Brotherhood | 57/64    | TV     |
 | A Place Further Than The Universe |  4/13    | TV     |
 
 ## Planning
@@ -42,106 +39,108 @@ Full Metal Alchemist: Brotherhood Episode 27 is a recap episode btw
 ## Completed
 
 | Title                                           | Score | Length | Format  |
-|-------------------------------------------------|-------|--------|---------|
-| 5 Centimeters per Second                        | 5     | 1      | Movie   |
-| A Silent Voice                                  | 5     | 1      | Movie   |
-| After The Rain                                  | 5     | 12     | TV      |
-| FLCL Alternative                                | 5     | 6      | TV      |
-| Girls Last Tour                                 | 5     | 12     | TV      |
-| Highschool of the Dead                          | 5     | 12     | TV      |
-| Into the Forest of Fireflies Light              | 5     | 1      | Movie   |
-| Is this a Zombie?                               | 5     | 12     | TV      |
-| Josee, the Tiger and the Fish                   | 5     | 1      | Movie   |
-| Konosuba 3                                      | 5     | 11     | TV      |
-| K-On!                                           | 5     | 13     | TV      |
-| K-On! Movie                                     | 5     | 1      | Movie   |
-| ODDTAXI                                         | 5     | 13     | TV      |
-| Paranoia Agent                                  | 5     | 13     | TV      |
-| Perfect Blue                                    | 5     | 1      | Movie   |
-| The Garden of Words                             | 5     | 1      | Movie   |
-| The Night is Short, Walk on Girl                | 5     | 1      | Movie   |
-| Toradora!                                       | 5     | 25     | TV      |
-| Tsukigakirei                                    | 5     | 12     | TV      |
-| Run With The Wind                               | 5     | 23     | TV      |
-| Say "I Love You".                               | 5     | 13     | TV      |
-| Scum's Wish                                     | 5     | 12     | TV      |
-| Weathering With You                             | 5     | 1      | Movie   |
+|-------------------------------------------------+-------+--------+---------|
+| 5 Centimeters per Second                        |     5 |      1 | Movie   |
+| A Silent Voice                                  |     5 |      1 | Movie   |
+| After The Rain                                  |     5 |     12 | TV      |
+| FLCL Alternative                                |     5 |      6 | TV      |
+| Girls Last Tour                                 |     5 |     12 | TV      |
+| Highschool of the Dead                          |     5 |     12 | TV      |
+| Into the Forest of Fireflies Light              |     5 |      1 | Movie   |
+| Is this a Zombie?                               |     5 |     12 | TV      |
+| Josee, the Tiger and the Fish                   |     5 |      1 | Movie   |
+| Konosuba 3                                      |     5 |     11 | TV      |
+| K-On!                                           |     5 |     13 | TV      |
+| K-On! Movie                                     |     5 |      1 | Movie   |
+| ODDTAXI                                         |     5 |     13 | TV      |
+| Paranoia Agent                                  |     5 |     13 | TV      |
+| Perfect Blue                                    |     5 |      1 | Movie   |
+| The Garden of Words                             |     5 |      1 | Movie   |
+| The Night is Short, Walk on Girl                |     5 |      1 | Movie   |
+| Toradora!                                       |     5 |     25 | TV      |
+| Tsukigakirei                                    |     5 |     12 | TV      |
+| Run With The Wind                               |     5 |     23 | TV      |
+| Say "I Love You".                               |     5 |     13 | TV      |
+| Scum's Wish                                     |     5 |     12 | TV      |
+| Weathering With You                             |     5 |      1 | Movie   |
 |                                                 |       |        |         |
-| AJIN: Demi-Human                                | 4     | 13     | TV      |
-| Akira                                           | 4     | 1      | Movie   |
-| Asobi Asobase                                   | 4     | 12     | TV      |
-| Bakemonogatari                                  | 4     | 15     | TV      |
-| Cowboy Bebop - Knockin' On Heaven's Door        | 4     | 1      | Movie   |
-| Death Note                                      | 4     | 37     | TV      |
-| Death Parade                                    | 4     | 12     | TV      |
-| Demon Slayer - Swordsmith Village Arc           | 4     | 11     | TV      |
-| Eroge! H mo Game mo Kaihatsu Zanmai             | 4     | 6      | OVA     |
-| Flavors of Youth                                | 4     | 1      | Movie   |
-| FLCL                                            | 4     | 6      | OVA     |
-| FLCL Progressive                                | 4     | 6      | TV      |
-| Gantz                                           | 4     | 13     | TV      |
-| Ghost in the Shell                              | 4     | 1      | Movie   |
-| Grave of the Fireflies                          | 4     | 1      | Movie   |
-| Himouto! Umaru-chan                             | 4     | 12     | TV      |
-| Kiss x Sis                                      | 4     | 12     | OVA     |
-| Konosuba                                        | 4     | 10     | TV      |
-| Konosuba 2                                      | 4     | 10     | TV      |
-| Konosuba - Legend of Crimson                    | 4     | 1      | Movie   |
-| Mushoku Tensei: Jobless Reincarnation           | 4     | 24     | TV      |
-| Mushoku Tensei: Jobless Reincarnation - Season2 | 4     | 25     | TV      |
-| Neon Genisis Evangelion - The End of Evangelion | 4     | 1      | Movie   |
-| PUPARIA                                         | 4     | 1      | ONA     |
-| Spirited Away                                   | 4     | 1      | Movie   |
-| Summer Ghost                                    | 4     | 1      | Movie   |
-| Tekkonkinkreet                                  | 4     | 1      | Movie   |
-| The Girl Who Leapt Through Time                 | 4     | 1      | Movie   |
-| Tokyo Godfathers                                | 4     | 1      | Movie   |
-| Toradora!: Bento Battle                         | 4     | 1      | OVA     |
-| Your Name.                                      | 4     | 1      | Movie   |
+| AJIN: Demi-Human                                |     4 |     13 | TV      |
+| Akira                                           |     4 |      1 | Movie   |
+| Asobi Asobase                                   |     4 |     12 | TV      |
+| Bakemonogatari                                  |     4 |     15 | TV      |
+| Cowboy Bebop - Knockin' On Heaven's Door        |     4 |      1 | Movie   |
+| Death Note                                      |     4 |     37 | TV      |
+| Death Parade                                    |     4 |     12 | TV      |
+| Demon Slayer - Swordsmith Village Arc           |     4 |     11 | TV      |
+| Eroge! H mo Game mo Kaihatsu Zanmai             |     4 |      6 | OVA     |
+| Flavors of Youth                                |     4 |      1 | Movie   |
+| FLCL                                            |     4 |      6 | OVA     |
+| FLCL Progressive                                |     4 |      6 | TV      |
+| Gantz                                           |     4 |     13 | TV      |
+| Ghost in the Shell                              |     4 |      1 | Movie   |
+| Grave of the Fireflies                          |     4 |      1 | Movie   |
+| Himouto! Umaru-chan                             |     4 |     12 | TV      |
+| Kiss x Sis                                      |     4 |     12 | OVA     |
+| Konosuba                                        |     4 |     10 | TV      |
+| Konosuba 2                                      |     4 |     10 | TV      |
+| Konosuba - Legend of Crimson                    |     4 |      1 | Movie   |
+| Mushoku Tensei: Jobless Reincarnation           |     4 |     24 | TV      |
+| Mushoku Tensei: Jobless Reincarnation - Season2 |     4 |     25 | TV      |
+| Neon Genisis Evangelion - The End of Evangelion |     4 |      1 | Movie   |
+| PUPARIA                                         |     4 |      1 | ONA     |
+| Spirited Away                                   |     4 |      1 | Movie   |
+| Summer Ghost                                    |     4 |      1 | Movie   |
+| Tekkonkinkreet                                  |     4 |      1 | Movie   |
+| The Girl Who Leapt Through Time                 |     4 |      1 | Movie   |
+| Tokyo Godfathers                                |     4 |      1 | Movie   |
+| Toradora!: Bento Battle                         |     4 |      1 | OVA     |
+| Your Name.                                      |     4 |      1 | Movie   |
 |                                                 |       |        |         |
-| BLEND-S                                         | 3     | 12     | TV      |
-| Gabriel Dropout                                 | 3     | 12     | TV      |
-| Children of the Sea                             | 3     | 1      | Movie   |
-| Cowboy Bebop                                    | 3     | 26     | TV      |
-| Demon Slayer Hashira Training Arc               | 3     | 8      | TV      |
-| Demon Slayer Infinity Train                     | 3     | 1      | Movie   |
-| Divine Gate                                     | 3     | 12     | TV      |
-| Elfen Lied                                      | 3     | 13     | TV      |
-| GANGSTA.                                        | 3     | 12     | TV      |
-| Grimgar of Fantasy and Ash                      | 3     | 12     | TV      |
-| Gunslinger Girl                                 | 3     | 13     | TV      |
-| Gunsmith Cats                                   | 3     | 3      | OVA     |
-| Haibaane Renmei                                 | 3     | 13     | TV      |
-| HELLO WORLD                                     | 3     | 1      | Movie   |
-| High School of the Dead: Drifters of the Dead   | 3     | 1      | OVA     |
-| Himouto! Umaru-chan R                           | 3     | 12     | TV      |
-| Himouto! Umaru-chanS                            | 3     | 12     | Special |
-| Is the Order a Rabbit?                          | 3     | 12     | TV      |
-| Last Exile                                      | 3     | 26     | TV      |
-| Neon Genesis Evangelion                         | 3     | 26     | TV      |
-| One-Punch Man                                   | 3     | 12     | TV      |
-| Serial Experiments Lain                         | 3     | 13     | TV      |
-| The Pet Girl of Sakurasou                       | 3     | 24     | TV      |
-| The Tatami Galaxy                               | 3     | 11     | TV      |
-| Tsubasa RESERVoir CHRoNiCLE                     | 3     | 26     | TV      |
-| Wolf Children                                   | 3     | 1      | Movie   |
+| BLEND-S                                         |     3 |     12 | TV      |
+| Gabriel Dropout                                 |     3 |     12 | TV      |
+| Children of the Sea                             |     3 |      1 | Movie   |
+| Cowboy Bebop                                    |     3 |     26 | TV      |
+| Demon Slayer Hashira Training Arc               |     3 |      8 | TV      |
+| Demon Slayer Infinity Train                     |     3 |      1 | Movie   |
+| Divine Gate                                     |     3 |     12 | TV      |
+| Elfen Lied                                      |     3 |     13 | TV      |
+| Elfen Lied                                      |     3 |     13 | TV      |
+| Full Metal Alchemist: Brotherhood               |     3 |     13 | TV      |
+| GANGSTA.                                        |     3 |     12 | TV      |
+| Grimgar of Fantasy and Ash                      |     3 |     12 | TV      |
+| Gunslinger Girl                                 |     3 |     13 | TV      |
+| Gunsmith Cats                                   |     3 |      3 | OVA     |
+| Haibaane Renmei                                 |     3 |     13 | TV      |
+| HELLO WORLD                                     |     3 |      1 | Movie   |
+| High School of the Dead: Drifters of the Dead   |     3 |      1 | OVA     |
+| Himouto! Umaru-chan R                           |     3 |     12 | TV      |
+| Himouto! Umaru-chanS                            |     3 |     12 | Special |
+| Is the Order a Rabbit?                          |     3 |     12 | TV      |
+| Last Exile                                      |     3 |     26 | TV      |
+| Neon Genesis Evangelion                         |     3 |     26 | TV      |
+| One-Punch Man                                   |     3 |     12 | TV      |
+| Serial Experiments Lain                         |     3 |     13 | TV      |
+| The Pet Girl of Sakurasou                       |     3 |     24 | TV      |
+| The Tatami Galaxy                               |     3 |     11 | TV      |
+| Tsubasa RESERVoir CHRoNiCLE                     |     3 |     26 | TV      |
+| Wolf Children                                   |     3 |      1 | Movie   |
 |                                                 |       |        |         |
-| Attack on Titan                                 | 2     | 25     | TV      |
-| Attack on Titan Season 2                        | 2     | 12     | TV      |
-| Demon Slayer                                    | 2     | 26     | TV      |
-| Demon Slayer Entertainment District Arc         | 2     | 11     | TV      |
-| HELLSING                                        | 2     | 13     | TV      |
-| High School DxD                                 | 2     | 12     | TV      |
-| Ikkitousen: Dragon Destiny                      | 2     | 12     | TV      |
-| Ikkitousen: Great Guardians                     | 2     | 12     | TV      |
-| Ikkitousen: Xtreme Xecutor                      | 2     | 12     | TV      |
+| Attack on Titan                                 |     2 |     25 | TV      |
+| Attack on Titan Season 2                        |     2 |     12 | TV      |
+| Demon Slayer                                    |     2 |     26 | TV      |
+| Demon Slayer Entertainment District Arc         |     2 |     11 | TV      |
+| HELLSING                                        |     2 |     13 | TV      |
+| High School DxD                                 |     2 |     12 | TV      |
+| Ikkitousen: Dragon Destiny                      |     2 |     12 | TV      |
+| Ikkitousen: Great Guardians                     |     2 |     12 | TV      |
+| Ikkitousen: Xtreme Xecutor                      |     2 |     12 | TV      |
 |                                                 |       |        |         |
-| Aesthetica of a Rogue Hero                      | 1     | 12     | TV      |
-| Battle Vixens: Ikki Tousen                      | 1     | 13     | TV      |
-| GOLDEN BOY                                      | 1     | 6      | OVA     |
-| PSYCHO-PASS                                     | 1     | 22     | TV      |
-| Sword Art Online                                | 1     | 25     | TV      |
-| The Future Diary                                | 1     | 26     | TV      |
+| Aesthetica of a Rogue Hero                      |     1 |     12 | TV      |
+| Battle Vixens: Ikki Tousen                      |     1 |     13 | TV      |
+| GOLDEN BOY                                      |     1 |      6 | OVA     |
+| PSYCHO-PASS                                     |     1 |     22 | TV      |
+| Sword Art Online                                |     1 |     25 | TV      |
+| The Future Diary                                |     1 |     26 | TV      |
 
 ## Dropped/Paused
 
