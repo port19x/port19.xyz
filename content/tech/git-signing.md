@@ -15,7 +15,7 @@ Locally, run the command `git config --global gpg.format ssh`. \
 Then follow it up with `git config --global user.signingkey ~/.ssh/github.pub`. \
 You may omit `--global` if you only want to sign commits of a specific repository.
 Also keep in mind to replace `~/.ssh/github.pub` with the path to your public key.
-Then add your public key to github (again), this time changing the key type to "Signing Key". \
+Then add your public key to github (again), this time changing the key type to "Signing Key".
 
 To sign selected commits, run `git commit` with the `-S` option. \
 To sign all future git commits, run `git config --global commit.gpgsign true`. \
