@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2025-02-09
+updated = 2025-02-14
 description = "Port19s selfhosted anime list"
 +++
 
@@ -27,7 +27,7 @@ description = "Port19s selfhosted anime list"
 
 | Title                             | Progress | Format |
 |-----------------------------------|----------|--------|
-| A Place Further Than The Universe |  4/13    | TV     |
+| A Place Further Than The Universe |  5/13    | TV     |
 
 ## Planning
 
@@ -39,7 +39,7 @@ description = "Port19s selfhosted anime list"
 ## Completed
 
 | Title                                           | Score | Length | Format  |
-|-------------------------------------------------+-------+--------+---------|
+|-------------------------------------------------|-------|--------|---------|
 | 5 Centimeters per Second                        |     5 |      1 | Movie   |
 | A Silent Voice                                  |     5 |      1 | Movie   |
 | After The Rain                                  |     5 |     12 | TV      |
