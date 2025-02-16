@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 (Non)Guix - The Uninstallable</title>
+<meta name="description" content="channelling my lambda grindset">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 (Non)Guix - The Uninstallable
+</h1>
+
+<i>First Published: 2024-02-21</i>
+
+<hr>
+<p><em>channelling my lambda grindset</em></p>
+<h2 id="motivation">
+<a class="zola-anchor" href="#motivation" aria-label="Anchor link for: motivation">🔗</a>
+
+Motivation</h2>
+<p>So I've been writing lisp or 1-2 years now depending on how we count, mostly Clojure<a href="https://github.com/port19x/clojure-era">¹</a> and Emacs Lisp.<a href="https://github.com/port19x/haproxy-mode">²</a>
+Recently I started looking into guile scheme as the next fun lisp to sink time into.
+At the same time, friends in the <a href="https://github.com/pystardust/ani-cli">ani-cli</a> discord are moving to nixos in droves.
+Wanting some of that functional package management goodness for myself, but with a lispy touch, I tried installing Guix on arch.
+That actually somewhat works if you use the manual installation method, but integration is meh.
+So, having another arch install on my laptop as a fallback, I set out on a little adventure.</p>
+<p>Despite my experience this took me 4 hours to install, so I hope this post and the sources I link to can help someone.</p>
+<h2 id="retrieving-the-iso">
+<a class="zola-anchor" href="#retrieving-the-iso" aria-label="Anchor link for: retrieving-the-iso">🔗</a>
+
+Retrieving the ISO</h2>
+<p>Guix is a FSF approved linux-libre distro, so it won't work if you have a modern wifi card.
+However don't get a false sense of security from a wired connection. <br />
+<a href="http://wingolog.org/archives/2024/02/16/guix-on-the-framework-13-amd">AMD GPUs need proprietary firmware.</a></p>
+<p>There is a <a href="https://github.com/SystemCrafters/guix-installer">installer image</a> for current nonguix by systemcrafters, but <a href="https://github.com/SystemCrafters/guix-installer/issues/27">its CI has stalled</a>, so use the "official" <a href="https://gitlab.com/nonguix/nonguix/-/releases">nonguix image</a> for now.</p>
+<p>Be a good boy and verify the cryptographic signature.</p>
+<h2 id="amending-the-config">
+<a class="zola-anchor" href="#amending-the-config" aria-label="Anchor link for: amending-the-config">🔗</a>
+
+Amending the config</h2>
+<p>After running through the guided installer, edit the <code>/mnt/etc/config.scm</code> to include the snippets by <a href="https://gitlab.com/nonguix/nonguix">nonguix</a>.</p>
+<p>Check back in the linked nonguix readme if something happens to change.</p>
+<h3 id="use-module">
+<code>use-module</code></h3>
+<p>replace</p>
+<pre data-lang="lisp" style="background-color:#0f1419;color:#bfbab0;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(use</span><span style="color:#f29668;">-</span><span>module (gnu))
+</span></code></pre>
+<p>with</p>
+<pre data-lang="lisp" style="background-color:#0f1419;color:#bfbab0;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(use</span><span style="color:#f29668;">-</span><span>module (gnu)
+</span><span>            (nongnu packages linux)
+</span><span>            (nongnu system linux</span><span style="color:#f29668;">-</span><span>initrd))
+</span></code></pre>
+<h3 id="operating-system">
+<code>operating-system</code></h3>
+<p>and add the following 3 lines in the <code>operating-system</code> block</p>
+<pre style="background-color:#0f1419;color:#bfbab0;"><code><span>(operating-system
+</span><span>  (kernel linux)
+</span><span>  (initrd microcode-initrd)
+</span><span>  (firmware (list linux-firmware))
+</span><span>  ...
+</span><span>  )
+</span></code></pre>
+<p>Then, change to tty3 or tty4 to make some more changes.</p>
+<h2 id="add-the-nonguix-channel">
+<a class="zola-anchor" href="#add-the-nonguix-channel" aria-label="Anchor link for: add-the-nonguix-channel">🔗</a>
+
+Add the nonguix channel</h2>
+<pre style="background-color:#0f1419;color:#bfbab0;"><code><span>cp /mnt/etc/config.scm .
+</span><span>mkdir -p ~/.config/guix
+</span></code></pre>
+<p>Put the following block into the <code>~/.config/guix/channels.scm</code></p>
+<pre style="background-color:#0f1419;color:#bfbab0;"><code><span>(cons* (channel
+</span><span>        (name &#39;nonguix)
+</span><span>        (url &quot;https://gitlab.com/nonguix/nonguix&quot;)
+</span><span>        ;; Enable signature verification:
+</span><span>        (introduction
+</span><span>         (make-channel-introduction
+</span><span>          &quot;897c1a470da759236cc11798f4e0a5f7d4d59fbc&quot;
+</span><span>          (openpgp-fingerprint
+</span><span>           &quot;2A39 3FFF 68F4 EF7A 3D29  12AF 6F51 20A0 22FB B2D5&quot;))))
+</span><span>       %default-channels)
+</span></code></pre>
+<h2 id="syncing-all-the-stuff">
+<a class="zola-anchor" href="#syncing-all-the-stuff" aria-label="Anchor link for: syncing-all-the-stuff">🔗</a>
+
+Syncing all the stuff</h2>
+<p>Then we gotta jump through some hoops to sync things.</p>
+<pre style="background-color:#0f1419;color:#bfbab0;"><code><span>guix pull
+</span><span>hash guix
+</span></code></pre>
+<p>Especially that <code>hash guix</code> can trip you up, <a href="https://wiki.systemcrafters.net/guix/nonguix-installation-guide/#channels">it is necessary</a>.</p>
+<h2 id="installation">
+<a class="zola-anchor" href="#installation" aria-label="Anchor link for: installation">🔗</a>
+
+Installation</h2>
+<p>You could run the install like this: <code>guix system init /mnt/etc/config.scm /mnt</code>,
+but I recommend adding the <a href="https://dthompson.us/posts/installing-guix-on-a-10th-gen-thinkpad-x1.html">substitutes</a> while they are non-standard<a href="https://gitlab.com/nonguix/nonguix/-/issues/315">³</a>.
+So you end up with <code>guix system init /mnt/etc/config.scm --substitute-urls='https://ci.guix.gnu.org https://bordeaux.guix.gnu.org https://substitutes.nonguix.org' /mnt</code></p>
+<p>Don't get your hopes up that the nonguix substitutes are actually all available.
+For me, linux-firmware was available but the kernel compiled from scratch.</p>
+<p>I had an issue that during the install of my selected packages, the root partition of the installer filled up, erroring with something along the lines of "no space left on device".
+Even with an extremely minimal subset I barely got it installed, leaving with 89% (5.2 / 5.8GB) usage on the installer root partition.</p>
+<p><em>I suspect this to be a bug and will follow this up with the appropriate parties</em></p>
+<h2 id="finished">
+<a class="zola-anchor" href="#finished" aria-label="Anchor link for: finished">🔗</a>
+
+Finished</h2>
+<p>Now you can reboot.</p>
+<p>Pray that you have good wifi utils.
+I'm still struggling to configure it with <code>ip</code> and <code>iw</code> alone.
+I'm more used to <code>iwctl</code>/<code>iwd</code>.
+Biggest issue will be WPA2 auth, that's not as standard in some of these tools as you may think.</p>
+<p>Sorry if this was a little handwavy, I barely got it installed myself.
+I plan to write on Guix again once I'm a little more acclimated and have a config ready.
+Once such a config is ready, any future install will be significantly easier anyway.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;blog&#x2F;">💻 My Blogging System ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;git-signing&#x2F;">‹ 💻 Commit Signatures via SSH</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
