@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 High Availability</title>
+<meta name="description" content="How many nines do you need?">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 High Availability
+</h1>
+
+<i>First Published: 2024-06-03</i>
+
+<hr>
+<h1 id="how-many-nines-do-you-need">
+How many nines do you need?</h1>
+<p>I consider myself to be a linux admin, or devops engineer as the kids say, so the goal of <a href="https://en.wikipedia.org/wiki/High_availability">high availability</a> is one without which I'd be much less optimistic about my career. I want to put out this article to take a step back and cover in broad strokes what level of availability you may want to aspire towards and what measures you can take to achieve it.</p>
+<h2 id="first-nine-90">
+<a class="zola-anchor" href="#first-nine-90" aria-label="Anchor link for: first-nine-90">🔗</a>
+
+First Nine - 90%</h2>
+<p><em>9 days downtime per quarter</em></p>
+<p>Not cracking the first nine is bad, even for hobby projects. To dip below the first nine, you need to ban the term "best practice" from your vocabulary, make pervasive use of all available hipster technology and abstain from any monitoring of any kind. The only way for you to dip below 90% availability that I can empathise with is if you run your server at home in a country with bad internet, like Germany.</p>
+<p>If you follow your intuition and just throw your binary at a random VPS host, you'll get the first nine.
+And even in the event of an outage, you can take a day off before addressing it without adverse effect.</p>
+<h2 id="second-nine-99">
+<a class="zola-anchor" href="#second-nine-99" aria-label="Anchor link for: second-nine-99">🔗</a>
+
+Second Nine - 99%</h2>
+<p><em>22 hours downtime per quarter</em></p>
+<p>To get the second nine I recommend you sign up for some free uptime monitoring service like <a href="https://uptimerobot.com/">uptimerobot</a> and configure it to send you email notifications on downtime. I'd say this level is perfectly appropriate for small personal projects or early public projects in the "move fast and break things" phase. <br />
+Bonus points for using version control and doing a recovery test every so often.</p>
+<h2 id="third-nine-99-9">
+<a class="zola-anchor" href="#third-nine-99-9" aria-label="Anchor link for: third-nine-99-9">🔗</a>
+
+Third Nine - 99.9%</h2>
+<p><em>131 minutes downtime per quarter</em></p>
+<p>At this point you <em>need</em> monitoring, ideally a little more than just third party uptime monitoring. You need to configure the monitoring software to wake you up at night if the server fails, or alternatively have some primitive failover mechanism that kicks in automatically. Such a failover mechanism could be an <a href="https://developers.cloudflare.com/load-balancing/load-balancers/common-configurations/">active-passive</a> setup behind a reverse proxy, where you have another instance of your application running all the time ready to take over. This is also a good point to stop rolling out updates on a Friday afternoon and to establish some holistic testing procedure.</p>
+<h2 id="fourth-nine-99-99">
+<a class="zola-anchor" href="#fourth-nine-99-99" aria-label="Anchor link for: fourth-nine-99-99">🔗</a>
+
+Fourth Nine - 99.99%</h2>
+<p><em>13 minutes downtime per quarter</em></p>
+<p>Kubernetes! DevOps! Cloud! Congratulations, you're now the target audience for many shiny new things and evidently have enough of a business to throw some money at people like me. At this point your product needs to have reached some level of maturity and the infrastructure people need to put failover mechanisms into place that catch every common and expectable failure mode.</p>
+<p>This is also getting into ghost hunting territory, as even moderately complex systems can have hard to predict failure conditions and the relatively short time for recovery means that one regular outage, even if handled to the standards of a fortune 500 tech firm, can ruin your availability stat for the year.</p>
+<p>Maybe Kubernetes is the answer, maybe not. Add me to any team of software devs and I'll get you that third nine, but for the fourth you'll have to get me some colleagues. With a bit of luck, we'll figure it out.</p>
+<h2 id="mythical-fifth-nine">
+<a class="zola-anchor" href="#mythical-fifth-nine" aria-label="Anchor link for: mythical-fifth-nine">🔗</a>
+
+Mythical Fifth Nine</h2>
+<p><em>79 seconds downtime per quarter</em></p>
+<p>If the fourth nine requires hiring a couple of people, the fifth and beyond require hiring dozens, plus some very favourable conditions and/or luck. Even a product like <a href="https://www.theverge.com/2019/6/18/18683625/google-calendar-down-worldwide-outage-404-error">Google Calendar</a>, <a href="https://www.macrumors.com/2024/04/25/reddit-is-down-on-iphone-and-web/">Reddit</a> or <a href="https://techcrunch.com/2024/03/05/discord-is-down-for-some-users/?guccounter=1">Discord</a> can be down for about an hour, easily ruining the fifth nine for a decade.</p>
+<h2 id="before-the-first-nine">
+<a class="zola-anchor" href="#before-the-first-nine" aria-label="Anchor link for: before-the-first-nine">🔗</a>
+
+Before The First Nine</h2>
+<p>Make backups of your code. A git repository is sufficient for that, so you're probably good already.
+If you offer a stateful service, make regular backups of the application state, e.g. the customer data.
+This is why people are so conservative when it comes to storage: an outage is an inconvenience, loss of data is a company killer.</p>
+<p>I hope this was a nice read and I got someone motivated to at least slap uptimerobot onto their blog.
+Maybe in a few years I'll have some snake oil to sell that promises that next nine, but for now this will do.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;github-actions-monitoring&#x2F;">💻 Monitoring with Github Actions ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;gpn-ctf-2024-writeup&#x2F;">‹ 💻 GPN CTF 2024 Writeup</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>

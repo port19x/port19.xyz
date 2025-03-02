@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 The Essence of Functional Programming</title>
+<meta name="description" content="My attempt at a better explanation">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 The Essence of Functional Programming
+</h1>
+
+<i>First Published: 2023-11-18</i>
+
+<hr>
+<figure>
+<img src="./consing.png" height="300vw">
+<figcaption><i>
+My attempt at a better explanation
+</i></figcaption>
+</figure>
+<h2 id="state">
+<a class="zola-anchor" href="#state" aria-label="Anchor link for: state">🔗</a>
+
+State</h2>
+<p><strong>The key premise of functional programming is that there shall be no mutable global state.</strong></p>
+<p>Every other property of functional programming can be derived from this key premise.
+Every semantic tool that is foreign to the imperative programmer exists to make handling immutable global state possible and ergonomic.
+I do not consider the absence of (side-) effects or functional purity to be a defining factor, your programm needs to interact with the world after all.</p>
+<h2 id="lists">
+<a class="zola-anchor" href="#lists" aria-label="Anchor link for: lists">🔗</a>
+
+Lists</h2>
+<p>In object oriented programming the most prominent composite data structure is the object, derived from classes.
+In functional programming it is the variable sized, sometimes nested, list.</p>
+<p>Some people make the case that recursion taking the place of loops is something that sets functional programming apart from imperative programming.
+I disagree.
+It is the treatment of the list as a holistic unit that semantically enriches functional programming over it's imperative counterpart.
+Whether you recurse through a list or loop it, explicitly taking time to look at each element individually, while sometimes necessary, isn't elegant either way.</p>
+<p>Functional programming languages provide a rich collection of list functions, often making it possible to forego recursion entirely.
+Some of these are called higher order functions, which means they take one or more functions as their input.
+Some of my favorites that are often absent in the imperative languages I know:
+<a href="https://clojuredocs.org/clojure.core/map"><code>map</code></a>,
+<a href="https://clojuredocs.org/clojure.core/filter"><code>filter</code></a>,
+<a href="https://clojuredocs.org/clojure.core/reduce"><code>reduce</code></a>,
+<a href="https://clojuredocs.org/clojure.core/apply"><code>apply</code></a>,
+<a href="https://clojuredocs.org/clojure.core/partition"><code>partition</code></a>,
+<a href="https://clojuredocs.org/clojure.core/take-while"><code>take-while</code></a>,
+<a href="https://clojuredocs.org/clojure.core/identity"><code>identity</code></a>,
+<a href="https://clojuredocs.org/clojure.core/drop"><code>drop</code></a></p>
+<h2 id="composition">
+<a class="zola-anchor" href="#composition" aria-label="Anchor link for: composition">🔗</a>
+
+Composition</h2>
+<p>Since functions in functional programming are pure, at least with regards to global state, they can be readily broken up and composed as necessary.
+In my time practicing functional programming, the functions I defined were often just compositions of 5-10 readily available functions with one or two lamdas thrown in.
+The prevelance of composition is about as high as in shell scripting, where the pipe enables expressive solutions by composing the utilities of the surrounding environment.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;subfont&#x2F;">💻 Optimizing Unicode Fonts with Subfont ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;macos&#x2F;">‹ 💻 M1 Mac Review</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
