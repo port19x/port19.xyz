@@ -1,28 +1,31 @@
 +++
 title = "💻Programs I use💻"
 date = 2024-03-16
-updated = 2024-10-31
+updated = 2025-03-10
 description = "and recommend"
 +++
 
 ## Base
 
-### [Linux Mint](https://linuxmint.com/)
+### [Arch Linux](https://archlinux.org/)
 
-I like it for its cinnamon desktop and high level of polish.
+Arch Linux has been my linux distribution of choice since early 2021.
+It has been a reliable and trusty companion over the years, being less fragile than several of the allegedly stable distros I've used prior, such as debian.
+I tightly integrate my [dotfiles](https://github.com/port19x/dotfiles) with arch, having a [PKGBUILD](https://github.com/port19x/dotfiles/blob/master/PKGBUILD) to automate my dotfiles bootstrapping.
+I believe this approach to be superior to a post-install script, since it allows me to more explicitly track the packages I use and keep the list of explicitly installed packages low.
 
-Arch Linux was my linux distribution of choice Q12021-Q42024. \
-Yet, last friday due to proprietary packages used at my employer, I set sail to a more mainstream setup.
+My recovery time from a backup, including a full reinstall, is less than one hour.
+
+My current shell is zsh, but I've also used bash in the past. \
+My wayland compositor is [labwc](https://github.com/labwc/labwc).
 
 ### [Brave](https://brave.com/)
 
 I'm currently using brave as my primary web browser. I like it due to it's builtin adblock and speed. I've also extensively used both [Librewolf](https://librewolf.net/) and [Qutebrowser](https://qutebrowser.org/) in the past and can recommend them for enhanced privacy protection and keyboard driven operation respectively.
 
-### [Wezterm](https://wezfurlong.org/wezterm/index.html)
+### [Foot](https://codeberg.org/dnkl/foot)
 
-Wezterm is a great terminal emulator all around. \
-I have previously reviewed all terminal emulators, [have a read](https://port19.xyz/tech/terminals/). \
-My current shell is bash, but I've also used zsh in the past.
+I have previously reviewed all terminal emulators, [have a read](https://port19.xyz/tech/terminals/).
 
 ### [Neovim](https://neovim.io/)
 
@@ -51,12 +54,6 @@ If you're on linux it's likely already installed as a dependency to something el
 I use imagemagick to do all my basic image conversion and editing. \
 This includes cropping, scaling, captions, appending, rotation. \
 For anything more advanced, which I only need to do every few months, I use [gimp](https://www.gimp.org/).
-
-### [Flameshot](https://flameshot.org/)
-
-Flameshot is a great screen shotting program, with good support for editing the screenshot before saving.
-Think red circles and arrows, numbered steps or perhaps colored blocks to redact information.
-It's great.
 
 ### [Poppler](https://poppler.freedesktop.org/)
 
