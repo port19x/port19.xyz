@@ -1,52 +1,53 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-02-09
+updated = 2025-03-10
 description = "action-adventure > rpg"
 +++
 
-*action-adventure > rpg*
-
 ## Playing
 
+<img src="/retrocovers/silent-hill.jpg">
 <img src="/retrocovers/devil-may-cry.jpg">
+<img src="/retrocovers/super-mario-all-stars.jpg" title="1 completed, playing 3">
 
 ## Completed
 
+Borders:
+<i style="color: silver">• best on system</i>
+<i style="color: gold">• played through twice</i>
 <!-- NA Relese Dates: SNES 1991, PSX 1995, N64 1996, PS2 2000, GBA 2001, GC 2001-->
 
-<img src="/retrocovers/metroid-prime.jpg">
+<img src="/retrocovers/metroid-prime.jpg" style="box-shadow: 0 0 0 3px silver;">
 <br>
 <img src="/retrocovers/metroid-fusion.jpg">
-<img src="/retrocovers/castlevania-aria-of-sorrow.jpg">
+<img src="/retrocovers/castlevania-aria-of-sorrow.jpg" style="box-shadow: 0 0 0 3px silver;">
 <img src="/retrocovers/metroid-zero-mission.jpg">
 <br>
 <img src="/retrocovers/drill-dozer.jpg">
 <img src="/retrocovers/pokemon-leafgreen.jpg">
 <img src="/retrocovers/final-fantasy-1-2.jpg" title="only 1, 2 sucks">
 <br>
-<img src="/retrocovers/super-mario-64.jpg">
+<img src="/retrocovers/super-mario-64.jpg" style="box-shadow: 0 0 0 3px silver;">
 <img src="/retrocovers/star-fox-64.jpg" title="only easy route tho">
 <img src="/retrocovers/paper-mario.jpg">
 <br>
 <img src="/retrocovers/super-mario-rpg.jpg">
 <img src="/retrocovers/super-mario-kart.jpg" title="fuck that special cup! everything else gold!">
-<img src="/retrocovers/super-mario-all-stars.jpg" title="1 completed, quit 3 due to world 3">
-<img src="/retrocovers/super-metroid.jpg" title="played twice, back to back">
+<img src="/retrocovers/super-metroid.jpg" title="played twice, back to back" style="box-shadow: 0 0 0 3px gold;">
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
 
 ## Planning
 
 <img src="/retrocovers/final-fantasy-7.jpg">
 <img src="/retrocovers/castlevania-symphony-of-the-night.jpg">
-<img src="/retrocovers/metal-gear-solid.jpg">
+<br>
 <img src="/retrocovers/chrono-trigger.jpg">
 <img src="/retrocovers/earthbound.jpg">
 <br>
 <img src="/retrocovers/pokemon-emerald.jpg">
 <img src="/retrocovers/final-fantasy-tactics.jpg">
 <img src="/retrocovers/final-fantasy-6.jpg">
-
 
 ## Sourcing & Emulation
 
@@ -60,12 +61,7 @@ Pick games for one of the top100 lists on gamefaqs:
 I tend to stick to the top 20, with some franchise / genre specific exceptions. \
 [Metacritic](https://www.metacritic.com/) is a decent fallback for finding good games.
 
-- [Romsfun](https://romsfun.com/) is currently the best site for PS2 and Gamecube
-- [Emulatorgames](https://www.emulatorgames.net/) is a decent site for older titles
-
-[Gamefaqs](https://gamefaqs.gamespot.com/) is also by far the best to find walkthroughs if you get stuck.
-
-<br>
+[Romsfun](https://romsfun.com/) is currently the best site for sourcing roms preiod
 
 I use [Batocera Linux](https://batocera.org/) as the OS for all my retro gaming needs.
 
