@@ -4,7 +4,7 @@ date = 2022-06-15
 description = "Overnight Oats Recipe"
 +++
 
-# Overnight Oats Recipe
+<img src="./overnight-oats.jpg" height="300vw">
 
 - Prep time: 5 min
 - Fridge time: 6-12 hours
