@@ -1,15 +1,11 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-03-10
+updated = 2025-03-12
 description = "action-adventure > rpg"
 +++
 
-## Playing
-
-<img src="/retrocovers/silent-hill.jpg">
-<img src="/retrocovers/devil-may-cry.jpg">
-<img src="/retrocovers/super-mario-all-stars.jpg" title="1 completed, playing 3">
+Super bored with this hobby, putting it on hold for now.
 
 ## Completed
 
@@ -36,18 +32,6 @@ Borders:
 <img src="/retrocovers/super-mario-kart.jpg" title="fuck that special cup! everything else gold!">
 <img src="/retrocovers/super-metroid.jpg" title="played twice, back to back" style="box-shadow: 0 0 0 3px gold;">
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
-
-## Planning
-
-<img src="/retrocovers/final-fantasy-7.jpg">
-<img src="/retrocovers/castlevania-symphony-of-the-night.jpg">
-<br>
-<img src="/retrocovers/chrono-trigger.jpg">
-<img src="/retrocovers/earthbound.jpg">
-<br>
-<img src="/retrocovers/pokemon-emerald.jpg">
-<img src="/retrocovers/final-fantasy-tactics.jpg">
-<img src="/retrocovers/final-fantasy-6.jpg">
 
 ## Sourcing & Emulation
 
