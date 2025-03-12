@@ -35,7 +35,6 @@ description = "Port19s selfhosted anime list"
 | Title                             | Format |
 |-----------------------------------|--------|
 | K-On!!                            | TV     |
-| Bocchi the Rock!                  | TV     |
 
 ## Completed
 
