@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2025-03-12
+updated = 2025-03-16
 description = "Port19s selfhosted anime list"
 +++
 
@@ -25,10 +25,10 @@ description = "Port19s selfhosted anime list"
 
 ## Watching
 
-| Title                             | Progress | Format |
-|-----------------------------------|----------|--------|
-| Frieren: Beyond Journey's End     |  6/28    | TV     |
-| A Place Further Than The Universe |  6/13    | TV     |
+| Title                             | Progress  | Format |
+|-----------------------------------|-----------|--------|
+| Frieren: Beyond Journey's End     |  10/28    | TV     |
+| A Place Further Than The Universe |  6 /13    | TV     |
 
 ## Planning
 
