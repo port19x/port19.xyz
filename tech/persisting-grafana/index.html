@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Persisting Grafana</title>
+<meta name="description" content="4 whole config files 😠">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Persisting Grafana
+</h1>
+
+<i>First Published: 2024-01-15</i>
+
+<hr>
+<p>Grafana is a visualization frontend for many metrics based monitoring solutions like prometheus.
+Persisting its dashboards is far from trivial, so I thought I'd share how I'm doing it.</p>
+<h2 id="prerequisites">
+<a class="zola-anchor" href="#prerequisites" aria-label="Anchor link for: prerequisites">🔗</a>
+
+Prerequisites</h2>
+<ul>
+<li>install <a href="https://grafana.com/docs/grafana/latest/setup-grafana/installation/"><code>grafana</code></a></li>
+<li>install <a href="https://prometheus.io/docs/prometheus/latest/installation/"><code>prometheus</code></a></li>
+<li>install <a href="https://prometheus.io/docs/guides/node-exporter/"><code>prometheus-node-exporter</code></a></li>
+<li>install <a href="https://docs.docker.com/compose/install/"><code>docker-compose</code></a></li>
+</ul>
+<h3 id="docker-compose-yml">
+docker-compose.yml</h3>
+<p>I'm using docker-compose, both on my server as well as for this article. <br />
+You should be able to extrapolate to your preferred infrastructure-as-code solution.</p>
+<pre data-lang="yml" style="background-color:#0f1419;color:#bfbab0;" class="language-yml "><code class="language-yml" data-lang="yml"><span style="color:#59c2ff;">version</span><span style="color:#bfbab0cc;">: </span><span style="color:#c2d94c;">&#39;3&#39;
+</span><span>
+</span><span style="color:#59c2ff;">networks</span><span style="color:#bfbab0cc;">:
+</span><span>  </span><span style="color:#59c2ff;">default</span><span style="color:#bfbab0cc;">:
+</span><span>    </span><span style="color:#59c2ff;">internal</span><span style="color:#bfbab0cc;">: </span><span style="color:#f29718;">true
+</span><span>  </span><span style="color:#59c2ff;">proxy</span><span style="color:#bfbab0cc;">:
+</span><span>    </span><span style="color:#59c2ff;">internal</span><span style="color:#bfbab0cc;">: </span><span style="color:#f29718;">false
+</span><span>
+</span><span style="color:#59c2ff;">services</span><span style="color:#bfbab0cc;">:
+</span><span>  </span><span style="color:#59c2ff;">grafana</span><span style="color:#bfbab0cc;">:
+</span><span>    </span><span style="color:#59c2ff;">image</span><span style="color:#bfbab0cc;">: </span><span style="color:#c2d94c;">grafana/grafana:10.2.3
+</span><span>    </span><span style="color:#59c2ff;">networks</span><span style="color:#bfbab0cc;">:
+</span><span>      - </span><span style="color:#c2d94c;">default
+</span><span>      - </span><span style="color:#c2d94c;">proxy
+</span><span>    </span><span style="color:#59c2ff;">ports</span><span style="color:#bfbab0cc;">:
+</span><span>      - </span><span style="color:#c2d94c;">&quot;3000:3000&quot;
+</span><span>    </span><span style="color:#59c2ff;">volumes</span><span style="color:#bfbab0cc;">:
+</span><span>      - </span><span style="color:#c2d94c;">./grafana.ini:/etc/grafana/grafana.ini
+</span><span>      - </span><span style="color:#c2d94c;">./grafana-datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml
+</span><span>      - </span><span style="color:#c2d94c;">./grafana-dashboard.yml:/etc/grafana/provisioning/dashboards/dashboard.yml
+</span><span>      - </span><span style="color:#c2d94c;">./grafana-dashboard.json:/etc/grafana/provisioning/dashboards/dashboard.json
+</span><span>
+</span><span>  </span><span style="color:#59c2ff;">prometheus</span><span style="color:#bfbab0cc;">:
+</span><span>    </span><span style="color:#59c2ff;">image</span><span style="color:#bfbab0cc;">: </span><span style="color:#c2d94c;">prom/prometheus:v2.49.0
+</span><span>    </span><span style="color:#59c2ff;">volumes</span><span style="color:#bfbab0cc;">:
+</span><span>      - </span><span style="color:#c2d94c;">./prometheus.yml:/etc/prometheus/prometheus.yml
+</span><span>
+</span><span>  </span><span style="color:#59c2ff;">node-exporter</span><span style="color:#bfbab0cc;">:
+</span><span>    </span><span style="color:#59c2ff;">image</span><span style="color:#bfbab0cc;">: </span><span style="color:#c2d94c;">prom/node-exporter:v1.7.0
+</span><span>    </span><span style="color:#59c2ff;">command</span><span style="color:#bfbab0cc;">:
+</span><span>      - </span><span style="color:#c2d94c;">&#39;--path.rootfs=/host&#39;
+</span><span>      - </span><span style="color:#c2d94c;">&#39;--path.procfs=/host/proc&#39;
+</span><span>      - </span><span style="color:#c2d94c;">&#39;--path.sysfs=/host/sys&#39;
+</span><span>      - </span><span style="color:#c2d94c;">--collector.filesystem.ignored-mount-points
+</span><span>      - </span><span style="color:#c2d94c;">&quot;^/(sys|proc|dev|host|etc|rootfs/var/lib/docker/containers|rootfs/var/lib/docker/overlay2|rootfs/run/docker/netns|rootfs/var/lib/docker/aufs)($$|/)&quot;
+</span><span>    </span><span style="color:#59c2ff;">volumes</span><span style="color:#bfbab0cc;">:
+</span><span>      - </span><span style="color:#c2d94c;">/proc:/host/proc:ro
+</span><span>      - </span><span style="color:#c2d94c;">/sys:/host/sys:ro
+</span><span>      - </span><span style="color:#c2d94c;">/:/rootfs:ro
+</span><span>      - </span><span style="color:#c2d94c;">/:/host:ro,rslave
+</span></code></pre>
+<h3 id="prometheus-yml">
+prometheus.yml</h3>
+<pre data-lang="yml" style="background-color:#0f1419;color:#bfbab0;" class="language-yml "><code class="language-yml" data-lang="yml"><span style="color:#59c2ff;">scrape_configs</span><span style="color:#bfbab0cc;">:
+</span><span>  - </span><span style="color:#59c2ff;">job_name</span><span style="color:#bfbab0cc;">: </span><span style="color:#c2d94c;">&quot;node-exporter&quot;
+</span><span>    </span><span style="color:#59c2ff;">static_configs</span><span style="color:#bfbab0cc;">:
+</span><span>      - </span><span style="color:#59c2ff;">targets</span><span style="color:#bfbab0cc;">: </span><span>[</span><span style="color:#c2d94c;">&quot;node-exporter:9100&quot;</span><span>]
+</span></code></pre>
+<h2 id="the-global-config">
+<a class="zola-anchor" href="#the-global-config" aria-label="Anchor link for: the-global-config">🔗</a>
+
+The Global Config</h2>
+<p>Make sure to check the docker-compose file for where these files need to go.</p>
+<h3 id="grafana-ini">
+grafana.ini</h3>
+<pre data-lang="ini" style="background-color:#0f1419;color:#bfbab0;" class="language-ini "><code class="language-ini" data-lang="ini"><span style="color:#ff7733;">[server]
+</span><span style="color:#f29718;">serve_from_sub_path </span><span style="color:#f29668;">= </span><span style="color:#f29718;">true
+</span><span style="color:#f29718;">root_url </span><span style="color:#f29668;">= </span><span style="color:#f29718;">http://example.com</span><span style="color:#f29668;">/
+</span><span style="font-style:italic;color:#5c6773;">#[auth]
+</span><span style="font-style:italic;color:#5c6773;">#disable_login_form = true
+</span><span style="color:#ff7733;">[auth.anonymous]
+</span><span style="color:#f29718;">enabled </span><span style="color:#f29668;">= </span><span style="color:#f29718;">true
+</span><span style="color:#f29718;">org_role </span><span style="color:#f29668;">=</span><span> Viewer
+</span><span style="color:#ff7733;">[dashboards]
+</span><span style="color:#f29718;">default_home_dashboard_path </span><span style="color:#f29668;">= /</span><span>etc</span><span style="color:#f29668;">/</span><span>grafana</span><span style="color:#f29668;">/</span><span>provisioning</span><span style="color:#f29668;">/</span><span>dashboards</span><span style="color:#f29668;">/</span><span>dashboard</span><span style="color:#f29668;">.</span><span>json
+</span><span style="color:#ff7733;">[analytics]
+</span><span style="color:#f29718;">enabled </span><span style="color:#f29668;">= </span><span style="color:#f29718;">false
+</span><span style="color:#f29718;">check_for_updates </span><span style="color:#f29668;">= </span><span style="color:#f29718;">false
+</span></code></pre>
+<p>The server section is necessary to get Grafana to return, this doesn't matter on localhost. <br />
+I recommend terminating TLS on a reverse proxy in front of Grafana. <br />
+<code>serve_from_sub_path</code> is only necessary if you locate your dashboard on a subpath like <code>example.com/grafana</code>. <br />
+<code>default_home_dashboard_path</code> sets the default dashboard to display. <br />
+Also, since this is corporate software, you have to opt-out of update checks and analytics. \</p>
+<p><code>disable_login_form = true</code> is a useful setting for when your dashboard is exposed to the public. <br />
+If it is, also add the <code>[auth.anonymous]</code> block. Otherwise you're locking yourself out of Grafana. <br />
+<code>disable_login_form</code> is commented out so we can edit the dashboard, but I recommend it for "production".
+The default Grafana login credentials are <code>admin</code> <code>admin</code>.</p>
+<h3 id="grafana-datasources-yml">
+grafana-datasources.yml</h3>
+<p>The url will differ if you're not using my docker-compose setup.</p>
+<pre data-lang="yml" style="background-color:#0f1419;color:#bfbab0;" class="language-yml "><code class="language-yml" data-lang="yml"><span style="color:#59c2ff;">apiVersion</span><span style="color:#bfbab0cc;">: </span><span style="color:#f29718;">1
+</span><span style="color:#59c2ff;">datasources</span><span style="color:#bfbab0cc;">:
+</span><span>  - </span><span style="color:#59c2ff;">name</span><span style="color:#bfbab0cc;">: </span><span style="color:#c2d94c;">Prometheus
+</span><span>    </span><span style="color:#59c2ff;">type</span><span style="color:#bfbab0cc;">: </span><span style="color:#c2d94c;">prometheus
+</span><span>    </span><span style="color:#59c2ff;">access</span><span style="color:#bfbab0cc;">: </span><span style="color:#c2d94c;">proxy
+</span><span>    </span><span style="color:#59c2ff;">url</span><span style="color:#bfbab0cc;">: </span><span style="color:#c2d94c;">http://prometheus:9090
+</span></code></pre>
+<h3 id="grafana-dashboard-yml">
+grafana-dashboard.yml</h3>
+<pre data-lang="yml" style="background-color:#0f1419;color:#bfbab0;" class="language-yml "><code class="language-yml" data-lang="yml"><span style="color:#59c2ff;">apiVersion</span><span style="color:#bfbab0cc;">: </span><span style="color:#f29718;">1
+</span><span style="color:#59c2ff;">providers</span><span style="color:#bfbab0cc;">:
+</span><span>  - </span><span style="color:#59c2ff;">name</span><span style="color:#bfbab0cc;">: </span><span style="color:#c2d94c;">&#39;Node Load&#39;
+</span><span>    </span><span style="color:#59c2ff;">options</span><span style="color:#bfbab0cc;">:
+</span><span>      </span><span style="color:#59c2ff;">path</span><span style="color:#bfbab0cc;">: </span><span style="color:#c2d94c;">/etc/grafana/provisioning/dashboards
+</span></code></pre>
+<h2 id="persisting-a-dashboard">
+<a class="zola-anchor" href="#persisting-a-dashboard" aria-label="Anchor link for: persisting-a-dashboard">🔗</a>
+
+Persisting a dashboard</h2>
+<p>Dashboards can be exported and imported as a large json blob. <br />
+In this example it lives in a <a href="https://github.com/port19x/persisting-grafana/blob/master/grafana-dashboard.json"><code>dashboard.json</code></a>, remember that you can set the default dashboard in the <code>grafana.ini</code>.
+You can browse your available dashboards from the Grafana web ui.</p>
+<p>When you are done editing your dashboard, persist it back into a version controlled json file as follows:</p>
+<ul>
+<li>click the cog <em>(top right)</em></li>
+<li>save as <em>(top right)</em></li>
+<li>name it whatever¹</li>
+<li>click the share icon <em>(top left)</em></li>
+<li>export <em>(top middle)</em></li>
+<li>toggle on "Export for sharing externally"</li>
+<li>save to file <em>(select the previous iteration, overwriting it)</em></li>
+</ul>
+<p>¹I recommend adding a timestamp, as you can't have two dashboards of the same name. <br />
+Alternatively, you can find the dashboard name in your git diff and manually revert the name back.</p>
+<h2 id="what-now">
+<a class="zola-anchor" href="#what-now" aria-label="Anchor link for: what-now">🔗</a>
+
+What now?</h2>
+<p>You can browse public dashboards on <a href="https://grafana.com/grafana/dashboards/">Grafanas website</a>. <br />
+You can also check out <a href="https://github.com/port19x/rapture">my vps setup</a> <br />
+The code for this article is available <a href="https://github.com/port19x/persisting-grafana">here</a></p>
+<p>If you run into any problems, feel free to reach out.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;git-recovery&#x2F;">💻 Recovering Rebased Git Commits ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;shell&#x2F;">‹ 💻 Shell Scripting Advice</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
