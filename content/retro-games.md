@@ -1,11 +1,9 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-03-12
+updated = 2025-04-11
 description = "action-adventure > rpg"
 +++
-
-Super bored with this hobby, putting it on hold for now.
 
 ## Completed
 
@@ -15,6 +13,7 @@ Borders:
 <!-- NA Relese Dates: SNES 1991, PSX 1995, N64 1996, PS2 2000, GBA 2001, GC 2001-->
 
 <img src="/retrocovers/metroid-prime.jpg" style="box-shadow: 0 0 0 3px silver;">
+<img src="/retrocovers/castlevania-chronicles.jpg" title="with save states, do not recommend">
 <br>
 <img src="/retrocovers/metroid-fusion.jpg">
 <img src="/retrocovers/castlevania-aria-of-sorrow.jpg" style="box-shadow: 0 0 0 3px silver;">
