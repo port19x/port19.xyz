@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-04-16
+updated = 2025-04-20
 description = "action-adventure > rpg"
 +++
 
@@ -14,7 +14,7 @@ Borders:
 
 <img src="/retrocovers/metroid-prime.jpg" style="box-shadow: 0 0 0 3px silver;">
 <img src="/retrocovers/castlevania-chronicles.jpg" title="with save states, do not recommend">
-<img src="/retrocovers/castlevania-symphony-of-the-night.jpg" title="with save states, do not recommend">
+<img src="/retrocovers/castlevania-symphony-of-the-night.jpg" style="box-shadow: 0 0 0 3px gold;">
 <br>
 <img src="/retrocovers/metroid-fusion.jpg">
 <img src="/retrocovers/castlevania-aria-of-sorrow.jpg" style="box-shadow: 0 0 0 3px silver;">
