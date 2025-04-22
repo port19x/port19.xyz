@@ -1,9 +1,13 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-04-20
+updated = 2025-04-21
 description = "action-adventure > rpg"
 +++
+
+## Playing
+
+<img src="/retrocovers/silent-hill.jpg">
 
 ## Completed
 
@@ -30,6 +34,8 @@ Borders:
 <br>
 <img src="/retrocovers/super-mario-rpg.jpg">
 <img src="/retrocovers/super-mario-kart.jpg" title="fuck that special cup! everything else gold!">
+<img src="/retrocovers/super-mario-all-stars.jpg" title="only 1 so far">
+<br>
 <img src="/retrocovers/super-metroid.jpg" title="played twice, back to back" style="box-shadow: 0 0 0 3px gold;">
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
 
