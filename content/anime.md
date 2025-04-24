@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2025-04-21
+updated = 2025-04-24
 description = "Port19s selfhosted anime list"
 +++
 
@@ -28,7 +28,6 @@ description = "Port19s selfhosted anime list"
 | Title                             | Progress  | Format |
 |-----------------------------------|-----------|--------|
 | Frieren: Beyond Journey's End     |  16/28    | TV     |
-| A Place Further Than The Universe |  6 /13    | TV     |
 
 ## Planning
 
@@ -43,7 +42,9 @@ description = "Port19s selfhosted anime list"
 | 5 Centimeters per Second                        |     5 |      1 | Movie   |
 | A Silent Voice                                  |     5 |      1 | Movie   |
 | After The Rain                                  |     5 |     12 | TV      |
+| BLEND-S                                         |     5 |     12 | TV      |
 | FLCL Alternative                                |     5 |      6 | TV      |
+| Gabriel Dropout                                 |     5 |     12 | TV      |
 | Girls Last Tour                                 |     5 |     12 | TV      |
 | Highschool of the Dead                          |     5 |     12 | TV      |
 | Into the Forest of Fireflies Light              |     5 |      1 | Movie   |
@@ -79,6 +80,7 @@ description = "Port19s selfhosted anime list"
 | Gantz                                           |     4 |     13 | TV      |
 | Ghost in the Shell                              |     4 |      1 | Movie   |
 | Grave of the Fireflies                          |     4 |      1 | Movie   |
+| Gunsmith Cats                                   |     4 |      3 | OVA     |
 | Himouto! Umaru-chan                             |     4 |     12 | TV      |
 | Kiss x Sis                                      |     4 |     12 | OVA     |
 | Konosuba                                        |     4 |     10 | TV      |
@@ -96,8 +98,7 @@ description = "Port19s selfhosted anime list"
 | Toradora!: Bento Battle                         |     4 |      1 | OVA     |
 | Your Name.                                      |     4 |      1 | Movie   |
 |                                                 |       |        |         |
-| BLEND-S                                         |     3 |     12 | TV      |
-| Gabriel Dropout                                 |     3 |     12 | TV      |
+| A Place Further Than The Universe               |     3 |      1 | Movie   |
 | Children of the Sea                             |     3 |      1 | Movie   |
 | Cowboy Bebop                                    |     3 |     26 | TV      |
 | Demon Slayer Hashira Training Arc               |     3 |      8 | TV      |
@@ -109,7 +110,6 @@ description = "Port19s selfhosted anime list"
 | GANGSTA.                                        |     3 |     12 | TV      |
 | Grimgar of Fantasy and Ash                      |     3 |     12 | TV      |
 | Gunslinger Girl                                 |     3 |     13 | TV      |
-| Gunsmith Cats                                   |     3 |      3 | OVA     |
 | Haibaane Renmei                                 |     3 |     13 | TV      |
 | HELLO WORLD                                     |     3 |      1 | Movie   |
 | High School of the Dead: Drifters of the Dead   |     3 |      1 | OVA     |
