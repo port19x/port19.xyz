@@ -1,13 +1,14 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-04-21
+updated = 2025-04-24
 description = "action-adventure > rpg"
 +++
 
 ## Playing
 
 <img src="/retrocovers/silent-hill.jpg">
+<img src="/retrocovers/earthbound.jpg">
 
 ## Completed
 
