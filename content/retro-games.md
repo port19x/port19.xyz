@@ -1,13 +1,12 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-04-24
+updated = 2025-04-26
 description = "action-adventure > rpg"
 +++
 
 ## Playing
 
-<img src="/retrocovers/silent-hill.jpg">
 <img src="/retrocovers/earthbound.jpg">
 
 ## Completed
@@ -18,8 +17,6 @@ Borders:
 <!-- NA Relese Dates: SNES 1991, PSX 1995, N64 1996, PS2 2000, GBA 2001, GC 2001-->
 
 <img src="/retrocovers/metroid-prime.jpg" style="box-shadow: 0 0 0 3px silver;">
-<img src="/retrocovers/castlevania-chronicles.jpg" title="with save states, do not recommend">
-<img src="/retrocovers/castlevania-symphony-of-the-night.jpg" style="box-shadow: 0 0 0 3px gold;">
 <br>
 <img src="/retrocovers/metroid-fusion.jpg">
 <img src="/retrocovers/castlevania-aria-of-sorrow.jpg" style="box-shadow: 0 0 0 3px silver;">
@@ -28,6 +25,10 @@ Borders:
 <img src="/retrocovers/drill-dozer.jpg">
 <img src="/retrocovers/pokemon-leafgreen.jpg">
 <img src="/retrocovers/final-fantasy-1-2.jpg" title="only 1, 2 sucks">
+<br>
+<img src="/retrocovers/castlevania-chronicles.jpg" title="with save states, do not recommend">
+<img src="/retrocovers/castlevania-symphony-of-the-night.jpg" style="box-shadow: 0 0 0 3px gold;">
+<img src="/retrocovers/silent-hill.jpg">
 <br>
 <img src="/retrocovers/super-mario-64.jpg" style="box-shadow: 0 0 0 3px silver;">
 <img src="/retrocovers/star-fox-64.jpg" title="only easy route tho">
