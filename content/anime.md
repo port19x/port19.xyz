@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2025-04-24
+updated = 2025-04-27
 description = "Port19s selfhosted anime list"
 +++
 
@@ -27,13 +27,8 @@ description = "Port19s selfhosted anime list"
 
 | Title                             | Progress  | Format |
 |-----------------------------------|-----------|--------|
-| Frieren: Beyond Journey's End     |  16/28    | TV     |
-
-## Planning
-
-| Title                             | Format |
-|-----------------------------------|--------|
-| K-On!!                            | TV     |
+| Frieren: Beyond Journey's End     |  21/28    | TV     |
+| K-On!!                            |   1/26    | TV     |
 
 ## Completed
 
