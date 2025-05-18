@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2025-05-17
+updated = 2025-05-18
 description = "Port19s selfhosted anime list"
 +++
 
@@ -27,7 +27,6 @@ description = "Port19s selfhosted anime list"
 
 | Title                             | Progress  | Format |
 |-----------------------------------|-----------|--------|
-| Frieren: Beyond Journey's End     |  26/28    | TV     |
 | K-On!!                            |   4/26    | TV     |
 
 ## Completed
@@ -39,6 +38,7 @@ description = "Port19s selfhosted anime list"
 | After The Rain                                  |     5 |     12 | TV      |
 | BLEND-S                                         |     5 |     12 | TV      |
 | FLCL Alternative                                |     5 |      6 | TV      |
+| Frieren: Beyond Journey's End                   |     5 |     28 | TV      |
 | Gabriel Dropout                                 |     5 |     12 | TV      |
 | Girls Last Tour                                 |     5 |     12 | TV      |
 | Highschool of the Dead                          |     5 |     12 | TV      |
