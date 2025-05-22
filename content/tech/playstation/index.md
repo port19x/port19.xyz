@@ -61,7 +61,7 @@ Good, but with no watts being wasted to ray trace the exact reflections in a mud
 The 1080p resolution helps a lot here.
 
 PS3 has nice remasters from the PS2 era as well as plenty of originals of its own.
-I'd say it's the last generation before the gaming industry god extremely uncreative.
+I'd say it's the last generation before the gaming industry got extremely uncreative.
 PS3 is already less radical in terms of game designs than the PS2 and it is more of a generation of refinements and small improvements.
 
 ## Emulation

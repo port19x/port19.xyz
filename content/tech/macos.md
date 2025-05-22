@@ -37,7 +37,7 @@ Only downside: lacking ports, not even a single USB-A.
 Performance wise, it’s also pretty impressive, being able to run my most demanding compatible game: XCOM 2 at 1440p Medium, which is nowhere near playable on the Tuxedo Aura 15.
 
 Let’s talk battery life. On the extreme end, 1.5 hours of XCOM 2 depleted the battery from 97 to 37%.
-In more modest applications it's battery life rather impressive, lasting for a full day of college.
+In more modest applications it's battery life is rather impressive, lasting for a full day of college.
 The included usb-c charger appears to be of high quality with a long enough cable for my needs.
 
 Perhaps most important to me, it's fanless!
