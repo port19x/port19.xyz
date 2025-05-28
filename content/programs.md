@@ -1,31 +1,21 @@
 +++
 title = "💻Programs I use💻"
 date = 2024-03-16
-updated = 2025-03-10
+updated = 2025-05-28
 description = "and recommend"
 +++
 
 ## Base
 
-### [Arch Linux](https://archlinux.org/)
+### Apple
 
-Arch Linux has been my linux distribution of choice since early 2021.
-It has been a reliable and trusty companion over the years, being less fragile than several of the allegedly stable distros I've used prior, such as debian.
-I tightly integrate my [dotfiles](https://github.com/port19x/dotfiles) with arch, having a [PKGBUILD](https://github.com/port19x/dotfiles/blob/master/PKGBUILD) to automate my dotfiles bootstrapping.
-I believe this approach to be superior to a post-install script, since it allows me to more explicitly track the packages I use and keep the list of explicitly installed packages low.
-
-My recovery time from a backup, including a full reinstall, is less than one hour.
-
-My current shell is zsh, but I've also used bash in the past. \
-My wayland compositor is [labwc](https://github.com/labwc/labwc).
+I an Iphone 16e, Apple Watch Series 9 and M4 Mac Mini Base Model along with Airpods 3 and a few Airtags.
+My [dotfiles](https://github.com/port19x/dotfiles) still contain a homebrew package list and zshrc, along with a rich history of 1000 Commits across the past  years on Linux.
+I'm still figuring out how to user Mac OS to its fullest potential, perhaps I'll write a post about this some day.
 
 ### [Brave](https://brave.com/)
 
 I'm currently using brave as my primary web browser. I like it due to it's builtin adblock and speed. I've also extensively used both [Librewolf](https://librewolf.net/) and [Qutebrowser](https://qutebrowser.org/) in the past and can recommend them for enhanced privacy protection and keyboard driven operation respectively.
-
-### [Foot](https://codeberg.org/dnkl/foot)
-
-I have previously reviewed all terminal emulators, [have a read](https://port19.xyz/tech/terminals/).
 
 ### [Neovim](https://neovim.io/)
 
@@ -39,10 +29,10 @@ You need to watch only two videos on emacs to make a well informed decision on w
 
 ## Multimedia
 
-### [MPV](https://mpv.io/)
+### [IINA](https://iina.io/)
 
-My media player of choice is mpv, it's great for both audio and video and the dominant choice among linux users.
-To mac users I can recommend [IINA](https://iina.io/).
+My media player of choice is IINA, it's great for both audio and video. A hidden gem for mac users.
+To everyone else I can recommend [MPV](https://mpv.io/).
 
 ### [FFMPEG](https://ffmpeg.org/)
 
