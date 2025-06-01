@@ -1,13 +1,9 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-04-26
+updated = 2025-06-01
 description = "action-adventure > rpg"
 +++
-
-## Playing
-
-<img src="/retrocovers/earthbound.jpg">
 
 ## Completed
 
@@ -39,6 +35,7 @@ Borders:
 <img src="/retrocovers/super-mario-all-stars.jpg" title="only 1 so far">
 <br>
 <img src="/retrocovers/super-metroid.jpg" title="played twice, back to back" style="box-shadow: 0 0 0 3px gold;">
+<img src="/retrocovers/earthbound.jpg">
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
 
 ## Sourcing & Emulation
