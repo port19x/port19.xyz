@@ -4,7 +4,7 @@ date = 2025-06-03
 description = "It's not about time"
 +++
 
-# It's not about time
+<img src="./ragebait.gif" height="400vw">
 
 So almost 3 years ago I wrote a post about [social media](https://port19.xyz/lifestyle/avoid-social-media/) and how it wastes your time.
 I kind of cringe at this cheap proclamation of virtue that any critique of social media is.
