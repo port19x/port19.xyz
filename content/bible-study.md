@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2025-06-09
+updated = 2025-06-14
 description = "Tracking Bible Reading Progress"
 +++
 
@@ -24,7 +24,7 @@ from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-cera
 
 | Book                   | Progress  |
 |------------------------|-----------|
-| Proverbs               |     12/31 |
+| Proverbs               |     21/31 |
 
 ## Completed
 
