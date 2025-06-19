@@ -17,11 +17,11 @@ description = "Port19s selfhosted anime list"
 
 ### TV
 
-1. Run With The Wind
-2. FLCL Alternative
-3. Girls Last Tour
-4. K-On!
-5. Is this a Zombie?
+1. FLCL Alternative
+2. Girls Last Tour
+3. Highschool of the Dead
+4. Is this a Zombie
+5. Tsukigakirei
 
 ## Completed
 
