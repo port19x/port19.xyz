@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2025-06-09
+updated = 2025-06-19
 description = "Port19s selfhosted anime list"
 +++
 
@@ -22,12 +22,6 @@ description = "Port19s selfhosted anime list"
 3. Girls Last Tour
 4. K-On!
 5. Is this a Zombie?
-
-## Watching
-
-| Title                             | Progress  | Format |
-|-----------------------------------|-----------|--------|
-| K-On!!                            |   9/26    | TV     |
 
 ## Completed
 
@@ -148,6 +142,7 @@ description = "Port19s selfhosted anime list"
 | One Piece                                        | 3     | 30/>1000 | TV      |
 | Blast of Tempest                                 | 2     | 2/24     | TV      |
 | Nekopara                                         | 2     | 4/12     | TV      |
+| K-On!!                                           | 2     | 10/26    | TV      |
 | Sonny Boy                                        | 2     | 8/12     | TV      |
 | Toradora! SOS! Hurray for Gourmands              | 2     | 2/4      | Special |
 | Dorei-ku The Animation                           | 1     | 6/12     | TV      |
