@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2025-06-18
+updated = 2025-06-19
 description = "Tracking Bible Reading Progress"
 +++
 
@@ -36,6 +36,9 @@ from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-cera
 | Romans                 |       16 |     25.05.2025 |
 | Song of Songs          |        8 |     26.05.2025 |
 | Proverbs               |       31 |     18.06.2025 |
+| 1 John                 |        5 |     19.06.2025 |
+| 2 John                 |        1 |     19.06.2025 |
+| 3 John                 |        1 |     19.06.2025 |
 
 ## Guides & Resources
 
