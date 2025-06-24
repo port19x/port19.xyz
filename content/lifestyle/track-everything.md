@@ -23,7 +23,7 @@ items that are struck through but still somewhat compelling.
 This is an area I wish I would have tracked much sooner, having only started this year.
 
 The problem with nutrition trackers is that most merely track the macronutrients which are basically useless unless you have a predisposition that makes you need more of one macronutrient,
- such as protein for body builders, carbs for endurance athletes and fats for people with inflamatory issues.
+ such as protein for body builders, carbs for endurance athletes and fats for people with inflammatory issues.
 Worse yet, there tends to be a focus on calories which is really only relevant if you're either overweight or underweight.
 
 Cronometer is drastically different in that it does track macros and calories, but also all necessary micronutrients.
@@ -36,7 +36,7 @@ So I ordered a supplement for that and am looking forward to seeing if that cure
 Take some nutrition fun facts I learned from tracking with cronometer:
 - 1 Liter of orange juice has 3x the RDA of Vitamin C
 - 20g of 85% Dark Chocolate has 35% the RDA of Iron and 10% the RDA of Magnesium
-- 300g Steamed Brocoli twice a week will top off your Vitamin K
+- 300g Steamed Broccoli twice a week will top off your Vitamin K
 - Potatoes are by far the easiest way to get loads of Vitamin E
 - Pasta with Tomato Sauce is jarringly nutritious
 - 1 Banana has 25% of your Potassium RDA
@@ -46,7 +46,7 @@ On top of giving you reliable nutrition metrics, tracking your food intake on it
 
 ## [Health](https://en.wikipedia.org/wiki/Health_(Apple)) & [Fitness](https://en.wikipedia.org/wiki/Fitness_(Apple)) (via Apple)
 
-Without my apple watch ecg, I wouldn't have gotten my diagnosis and corrective surgery for my [AVNRT](https://en.wikipedia.org/wiki/AV_nodal_reentrant_tachycardia), a rare heart arrythmia that I've had for 10 years.
+Without my apple watch ecg, I wouldn't have gotten my diagnosis and corrective surgery for my [AVNRT](https://en.wikipedia.org/wiki/AV_nodal_reentrant_tachycardia), a rare heart arrhythmia that I've had for 10 years.
 That alone will make the apple watch forever one of my best purchases.
 
 But even as a healthy young man its useful to track several vitals and watch for potential changes.
