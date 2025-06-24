@@ -44,6 +44,7 @@ from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-cera
 | James                  |        5 |     22.06.2025 |
 | Jude                   |        1 |     22.06.2025 |
 | Philemon               |        1 |     23.06.2025 |
+| Titus                  |        3 |     24.06.2025 |
 
 ## Guides & Resources
 
