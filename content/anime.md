@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2025-06-19
+updated = 2025-06-25
 description = "Port19s selfhosted anime list"
 +++
 
@@ -87,13 +87,12 @@ description = "Port19s selfhosted anime list"
 | Toradora!: Bento Battle                         |     4 |      1 | OVA     |
 | Your Name.                                      |     4 |      1 | Movie   |
 |                                                 |       |        |         |
-| A Place Further Than The Universe               |     3 |      1 | Movie   |
+| A Place Further Than The Universe               |     3 |     13 | TV      |
 | Children of the Sea                             |     3 |      1 | Movie   |
 | Cowboy Bebop                                    |     3 |     26 | TV      |
 | Demon Slayer Hashira Training Arc               |     3 |      8 | TV      |
 | Demon Slayer Infinity Train                     |     3 |      1 | Movie   |
 | Divine Gate                                     |     3 |     12 | TV      |
-| Elfen Lied                                      |     3 |     13 | TV      |
 | Elfen Lied                                      |     3 |     13 | TV      |
 | Full Metal Alchemist: Brotherhood               |     3 |     13 | TV      |
 | GANGSTA.                                        |     3 |     12 | TV      |
@@ -106,7 +105,6 @@ description = "Port19s selfhosted anime list"
 | Himouto! Umaru-chanS                            |     3 |     12 | Special |
 | Is the Order a Rabbit?                          |     3 |     12 | TV      |
 | Last Exile                                      |     3 |     26 | TV      |
-| Neon Genesis Evangelion                         |     3 |     26 | TV      |
 | One-Punch Man                                   |     3 |     12 | TV      |
 | Serial Experiments Lain                         |     3 |     13 | TV      |
 | The Pet Girl of Sakurasou                       |     3 |     24 | TV      |
@@ -123,6 +121,7 @@ description = "Port19s selfhosted anime list"
 | Ikkitousen: Dragon Destiny                      |     2 |     12 | TV      |
 | Ikkitousen: Great Guardians                     |     2 |     12 | TV      |
 | Ikkitousen: Xtreme Xecutor                      |     2 |     12 | TV      |
+| Neon Genesis Evangelion                         |     2 |     26 | TV      |
 |                                                 |       |        |         |
 | Aesthetica of a Rogue Hero                      |     1 |     12 | TV      |
 | Battle Vixens: Ikki Tousen                      |     1 |     13 | TV      |
