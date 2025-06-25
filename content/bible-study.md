@@ -10,7 +10,7 @@ Yes, I'm christian. Roman Catholic to be percise.
 My Bible is the revised [Einheitsübersetzung](https://en.wikipedia.org/wiki/Einheits%C3%BCbersetzung), a german translation used in the liturgy of the catholic church, and the most widespread in germany.
 It's the [2025 year edition](https://shop.die-bibel.de/Einheitsuebersetzung-Jahresedition-2025/1296), that only affects the cover art of course, they don't retranslate the bible every year.
 
-For US shoppers I recommend [the catholic company](https://www.catholiccompany.com/), 
+For US shoppers I recommend [the catholic company](https://www.catholiccompany.com/),
 from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-ceramic-stretch-rosary-bracelet-i129114/) and my [crucifix chain](https://www.catholiccompany.com/traditional-crucifix-w-chain-i36361/)
 
 <details>

@@ -21,7 +21,7 @@ I would say I'm actually pretty good at mindfulness meditation. In those phases 
 
 ## The Holy Rosary
 
-Now the rosary is a complex prayer and the most popular catholic private devotion. 
+Now the rosary is a complex prayer and the most popular catholic private devotion.
 It goes back to saint dominic who, according to pious catholic belief, received it from an apparition of the virgin mary.
 It consists of 53 hail marys, 6 our fathers, 6 glory bes, 6 optional fatima prayers as well as the apostolic creed as an opener.
 Additionally, there are 4 sets of 5 mysteries with a different one being assigned to each day of the week, focusing on different events in the life of jesus christ.
