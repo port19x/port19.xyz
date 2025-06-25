@@ -51,6 +51,6 @@ from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-cera
 - [Bible Reading Order](https://youtu.be/iq6dn3Z9--g)
 - [How to Pray the Rosary](https://youtu.be/iMQ_CRYWHME), [(German)](http://www.kirchenweb.at/rosenkranz/)
 - [Christian Denominations Overview](https://youtu.be/tzLS4O7YaUg)
-- [Chaplet of St. Michael the Archangel](https://www.ewtn.com/catholicism/devotions/chaplet-of-st-michael-the-archangel-386), [(German)](https://freunde.carloacutis.de/gebete/der-rosenkranz/rosenkranz-zum-erzengel-michael/)
+- [Chaplet of St. Michael the Archangel](https://chapletofsaintmichael.com/), [(German)](https://chapletofsaintmichael.com/german)
 - [Church Fathers](https://www.newadvent.org/fathers/)
 - [Catena Aurea](https://www.ecatholic2000.com/catena/)
