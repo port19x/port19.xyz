@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Commit Signatures via SSH</title>
+<meta name="description" content="The easy way to sign your git commits">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Commit Signatures via SSH
+</h1>
+
+<i>First Published: 2024-02-17</i>
+
+<hr>
+<p><em>The easy way to sign your git commits</em></p>
+<p>In <a href="https://blog.gitbutler.com/git-tips-and-tricks/">a talk</a> by GitButler I learned about the quick, gpgless way to sign commits on git 2.34+, supported by github and all major code forges, that I'll share with you today.</p>
+<p>As a prerequisite I assume you already have your ssh key pair that you use for authenticating with github.
+If not, and you somehow still use access tokens to authenticate, check out the <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">github docs</a> on the matter.</p>
+<p>Locally, run the command <code>git config --global gpg.format ssh</code>. <br />
+Then follow it up with <code>git config --global user.signingkey ~/.ssh/github.pub</code>. <br />
+You may omit <code>--global</code> if you only want to sign commits of a specific repository.
+Also keep in mind to replace <code>~/.ssh/github.pub</code> with the path to your public key.
+Then add your public key to github (again), this time changing the key type to "Signing Key".</p>
+<p>To sign selected commits, run <code>git commit</code> with the <code>-S</code> option. <br />
+To sign all future git commits, run <code>git config --global commit.gpgsign true</code>. <br />
+To sign selected tags, use <code>git tag</code> with the lowercase <code>-s</code> option. <br />
+To sign all future git tags, run <code>git config --global tag.gpgsign true</code>.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;nonguix&#x2F;">💻 (Non)Guix - The Uninstallable ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;new-pc&#x2F;">‹ 💻 New PC Build</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
