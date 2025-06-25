@@ -1,9 +1,11 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-06-01
+updated = 2025-06-25
 description = "action-adventure > rpg"
 +++
+
+*also check my [anime list](https://port19.xyz/anime)*
 
 ## Completed
 
