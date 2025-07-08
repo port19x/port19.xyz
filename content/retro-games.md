@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-07-06
+updated = 2025-07-08
 description = "action-adventure > rpg"
 +++
 
@@ -10,6 +10,7 @@ description = "action-adventure > rpg"
 ## Playing
 
 <img src="/retrocovers/chrono-trigger.jpg">
+<img src="/retrocovers/kirby-super-star.jpg">
 
 ## Completed
 
@@ -55,9 +56,10 @@ Pick games for one of the top100 lists on gamefaqs:
 [GC](https://gamefaqs.gamespot.com/boards/915781-gamecube/79516002),
 [GBA](https://gamefaqs.gamespot.com/boards/916598-game-boy-advance/66659387),
 I tend to stick to the top 20, with some franchise / genre specific exceptions. \
-[Metacritic](https://www.metacritic.com/) is a decent fallback for finding good games.
+[Metacritic](https://www.metacritic.com/) is a decent fallback for finding good games.\
+Also consider using [ChatGPT](https://chatgpt.com/) for this. The keyword heavy crossword puzzle that is game recommendations plays exactly into the strengths of large language models.
 
-[Romsfun](https://romsfun.com/) is currently the best site for sourcing roms preiod
+[Romsfun](https://romsfun.com/) is currently the best site for sourcing roms period.
 
 I use [Batocera Linux](https://batocera.org/) as the OS for all my retro gaming needs.
 
