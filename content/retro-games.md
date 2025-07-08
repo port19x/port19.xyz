@@ -10,7 +10,6 @@ description = "action-adventure > rpg"
 ## Playing
 
 <img src="/retrocovers/chrono-trigger.jpg">
-<img src="/retrocovers/kirby-super-star.jpg">
 
 ## Completed
 
@@ -44,6 +43,7 @@ Borders:
 <img src="/retrocovers/super-metroid.jpg" title="played twice, back to back" style="box-shadow: 0 0 0 3px gold;">
 <img src="/retrocovers/earthbound.jpg">
 <img src="/retrocovers/tetris-attack.jpg">
+<img src="/retrocovers/kirby-super-star.jpg">
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
 
 ## Sourcing & Emulation
