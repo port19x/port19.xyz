@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-07-09
+updated = 2025-07-12
 description = "action-adventure > rpg"
 +++
 
@@ -46,22 +46,31 @@ Borders:
 <img src="/retrocovers/kirby-super-star.jpg" style="box-shadow: 0 0 0 3px gold;">
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
 
-## Sourcing & Emulation
+## Curation
 
-Pick games for one of the top100 lists on gamefaqs:
+Retroachievements (Action Bias):
+[SNES](https://retroachievements.org/system/3-snes-super-famicom/games?sort=-playersTotal&page%5Bsize%5D=50&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail),
+[N64](https://retroachievements.org/system/2-nintendo-64/games?sort=-playersTotal&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail&page%5Bsize%5D=50),
+[PSX](https://retroachievements.org/system/12-playstation/games?sort=-playersTotal&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail&page%5Bsize%5D=50),
+[PS2](https://retroachievements.org/system/21-playstation-2/games?sort=-playersTotal&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail&page%5Bsize%5D=50),
+[GC](https://retroachievements.org/system/16-gamecube/games?sort=-playersTotal&filter%5Bgame-type%5D=retail&filter%5Bsubsets%5D=only-games&page%5Bsize%5D=50),
+[GBA](https://retroachievements.org/system/5-game-boy-advance/games?sort=-playersTotal&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail&page%5Bsize%5D=50)
+
+Gamefaqs (RPG Bias):
 [SNES](https://gamefaqs.gamespot.com/boards/916396-super-nintendo/76022917),
 [N64](https://gamefaqs.gamespot.com/boards/916387-nintendo-64/78772770),
 [PSX](https://gamefaqs.gamespot.com/boards/916392-playstation/79518173),
 [PS2](https://gamefaqs.gamespot.com/boards/915821-playstation-2/79518850),
 [GC](https://gamefaqs.gamespot.com/boards/915781-gamecube/79516002),
-[GBA](https://gamefaqs.gamespot.com/boards/916598-game-boy-advance/66659387),
-I tend to stick to the top 20, with some franchise / genre specific exceptions. \
-[Metacritic](https://www.metacritic.com/) is a decent fallback for finding good games.\
-Also consider using [ChatGPT](https://chatgpt.com/) for this. The keyword heavy crossword puzzle that is game recommendations plays exactly into the strengths of large language models.
+[GBA](https://gamefaqs.gamespot.com/boards/916598-game-boy-advance/66659387)
 
-[Romsfun](https://romsfun.com/) is currently the best site for sourcing roms period.
+## Sourcing & Emulation
 
-I use [Batocera Linux](https://batocera.org/) as the OS for all my retro gaming needs.
+[Myrient](https://myrient.erista.me/) is good for curated nointro and redump romsets.\
+[Romsfun](https://romsfun.com/) is my current fallback site.
+
+I use [Batocera Linux](https://batocera.org/) as the OS for all my retro gaming needs.\
+My Gamepad is a black [8bitdo pro 2](https://www.8bitdo.com/pro2/)
 
 ## PC
 
