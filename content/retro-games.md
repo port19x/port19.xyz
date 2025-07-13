@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-07-12
+updated = 2025-07-13
 description = "action-adventure > rpg"
 +++
 
@@ -46,23 +46,35 @@ Borders:
 <img src="/retrocovers/kirby-super-star.jpg" style="box-shadow: 0 0 0 3px gold;">
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
 
+## Completed (Consoles)
+
+### N64
+
+I tried and quickly quit the other 3d platformers, they suck.\
+Not big into the N64 racing games either.\
+I tried Goldeneye and Perfect Dark, but the controls aged terribly.\
+Zelda OOT is a great game objectively, but something about the gameplay just didn't click with me so I just kinda stopped playing about 10 hours in.
+
+### PSX
+The 3D graphics suck.\
+I tried and disliked metal gear solid and crash bandicoot.\
+RPGs would be plentiful, but where are they not?\
+Some games I may play as ports on later systems.
+
 ## Curation
 
 Retroachievements (Action Bias):
 [SNES](https://retroachievements.org/system/3-snes-super-famicom/games?sort=-playersTotal&page%5Bsize%5D=50&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail),
-[N64](https://retroachievements.org/system/2-nintendo-64/games?sort=-playersTotal&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail&page%5Bsize%5D=50),
-[PSX](https://retroachievements.org/system/12-playstation/games?sort=-playersTotal&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail&page%5Bsize%5D=50),
 [PS2](https://retroachievements.org/system/21-playstation-2/games?sort=-playersTotal&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail&page%5Bsize%5D=50),
 [GC](https://retroachievements.org/system/16-gamecube/games?sort=-playersTotal&filter%5Bgame-type%5D=retail&filter%5Bsubsets%5D=only-games&page%5Bsize%5D=50),
 [GBA](https://retroachievements.org/system/5-game-boy-advance/games?sort=-playersTotal&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail&page%5Bsize%5D=50)
 
 Gamefaqs (RPG Bias):
 [SNES](https://gamefaqs.gamespot.com/boards/916396-super-nintendo/76022917),
-[N64](https://gamefaqs.gamespot.com/boards/916387-nintendo-64/78772770),
-[PSX](https://gamefaqs.gamespot.com/boards/916392-playstation/79518173),
 [PS2](https://gamefaqs.gamespot.com/boards/915821-playstation-2/79518850),
 [GC](https://gamefaqs.gamespot.com/boards/915781-gamecube/79516002),
 [GBA](https://gamefaqs.gamespot.com/boards/916598-game-boy-advance/66659387)
+
 
 ## Sourcing & Emulation
 
