@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-07-13
+updated = 2025-07-14
 description = "action-adventure > rpg"
 +++
 
@@ -82,7 +82,8 @@ Gamefaqs (RPG Bias):
 [Romsfun](https://romsfun.com/) is my current fallback site.
 
 I use [Batocera Linux](https://batocera.org/) as the OS for all my retro gaming needs.\
-My Gamepad is a black [8bitdo pro 2](https://www.8bitdo.com/pro2/)
+My Gamepad is a black [8bitdo pro 2.](https://www.8bitdo.com/pro2/)\
+[Input Lag Mitigation](https://emulation.gametechwiki.com/index.php/Input_lag)
 
 ## PC
 
