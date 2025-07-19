@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-07-14
+updated = 2025-07-20
 description = "action-adventure > rpg"
 +++
 
@@ -75,6 +75,11 @@ Gamefaqs (RPG Bias):
 [GC](https://gamefaqs.gamespot.com/boards/915781-gamecube/79516002),
 [GBA](https://gamefaqs.gamespot.com/boards/916598-game-boy-advance/66659387)
 
+Retroachievements per franchise:
+[Metroid](https://retroachievements.org/hub/8854?page%5Bsize%5D=50&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail&sort=-playersTotal),
+[Castlevania](https://retroachievements.org/hub/8027?page%5Bsize%5D=50&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail&sort=-playersTotal),
+[Mario](https://retroachievements.org/hub/2714?page%5Bsize%5D=50&sort=-playersTotal&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail),
+[Kirby](https://retroachievements.org/hub/2129?page%5Bsize%5D=50&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail&sort=-playersTotal)
 
 ## Sourcing & Emulation
 
