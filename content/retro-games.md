@@ -10,6 +10,7 @@ description = "action-adventure > rpg"
 ## Playing
 
 <img src="/retrocovers/chrono-trigger.jpg">
+<img src="/retrocovers/sonic-wings-special.jpg">
 
 ## Completed
 
@@ -73,6 +74,7 @@ Retroachievements per franchise:
 [Romsfun](https://romsfun.com/) is my current fallback site.
 
 I use [Batocera Linux](https://batocera.org/) as the OS for all my retro gaming needs.\
+[Lakka](https://www.lakka.tv/) is a more streamlined and lightweight alternative that I recommend for Single Board Computers.\
 My Gamepad is a black [8bitdo pro 2.](https://www.8bitdo.com/pro2/)\
 [Input Lag Mitigation](https://emulation.gametechwiki.com/index.php/Input_lag)
 
