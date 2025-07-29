@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-07-27
+updated = 2025-07-29
 description = "action-adventure > rpg"
 +++
 
@@ -46,21 +46,6 @@ Borders:
 <img src="/retrocovers/super-castlevania-iv.jpg">
 <img src="/retrocovers/kirby-super-star.jpg" style="box-shadow: 0 0 0 3px gold;">
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
-
-## Completed (Consoles)
-
-### N64
-
-I tried and quickly quit the other 3d platformers, they suck.\
-Not big into the N64 racing games either.\
-I tried Goldeneye and Perfect Dark, but the controls aged terribly.\
-Zelda OOT is a great game objectively, but something about the gameplay just didn't click with me so I just kinda stopped playing about 10 hours in.
-
-### PSX
-The 3D graphics suck.\
-I tried and disliked metal gear solid and crash bandicoot.\
-RPGs would be plentiful, but where are they not?\
-Some games I may play as ports on later systems.
 
 ## Curation
 
