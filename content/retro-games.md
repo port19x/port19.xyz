@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-07-29
+updated = 2025-07-31
 description = "action-adventure > rpg"
 +++
 
@@ -11,6 +11,7 @@ description = "action-adventure > rpg"
 
 <img src="/retrocovers/chrono-trigger.jpg">
 <img src="/retrocovers/sonic-wings-special.jpg">
+<img src="/retrocovers/sexy-parodius.jpg">
 
 ## Completed
 
