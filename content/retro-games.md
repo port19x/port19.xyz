@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-07-31
+updated = 2025-08-01
 description = "action-adventure > rpg"
 +++
 
@@ -45,7 +45,7 @@ Borders:
 <img src="/retrocovers/super-metroid.jpg" title="played twice, back to back" style="box-shadow: 0 0 0 3px gold;">
 <img src="/retrocovers/earthbound.jpg">
 <img src="/retrocovers/tetris-attack.jpg">
-<img src="/retrocovers/super-castlevania-iv.jpg">
+<img src="/retrocovers/super-castlevania-iv.jpg" style="box-shadow: 0 0 0 3px gold;">
 <img src="/retrocovers/kirby-super-star.jpg" style="box-shadow: 0 0 0 3px gold;">
 <!-- NES sucks, but I played bubble bobble, tetris and kirbys adventure on it. Covers suck too, so I'm not including them-->
 
