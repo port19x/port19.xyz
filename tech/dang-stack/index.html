@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Infrastructure with the DANG Stack</title>
+<meta name="description" content="Docker Ansible Nginx Grafana">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Infrastructure with the DANG Stack
+</h1>
+
+<i>First Published: 2023-07-10</i>
+
+<hr>
+<img src="./DangStack.png" height="400vw">
+<p>In this post I'll introduce the tech stack I use to build my personal infrastructure.
+It is ideal for monolithic deployments, but will scale well to about a dozen servers.
+The four main components are each supported by one or two smaller components to coherently achieve some administration task.</p>
+<h2 id="docker">
+<a class="zola-anchor" href="#docker" aria-label="Anchor link for: docker">🔗</a>
+
+Docker</h2>
+<p><a href="https://www.docker.com/why-docker/">Docker</a> is the most common containerization software in use today.
+Its role in the DANG stack is to be the application runtime.
+Docker allows a developer to build their application in a reproducible and deployable manner.
+Stateless applications are benefited the most, but stateful applications work as well.</p>
+<p><a href="https://github.com/docker/compose#quick-start">Docker Compose</a> is a way to connect the container to it's environment.
+It connects ports, binds storage volumes and defines what containers are deployed in the first place.
+This makes multi-container setups reproducible and easy.</p>
+<p><a href="https://docs.docker.com/engine/swarm/">Docker Swarm</a> is a way to coordinate docker containers across several hosts.
+You can think of it as a poor mans kubernetes, but since it is a lot simpler it's the superior choice for deployments up to a dozen servers.
+I currently have no use for this, but might leverage it once I deploy to multiple servers.</p>
+<h2 id="ansible">
+<a class="zola-anchor" href="#ansible" aria-label="Anchor link for: ansible">🔗</a>
+
+Ansible</h2>
+<p><a href="https://docs.ansible.com/ansible/latest/getting_started/index.html">Ansible</a> is the default Infrastructure as Code solution in use today.
+It's job in the DANG stack is the provisioning and configuration of cloud resources.
+It fits particularly well, as it has rich templating support and uses a push based config management, enabling use in a CI/CD context.</p>
+<p>My current setup uses <a href="https://m.do.co/c/e3fad703cc9b">Digital Ocean</a> for hosting, which is natively supported by Ansible.
+This provisioning and deprovisioning saves me money during this experimental phase where I have no services to run 24/7.</p>
+<p><a href="https://www.terraform.io/use-cases/multi-cloud-deployment">Terraform</a> is focused solely on cloud provisioning and as such supports many more clouds than Ansible does.
+<code>terraform destroy</code> is also a more ergonomic way to deprovision resources when they are no longer needed, compared to having a <code>destroy.yml</code> playbook in ansible.
+I will start using it once I leverage more involved cloud offerings or start to use more than one provider at once.</p>
+<p><a href="https://docs.github.com/en/actions">Github Actions</a> can automate deployment in a CI/CD fashion. You can get creative here.
+Perhaps deploy to a test environment when not on the master branch?
+Maybe have automatic deprovisioning and provisioning with roll-over at regular intervals?
+Cool stuff!
+In any case you'll need to add an ssh key and an api token to Github secrets.</p>
+<h2 id="nginx">
+<a class="zola-anchor" href="#nginx" aria-label="Anchor link for: nginx">🔗</a>
+
+Nginx</h2>
+<p><a href="https://nginx.org/en/docs/">Nginx</a> handles all the traffic.
+It serves the DANG stack as a <a href="https://youtu.be/lZVAI3PqgHc">reverse proxy</a> first and foremost, but also provides usage statistics in the form of access logs that are visualized on a Grafana dashboard.
+Once you scale up, it also supports caching and load balancing, so that's nice.</p>
+<p>Nginx is aided by any decent firewall, assuring visitors don't just sidestep your reverse proxy.
+For this I personally use <a href="https://en.wikipedia.org/wiki/Uncomplicated_Firewall">ufw</a>, the uncomplicated firewall, which is a wrapper around iptables.</p>
+<h2 id="grafana">
+<a class="zola-anchor" href="#grafana" aria-label="Anchor link for: grafana">🔗</a>
+
+Grafana</h2>
+<p><a href="https://grafana.com/grafana">Grafana</a> is the best visualization software for infrastructure monitoring out today.
+It visualizes metrics that are aggregated by <a href="https://prometheus.io/docs/instrumenting/exporters/">Prometheus</a>, which itself needs a few exporters to give us the insights we deserve.</p>
+<p>This component is the most open ended, as you can easily expand to Log Aggregation (e.g. via <a href="https://grafana.com/products/cloud/logs/?plcmt=footer">Grafana Loki</a>) or even use all four Grafana products at once.
+Prometheus is also not a set and forget solution, as you need to configure several exporters to gain insights beyond resource consumption.</p>
+<h2 id="the-synergy">
+<a class="zola-anchor" href="#the-synergy" aria-label="Anchor link for: the-synergy">🔗</a>
+
+The Synergy</h2>
+<p>These four components lay a powerful foundation for an infrastructure that can grow to at least a moderate size.
+Each component excels at it's job while not impeding any of the other components.
+Check out <a href="https://github.com/port19x/rapture">my repo</a> for a demonstration of what is possible and to follow where I'm going with this.
+If you have any suggestions of software that might be fun for me to self-host, please let me know.
+I'll also be publishing more focussed tutorials on how to achieve specific things with the components mentioned, as related resources can be dry sometimes.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;ansible-provision&#x2F;">💻 DigitalOcean Provisioning with Ansible ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;emacs-init&#x2F;">‹ 💻 Faster Emacs Init</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
