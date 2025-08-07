@@ -7,7 +7,7 @@ description = "according to german federal sources"
 In February I played the game [This War Of Mine](https://store.steampowered.com/app/282070/This_War_of_Mine/), in which you play a civilian surviving during war. It's a very fun resource management type game and is what got me interested in the topic.
 By the end of April, I was pretty much done with my prepping, but I didn't feel like making a post out of it until now.
 
-## Scope 
+## Scope
 
 This is not intended to keep you alive indefinitely in a true [SHTF](https://www.urbandictionary.com/define.php?term=shtf) scenario.
 It's supposed to give you a baseline for lasting 14 days, enough for any natural disaster or infrastructure outage to blow over for the foreseeable future.
