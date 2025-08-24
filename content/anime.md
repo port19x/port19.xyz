@@ -1,11 +1,15 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2025-06-25
+updated = 2025-08-24
 description = "Port19s selfhosted anime list"
 +++
 
 ## Favorites
+
+| Title             | Progress |
+|-------------------|----------|
+| Lord of Mysteries |      1/? |
 
 ### Movies
 
