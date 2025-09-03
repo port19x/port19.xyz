@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2025-07-29
+updated = 2025-09-03
 description = "Tracking Bible Reading Progress"
 +++
 
@@ -18,8 +18,6 @@ from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-cera
 </summary>
 <img src="/catholicstuff.jpg" height="800vw">
 </details>
-
-## Currently Reading: Acts of the Apostles
 
 ## Completed
 
@@ -41,6 +39,7 @@ from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-cera
 | Philemon               |        1 |     23.06.2025 |
 | The Gospel of Mark     |       16 |     30.06.2025 |
 | The Gospel of Matthew  |       28 |     29.07.2025 |
+| Acts                   |       28 |     03.09.2025 |
 
 ## Guides & Resources
 
