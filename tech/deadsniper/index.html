@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 I coded my own dead link checker</title>
+<meta name="description" content="Go is an acquired taste">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 I coded my own dead link checker
+</h1>
+
+<i>First Published: 2024-08-27</i>
+
+<hr>
+<p><em>Go is an acquired taste</em></p>
+<h2 id="foreshadowing">
+<a class="zola-anchor" href="#foreshadowing" aria-label="Anchor link for: foreshadowing">🔗</a>
+
+Foreshadowing</h2>
+<p>As foreshadowed in my post explaining <a href="https://port19.xyz/tech/blog/#quality-assurance">my blogging setup</a>, I always wanted a faster dead link checker to run on my evergrowing website.
+My <a href="https://port19.xyz/tech/go-review/">dislike for go</a> made me procrastinate on this project for quite a while.
+Then, last Friday I finally had some motivation to code some go and ended up writing the v1.0 of my own dead link checker in about two hours.
+Some async bug fixes and feature additions later and it now sits at v1.4, ~170LoC and is available as a github action as well.
+I estimate that I now spent ~10h total on it.</p>
+<h2 id="go-review-revised">
+<a class="zola-anchor" href="#go-review-revised" aria-label="Anchor link for: go-review-revised">🔗</a>
+
+Go Review Revised</h2>
+<p>I must say that go as a language to me feels similar to php in the sense that I dislike its lack of elegance, but can't resist it for its incredible deployment path. Nothing easier than <code>scp</code>-ing an <code>index.php</code> and nothing easier than uploading a statically linked go binary to github releases.</p>
+<p>The concurrency model and error handling are pretty neat, as is the tooling.</p>
+<p>One thing that still bugs me is that go has no list membership function, so I have to code my own like this:</p>
+<pre data-lang="go" style="background-color:#0f1419;color:#bfbab0;" class="language-go "><code class="language-go" data-lang="go"><span style="color:#ff7733;">func </span><span style="color:#ffb454;">contains</span><span>(</span><span style="color:#f29718;">slice </span><span>[]</span><span style="font-style:italic;color:#39bae6;">int</span><span style="color:#bfbab0cc;">, </span><span style="color:#f29718;">item </span><span style="font-style:italic;color:#39bae6;">int</span><span>) </span><span style="font-style:italic;color:#39bae6;">bool </span><span>{
+</span><span>	</span><span style="color:#ff7733;">for </span><span style="font-style:italic;color:#39bae6;">_</span><span style="color:#bfbab0cc;">, </span><span>v </span><span style="color:#f29668;">:= </span><span style="color:#ff7733;">range </span><span>slice {
+</span><span>		</span><span style="color:#ff7733;">if </span><span>v </span><span style="color:#f29668;">== </span><span>item {
+</span><span>			</span><span style="color:#ff7733;">return </span><span style="color:#f29718;">true
+</span><span>		}
+</span><span>	}
+</span><span>	</span><span style="color:#ff7733;">return </span><span style="color:#f29718;">false
+</span><span>}
+</span></code></pre>
+<p>But at least I can amuse myself by doing <a href="https://github.com/port19x/deadsniper/blob/ce6d506bd4f9fa2f2f3c2513eb109ba81e5e5bb3/main.go#L107-L124">argument parsing with gotos</a>, among other affronts to the clean-code crowd.</p>
+<h2 id="deadsniper">
+<a class="zola-anchor" href="#deadsniper" aria-label="Anchor link for: deadsniper">🔗</a>
+
+Deadsniper</h2>
+<p>If you're in the market for a dead link checker to min-max your website quality please do check out <a href="https://github.com/port19x/deadsniper">deadsniper</a>, you'll like it.
+I also consider the code to be well written and commented overall, so if you want to see an example of goroutines in action, there are worse codebases than mine to investigate.</p>
+<p>As a final sales pitch, check out this help text:</p>
+<pre style="background-color:#0f1419;color:#bfbab0;"><code><span>Usage: deadsniper [options] &lt;link to sitemap.xml&gt;
+</span><span>
+</span><span>Options:
+</span><span>  -h | --help    print this help text
+</span><span>  -V | --version print the version number
+</span><span>  -s | --strict  allow only HTTP 200 response codes
+</span><span>  -t | --timeout set the request timeout in seconds (default 5)
+</span><span>
+</span><span>Examples:
+</span><span>  deadsniper https://port19.xyz/sitemap.xml
+</span><span>  deadsniper -V
+</span><span>  deadsniper --strict https://port19.xyz/sitemap.xml
+</span><span>  deadsniper -t 1 -s https://port19.xyz/sitemap.xml
+</span></code></pre>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;playstation&#x2F;">💻 Review of my Playstation 2 and 3 ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;apple-ecosystem&#x2F;">‹ 💻 Apple Ecosystem Review</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
