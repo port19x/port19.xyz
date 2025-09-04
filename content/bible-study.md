@@ -1,22 +1,30 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2025-09-03
+updated = 2025-09-04
 description = "Tracking Bible Reading Progress"
 +++
 
 Yes, I'm christian. Roman Catholic to be percise.
 
 My Bible is the revised [Einheitsübersetzung](https://en.wikipedia.org/wiki/Einheits%C3%BCbersetzung), a german translation used in the liturgy of the catholic church, and the most widespread in germany.
-It's the [2025 year edition](https://shop.die-bibel.de/Einheitsuebersetzung-Jahresedition-2025/1296), that only affects the cover art of course, they don't retranslate the bible every year.
+It's a [large leather edition.](https://www.bibelwerk.shop/produkte/die-bibel-44020)
 
 For US shoppers I recommend [the catholic company](https://www.catholiccompany.com/),
-from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-ceramic-stretch-rosary-bracelet-i129114/) and my [crucifix chain](https://www.catholiccompany.com/traditional-crucifix-w-chain-i36361/)
+from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-ceramic-stretch-rosary-bracelet-i129114/) and my [crucifix chain](https://www.catholiccompany.com/traditional-crucifix-w-chain-i36361/). I later added a [St Michaels medal.](https://www.marienfiguren.de/medaille-erzengel-michael-schutzengel-a-sk12140.html)
+
+From [TAN Books](https://tanbooks.com/) I have two spiritual books that are enough to last a lifetime:\
+[St Alphonsus Ligouri: 12 Steps to Holiness and Salvation](https://tanbooks.com/products/books/the-12-steps-to-holiness-and-salvation-deluxe-leatherette/),
+[(goodreads)](https://www.goodreads.com/book/show/1093642.The_12_Steps_to_Holiness_and_Salvation)\
+[St Luis de Montfort: The Secret of the Rosary](https://tanbooks.com/products/books/the-secret-of-the-rosary-deluxe-leatherette/), 
+[(goodreads)](https://www.goodreads.com/book/show/1448527.The_Secret_Of_The_Rosary)
+
+For travel, I also have a german [pocket edition of the gospels.](https://www.bibelwerk.shop/produkte/die-evangelien-44058)
 
 <details>
-<summary>Picture of my Bible, Rosary & Chain
+<summary>Picture of it all
 </summary>
-<img src="/catholicstuff.jpg" height="800vw">
+<img src="/catholicstuff2.jpg" height="800vw">
 </details>
 
 ## Completed
