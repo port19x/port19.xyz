@@ -1,15 +1,11 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-09-02
+updated = 2025-09-12
 description = "action-adventure > rpg"
 +++
 
 *also check my [anime list](https://port19.xyz/anime)*
-
-## Playing
-
-<img src="/retrocovers/chrono-trigger.jpg">
 
 ## Completed
 
