@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Optimizing Unicode Fonts with Subfont</title>
+<meta name="description" content="From 23 Megabytes to 12 Kilobytes">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Optimizing Unicode Fonts with Subfont
+</h1>
+
+<i>First Published: 2023-11-29</i>
+
+<hr>
+<h1 id="from-23-megabytes-to-12-kilobytes">
+From 23 Megabytes to 12 Kilobytes</h1>
+<p>So this website uses a small handful of unicode emojis to visually indicate different elements, most notably post category.
+Since not every browser handles these well, I supply googles <a href="https://fonts.google.com/noto/specimen/Noto+Color+Emoji">noto color emoji</a> font as a fallback.
+This font is about as large as my whole website, so sending it on every request is a non-starter.
+<a href="https://github.com/Munter/subfont">Subfont</a> to the rescue!
+A command line tool and generally available via npm.</p>
+<p>Since this is a javascript project by someone I assume to be a frontend dev, it makes some weird assumptions.
+By default it will spit out the optimized font as a massive base64 glob inside your css file. <br />
+I don't want that.
+The workaround <a href="https://github.com/Munter/subfont/issues/155">¹</a> is to specify more than one format.</p>
+<ol>
+<li>If you've optimized the font previously and need to cover new glyphs, temporarily replace it with the larger parent font</li>
+<li>Make sure you're in a temporary directory as this will spit out a whole lot of garbage</li>
+<li><code>subfont --formats='woff2,woff' -r -d -o . https://port19.xyz</code></li>
+<li>Locate the optimized font in the <code>subfont</code> directory</li>
+</ol>
+<p>That's all. Just a quick reference for my future self, but maybe someone else finds it useful as well.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;exwm&#x2F;">💻 Emacs X Window Manager Review ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;functional-essence&#x2F;">‹ 💻 The Essence of Functional Programming</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
