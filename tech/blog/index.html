@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 My Blogging System</title>
+<meta name="description" content="A tour of what makes my blog totally awesome">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 My Blogging System
+</h1>
+
+<i>First Published: 2024-03-10</i>
+
+<hr>
+<p><em>A tour of what makes my blog totally awesome</em></p>
+<p>I've been actively blogging for almost 2 years now, releasing over 50 posts in the process.
+Along the way I optimised a bunch of parts of my publishing process and website. <br />
+This post will cover all of the technical aspects of what powers this blog.</p>
+<h2 id="static-site-generator">
+<a class="zola-anchor" href="#static-site-generator" aria-label="Anchor link for: static-site-generator">🔗</a>
+
+Static Site Generator</h2>
+<p>My static site generator of choice is <a href="https://github.com/getzola/zola">Zola</a>.
+What makes Zola special is that I retain full control over all the HTML<a href="https://github.com/port19x/port19.xyz/tree/master/templates">¹</a> and CSS<a href="https://github.com/port19x/port19.xyz/blob/master/static/style.css">²</a> that ends up on my page, no theme bullshit like with Hugo.
+It's written in rust and thus reasonably fast, building my whole website in &lt;100ms.</p>
+<p>The documentation is okay-ish.
+My gripe with it is that the hard part, how to effectively leverage the templating engine, is almost entirely undocumented.
+Also it's difficult to find large sites written in Zola to copy-paste things from.
+I'll claim mine is the biggest until proven otherwise.</p>
+<p>I've previously written on Zola and my dislike for Hugo <a href="https://port19.xyz/tech/zola/">here</a>. <br />
+Note that even Hugo is still leagues better than any of those javascript SSGs.</p>
+<h2 id="hosting">
+<a class="zola-anchor" href="#hosting" aria-label="Anchor link for: hosting">🔗</a>
+
+Hosting</h2>
+<p>Site hosting is done via github pages.
+That way I don't have to administrate linux servers in my free time as well.
+Also no expiring certificates like on every other old blog I see nowadays.</p>
+<p>If you end up self-hosting with a proper VPS, please take the necessary precautions and at least automate cert-rotation as well as downtime alerting.</p>
+<p>I bought my domain from Njalla.
+They're okay, a little expensive maybe.
+It doesn't really matter where you buy your domain.</p>
+<h2 id="post-categories">
+<a class="zola-anchor" href="#post-categories" aria-label="Anchor link for: post-categories">🔗</a>
+
+Post Categories</h2>
+<p>I sort my posts by categories. Tags don't really make sense until you reach triple digits of posts.
+On my landing page, you can filter the post categories with some convenient buttons at the top.
+This client-side interactivity is implemented using <a href="https://alpinejs.dev/">alpinejs</a>.
+I hacked that filtering together in an afternoon sometime last year, not having touched javascript before or since.</p>
+<h2 id="asset-management">
+<a class="zola-anchor" href="#asset-management" aria-label="Anchor link for: asset-management">🔗</a>
+
+Asset Management</h2>
+<p>I tend to convert any images I use in posts to jpegs. <br />
+You can do this via imagemagick on most linux systems: <code>convert &lt;input&gt; asset.jpg</code></p>
+<p>Since my website uses unicode emojis for categories, and I don't want to ship 10 megs of junk on every request, I used subfont to create a minimal subset of the unicode font I use.
+I've written on my usage of subfont <a href="https://port19.xyz/tech/subfont/">here</a>.</p>
+<h2 id="quality-assurance">
+<a class="zola-anchor" href="#quality-assurance" aria-label="Anchor link for: quality-assurance">🔗</a>
+
+Quality Assurance</h2>
+<p>To combat bit rot of my posts, I use a <a href="https://github.com/hahwul/deadfinder">dead link checker</a> via github actions.
+It's pretty slow, taking like 2 minutes to check my site.
+It also doesn't give me the red X in CI that I want upon finding a dead link, but that's probably just a bug that I should report. \</p>
+<p>If you're looking for an easy coding project, please write an asynchronous dead link checker with a github action to go along with it.</p>
+<p>Sometime last year I checked my site with the various SEO checkers I could find, just to make sure my HTML head and other things are as compliant as they can be.
+<a href="https://developer.chrome.com/docs/lighthouse/">Lighthouse</a> gets you 90% of the way there and is the official tool bundled with chromium based browsers.
+Just make sure you get the full score with lighthouse and you'll be fine.</p>
+<p>I also check for <a href="https://github.com/ocular-d/trailing-spaces">trailing whitespace</a>, but that's probably excessive and doesn't matter.</p>
+<h2 id="misc">
+<a class="zola-anchor" href="#misc" aria-label="Anchor link for: misc">🔗</a>
+
+Misc</h2>
+<p>I disallow the GPTBot in my <a href="https://github.com/port19x/port19.xyz/blob/master/templates/robots.txt">robots.txt</a>, and recommend you do the same.</p>
+<p>This website doesn't have an about page, which is fine since I don't currently syndicate my posts on hacker news, lobste.rs or, god forbid, reddit.
+I might add one in the future, or I might not.</p>
+<p>I hope this post is helpful to some of you. <br />
+Being an internet landlord<a href="https://youtu.be/SynQFoNMcQU">³</a> is fun, you should try it!</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;other-lisps&#x2F;">💻 The Other Lisps ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;nonguix&#x2F;">‹ 💻 (Non)Guix - The Uninstallable</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
