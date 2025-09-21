@@ -122,6 +122,7 @@ description = "Port19s selfhosted anime list"
 | Attack on Titan Season 2                        |     2 |     12 | TV      |
 | Demon Slayer                                    |     2 |     26 | TV      |
 | Demon Slayer Entertainment District Arc         |     2 |     11 | TV      |
+| Demon Slayer Infinity Castle Akaza Sairai       |     2 |      1 | Movie   |
 | HELLSING                                        |     2 |     13 | TV      |
 | High School DxD                                 |     2 |     12 | TV      |
 | Ikkitousen: Dragon Destiny                      |     2 |     12 | TV      |
