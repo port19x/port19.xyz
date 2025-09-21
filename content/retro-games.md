@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-09-18
+updated = 2025-09-22
 description = "action-adventure > rpg"
 +++
 
@@ -12,7 +12,7 @@ description = "action-adventure > rpg"
 <i style="color: gold">• played through twice</i>
 <!-- NA Relese Dates: SNES 1991, PSX 1995, N64 1996, PS2 2000, GBA 2001, GC 2001-->
 <!-- SNES quit: Donkey Kong Country, F Zero, Secret of Mana, Chrono Trigger, Contra III, many shmups-->
-<!-- SNES games with potential: Zelda ALTTP, Mega Man X, Yoshis Island, TNMT IV, Aero Fighters-->
+<!-- SNES games with potential: Zelda ALTTP, Mega Man X, Yoshis Island, Aero Fighters-->
 <!-- GBA games with potential: Castlevania CotM, Kirby, Zelda Minish Cap-->
 <!-- PS2: God of War (&2), Silent Hill 2 (&3), Castlevania Lament of Innocence-->
 <!-- GC: Metroid Prime 2, Luigis Mansion, Resident Evil-->
@@ -27,6 +27,7 @@ description = "action-adventure > rpg"
 <br>
 <img src="/retrocovers/earthbound.jpg">
 <img src="/retrocovers/tetris-attack.jpg">
+<img src="/retrocovers/tmnt-4.jpg">
 <br>
 <img src="/retrocovers/super-mario-64.jpg">
 <img src="/retrocovers/star-fox-64.jpg">
