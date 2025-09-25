@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2025-09-23
+updated = 2025-09-25
 description = "Tracking Bible Reading Progress"
 +++
 
@@ -52,6 +52,7 @@ For travel, I also have a german [pocket edition of the gospels.](https://www.bi
 | 2 Corinthians          |       13 |     18.09.2025 |
 | Galatians              |        6 |     21.09.2025 |
 | Ephesians              |        6 |     23.09.2025 |
+| Philippians            |        4 |     25.09.2025 |
 
 ## Guides & Resources
 
