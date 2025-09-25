@@ -53,6 +53,7 @@ For travel, I also have a german [pocket edition of the gospels.](https://www.bi
 | Galatians              |        6 |     21.09.2025 |
 | Ephesians              |        6 |     23.09.2025 |
 | Philippians            |        4 |     25.09.2025 |
+| Colossians             |        4 |     25.09.2025 |
 
 ## Guides & Resources
 
