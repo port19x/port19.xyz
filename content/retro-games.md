@@ -1,8 +1,8 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-09-22
-description = "action-adventure > rpg"
+updated = 2025-09-26
+description = "snes only"
 +++
 
 *also check my [anime list](https://port19.xyz/anime)*
@@ -51,20 +51,14 @@ description = "action-adventure > rpg"
 
 ## Curation
 
-Retroachievements (Action Bias):
-[SNES](https://retroachievements.org/system/3-snes-super-famicom/games?sort=-playersTotal&page%5Bsize%5D=50&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail),
-[GBA](https://retroachievements.org/system/5-game-boy-advance/games?sort=-playersTotal&filter%5Bsubsets%5D=only-games&filter%5Bgame-type%5D=retail&page%5Bsize%5D=50)
-
-Gamefaqs (RPG Bias):
-[SNES](https://gamefaqs.gamespot.com/boards/916396-super-nintendo/76022917),
-[GBA](https://gamefaqs.gamespot.com/boards/916598-game-boy-advance/66659387)
+<img src="/retrocovers/snes-classic.jpg" width=600>
 
 ## Sourcing & Emulation
 
 [Myrient](https://myrient.erista.me/) is good for curated nointro and redump romsets.\
 [Romsfun](https://romsfun.com/) is my current fallback site.
 
-I now use [snes9x](https://www.snes9x.com/) via `snes9x-gtk` and [mgba](https://mgba.io/) via `mgba-qt` now.\
+I now use [snes9x](https://www.snes9x.com/) via `snes9x-gtk`\
 My Gamepad is a black [8bitdo pro 2.](https://www.8bitdo.com/pro2/)\
 [Input Lag Mitigation](https://emulation.gametechwiki.com/index.php/Input_lag)
 
