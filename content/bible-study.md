@@ -58,6 +58,7 @@ For travel, I also have a german [pocket edition of the gospels.](https://www.bi
 | 2 Thessalonians        |        3 |     27.09.2025 |
 | 1 Timothy              |        6 |     29.09.2025 |
 | 2 Timothy              |        4 |     03.10.2025 |
+| Titus                  |        3 |     03.10.2025 |
 
 ## Guides & Resources
 
