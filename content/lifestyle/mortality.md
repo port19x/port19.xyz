@@ -11,7 +11,6 @@ description = "💀"
 If you manage to survive childhood, that's the average age you're supposed to hit.
 To get old presupposes that you don't die early, but what are the chances of that?¹
 Turns out, in germany, the probability of this would be ~10 percent, ~13.5 for men and ~6.5 for women.
-[²](https://knoema.com/atlas/Germany/topics/Demographics/Mortality/Adult-mortality-rate)
 Those are the numbers for the adult mortality rate, the probability of death between ages 15 and 60, given a survived childhood.
 Of course you do have some influence on our life expectancy and risk of early death.
 Diet and exercise can add a few years, while heavy drug use can subtract a few.

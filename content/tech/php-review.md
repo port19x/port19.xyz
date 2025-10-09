@@ -22,7 +22,7 @@ I took note of the ["speedrun checkpoints"](https://github.com/port19x/php-monor
 
 
 This experiment made me very optimistic about PHP and so on the next evening I implemented
-[fizzbuzz](https://github.com/port19x/php-monorepo/blob/master/2-fizzbuzz/index.php) and about a week later I re-implemented an old project of mine, a Clash Royale kicklist generator that at the time of writing is [still online](https://kicklistbot.nfshost.com/).
+[fizzbuzz](https://github.com/port19x/php-monorepo/blob/master/2-fizzbuzz/index.php) and about a week later I re-implemented an old project of mine, a Clash Royale kicklist generator that at the time of writing was still online.
 
 In the weeks since, I have bought myself used copies of [Programming PHP](https://www.oreilly.com/library/view/programming-php-4th/9781492054122/) and the [SQL Pocket Guide](https://www.oreilly.com/library/view/sql-pocket-guide/9781449397586/) and have made a [monorepo](https://github.com/port19x/php-monorepo/) for future PHP projects.
 

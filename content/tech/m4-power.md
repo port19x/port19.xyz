@@ -21,8 +21,8 @@ I'm too lazy to write a large introductory paragraph, so take a look at the [X86
 
 - [Speedometer 3.1](https://browserbench.org/Speedometer3.1/) Brave: 23.6 vs 48.9
 - XCOM 2 4K Minimal Menu: 40FPS vs 15FPS
-- [Emacs Lisp Benchmark](https://github.com/enzuru/native-comp-elisp-benchmarks#submit-your-own) Default GC Threshold: [30.95s](https://github.com/port19x/native-comp-elisp-benchmarks/blob/master/cpu/intel-i3-14100F.org#results-with-default-gc-cons-threshold) vs [20.65s](https://github.com/port19x/native-comp-elisp-benchmarks/blob/master/cpu/apple-m4.org#results-with-default-gc-cons-threshold)
-- [Emacs Lisp Benchmark](https://github.com/enzuru/native-comp-elisp-benchmarks#submit-your-own) Comp 8MB GC Threshold: [20.87s](https://github.com/port19x/native-comp-elisp-benchmarks/blob/master/cpu/intel-i3-14100F.org#results) vs [16.01s](https://github.com/port19x/native-comp-elisp-benchmarks/blob/master/cpu/apple-m4.org#results)
+- [Emacs Lisp Benchmark](https://github.com/enzuru/native-comp-elisp-benchmarks#submit-your-own) Default GC Threshold: [30.95s](https://github.com/enzuru/native-comp-elisp-benchmarks/blob/master/cpu/intel-i3-14100F.org#results-with-default-gc-cons-threshold) vs [20.65s](https://github.com/enzuru/native-comp-elisp-benchmarks/blob/master/cpu/apple-m4.org#results-with-default-gc-cons-threshold)
+- [Emacs Lisp Benchmark](https://github.com/enzuru/native-comp-elisp-benchmarks#submit-your-own) Comp 8MB GC Threshold: [20.87s](https://github.com/enzuru/native-comp-elisp-benchmarks/blob/master/cpu/intel-i3-14100F.org#results) vs [16.01s](https://github.com/enzuru/native-comp-elisp-benchmarks/blob/master/cpu/apple-m4.org#results)
 
 ## Amortisation
 

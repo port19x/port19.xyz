@@ -16,7 +16,7 @@ from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-cera
 From [TAN Books](https://tanbooks.com/) I have two spiritual books that are enough to last a lifetime:\
 [St Alphonsus Ligouri: 12 Steps to Holiness and Salvation](https://tanbooks.com/products/books/the-12-steps-to-holiness-and-salvation-deluxe-leatherette/),
 [(goodreads)](https://www.goodreads.com/book/show/1093642.The_12_Steps_to_Holiness_and_Salvation)\
-[St Luis de Montfort: The Secret of the Rosary](https://tanbooks.com/products/books/the-secret-of-the-rosary-deluxe-leatherette/), 
+[St Luis de Montfort: The Secret of the Rosary](https://tanbooks.com/products/books/the-secret-of-the-rosary-deluxe-leatherette/),
 [(goodreads)](https://www.goodreads.com/book/show/1448527.The_Secret_Of_The_Rosary)
 
 For travel, I also have a german [pocket edition of the gospels.](https://www.bibelwerk.shop/produkte/die-evangelien-44058)
