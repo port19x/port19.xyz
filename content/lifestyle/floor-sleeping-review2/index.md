@@ -18,6 +18,7 @@ Even my apple watch agrees that the sleep I now get is as restful as on my bed.
 The last time I seriously tried this three years ago I used a 6mm yoga mat and a sleeping bag.
 Now I am layering [this](https://www.ikea.com/de/de/p/trattviva-tagesdecke-dunkelgrau-60615067/) 230x250cm blanket from IKEA, folded twice on the long side, on top of the yoga mat.
 Since the short side is still a bit longer than the mat, I let it overhang slightly and fold in the head side for some extra elevation.
+During the day I let both the blanket and yoga mat air out.
 As for sleeping positions, this works well on my back and on either side.
 
 Finally I can rid myself of my most annoying possession, my bed.\
