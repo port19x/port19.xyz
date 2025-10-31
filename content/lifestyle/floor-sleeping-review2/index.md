@@ -23,3 +23,5 @@ As for sleeping positions, this works well on my back and on either side.
 
 Finally I can rid myself of my most annoying possession, my bed.\
 This is a sequel to [my second lifestyle post](https://port19.xyz/lifestyle/floor-sleeping-review/) from 3 years ago.
+
+*Edit Oct 31st: I did this until the 24th, comfort decreased gradually with the compression of blanket and yoga mat. I also found side sleeping more unpleasant, as head elevation was difficult to maintain at the desired level. Also its cold now. I know where to proceed when I go back to the floor, but this winter I shall remain in my bed*
