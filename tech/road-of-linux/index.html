@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Road of linux</title>
+<meta name="description" content="In Linux, we all travel a similar road">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Road of linux
+</h1>
+
+<i>First Published: 2023-05-28</i>
+
+<hr>
+<h1 id="in-linux-we-all-travel-a-similar-road">
+In Linux, we all travel a similar road</h1>
+<h2 id="layer-1-distrohopping">
+<a class="zola-anchor" href="#layer-1-distrohopping" aria-label="Anchor link for: layer-1-distrohopping">🔗</a>
+
+Layer 1: distrohopping</h2>
+<p>At first, sometime late 2019, there was a blue screen of death and some instability with windows on my first self-built pc.
+As I started getting into <a href="https://youtu.be/8ev9ZX9J45A">CTFs</a> at the time, I took the opportunity and installed <a href="https://www.parrotsec.org/">parrot</a> as my first linux distro.
+In the following year, like many of you I hopped distros a lot.
+The details of what distros I used when are both lost to time and irrelevant, tho I can say that it was important.</p>
+<p>Getting to know many slightly different ways of using a computer as well as numerous different linux programs helps laying a foundation.
+You discover properties in software that you like and dislike, but don't consciously reason about them yet.</p>
+<h2 id="layer-2-window-managers">
+<a class="zola-anchor" href="#layer-2-window-managers" aria-label="Anchor link for: layer-2-window-managers">🔗</a>
+
+Layer 2: window managers</h2>
+<p>After a while I hopped to arch linux, learning a lot in my first time configuring it.
+I tried out the openbox window manager, a fantastic floating wm, but soon dismissed it in favor of qtile.
+It was at this point that I started thoroughly tinkering with my application stack.
+I tried out different terminal emulators, file managers and web browsers, as well as discovering many applications of lower importance, such as ncdu for disk usage analysis on the terminal, or calcurse for a basic scheduling and todo application.
+I finally <a href="https://youtu.be/ST7vnfKjfvY">learned vim</a>!
+This was also the point where I began storing the important parts of my configuration in a git repository.</p>
+<p>At this stage you're no longer changing your base operating system, or at least aren't actively seeking to do so.
+You start reading documentation. You actively pick some software and configure it via configuration files.
+You learn vim.
+You set up your dotfiles repo.
+You browse the web for inspiration and get inspired by posts on <a href="https://reddit.com/r/unixporn/top?t=month">r/unixporn</a>.</p>
+<h2 id="layer-3-refinement">
+<a class="zola-anchor" href="#layer-3-refinement" aria-label="Anchor link for: layer-3-refinement">🔗</a>
+
+Layer 3: refinement</h2>
+<p>Late 2021, my customizations slowed down a bit and I no longer swapped out different terminal programs on a near daily basis.
+In this time my most notable change was from qtile to <a href="https://github.com/awesomeWM/awesome">awesome</a> as my window manager, as I grew frustrated with qtile's maintainers.
+I still tried out new stuff from time to time, I lived a few months in wayland with sway for example, but some components began to stabilize.
+Throughout 2022 I also started to work on improving my bootstrapping:
+While many prefer to write an installation script, I chose to put that into an arch pkgbuild so my package list could be managed alongside my dotfiles.
+I also started using <a href="https://www.conventionalcommits.org/en/v1.0.0/#summary">conventional commits</a> for my dotfiles repo.</p>
+<p>This stage is marked by slow, incremental changes to your software, rather than big leaps from one offering to the next.
+You might still change out some components from time to time, but a grand picture has formed and you now have a coherent environment.
+You start working on reproducibility, you write an installation script or similar.
+You definitely manage your config files in git.
+You're also very comfortable in the shell by now.</p>
+<h2 id="layer-4-the-editor">
+<a class="zola-anchor" href="#layer-4-the-editor" aria-label="Anchor link for: layer-4-the-editor">🔗</a>
+
+Layer 4: the editor</h2>
+<p>In terms of a timeline this overlaps with the previous point: On January the 7th 2022 I installed <a href="https://github.com/doomemacs/doomemacs">doom emacs</a> on my computer and started digging in.
+This felt almost like another introduction to linux in the sense that I went through similar layers again, getting accustomed to a foreign environment.
+It took me over a year until I moved from doom, which feels like the linux mint of emacs, to vanilla emacs.
+And that is where I am today in my linux journey: I'm mostly tinkering with emacs now and am figuring out ways to be more productive or more comfortable in my editor, often both.</p>
+<p>Whether you choose vim or emacs, at this stage your editor becomes the focus of your customization efforts.
+You add plugins (vim) or packages (emacs) and slowly get more accustomed to doing more and more in your editor.
+Adjustments to your other configurations become smaller with 1 line changes now being the norm.
+Testing new software becomes the exception.</p>
+<p>I'll link 2 particularly insightful videos on the topic of vim vs emacs here:</p>
+<ul>
+<li><a href="https://youtu.be/1mr3issv79s">luke smith - why I don't use emacs</a></li>
+<li><a href="https://youtu.be/qTncc2lI6OI">protesilaos stavrou - emacs mindset and unix philosophy</a></li>
+</ul>
+<h2 id="layer-5-regression">
+<a class="zola-anchor" href="#layer-5-regression" aria-label="Anchor link for: layer-5-regression">🔗</a>
+
+Layer 5(?): regression</h2>
+<p>This is purely speculative, but an observation I've made at work as a sysadmin in training:
+People that were on linux for years abandon their tailored environments to move back to the mainstream.
+On several occasions I have seen co-workers trade in their linux laptop for a macbook.
+I have met impressively knowledgeable co-workers with decades of admin experience using linux mint.
+I assume this layer is not inevitable, but I wanted to mention it, since I found it odd when I first observed it.</p>
+<h2 id="the-similar-road-we-travel">
+<a class="zola-anchor" href="#the-similar-road-we-travel" aria-label="Anchor link for: the-similar-road-we-travel">🔗</a>
+
+The similar road we travel</h2>
+<p>Most of us start on some ubuntu based distro clicking through gtk menus and pointing at our text with the mouse in some floating window.
+We hop around and eventually find our place in some distro base. For many that is arch linux, but others gravitate to gentoo, debian or nixos instead.
+We may start playing around with window managers, crafting desktop environments of our own.
+We live in the terminal, using dozens of small little gemstones that we got for free by the open source ecosystem.</p>
+<p>And then, eventually, we focus on the primary task of the computer: text editing.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;emacs-init&#x2F;">💻 Faster Emacs Init ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;epigrams&#x2F;">‹ 💻 Epigrams on Web Scraping</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
