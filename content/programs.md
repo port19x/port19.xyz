@@ -1,7 +1,7 @@
 +++
 title = "💻Programs I use💻"
 date = 2024-03-16
-updated = 2025-10-14
+updated = 2025-10-31
 description = "and recommend"
 +++
 
@@ -14,9 +14,12 @@ Now that my computer usage is becoming less technical as I turn away from my car
 This strikes a middle ground between the polish of mac os that comes at the price of terrible gaming and scripting, and the very hands on nature of my custom arch setup.
 I make minimal adjustments to Linux Mint, only installing a small handful of packages that are documented in the readme of my [dotfiles](https://github.com/port19x/dotfiles) repo.
 
-### [Brave](https://brave.com/)
+### [Librewolf](https://librewolf.net/)
 
-I'm currently using brave as my primary web browser. I like it due to it's builtin adblock and speed. I've also extensively used both [Librewolf](https://librewolf.net/) and [Qutebrowser](https://qutebrowser.org/) in the past and can recommend them for enhanced privacy protection and keyboard driven operation respectively.
+I'm currently using librewolf as my primary web browser.
+I like it due to it's unparalleled out-of-the-box security and privacy.
+For security reasons I use the flatpak version over the native package.
+I've also extensively used both [Brave](https://brave.com/) and [Qutebrowser](https://qutebrowser.org/) in the past and can recommend them for speed and keyboard driven operation respectively.
 
 ## Multimedia
 
