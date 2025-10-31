@@ -1,15 +1,9 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2025-09-21
+updated = 2025-10-31
 description = "Port19s selfhosted anime list"
 +++
-
-## Watching
-
-| Title             | Progress |
-|-------------------|----------|
-| Lord of Mysteries |      3/? |
 
 ## Favorites
 
@@ -145,6 +139,7 @@ description = "Port19s selfhosted anime list"
 | Mob Psycho 100                                   | 4     | 9/37     | TV      |
 | Durarara                                         | 3     | 13/24    | TV      |
 | Hamatora                                         | 3     | 12/24    | TV      |
+| Lord of Mysteries                                | 3     | 3/13     | TV      |
 | One Piece                                        | 3     | 30/>1000 | TV      |
 | Blast of Tempest                                 | 2     | 2/24     | TV      |
 | Nekopara                                         | 2     | 4/12     | TV      |
