@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>Port19s Webpage</title>
+<meta name="description" content="My Writings on Linux, Tech and Lifestyle">
+<script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body>
+  
+
+<header style="">
+  <h1 style="font-family:Fira Sans,sans; padding-bottom:1.25rem; font-size:2.5em; margin-bottom:0;"> Port19s Webpage </h1>
+  <span>
+    <a href="/retro-games">🌸Retro Games🌸</a>
+    <a style="float:right" href="/programs">💻Programs I use💻</a>
+    <a style="float:left" href="/bible-study">✝️Bible Study✝️</a>
+  </span>
+</header>
+<wbr>
+<hr>
+
+<h2> Recent Posts </h2>
+<main>
+  <div x-cloak>
+    <script>
+      document.addEventListener('alpine:init', () => {
+          Alpine.store('filter', {
+              filter: '',
+
+              check(el) {
+                  return this.filter === '' || el.textContent.includes(this.filter)
+              }
+          })
+      })
+    </script>
+    <span x-data>
+      <button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = '📚'">📚 lifestyle</button>
+      <button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = '💻'">💻 tech</button>
+      <button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = '🍚'">🍚 recipes</button>
+      <button style="margin-left:1rem; margin-right:1rem;" x-on:click="$store.filter.filter = ''">reset filters</button>
+    </span>
+  </div>
+
+  <ul x-data>
+  
+  
+  
+  
+  
+    <li x-show="$store.filter.check($el)">
+      <time>10.10.2025</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/floor-sleeping-review2/">📚 Floor Sleeping Review 2</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>09.10.2025</time>  &ndash;
+      <a href="https://port19.xyz/tech/internet-exit/">💻 Internet Exit Strategy</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>09.09.2025</time>  &ndash;
+      <a href="https://port19.xyz/tech/autoreboot/">💻 Easy Lockscreen Autoreboot</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>03.09.2025</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/2nd-nursing-internship/">📚 Second Nursing Internship</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>07.08.2025</time>  &ndash;
+      <a href="https://port19.xyz/tech/apple-ecosystem-2/">💻 Re-Reviewing the Apple Ecosystem</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>06.08.2025</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/basic-prepping/">📚 Basic Prepping</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>24.06.2025</time>  &ndash;
+      <a href="https://port19.xyz/recipes/overnight-oats-2/">🍚 Overnight Oats 2.0</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>24.06.2025</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/track-everything/">📚 Track Everything</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>24.06.2025</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/rosary/">📚 The Rosary &gt;&gt; Mindfulness Meditation</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>03.06.2025</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/worse-than-social-media/">📚 On (Rage)Bait, The News and Reddit</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>23.05.2025</time>  &ndash;
+      <a href="https://port19.xyz/tech/m4-power/">💻 X86 vs M4 Mac Mini Benchmarks</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>18.04.2025</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/nursing-internship/">📚 Nursing Internship &amp; NEET Update</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>11.03.2025</time>  &ndash;
+      <a href="https://port19.xyz/tech/leaving-it/">💻 Leaving IT And Future Of This Blog</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>03.02.2025</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/triathlon-synergy/">📚 The Synergy Of Triathletic Training</a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>02.12.2024</time>  &ndash;
+      <a href="https://port19.xyz/recipes/flu-bomb-tea/">🍚 Flu Bomb Tea</a>
+    </li>
+  
+  </ul>
+
+  <details> <summary><i>see all</i></summary> <ul x-data>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>18.11.2024</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/run-warmup/">📚 Run Warmup </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>14.11.2024</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/race-protocol/">📚 Running Race Protocol </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>18.10.2024</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/garmin-vs-apple-watch/">📚 Garmin vs Apple Watch </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>25.09.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/voyager/">💻 ZSA Voyager Review </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>24.09.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/playstation/">💻 Review of my Playstation 2 and 3 </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>23.09.2024</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/running/">📚 Beginner Running Advice </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>27.08.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/deadsniper/">💻 I coded my own dead link checker </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>08.08.2024</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/stop-whining/">📚 Stop Whining </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>19.07.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/apple-ecosystem/">💻 Apple Ecosystem Review </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>18.07.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/php-review/">💻 PHP Language Review </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>25.06.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/fonttools/">💻 Optimizing Unicode Fonts with Fonttools </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>21.06.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/github-actions-monitoring/">💻 Monitoring with Github Actions </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>03.06.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/high-availability/">💻 High Availability </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>02.06.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/gpn-ctf-2024-writeup/">💻 GPN CTF 2024 Writeup </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>07.05.2024</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/unyielding-consumerism/">📚 Unyielding Consumerism </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>06.05.2024</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/meditation/">📚 Is Meditation Worth It? </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>29.04.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/ctf/">💻 CTF: My Origins </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>25.04.2024</time>  &ndash;
+      <a href="https://port19.xyz/recipes/mushroom-stew/">🍚 Mushroom Stew </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>25.04.2024</time>  &ndash;
+      <a href="https://port19.xyz/recipes/leg-disk-stew/">🍚 Leg Disk Stew </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>10.04.2024</time>  &ndash;
+      <a href="https://port19.xyz/recipes/irish-coddle/">🍚 Irish Coddle </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>21.03.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/other-lisps/">💻 The Other Lisps </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>10.03.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/blog/">💻 My Blogging System </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>21.02.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/nonguix/">💻 (Non)Guix - The Uninstallable </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>17.02.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/git-signing/">💻 Commit Signatures via SSH </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>06.02.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/new-pc/">💻 New PC Build </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>16.01.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/git-recovery/">💻 Recovering Rebased Git Commits </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>15.01.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/persisting-grafana/">💻 Persisting Grafana </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>14.01.2024</time>  &ndash;
+      <a href="https://port19.xyz/tech/shell/">💻 Shell Scripting Advice </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>03.12.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/exwm/">💻 Emacs X Window Manager Review </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>29.11.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/subfont/">💻 Optimizing Unicode Fonts with Subfont </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>29.11.2023</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/mortality/">📚 On Mortality </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>25.11.2023</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/gratitude/">📚 On Gratitude </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>18.11.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/functional-essence/">💻 The Essence of Functional Programming </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>05.11.2023</time>  &ndash;
+      <a href="https://port19.xyz/recipes/oven-potatoes/">🍚 Baked Potatoes </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>30.10.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/macos/">💻 M1 Mac Review </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>20.10.2023</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/goal-setting/">📚 Goal Setting </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>15.10.2023</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/time-stealers/">📚 Our time is being stolen </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>14.10.2023</time>  &ndash;
+      <a href="https://port19.xyz/recipes/shrimp-rice/">🍚 Shrimp rice </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>16.09.2023</time>  &ndash;
+      <a href="https://port19.xyz/recipes/chickpea-curry/">🍚 Chana masala with spinach </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>10.09.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/go-review/">💻 Go Language Review </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>30.08.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/status-update-2309/">💻 Status Update and Q4 Goals </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>25.08.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/va/">💻 Why I prefer VA Monitors </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>04.08.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/ansible-provision/">💻 DigitalOcean Provisioning with Ansible </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>25.07.2023</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/rolling-shoppinglist/">📚 The rolling shopping list </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>10.07.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/dang-stack/">💻 Infrastructure with the DANG Stack </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>06.06.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/emacs-init/">💻 Faster Emacs Init </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>28.05.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/road-of-linux/">💻 Road of linux </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>29.04.2023</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/habits-and-diminishing-returns/">📚 Habits and diminishing returns </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>20.04.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/epigrams/">💻 Epigrams on Web Scraping </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>16.04.2023</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/text-superiority/">📚 Text is vastly superior to video for content </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>29.03.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/webapps/">💻 Web apps are marketable </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>05.03.2023</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/productivity-systems/">📚 Productivity Systems </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>24.02.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/clojure/">💻 Clojure: 6 months later </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>17.02.2023</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/bullshit-job-fallacy/">📚 Overcoming the bullshit job fallacy </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>14.02.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/bye-qutebrowser/">💻 Farewell Qutebrowser </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>12.02.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/performance-software/">💻 Performance is a Software Problem </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>11.02.2023</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/cold-shower-review/">📚 Cold Shower Review </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>06.02.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/terminals/">💻 Reviewing all Terminal Emulators </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>27.01.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/neovim-customization/">💻 Neovim customization is inexcusably bad </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>15.01.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/emacs1y/">💻 Emacs: One year later </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>10.01.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/hardlinks/">💻 Hardlinks are underrated </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>05.01.2023</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/frustrations-with-college/">📚 Frustrations with college </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>04.01.2023</time>  &ndash;
+      <a href="https://port19.xyz/tech/on-programming-skill/">💻 On Programming Skill </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>31.12.2022</time>  &ndash;
+      <a href="https://port19.xyz/tech/year-review22/">💻 2022 year review </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>24.12.2022</time>  &ndash;
+      <a href="https://port19.xyz/tech/zola/">💻 Hugo is inexcusably bad </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>24.12.2022</time>  &ndash;
+      <a href="https://port19.xyz/tech/licenses/">💻 On FOSS Licenses </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>01.12.2022</time>  &ndash;
+      <a href="https://port19.xyz/tech/monoliths/">💻 Why I like Monoliths </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>28.11.2022</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/joglog22/">📚 2022 Jog Log </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>09.07.2022</time>  &ndash;
+      <a href="https://port19.xyz/tech/nixos/">💻 NixOS ain&#x27;t worth it </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>09.07.2022</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/avoid-social-media/">📚 Avoid Social Media </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>30.06.2022</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/floor-sleeping-review/">📚 Floor Sleeping Review </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>17.06.2022</time>  &ndash;
+      <a href="https://port19.xyz/lifestyle/no-smartphone/">📚 3 weeks without a smartphone </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>15.06.2022</time>  &ndash;
+      <a href="https://port19.xyz/recipes/roasted-broccoli/">🍚 Roasted Broccoli </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>15.06.2022</time>  &ndash;
+      <a href="https://port19.xyz/recipes/overnight-oats/">🍚 Overnight Oats </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>15.06.2022</time>  &ndash;
+      <a href="https://port19.xyz/recipes/baked-chickpeas/">🍚 Baked Chickpeas </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>02.06.2022</time>  &ndash;
+      <a href="https://port19.xyz/tech/searx/">💻 Cool Searx Bangs </a>
+    </li>
+  
+    <li x-show="$store.filter.check($el)">
+      <time>19.03.2022</time>  &ndash;
+      <a href="https://port19.xyz/tech/emacs/">💻 Why Emacs? </a>
+    </li>
+  
+  </ul> </details>
+</main>
+
+<h2> Notable Projects </h2>
+<section class="projects">
+
+ <h3> Emacs Packages </h3>
+
+  <details>
+    <summary>
+      <a href="https://github.com/port19x/eros-inspector">Eros Inspector</a>
+      Glue between <a href="https://github.com/xiongtx/eros">eros</a> and <a href="https://github.com/mmontone/emacs-inspector">inspector</a>
+    </summary>
+    <img src="https://port19.xyz/previews/eros-inspector.png" width="600" alt="Image preview for eros-inspector">
+  </details>
+
+  <details>
+    <summary>
+      <a href="https://github.com/port19x/geiser-overlay">Geiser Overlay</a>
+      Overlay Scheme Evaluation Results
+    </summary>
+    <img src="https://port19.xyz/previews/geiser-overlay.png" width="600" alt="Image preview for geiser-overlay">
+  </details>
+
+  <details>
+    <summary>
+      <a href="https://github.com/port19x/haproxy-mode">HAProxy Mode</a>
+      Emacs major mode for editing HAProxy config files
+    </summary>
+    <img src="https://port19.xyz/previews/prev-haproxy.png" width="600" alt="Image preview for HAProxy Mode">
+  </details>
+
+ <h3> Other </h3>
+
+  <details>
+      <summary>
+	<a href="https://github.com/pystardust/ani-cli/">ani-cli</a>
+	A cli tool to browse and play anime
+      </summary>
+      <video controls="controls" width="600" alt="Video preview for ani-cli">
+	<source type="video/mp4" src="https://user-images.githubusercontent.com/44473782/224679247-0856e652-f187-4865-bbcf-5a8e5cf830da.webm">
+      </video>
+  </details>
+
+  <details>
+    <summary>
+      <a href="https://github.com/port19x/deadsniper">Deadsniper</a>
+      A fast, specialized dead-link checker
+    </summary>
+    <pre><code>Usage: deadsniper [options] <link to sitemap.xml>
+
+Options:
+  -h | --help    print this help text
+  -V | --version print the version number
+  -s | --strict  allow only HTTP 200 response codes
+  -t | --timeout set the request timeout in seconds (default 5)
+
+Examples:
+  deadsniper https://port19.xyz/sitemap.xml
+  deadsniper -V
+  deadsniper --strict https://port19.xyz/sitemap.xml
+  deadsniper -t 1 -s https://port19.xyz/sitemap.xml</code></pre>
+  </details>
+
+  <details>
+    <summary>
+      <a href="https://github.com/port19x/redqu/">redqu</a>
+      A media centric reddit client
+    </summary>
+    <img src="https://port19.xyz/previews/prev-redqu.jpg" width="600" alt="Image preview for redqu">
+  </details>
+</section>
+<hr>
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
