@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Optimizing Unicode Fonts with Fonttools</title>
+<meta name="description" content="Good riddance subfont!">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Optimizing Unicode Fonts with Fonttools
+</h1>
+
+<i>First Published: 2024-06-25</i>
+
+<hr>
+<p><em>good riddance subfont</em></p>
+<p>This week I added a nicer house emoji to the footer and added heading anchors to all my <code>&lt;h2&gt;</code>s in the tech category.
+So to make sure everyone can actually see those I had to re-optimize my font of choice.
+Previously I have written about <a href="https://port19.xyz/tech/subfont/">how to use subfont</a> for this, but it's a pain to work with and despite my own documentation I didn't manage to make it work again on its latest version.</p>
+<p>Thank god I found <a href="https://fonttools.readthedocs.io/en/latest/subset/">fonttools</a>. <br />
+First I grepped for all emojis in my website via a hideous grep command I found <a href="https://stackoverflow.com/questions/43242440/javascript-regular-expression-for-unicode-emoji/45138005">on stackoverflow</a>:</p>
+<pre style="background-color:#0f1419;color:#bfbab0;"><code><span>grep -IPorh &quot;[\x{1f300}-\x{1f5ff}\x{1f900}-\x{1f9ff}\x{1f600}-\x{1f64f}\x{1f680}-\x{1f6ff}\x{2600}-\x{26ff}\x{2700}-\x{27bf}\x{1f1e6}-\x{1f1ff}\x{1f191}-\x{1f251}\x{1f004}\x{1f0cf}\x{1f170}-\x{1f171}\x{1f17e}-\x{1f17f}\x{1f18e}\x{3030}\x{2b50}\x{2b55}\x{2934}-\x{2935}\x{2b05}-\x{2b07}\x{2b1b}-\x{2b1c}\x{3297}\x{3299}\x{303d}\x{00a9}\x{00ae}\x{2122}\x{23f3}\x{24c2}\x{23e9}-\x{23ef}\x{25b6}\x{23f8}-\x{23fa}]&quot; | sort -u | tr -d &quot;\n&quot;
+</span></code></pre>
+<p><em>(no, I'm not gonna format this and break the copy-pastability)</em></p>
+<p>Then I slapped the result onto the following fonttools command: <br />
+<code>fonttools subset NotoColorEmoji-Regular.ttf --flavor="woff2" --text=</code></p>
+<p>That's all. Just a short post for myself in a couple months time.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;php-review&#x2F;">💻 PHP Language Review ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;github-actions-monitoring&#x2F;">‹ 💻 Monitoring with Github Actions</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>

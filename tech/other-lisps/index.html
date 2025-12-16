@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 The Other Lisps</title>
+<meta name="description" content="Experiments since my departure from Clojure">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 The Other Lisps
+</h1>
+
+<i>First Published: 2024-03-21</i>
+
+<hr>
+<h2 id="timeline">
+<a class="zola-anchor" href="#timeline" aria-label="Anchor link for: timeline">🔗</a>
+
+Timeline</h2>
+<p>My history with lisp and functional programming starts in august of '22 where I learned haskell<a href="https://learnyouahaskell.github.io/chapters.html">¹</a>, doing a lot of coding puzzles with it.
+When I eventually wanted to make an actual project with it, I ran into a wall regarding the tooling and practical applicability of it. <br />
+So, in september, I started learning clojure and then had a very productive few months with the language.
+An archive of my clojure projects is available <a href="https://github.com/port19x/clojure-era">here</a>.</p>
+<p>What eventually made me depart from clojure was a combination of platform pains with the jvm, as well as poor alignment of it's strengths and my needs.
+I wrote about it in a post looking back on <a href="https://port19.xyz/tech/clojure/">6 months with clojure</a>, but it took a few more for me to archive all the clojure projects and look back no more.</p>
+<h2 id="emacs-lisp">
+<a class="zola-anchor" href="#emacs-lisp" aria-label="Anchor link for: emacs-lisp">🔗</a>
+
+Emacs Lisp</h2>
+<p>If you were to be pedantic about it, I technically wrote emacs lisp before I ever did clojure, as emacs is configured in emacs lisp and I switched to that in january of '22.
+The first time I really wrote emacs lisp, in a standalone fashion, was last december for advent of code.
+I then wrote a major mode for HAProxy config files that I made available via melpa.</p>
+<p>I like emacs lisp. Especially with dash.el bringing idioms from clojure and cl-lib bringing stuff from common lisp, I have reason to suspect it is one of the most diverse lisp dialects out there.
+I may elaborate on useful libraries and dev tools for elisp some other time.</p>
+<p>One problem is that it's slow.
+I'm not proclaiming emacs itself is slow, but especially in the context of numerical coding problems, as are common in advent of code, it is.
+You have to be careful with how you code your solutions, otherwise both your memory and cpu usage can spike through the roof.
+Mitigations include using vectors instead of lists, memoization, good search algorithms and using <code>benchmark</code>.</p>
+<h2 id="scheme">
+<a class="zola-anchor" href="#scheme" aria-label="Anchor link for: scheme">🔗</a>
+
+Scheme</h2>
+<p>In february I read the <a href="https://www.wingolog.org/archives/2013/01/07/an-opinionated-guide-to-scheme-implementations">opinionated guide to scheme implementations</a> and decided to give <a href="https://www.gnu.org/software/guile/">gnu guile</a> a fair shot, as it's one of the few scheme dialects with a culture of interactive development. This bears repeating as many scheme dialects, notably racket, don't develop code in an interactive fashion that leverages the repl.
+Guile uses guix as it's package manager, motivating the brief distro hop <a href="https://port19.xyz/tech/nonguix/">I wrote about</a> last month.
+After a couple days scheme ultimately began looking like a fruitless pursuit, as their implementation communities are tiny, as are their selections of available packages. <br />
+The sole silver lining, the only use-case I'll concede that scheme is useful for, is reading and working through <a href="https://www.goodreads.com/book/show/43713.Structure_and_Interpretation_of_Computer_Programs">SICP</a>, the greatest computer science book ever written.</p>
+<h2 id="common-lisp">
+<a class="zola-anchor" href="#common-lisp" aria-label="Anchor link for: common-lisp">🔗</a>
+
+Common Lisp</h2>
+<p>Immediately after playing with guile scheme, I read up on some lisp history and started learning common lisp.
+I recommend reading the <a href="https://stevelosh.com/blog/2018/08/a-road-to-common-lisp/">road to common lisp</a> if you happen to be interested in learning the language.
+After setting up some basic emacs tooling, mostly just <a href="https://git.sr.ht/~fosskers/sly-overlay">sly-overlay</a>, I checked out a <a href="https://www.youtube.com/watch?v=LqBbGFMPcDI">youtube video</a> by gavin freeborn about cl project management with quicklisp and asdf.</p>
+<p>The common lisp community, tooling and package selection are all pretty good. I spent about two weeks on and off working through most of the <a href="https://github.com/google/lisp-koans">lisp koans</a> to familiarise myself with language idioms.
+I also coded a little graphic with <a href="https://github.com/vydd/sketch">sketch</a>, which is the cl equivalent to the drawing library I used with clojure: <a href="https://github.com/quil/quil">quil.</a></p>
+<p>What made me put common lisp on an indefinite pause was the sheer size of it, but some of the common ways of doing things didn't help either.
+Notable things I dislike are the four different levels of equality<a href="https://stackoverflow.com/questions/547436/whats-the-difference-between-eq-eql-equal-and-equalp-in-common-lisp">²</a>, an emphasis on iteration in the small and an emphasis on object orientation via CLOS in the large.
+I'll note the condition system, having a fast native compiler and just cl tooling in general are all pretty nice.</p>
+<h2 id="conclusion">
+<a class="zola-anchor" href="#conclusion" aria-label="Anchor link for: conclusion">🔗</a>
+
+Conclusion</h2>
+<p>All this programming language tourism reinforces my focus on shell and python as my primary languages of choice.
+Both are extremely well suited to linux administration<a href="https://port19.xyz/tech/go-review/">³</a>. <br />
+Even beyond my area of occupation, python remains a compelling choice for lisp programmers as well, since semantically speaking it has <a href="https://norvig.com/python-lisp.html">few differences</a> with lisp. <br />
+The lisp that stays in my toolbox is emacs lisp, as developing and distributing the improvements I want to add to emacs is fun and easy.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;ctf&#x2F;">💻 CTF: My Origins ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;blog&#x2F;">‹ 💻 My Blogging System</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>

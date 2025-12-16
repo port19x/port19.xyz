@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Recovering Rebased Git Commits</title>
+<meta name="description" content="Almost doxxed myself">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Recovering Rebased Git Commits
+</h1>
+
+<i>First Published: 2024-01-16</i>
+
+<hr>
+<p>Yesterday I accidentally committed to my public <a href="https://github.com/port19x/dotfiles">dotfiles repository</a> with my work email, temporarily exposing both my full government name as well as my employer.
+I rebased those commits away as fast as I could, temporarily loosing the changes of those two commits in the process.</p>
+<p>It's not implausible that I need to recover git commits again in the future,
+so I thought I'd share how I got my changes back and how you can get yours back do too, no matter how you lost yours.</p>
+<p>tl;dr: <a href="https://git-scm.com/docs/git-reflog"><code>git reflog</code></a>
+→ <a href="https://git-scm.com/docs/git-cherry-pick"><code>git cherry-pick</code></a>
+→ <a href="https://git-scm.com/docs/git-commit"><code>git commit --amend</code></a>
+→ <a href="https://git-scm.com/docs/git-gc"><code>(git gc)</code></a></p>
+<h2 id="step-1-git-reflog">
+<a class="zola-anchor" href="#step-1-git-reflog" aria-label="Anchor link for: step-1-git-reflog">🔗</a>
+
+Step 1 - Git Reflog</h2>
+<p>Step one is to run a <code>git reflog</code> to see if you still have the now orphaned commits lying around locally.
+If the orphaned commits are not there, you can check a different machine or your file backups.
+Without the reflog there is little chance of you recovering your changes.
+You'll need the commit hashes of the commits you want to recover, so either keep the respective terminal open or write them down somewhere.</p>
+<img src="./git-reflog.png" height="300vw" alt="output of git reflog">
+<h2 id="step-2-git-cherry-pick">
+<a class="zola-anchor" href="#step-2-git-cherry-pick" aria-label="Anchor link for: step-2-git-cherry-pick">🔗</a>
+
+Step 2 - Git Cherry-pick</h2>
+<p>Step two has you cherry picking the sequentially oldest commit you want to recover.</p>
+<img src="./git-cherrypick.png" height="100vw" alt="output of git cherry-pick">
+<h2 id="step-3-git-commit-amend">
+<a class="zola-anchor" href="#step-3-git-commit-amend" aria-label="Anchor link for: step-3-git-commit-amend">🔗</a>
+
+Step 3 - Git Commit --amend</h2>
+<p>Now in step three I amended the cherry-picked commit to update the author field to the appropriate contents.
+You can also edit the commit message if necessary, if not <code>--no-edit</code> suppresses the editor.
+Now repeat step two and three with the next newer commit to recover until you're done.</p>
+<img src="./git-amend.png" height="80vw" alt="output with --no-edit">
+<h2 id="step-4-git-gc-optional">
+<a class="zola-anchor" href="#step-4-git-gc-optional" aria-label="Anchor link for: step-4-git-gc-optional">🔗</a>
+
+Step 4 - Git GC (optional)</h2>
+<p>After a while of locally working on a git repository the reflog can become quite large and orphans can accumulate.
+After recovery is an appropriate time to do a git gc.
+But be careful, those orphans are the key to recovery, so only gc once you're confident the recovery was successful.</p>
+<img src="./git-gc.png" height="300vw" alt="output with --no-edit">
+<p>See the following stack overflow exchange on <a href="https://stackoverflow.com/questions/55729/how-often-should-you-use-git-gc">if and when to run git gc</a></p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;new-pc&#x2F;">💻 New PC Build ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;persisting-grafana&#x2F;">‹ 💻 Persisting Grafana</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>

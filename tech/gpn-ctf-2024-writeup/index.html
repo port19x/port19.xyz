@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 GPN CTF 2024 Writeup</title>
+<meta name="description" content="Support your local flag hunters">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 GPN CTF 2024 Writeup
+</h1>
+
+<i>First Published: 2024-06-02</i>
+
+<hr>
+<h1 id="gpn-ctf-2024-writeup">
+GPN CTF 2024 Writeup</h1>
+<p>This weekend I participated in the <a href="https://ctftime.org/event/2257">GPN CTF</a>, organised by the CTF team of the Karlsruhe Institute of Technology.
+I focused on the challenges tagged "Introduction", solving all except the Pwning one.
+For my readers unfamiliar with CTFs, I recently wrote <a href="https://port19.xyz/tech/ctf/">this post</a> about their role in my career so far.
+The flags are listed in the order I got them.</p>
+<h2 id="sanity-check-you-know-the-rules-and-so-do-i">
+<a class="zola-anchor" href="#sanity-check-you-know-the-rules-and-so-do-i" aria-label="Anchor link for: sanity-check-you-know-the-rules-and-so-do-i">🔗</a>
+
+Sanity Check: You know the rules and so do I</h2>
+<p>It's customary for CTF organisers to include at least one trivially easy flag to alleviate the participants worries that subsequent flags are rejected due to the system not working.
+As hinted at in the title, the flag was present in full on the site listing the rules for the event.</p>
+<h2 id="web-never-gonna-tell-a-lie-and-type-you">
+<a class="zola-anchor" href="#web-never-gonna-tell-a-lie-and-type-you" aria-label="Anchor link for: web-never-gonna-tell-a-lie-and-type-you">🔗</a>
+
+Web: Never gonna tell a lie and type you</h2>
+<p><em>This challenge gave a Dockerfile and some PHP code.</em></p>
+<p>The Dockerfile told me there was a file called <code>flag.txt</code> under the root directory, making the objective pretty obvious.
+What was less obvious was how to talk to the server and how the hell this PHP worked.</p>
+<p>Talking to the server turned out to be not too complicated after looking up the appropriate curl options to arrive at something like this: <br />
+<code>curl -A "friendlyHuman" --data 'data={"user": "admin🤠", "password": "something"}</code></p>
+<p>The PHP wanted me to meet the strange condition that my supplied password be equal to the result of applying the function <code>securePassword</code> to it.</p>
+<pre data-lang="perl" style="background-color:#0f1419;color:#bfbab0;" class="language-perl "><code class="language-perl" data-lang="perl"><span style="color:#ffb454;">function securePassword</span><span>($user_secret){
+</span><span>    </span><span style="color:#ff7733;">if </span><span>($user_secret </span><span style="color:#f29668;">&lt; </span><span style="color:#f29718;">10000</span><span>){
+</span><span>        </span><span style="color:#ff7733;">die</span><span>(</span><span style="color:#c2d94c;">&quot;nope don&#39;t cheat&quot;</span><span>)</span><span style="color:#bfbab0cc;">;
+</span><span>    }
+</span><span>    $o </span><span style="color:#f29668;">= </span><span>(</span><span style="color:#f29718;">integer</span><span>) (</span><span style="color:#f07178;">substr</span><span>(</span><span style="color:#ffb454;">hexdec</span><span>(</span><span style="color:#ffb454;">md5</span><span>(</span><span style="color:#ffb454;">strval</span><span>($user_secret)))</span><span style="color:#bfbab0cc;">,</span><span style="color:#f29718;">0</span><span style="color:#bfbab0cc;">,</span><span style="color:#f29718;">7</span><span>)</span><span style="color:#f29668;">*</span><span style="color:#f29718;">123981337</span><span>)</span><span style="color:#bfbab0cc;">;
+</span><span>    </span><span style="color:#ff7733;">return </span><span>$user_secret </span><span style="color:#f29668;">* </span><span>$o </span><span style="color:#bfbab0cc;">;
+</span><span>}
+</span></code></pre>
+<p>So my first intuition was that <code>0*x=0</code> and surely that must be useful to find this flag.
+I ended up spending about two hours first doing some napkin math of how long it would take my iGPU to find an md5 hash that starts with seven zeroes, followed by some <a href="https://hashcat.net/hashcat/">Hashcat</a> related research and ultimately finding the <a href="https://beneri.se/hashgame/">hashgame</a>.</p>
+<p>Somewhere along the way I heard about PHP type juggling and that in PHP, due to it, <code>md5('240610708')</code> equals <code>md5('QNKCDZO')</code>.
+After a short break I fired up another instance to get the communication rolling again.
+In my infinite wisdom, I supply the password "11e777777" and am surprised to be greeted as admin.</p>
+<p>From here I just had to add "cat /flag.txt" to the "command" field of my json POST data.</p>
+<h2 id="reversing-never-gonna-run-around-and-reverse-you">
+<a class="zola-anchor" href="#reversing-never-gonna-run-around-and-reverse-you" aria-label="Anchor link for: reversing-never-gonna-run-around-and-reverse-you">🔗</a>
+
+Reversing: Never gonna run around and reverse you</h2>
+<p><em>This challenge gave a binary that runs a hash function as well as the hashed flag.</em></p>
+<p>At first I ran the binary through <code>strings</code> and <code>xxd</code>, and with <code>strace</code> and <code>ltrace</code> to no avail.</p>
+<p>I then tested various inputs, quickly noticing that the hashing function is linear. What do I mean by that?
+Well, a character in the input string maps to a fixed number of digits in the output string, usually two.
+The early characters influence later characters, but not the other way around.
+If there was no influence at all, we could quickly build a substitution table, but this is still fine.</p>
+<p>To get the flag I wrote a python script that builds up the flag, checking each character for matching hash output as it appends it.
+The code speaks for itself:</p>
+<pre data-lang="python" style="background-color:#0f1419;color:#bfbab0;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#ff7733;">import </span><span>subprocess
+</span><span>target_hash </span><span style="color:#f29668;">= </span><span style="color:#c2d94c;">&quot;4717591a4e08732410215579264e7e0956320367384171045b28187402316e1a7243300f501946325a6a1f7810643b0a7e21566257083c63043404603f5763563e43&quot;
+</span><span>flag </span><span style="color:#f29668;">= </span><span style="color:#c2d94c;">&quot;GPNCTF{&quot;
+</span><span>local_hash </span><span style="color:#f29668;">= </span><span style="color:#c2d94c;">&quot;&quot;
+</span><span>
+</span><span style="color:#ff7733;">while </span><span style="color:#f29668;">not </span><span>local_hash </span><span style="color:#f29668;">== </span><span>target_hash:
+</span><span>    </span><span style="color:#ff7733;">for </span><span>x </span><span style="color:#ff7733;">in </span><span style="color:#f07178;">range</span><span>(</span><span style="color:#f29718;">32</span><span style="color:#bfbab0cc;">, </span><span style="color:#f29718;">127</span><span>):
+</span><span>        local_flag </span><span style="color:#f29668;">= </span><span>flag </span><span style="color:#f29668;">+ </span><span style="color:#f07178;">chr</span><span>(x)
+</span><span>        local_hash </span><span style="color:#f29668;">= </span><span>subprocess</span><span style="color:#f29668;">.</span><span style="color:#ffb454;">check_output</span><span>([</span><span style="color:#c2d94c;">&quot;./hasher&quot;</span><span style="color:#bfbab0cc;">, </span><span>local_flag])</span><span style="color:#f29668;">.</span><span style="color:#ffb454;">decode</span><span>()[</span><span style="color:#bfbab0cc;">:</span><span style="color:#f29668;">-</span><span style="color:#f29718;">1</span><span>]
+</span><span>        </span><span style="color:#ff7733;">if</span><span>(</span><span style="color:#f07178;">all</span><span>(x </span><span style="color:#f29668;">== </span><span>y </span><span style="color:#ff7733;">for </span><span>x</span><span style="color:#bfbab0cc;">,</span><span>y </span><span style="color:#ff7733;">in </span><span style="color:#f07178;">zip</span><span>(local_hash</span><span style="color:#bfbab0cc;">, </span><span>target_hash))):
+</span><span>            flag </span><span style="color:#f29668;">+= </span><span style="color:#f07178;">chr</span><span>(x)
+</span><span>            </span><span style="color:#ff7733;">break
+</span><span>
+</span><span style="color:#f07178;">print</span><span>(flag)
+</span></code></pre>
+<h2 id="crypto-never-gonna-let-you-crypto">
+<a class="zola-anchor" href="#crypto-never-gonna-let-you-crypto" aria-label="Anchor link for: crypto-never-gonna-let-you-crypto">🔗</a>
+
+Crypto: Never gonna let you crypto</h2>
+<p><em>This challenge gave a <code>chal.py</code> and a file with the encrypted flag.</em></p>
+<p><code>chal.py</code> contained an implementation of the <a href="https://en.wikipedia.org/wiki/XOR_cipher">XOR cipher</a>, with the notable weakness being the key length of 5.
+The XOR cipher is uniquely symmetric in that it's not just a symmetric cipher, but one where the encryption function is identical to the decryption function.
+Since the flag format was known to match <code>GPNCTF{.*}</code>, we had a known plaintext.
+With this, and after fighting pythons type system for a little, I was able to derive the key and then use that to decrypt the flag.
+Check out the code:</p>
+<pre data-lang="python" style="background-color:#0f1419;color:#bfbab0;" class="language-python "><code class="language-python" data-lang="python"><span>flag_enc </span><span style="color:#f29668;">= </span><span style="color:#c2d94c;">&quot;d24fe00395d364e12ea4ca4b9f2da4ca6f9a24b2ca729a399efb2cd873b3ca7d9d1fb3a66a9b73a5b43e8f3d&quot;
+</span><span>kpt </span><span style="color:#f29668;">= </span><span style="color:#c2d94c;">&quot;GPNCT&quot;
+</span><span>
+</span><span style="font-style:italic;color:#5c6773;"># convert to bytes
+</span><span>b_flag_enc </span><span style="color:#f29668;">= </span><span style="font-style:italic;color:#39bae6;">bytes</span><span style="color:#f29668;">.</span><span style="color:#ffb454;">fromhex</span><span>(flag_enc)
+</span><span>b_kpt </span><span style="color:#f29668;">= </span><span>kpt</span><span style="color:#f29668;">.</span><span style="color:#ffb454;">encode</span><span>(</span><span style="color:#c2d94c;">&quot;utf8&quot;</span><span>)
+</span><span>
+</span><span style="font-style:italic;color:#5c6773;"># derive the key
+</span><span>key </span><span style="color:#f29668;">= </span><span>[]
+</span><span style="color:#ff7733;">for </span><span>i </span><span style="color:#ff7733;">in </span><span style="color:#f07178;">range</span><span>(</span><span style="color:#f07178;">len</span><span>(b_kpt)):
+</span><span>    key </span><span style="color:#f29668;">+= </span><span>[b_flag_enc[i]</span><span style="color:#f29668;">^</span><span>b_kpt[i]]
+</span><span>key </span><span style="color:#f29668;">= </span><span style="font-style:italic;color:#39bae6;">bytes</span><span>(key)
+</span><span>
+</span><span style="font-style:italic;color:#5c6773;"># get flag
+</span><span>flag </span><span style="color:#f29668;">= </span><span>[]
+</span><span style="color:#ff7733;">for </span><span>i </span><span style="color:#ff7733;">in </span><span style="color:#f07178;">range</span><span>(</span><span style="color:#f07178;">len</span><span>(b_flag_enc)):
+</span><span>    flag </span><span style="color:#f29668;">+= </span><span>[b_flag_enc[i]</span><span style="color:#f29668;">^</span><span>key[i</span><span style="color:#f29668;">%</span><span style="color:#f07178;">len</span><span>(key)]]
+</span><span style="color:#f07178;">print</span><span>(</span><span style="font-style:italic;color:#39bae6;">bytes</span><span>(flag)</span><span style="color:#f29668;">.</span><span style="color:#ffb454;">decode</span><span>())
+</span></code></pre>
+<h2 id="misc-a-full-solve-s-what-i-m-thinking-of">
+<a class="zola-anchor" href="#misc-a-full-solve-s-what-i-m-thinking-of" aria-label="Anchor link for: misc-a-full-solve-s-what-i-m-thinking-of">🔗</a>
+
+Misc: A full solve's what I'm thinking of</h2>
+<p><em>With this challenge you're tasked with uploading a file to a website.</em></p>
+<p>The website then executes the uploaded file, with a <code>catflag</code> binary available in the root directory of the server.
+I'm not sure I could have done this challenge without hints.</p>
+<p>First order of business was to write a hello world program in C, which went well.
+Then, after a little digging, I thought <code>execl</code> would do the trick, calling <code>/catflag</code> from within my binary.
+While it worked locally to the extend testable, it did not yield a flag.</p>
+<p>Checking the chat logs, I came across the recommendation to use <code>patchelf</code>.
+So I thought to add <code>/catflag</code> as a dependency via <code>patchelf --add-needed "/catflag" a.out</code>, but that wasn't enough.
+What was actually necessary was to use <code>--set-interpreter</code> instead of <code>--add-needed</code>.
+The idea for that came from <a href="http://klamp.works/2016/04/15/code-exec-ldd.html">this post</a>, but I'm sure the patchelf hint would have been sufficient with a little more perseverance.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;high-availability&#x2F;">💻 High Availability ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;ctf&#x2F;">‹ 💻 CTF: My Origins</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>

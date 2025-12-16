@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Easy Lockscreen Autoreboot</title>
+<meta name="description" content="feds in shambles">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Easy Lockscreen Autoreboot
+</h1>
+
+<i>First Published: 2025-09-09</i>
+
+<hr>
+<h2 id="why">
+<a class="zola-anchor" href="#why" aria-label="Anchor link for: why">🔗</a>
+
+Why</h2>
+<p>Full Disk Encryption is more secure than any lockscreen.
+My FDE password is much more secure than my lockscreen password.
+If my laptop is stolen while in lockscreen, whether by criminals or feds, I want it to move into a more secure state eventually to circumvent brute-force attacks.</p>
+<p>Also I guess this is neat to save power if you go on vacation or sth.</p>
+<h2 id="how">
+<a class="zola-anchor" href="#how" aria-label="Anchor link for: how">🔗</a>
+
+How</h2>
+<p>On arch based distros with <a href="https://wiki.archlinux.org/title/Polkit">polkit</a>, an unpriviledged user can execute power management commands like <code>reboot</code> and <code>poweroff</code>.
+I use <a href="https://wiki.archlinux.org/title/Slock">slock</a> as my lockscreen, any alternative should work.
+Modify the number of seconds to sleep as needed. I use 12 hours, but I can see anything from 1-24 hours being useful depending on threat model.</p>
+<h3 id="emacs-lisp">
+Emacs Lisp</h3>
+<pre data-lang="lisp" style="background-color:#0f1419;color:#bfbab0;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#ff7733;">defun </span><span style="color:#ffb454;">launch </span><span>(command)
+</span><span>      (interactive (</span><span style="color:#f07178;">list </span><span>(</span><span style="color:#f07178;">read</span><span style="color:#f29668;">-</span><span>shell</span><span style="color:#f29668;">-</span><span>command </span><span style="color:#c2d94c;">&quot;$ &quot;</span><span>)))
+</span><span>      (start</span><span style="color:#f29668;">-</span><span>process</span><span style="color:#f29668;">-</span><span>shell</span><span style="color:#f29668;">-</span><span>command command </span><span style="color:#f29718;">nil</span><span> command))
+</span><span>
+</span><span>(</span><span style="color:#ff7733;">defun </span><span style="color:#ffb454;">slock </span><span>() (interactive)
+</span><span>         (launch </span><span style="color:#c2d94c;">&quot;sleep 43200 &amp;&amp; reboot&quot;</span><span>) </span><span style="font-style:italic;color:#5c6773;">;12 hours
+</span><span>         (launch </span><span style="color:#c2d94c;">&quot;slock &amp;&amp; killall sleep&quot;</span><span>))
+</span></code></pre>
+<h3 id="shell">
+Shell</h3>
+<pre data-lang="bash" style="background-color:#0f1419;color:#bfbab0;" class="language-bash "><code class="language-bash" data-lang="bash"><span>(</span><span style="color:#ffb454;">sleep</span><span> 43200 </span><span style="color:#f29668;">&amp;&amp; </span><span style="color:#ffb454;">reboot</span><span>) </span><span style="color:#f29668;">&amp;
+</span><span style="color:#ffb454;">slock </span><span style="color:#f29668;">&amp;&amp; </span><span style="color:#ffb454;">killall</span><span> sleep
+</span></code></pre>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;internet-exit&#x2F;">💻 Internet Exit Strategy ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;apple-ecosystem-2&#x2F;">‹ 💻 Re-Reviewing the Apple Ecosystem</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>

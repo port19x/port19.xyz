@@ -1,0 +1,42 @@
+/* For unit choice guidance: https://www.reddit.com/r/css/comments/kzkthl/what_units_do_you_use_px_vw_and_vh_em_rem/ */
+
+@font-face {
+  font-family: 'Noto Color Emoji';
+  src: url(/NotoColorEmojiSubfont.woff2);
+  font-display: swap;
+}
+
+body {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  max-width: 48em;
+  margin: auto;
+  font-family: serif, 'Noto Color Emoji';
+}
+
+/* p and h3 come with +1em margin ootb, therefore 5em to normalize*/
+h2           { background-color:#222222; }
+hr           { border: 1px dashed #008080; }
+time         { font-family: monospace; color: #888; }
+a            { text-decoration: none; }
+a:link       { color: #a9d9d9; }
+a:visited    { color: #d9a9a9; }
+th, td       { border: 1px solid; }
+thead, th    { border-bottom-style: double; }
+table        { border-collapse: collapse; margin: auto; }
+p, h3        { text-align: left; margin-left: 5em; }
+ol, ul, pre  { text-align: left; margin-left: 6em; }
+pre          { margin-right: 6em; }
+.zola-anchor { opacity: 45%; }
+.projects    { text-align:left; margin-left: 7.5em; margin-top: 1rem }
+wbr          { display: none; }
+
+/* Responsive™ */
+@media (max-width: 767px) {
+  p, h3, ol, ul, pre { margin-left: 1em; }
+  .projects { margin-left: 2.5em; }
+  pre { margin-right: 1em; }
+  img { max-width: 100%; height: auto; }
+  wbr { display: inline; }
+}

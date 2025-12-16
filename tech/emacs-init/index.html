@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Faster Emacs Init</title>
+<meta name="description" content="5 → 2 seconds">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Faster Emacs Init
+</h1>
+
+<i>First Published: 2023-06-06</i>
+
+<hr>
+<h1 id="5-2-seconds">
+5 → 2 seconds</h1>
+<h2 id="profiling-and-margin-of-error">
+<a class="zola-anchor" href="#profiling-and-margin-of-error" aria-label="Anchor link for: profiling-and-margin-of-error">🔗</a>
+
+Profiling and margin of error</h2>
+<p>For profiling startup speed several options are available, but few of them worked for me.
+<a href="https://github.com/jschaf/esup">esup</a> and <a href="https://github.com/dholm/benchmark-init-el">benchmark-init</a> didn't yield the desired results, showing me no output to speak of.
+<code>(setq use-package-verbose t)</code> works for a first glance, but I landed on <a href="https://www.emacswiki.org/emacs/profile-dotemacs.el">profile-dotemacs.el</a> as my solution of choice. Note that this gives an optimistic time that is lower than <code>M-x emacs-init-time</code> for some reason. The following numbers are the ones from <code>M-x emacs-init-time</code>.</p>
+<p>To get the theoretical minimum startup speed, run <code>emacs -q --eval='(message "%s" (emacs-init-time))'</code>, mine was 0.25s.</p>
+<p>Margin of error is ~0.1s for most of the numbers that follow, but obviously correlated to the number. The minimum startup speed has a margin of error of only 0.01s.</p>
+<p>With that out of the way, my starting point today was 4.9s.</p>
+<h2 id="garbage-collection">
+<a class="zola-anchor" href="#garbage-collection" aria-label="Anchor link for: garbage-collection">🔗</a>
+
+Garbage Collection</h2>
+<p><a href="https://www.emacswiki.org/emacs/profile-dotemacs.el">profile-dotemacs.el</a> highlights runtime, gc count and gc time for each expression beyond a specified runtime percentage.
+This highlighted an easy to fix issue: emacs did dozens of gc's during init.</p>
+<p>I added <code>(setq gc-cons-threshold most-positive-fixnum)</code> to the very top of my config and then added a hook to enable it again after init, increasing the threshold from the default 760KB to 8MB of memory usage.</p>
+<p>This can be done with either of the following depending on if you use use-package:</p>
+<ul>
+<li><code>(add-hook 'emacs-startup-hook (lambda () (setq gc-cons-threshold (* 8 1024 1024))))</code></li>
+<li><code>:hook (emacs-startup . (lambda () (setq gc-cons-threshold (* 8 1024 1024))))</code></li>
+</ul>
+<p>This brought down my startup time by ~33% to 3.3s</p>
+<h2 id="defer-n">
+<a class="zola-anchor" href="#defer-n" aria-label="Anchor link for: defer-n">🔗</a>
+
+:defer N</h2>
+<p><code>use-package</code> provides and option to explicitly defer loading via the <code>:defer</code> directive.
+Note that when you specify <code>:mode</code>, <code>:hook</code>, <code>:bind</code> or <a href="https://github.com/jwiegley/use-package#notes-about-lazy-loading">similar directives</a> it implicitly defers loading.</p>
+<p><code>:defer t</code> defers loading until the package is needed, perhaps because you open a specific file or use a command. By providing a numeric argument, integer or float, it will load after N seconds of idle time.</p>
+<p>I recommend explicitly deffering modes that meet all the following criteria:</p>
+<ul>
+<li>don't involve ui</li>
+<li>aren't evil</li>
+<li>are either mode specific or major modes</li>
+<li>take &gt;0.1s during profiling</li>
+</ul>
+<p>Using this method I deferred loading of 11 my 46 installed packages.
+This brought down my load time by another ~40% to 2.0s.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;dang-stack&#x2F;">💻 Infrastructure with the DANG Stack ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;road-of-linux&#x2F;">‹ 💻 Road of linux</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>

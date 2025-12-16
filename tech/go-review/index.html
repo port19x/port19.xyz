@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Go Language Review</title>
+<meta name="description" content="So I&#x27;m dropping Go to focus on Shell and Python">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Go Language Review
+</h1>
+
+<i>First Published: 2023-09-10</i>
+
+<hr>
+<h2 id="go-isn-t-important">
+<a class="zola-anchor" href="#go-isn-t-important" aria-label="Anchor link for: go-isn-t-important">🔗</a>
+
+Go isn't important</h2>
+<p>In my continued research on admin languages I spotted an article by RedHat from three years ago.
+<a href="https://www.redhat.com/sysadmin/programming-languages-sysadmin">That article</a> features a poll asking for the respondents favorite programming language for admin tasks.
+By far the two most popular were Python and Shell, with C, Go and Perl forming a distant cluster of thirds.</p>
+<img src="./admin-langs.png">
+<p>The <a href="https://roadmap.sh/devops?r=devops-beginner">devops roadmap</a> from roadmap.sh, while also recommending Go, just states to pick any programming language.
+The purpose of the language is to be able to write automation scripts to automate repetitive tasks.
+Devops, for those out of the loop is basically <em>admin done right</em> or sysadmin 2.</p>
+<p>So at that point I already reclassified Go from a potential cornerstone of my tech stack to a firm third place, relegated only to internal CLI tools.</p>
+<h2 id="go-isn-t-fun">
+<a class="zola-anchor" href="#go-isn-t-fun" aria-label="Anchor link for: go-isn-t-fun">🔗</a>
+
+Go isn't fun</h2>
+<p>I gave Go a shot yesterday. I tried to implement a TUI for the classic <a href="https://en.wikipedia.org/wiki/Mastermind_(board_game)">mastermind</a> game.
+Along the way I got reminded why I initially discarded the language when I spent a week doing coding puzzles with it about a year ago:
+<strong>Working with composite data structures in Go sucks</strong>.
+This is primarily regarding slices, but my very short time trying to leverage maps and then resorting to a switch case statement was no highlight either.
+Slices are variable sized arrays. Go calls slices what would be lists in python or java.</p>
+<p>Say you want to save a sorted copy of your slice. In python you just do <code>b = sorted(a)</code>. Let's see what we need to do in Go and how we need to adapt the semantics.
+Well, let's figure out how to copy an array first, because <code>b := a</code> does not work and instead links to the same memory as a. <br />
+Instead you have to do a <code>b := make([]int, len(a))</code> before doing a <code>copy(b, a)</code>. <br />
+Now you may import the sort package from the standard library. <br />
+Perhaps the idea arises to to <code>b := sortInts(b)</code>, which then complains because of course a sort function doesn't return a sorted slice.
+No, instead it goes in and mutates the slice to be sorted directly.</p>
+<p>Now, retrieving a sorted copy of a slice is surely an obscure operation that warrants a verbose workaround (it isn't), but how about deleting an element from a slice?
+Surely, something so trivial has it's own easy to use function, right?
+Python has several functions for this: <code>pop</code> removes the element at index and returns it, <code>del</code> just removes the element at index, and <code>remove</code> will traverse the list and remove the first element equal to the argument.
+In Go, you need to do re-slicing. You can implement a function for removal like this:</p>
+<pre style="background-color:#0f1419;color:#bfbab0;"><code><span>func remove(slice []int, s int) []int {
+</span><span>    return append(slice[:s], slice[s+1:]...)
+</span><span>}
+</span></code></pre>
+<p>That this isn't a standard feature is really stupid, so at some point Go agreed and since 1.21 ships with a slices package in the standard library.
+When you import that package you finally get access to stuff like <code>Delete</code>, <code>Contains</code>, <code>Reverse</code>, <code>Min</code>, <code>Max</code>, etc.
+A small subset of list functions available in python, which is again a small subset of list functions available in any respectable functional language (e.g. Haskell, Clojure).</p>
+<p>Go 1.21 released 5 weeks ago!
+Until 5 weeks ago people were writing for loops and performed re-slicing for the most basic of list operations.
+That's just not my cup of tea. If I have to write for loops to get basic functionality, have functions that mutate instead of returning, when I have a stupid gopath system to go on top of it, I'm out.</p>
+<p>And, just to mention it, TUI libraries are as plentiful as in every other language, with no clear standard. <br />
+CLI is clearly just Cobra and Viper, and that's neat, but tbh CLIs are easy to write in any language I know.</p>
+<h2 id="other-languages-of-interest">
+<a class="zola-anchor" href="#other-languages-of-interest" aria-label="Anchor link for: other-languages-of-interest">🔗</a>
+
+Other languages of interest</h2>
+<p>This leaves a gap in the stack for a natively compiled language. <br />
+This gap will remain open for some time, but I do know a few languages that may be of interest. <br />
+Julia and Racket both have nothing to do with admin work, but are languages I find beautiful. \</p>
+<p><a href="https://racket-lang.org/">Racket</a> is a dialect of Lisp, so it's in my back pocket for when I miss functional programming. <br />
+<a href="https://julialang.org/">Julia</a> is more of a fallback for if I dislike the data analytics and visualization workflow in python.</p>
+<h2 id="go-maybe-later">
+<a class="zola-anchor" href="#go-maybe-later" aria-label="Anchor link for: go-maybe-later">🔗</a>
+
+Go ... maybe later</h2>
+<p>It isn't entirely unrealistic that I'll learn some Go sometime in the future.
+It is very likely that I may have to make slight adjustments to someone elses "scripts" written in Perl or Go.
+But at that point I'd rather learn on demand.
+It's not like programming languages are the only tools counting towards admin skill.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;macos&#x2F;">💻 M1 Mac Review ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;status-update-2309&#x2F;">‹ 💻 Status Update and Q4 Goals</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
