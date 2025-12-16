@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2025-11-03
+updated = 2025-12-16
 description = "Tracking Bible Reading Progress"
 +++
 
@@ -26,6 +26,8 @@ For travel, I also have a german [pocket edition of the gospels.](https://www.bi
 </summary>
 <img src="/catholicstuff2.jpg" height="800vw">
 </details>
+
+## Currently Reading: Psalms
 
 ## Completed
 
