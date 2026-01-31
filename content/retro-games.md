@@ -1,8 +1,8 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2025-09-26
-description = "snes only"
+updated = 2026-01-31
+description = "mostly snes"
 +++
 
 *also check my [anime list](https://port19.xyz/anime)*
