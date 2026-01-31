@@ -9,7 +9,7 @@ description = "mostly snes"
 
 ## Playing
 
-I'm currently playing Metroid Prime 2
+<img src="/retrocovers/metroid-prime-2.jpg">
 
 ## Completed
 
