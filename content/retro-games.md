@@ -7,6 +7,10 @@ description = "snes only"
 
 *also check my [anime list](https://port19.xyz/anime)*
 
+## Playing
+
+I'm currently playing Metroid Prime 2
+
 ## Completed
 
 <i style="color: gold">• played through twice</i>
