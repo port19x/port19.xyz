@@ -1,7 +1,7 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2026-01-31
+updated = 2026-02-28
 description = "mostly snes"
 +++
 
@@ -59,12 +59,11 @@ description = "mostly snes"
 
 ## Sourcing & Emulation
 
-[Myrient](https://myrient.erista.me/) is good for curated nointro and redump romsets.\
+[Myrient](https://myrient.erista.me/) is good for curated nointro and redump romsets. It shuts down March 31st.\
 [Romsfun](https://romsfun.com/) is my current fallback site.
 
-I now use [snes9x](https://www.snes9x.com/) via `snes9x-gtk`\
+I use dolphin and pcsx2, but also the nintendo switch online library + expansion pack.
 My Gamepad is a black [8bitdo pro 2.](https://www.8bitdo.com/pro2/)\
-[Input Lag Mitigation](https://emulation.gametechwiki.com/index.php/Input_lag)
 
 ## PC
 
