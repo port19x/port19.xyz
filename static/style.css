@@ -40,3 +40,8 @@ wbr          { display: none; }
   img { max-width: 100%; height: auto; }
   wbr { display: inline; }
 }
+
+@supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
+  /* These rules will ONLY apply in Safari (desktop + iOS) */
+  body { font-family: Georgia, "Times New Roman", Times, 'Noto Color Emoji', serif; }
+}
