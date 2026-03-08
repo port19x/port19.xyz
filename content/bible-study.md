@@ -27,6 +27,8 @@ For travel, I also have a german [pocket edition of the gospels.](https://www.bi
 <img src="/catholicstuff2.jpg" height="800vw">
 </details>
 
+## Currently Reading: Genesis
+
 ## Completed
 
 | Book                   | Chapters | Date Completed |
