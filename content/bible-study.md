@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2025-12-16
+updated = 2026-03-08
 description = "Tracking Bible Reading Progress"
 +++
 
@@ -26,8 +26,6 @@ For travel, I also have a german [pocket edition of the gospels.](https://www.bi
 </summary>
 <img src="/catholicstuff2.jpg" height="800vw">
 </details>
-
-## Currently Reading: Psalms
 
 ## Completed
 
@@ -63,6 +61,7 @@ For travel, I also have a german [pocket edition of the gospels.](https://www.bi
 | Titus                  |        3 |     03.10.2025 |
 | Hebrews                |       13 |     04.10.2025 |
 | Revelation             |       22 |     03.11.2025 |
+| Psalms                 |      150 |     08.03.2026 |
 
 ## Guides & Resources
 
