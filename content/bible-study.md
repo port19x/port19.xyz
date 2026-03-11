@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2026-03-08
+updated = 2026-03-11
 description = "Tracking Bible Reading Progress"
 +++
 
@@ -13,13 +13,11 @@ It's a [large leather edition.](https://www.bibelwerk.shop/produkte/die-bibel-44
 For US shoppers I recommend [the catholic company](https://www.catholiccompany.com/),
 from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-ceramic-stretch-rosary-bracelet-i129114/) and my [crucifix chain](https://www.catholiccompany.com/traditional-crucifix-w-chain-i36361/). I later added a [St Michaels medal.](https://www.marienfiguren.de/medaille-erzengel-michael-schutzengel-a-sk12140.html)
 
-From [TAN Books](https://tanbooks.com/) I have two spiritual books that are enough to last a lifetime:\
+From [TAN Books](https://tanbooks.com/) I have:\
 [St Alphonsus Ligouri: 12 Steps to Holiness and Salvation](https://tanbooks.com/products/books/the-12-steps-to-holiness-and-salvation-deluxe-leatherette/),
-[(goodreads)](https://www.goodreads.com/book/show/1093642.The_12_Steps_to_Holiness_and_Salvation)\
-[St Luis de Montfort: The Secret of the Rosary](https://tanbooks.com/products/books/the-secret-of-the-rosary-deluxe-leatherette/),
-[(goodreads)](https://www.goodreads.com/book/show/1448527.The_Secret_Of_The_Rosary)
+[(goodreads)](https://www.goodreads.com/book/show/1093642.The_12_Steps_to_Holiness_and_Salvation)
 
-For travel, I also have a german [pocket edition of the gospels.](https://www.bibelwerk.shop/produkte/die-evangelien-44058)
+(I gotta update my stack sometime soon and add a new picture)
 
 <details>
 <summary>Picture of it all
@@ -65,11 +63,20 @@ For travel, I also have a german [pocket edition of the gospels.](https://www.bi
 | Revelation             |       22 |     03.11.2025 |
 | Psalms                 |      150 |     08.03.2026 |
 
-## Guides & Resources
-
-- [Bible Reading Order](https://youtu.be/iq6dn3Z9--g)
-- [How to Pray the Rosary](https://youtu.be/iMQ_CRYWHME), [(German)](http://www.kirchenweb.at/rosenkranz/)
-- [Christian Denominations Overview](https://youtu.be/tzLS4O7YaUg)
+## Resources
+### Prayers
 - [Chaplet of St. Michael the Archangel](https://chapletofsaintmichael.com/), [(German)](https://chapletofsaintmichael.com/german)
-- [Church Fathers](https://www.newadvent.org/fathers/)
-- [Catena Aurea](https://www.ecatholic2000.com/catena/)
+
+(I ought to make more websites like this)
+### General
+- [Catena Aurea](https://www.ecatholic2000.com/catena/) (extensive patristic commentaries on the gospels)
+- [Library 1 (ecatholic2000.com)](https://www.ecatholic2000.com/library2/library.shtml)
+- [Library 2 (traditionalcatholic.co)](https://www.traditionalcatholic.co/free-catholicbooks/)
+- [Library 3 (newadvent.org)](https://www.newadvent.org/fathers/)
+- [Library 4 (fisheaters.com)](https://fisheaters.com/catholiclibrary.html)
+### What I've read
+*the links point to free online versions*
+- St Alphonsus Ligouri: 12 Steps to Holiness and Salvation
+- [St Louis de Montfort: The Secret of the Rosary](https://www.ecatholic2000.com/montfort/rosary/rosary.shtml)
+- [The Rule of Saint Benedict](https://www.ecatholic2000.com/benedict/rule.shtml)
+- Benedicta Ward: The Sayings of the Desert Fathers, The Alphabetical Collection
