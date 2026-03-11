@@ -65,27 +65,12 @@ From [TAN Books](https://tanbooks.com/) I have:\
 
 ## Resources
 
-### Prayers
-
 - [Liturgy of the Hours](https://divineoffice.org/), [(German)](https://stundenbuch.katholisch.de/kalendertag.php)
-- [Chaplet of St. Michael the Archangel](https://chapletofsaintmichael.com/), [(German)](https://chapletofsaintmichael.com/german)
-
-(I ought to make more websites like this)
-
-### General
-
 - [Mass Readings of the day](https://www.vaticannews.va/en/word-of-the-day.html), [(German)](https://www.vaticannews.va/de/tagesevangelium-und-tagesliturgie.html)
 - [Catena Aurea](https://www.ecatholic2000.com/catena/) (extensive patristic commentaries on the gospels)
 - [Library 1 (ecatholic2000.com)](https://www.ecatholic2000.com/library2/library.shtml)
 - [Library 2 (traditionalcatholic.co)](https://www.traditionalcatholic.co/free-catholicbooks/)
 - [Library 3 (newadvent.org)](https://www.newadvent.org/fathers/)
 - [Library 4 (fisheaters.com)](https://fisheaters.com/catholiclibrary.html)
+- [Chaplet of St. Michael the Archangel](https://chapletofsaintmichael.com/), [(German)](https://chapletofsaintmichael.com/german)
 
-### What I've read
-
-*the links point to free online versions*
-
-- St Alphonsus Ligouri: 12 Steps to Holiness and Salvation
-- [St Louis de Montfort: The Secret of the Rosary](https://www.ecatholic2000.com/montfort/rosary/rosary.shtml)
-- [The Rule of Saint Benedict](https://www.ecatholic2000.com/benedict/rule.shtml)
-- Benedicta Ward: The Sayings of the Desert Fathers, The Alphabetical Collection
