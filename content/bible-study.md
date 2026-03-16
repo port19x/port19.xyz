@@ -69,8 +69,7 @@ From [TAN Books](https://tanbooks.com/) I have:\
 - Mass Readings of the day: [English](https://www.vaticannews.va/en/word-of-the-day.html), [German](https://www.vaticannews.va/de/tagesevangelium-und-tagesliturgie.html)
 - [Catena Aurea](https://www.ecatholic2000.com/catena/) (extensive patristic commentaries on the gospels)
 - [Library 1 (ecatholic2000.com)](https://www.ecatholic2000.com/library2/library.shtml)
-- [Library 2 (traditionalcatholic.co)](https://www.traditionalcatholic.co/free-catholicbooks/)
-- [Library 3 (newadvent.org)](https://www.newadvent.org/fathers/)
-- [Library 4 (fisheaters.com)](https://fisheaters.com/catholiclibrary.html)
+- [Library 2 (newadvent.org)](https://www.newadvent.org/fathers/)
+- [Library 3 (fisheaters.com)](https://fisheaters.com/catholiclibrary.html)
 - Chaplet of St. Michael the Archangel: [English](https://chapletofsaintmichael.com/), [German](https://chapletofsaintmichael.com/german)
 
