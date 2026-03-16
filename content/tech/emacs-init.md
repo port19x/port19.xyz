@@ -10,7 +10,7 @@ description = "5 → 2 seconds"
 
 For profiling startup speed several options are available, but few of them worked for me.
 [esup](https://github.com/jschaf/esup) and [benchmark-init](https://github.com/dholm/benchmark-init-el) didn't yield the desired results, showing me no output to speak of.
-`(setq use-package-verbose t)` works for a first glance, but I landed on [profile-dotemacs.el](https://www.emacswiki.org/emacs/profile-dotemacs.el) as my solution of choice. Note that this gives an optimistic time that is lower than `M-x emacs-init-time` for some reason. The following numbers are the ones from `M-x emacs-init-time`.
+`(setq use-package-verbose t)` works for a first glance, but I landed on profile-dotemacs.el as my solution of choice. Note that this gives an optimistic time that is lower than `M-x emacs-init-time` for some reason. The following numbers are the ones from `M-x emacs-init-time`.
 
 To get the theoretical minimum startup speed, run `emacs -q --eval='(message "%s" (emacs-init-time))'`, mine was 0.25s.
 
@@ -20,7 +20,7 @@ With that out of the way, my starting point today was 4.9s.
 
 ## Garbage Collection
 
-[profile-dotemacs.el](https://www.emacswiki.org/emacs/profile-dotemacs.el) highlights runtime, gc count and gc time for each expression beyond a specified runtime percentage.
+https://www.emacswiki.org/emacs/profile-dotemacs.el highlights runtime, gc count and gc time for each expression beyond a specified runtime percentage.
 This highlighted an easy to fix issue: emacs did dozens of gc's during init.
 
 I added `(setq gc-cons-threshold most-positive-fixnum)` to the very top of my config and then added a hook to enable it again after init, increasing the threshold from the default 760KB to 8MB of memory usage.
