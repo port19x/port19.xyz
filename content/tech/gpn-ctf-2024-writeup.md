@@ -38,7 +38,7 @@ function securePassword($user_secret){
 ```
 
 So my first intuition was that `0*x=0` and surely that must be useful to find this flag.
-I ended up spending about two hours first doing some napkin math of how long it would take my iGPU to find an md5 hash that starts with seven zeroes, followed by some [Hashcat](https://hashcat.net/hashcat/) related research and ultimately finding the [hashgame](https://beneri.se/hashgame/).
+I ended up spending about two hours first doing some napkin math of how long it would take my iGPU to find an md5 hash that starts with seven zeroes, followed by some [Hashcat](https://hashcat.net/hashcat/) related research and ultimately finding the hashgame (website dead now).
 
 Somewhere along the way I heard about PHP type juggling and that in PHP, due to it, `md5('240610708')` equals `md5('QNKCDZO')`.
 After a short break I fired up another instance to get the communication rolling again.
