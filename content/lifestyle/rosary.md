@@ -45,4 +45,4 @@ So if you're a christian that is open to this catholic practice I urge you to gi
 If you're from a different religion, research the repetitive prayer of it, as every major world religion has a devotion like this.
 And to the atheists I say, try out mindfulness meditation or mantra meditation, its still better than nothing.
 
-For further reading I'm gonna recommend an intro to [the rosary](https://youtu.be/iMQ_CRYWHME), as well as another [blog post](https://www.rosarymeds.com/why-rosary-meditation-is-the-best-meditation/) contrasting the rosary with mindfulness meditation by someone else.
+For further reading I'm gonna recommend an intro to [the rosary](https://youtu.be/iMQ_CRYWHME).
