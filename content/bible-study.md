@@ -11,7 +11,7 @@ My Bible is the revised [Einheitsübersetzung](https://en.wikipedia.org/wiki/Ein
 It's a [large leather edition.](https://www.bibelwerk.shop/produkte/die-bibel-44020) For US shoppers I recommend [the catholic company](https://www.catholiccompany.com/),
 from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-ceramic-stretch-rosary-bracelet-i129114/) and my [crucifix chain](https://www.catholiccompany.com/traditional-crucifix-w-chain-i36361/).
 
-I have 3 little statues, of Mary, St. Michael and Jesus. I'll add links later.
+I have 3 little statues, of [Mary](https://de.aliexpress.com/item/1005010045705922.html), [St. Michael](https://de.aliexpress.com/item/1005009506834358.html) and [Jesus](https://www.amazon.de/dp/B0CJ6RK7CM).
 
 From [TAN Books](https://tanbooks.com/) I have:\
 [St. Alphonsus Ligouri: 12 Steps to Holiness and Salvation](https://tanbooks.com/products/books/the-12-steps-to-holiness-and-salvation-deluxe-leatherette/)\
