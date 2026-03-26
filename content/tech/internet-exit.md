@@ -19,7 +19,7 @@ So here's the list of what I've been downloading with approximate sizes and link
 - 65GB Seinfeld [(torrent)](https://1337x.to/torrent/4507711/Seinfeld-1989-Season-1-9-S01-S09-Mixed-x265-HEVC-10bit-AAC-2-0-Silence-QxR/)
 - 22GB Spongebob [(torrent)](https://1337x.to/torrent/3060521/SpongeBob-SquarePants-1999-2015-480p-720p-HEVC-x265-pseudo/)
 - 1GB Music `yt-dlp -f 249`
-- 500MB Books [library genesis](https://libgen.gl/index.php)
+- 500MB Books (library genesis)
 - 500MB Websites `wget  --mirror --convert-links --adjust-extension --page-requisites`
 - 4GB SNES ROM Set [myrient](https://myrient.erista.me/)
 
