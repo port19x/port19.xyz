@@ -5,6 +5,8 @@ updated = 2025-10-31
 description = "and recommend"
 +++
 
+*I'm not gonna keep updating this on every distro/hardware change. For up-to-date info, check my [dotfiles](https://github.com/port19x/dotfiles)*
+
 ## Base
 
 ### [Linux Mint](https://linuxmint.com/)
