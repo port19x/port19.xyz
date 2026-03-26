@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download & Run Deadsniper (with retry)
-        uses: nick-fields/retry@v3
+        uses: nick-fields/retry@v4
         with:
           max_attempts: 5
           timeout_minutes: 2
@@ -23,15 +23,15 @@ jobs:
     name: Find Trailing Whitespace
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: ocular-d/trailing-spaces@0.0.2
   build:
     name: Publish site
     runs-on: ubuntu-latest
     steps:
     - name: Checkout master
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
     - name: Build and deploy
-      uses: shalzz/zola-deploy-action@master
+      uses: shalzz/zola-deploy-action@v0.22.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
