@@ -1,23 +1,23 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2026-03-11
-description = "Tracking Bible Reading Progress"
+updated = 2026-03-26
+description = "Tracking Bible & Spiritual Reading Progress"
 +++
 
 Yes, I'm christian. Roman Catholic to be percise.
 
 My Bible is the revised [Einheitsübersetzung](https://en.wikipedia.org/wiki/Einheits%C3%BCbersetzung), a german translation used in the liturgy of the catholic church, and the most widespread in germany.
-It's a [large leather edition.](https://www.bibelwerk.shop/produkte/die-bibel-44020)
+It's a [large leather edition.](https://www.bibelwerk.shop/produkte/die-bibel-44020) For US shoppers I recommend [the catholic company](https://www.catholiccompany.com/),
+from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-ceramic-stretch-rosary-bracelet-i129114/) and my [crucifix chain](https://www.catholiccompany.com/traditional-crucifix-w-chain-i36361/).
 
-For US shoppers I recommend [the catholic company](https://www.catholiccompany.com/),
-from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-ceramic-stretch-rosary-bracelet-i129114/) and my [crucifix chain](https://www.catholiccompany.com/traditional-crucifix-w-chain-i36361/). I later added a [St Michaels medal.](https://www.marienfiguren.de/medaille-erzengel-michael-schutzengel-a-sk12140.html)
+I have 3 little statues, of Mary, St. Michael and Jesus. I'll add links later.
 
 From [TAN Books](https://tanbooks.com/) I have:\
-[St Alphonsus Ligouri: 12 Steps to Holiness and Salvation](https://tanbooks.com/products/books/the-12-steps-to-holiness-and-salvation-deluxe-leatherette/),
-[(goodreads)](https://www.goodreads.com/book/show/1093642.The_12_Steps_to_Holiness_and_Salvation)
+[St. Alphonsus Ligouri: 12 Steps to Holiness and Salvation](https://tanbooks.com/products/books/the-12-steps-to-holiness-and-salvation-deluxe-leatherette/)\
+[TAN Classics 12 Book Set](https://tanbooks.com/products/books/tan-classics-12-book-set/) (still on its way)
 
-(I gotta update my stack sometime soon and add a new picture)
+(I gotta add a new picture)
 
 <details>
 <summary>Picture of it all
@@ -28,6 +28,17 @@ From [TAN Books](https://tanbooks.com/) I have:\
 ## Currently Reading: Genesis
 
 ## Completed
+
+### Spiritual Reading
+
+- [St Alphonsus Ligouri: 12 Steps to Holiness and Salvation](https://www.goodreads.com/book/show/1093642.The_12_Steps_to_Holiness_and_Salvation)
+- [St. Louis de Montfort: The Secret of the Rosary](https://www.goodreads.com/book/show/1448527.The_Secret_Of_The_Rosary)
+- [St. Benedict of Nursia: The Rule of Saint Benedict](https://www.goodreads.com/book/show/82406.The_Rule_of_Saint_Benedict)
+- [Benedicta Ward: The Sayings of the Desert Fathers - The Alphabetical Collection](https://www.goodreads.com/book/show/132153.The_Sayings_of_the_Desert_Fathers)
+- [St. Alphonsus Ligouri: Uniformity with Gods Will](https://www.goodreads.com/book/show/1590924.Uniformity_with_God_s_Will)
+- [Fr. Paul O'Sullivan: The Secret of Confession](https://www.goodreads.com/book/show/2105820.The_Secret_of_Confession)
+
+### Bible
 
 | Book                   | Chapters | Date Completed |
 |------------------------|----------|----------------|
