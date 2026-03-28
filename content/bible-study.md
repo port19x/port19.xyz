@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2026-03-26
+updated = 2026-03-28
 description = "Tracking Bible & Spiritual Reading Progress"
 +++
 
@@ -17,12 +17,10 @@ From [TAN Books](https://tanbooks.com/) I have:\
 [St. Alphonsus Ligouri: 12 Steps to Holiness and Salvation](https://tanbooks.com/products/books/the-12-steps-to-holiness-and-salvation-deluxe-leatherette/)\
 [TAN Classics 12 Book Set](https://tanbooks.com/products/books/tan-classics-12-book-set/) (still on its way)
 
-(I gotta add a new picture)
-
 <details>
 <summary>Picture of it all
 </summary>
-<img src="/catholicstuff2.jpg" height="800vw">
+<img src="/catholicstuff3.jpg" height="800vw">
 </details>
 
 ## Currently Reading: Genesis
