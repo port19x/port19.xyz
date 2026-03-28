@@ -1,15 +1,11 @@
 +++
 title = "🌸Retro Games🌸"
 date = 2024-04-17
-updated = 2026-02-28
+updated = 2026-03-28
 description = "mostly snes"
 +++
 
 *also check my [anime list](https://port19.xyz/anime)*
-
-## Playing
-
-<img src="/retrocovers/metroid-prime-2.jpg">
 
 ## Completed
 
@@ -63,7 +59,7 @@ description = "mostly snes"
 [Romsfun](https://romsfun.com/) is my current fallback site.
 
 I use dolphin and pcsx2, but also the nintendo switch online library + expansion pack.
-My Gamepad is a black [8bitdo pro 2.](https://www.8bitdo.com/pro2/)\
+My Gamepad is a black [8bitdo pro 2.](https://www.8bitdo.com/pro2/)
 
 ## PC
 
