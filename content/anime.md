@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2025-10-31
+updated = 2026-03-29
 description = "Port19s selfhosted anime list"
 +++
 
@@ -66,6 +66,7 @@ description = "Port19s selfhosted anime list"
 | Flavors of Youth                                |     4 |      1 | Movie   |
 | FLCL                                            |     4 |      6 | OVA     |
 | FLCL Progressive                                |     4 |      6 | TV      |
+| Frieren: Beyond Journey's End Season 2          |     4 |     10 | TV      |
 | Gantz                                           |     4 |     13 | TV      |
 | Ghost in the Shell                              |     4 |      1 | Movie   |
 | Grave of the Fireflies                          |     4 |      1 | Movie   |
