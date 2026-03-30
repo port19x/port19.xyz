@@ -74,7 +74,7 @@ From [TAN Books](https://tanbooks.com/) I have:\
 
 ## Resources
 
-- Liturgy of the Hours: [English](https://divineoffice.org/), [German](https://stundenbuch.katholisch.de/kalendertag.php)
+- Liturgy of the Hours: [English](https://divineoffice.org/), [German](https://mein.stundengebet.de/jetzt-beten)
 - Mass Readings of the day: [English](https://www.vaticannews.va/en/word-of-the-day.html), [German](https://www.vaticannews.va/de/tagesevangelium-und-tagesliturgie.html)
 - [Catena Aurea](https://www.ecatholic2000.com/catena/) (extensive patristic commentaries on the gospels)
 - [Library 1 (ecatholic2000.com)](https://www.ecatholic2000.com/library2/library.shtml)
