@@ -1,7 +1,6 @@
 +++
 title = "💻 Site Archival & My Favorite Posts"
 date = 2026-04-07
-draft = true
 description = "farewell"
 +++
 
