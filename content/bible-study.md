@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2026-03-28
+updated = 2026-04-07
 description = "Tracking Bible & Spiritual Reading Progress"
 +++
 
@@ -14,8 +14,7 @@ from where I bought my [rosary](https://www.catholiccompany.com/blue-floral-cera
 I have 3 little statues, of [Mary](https://de.aliexpress.com/item/1005010045705922.html), [St. Michael](https://de.aliexpress.com/item/1005009506834358.html) and [Jesus](https://www.amazon.de/dp/B0CJ6RK7CM).
 
 From [TAN Books](https://tanbooks.com/) I have:\
-[St. Alphonsus Ligouri: 12 Steps to Holiness and Salvation](https://tanbooks.com/products/books/the-12-steps-to-holiness-and-salvation-deluxe-leatherette/)\
-[TAN Classics 12 Book Set](https://tanbooks.com/products/books/tan-classics-12-book-set/) (still on its way)
+[St. Alphonsus Ligouri: 12 Steps to Holiness and Salvation](https://tanbooks.com/products/books/the-12-steps-to-holiness-and-salvation-deluxe-leatherette/)
 
 <details>
 <summary>Picture of it all
@@ -35,6 +34,7 @@ From [TAN Books](https://tanbooks.com/) I have:\
 - [Benedicta Ward: The Sayings of the Desert Fathers - The Alphabetical Collection](https://www.goodreads.com/book/show/132153.The_Sayings_of_the_Desert_Fathers)
 - [St. Alphonsus Ligouri: Uniformity with Gods Will](https://www.goodreads.com/book/show/1590924.Uniformity_with_God_s_Will)
 - [Fr. Paul O'Sullivan: The Secret of Confession](https://www.goodreads.com/book/show/2105820.The_Secret_of_Confession)
+- [St. Alphonsus Ligouri: How to Converse with God](https://www.goodreads.com/book/show/7910670-how-to-converse-with-god)
 
 ### Bible
 
