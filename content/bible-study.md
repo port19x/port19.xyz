@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2026-04-07
+updated = 2026-04-11
 description = "Tracking Bible & Spiritual Reading Progress"
 +++
 
@@ -21,8 +21,6 @@ From [TAN Books](https://tanbooks.com/) I have:\
 </summary>
 <img src="/catholicstuff3.jpg" height="800vw">
 </details>
-
-## Currently Reading: Genesis
 
 ## Completed
 
@@ -71,6 +69,7 @@ From [TAN Books](https://tanbooks.com/) I have:\
 | Hebrews                |       13 |     04.10.2025 |
 | Revelation             |       22 |     03.11.2025 |
 | Psalms                 |      150 |     08.03.2026 |
+| Genesis                |       50 |     11.04.2026 |
 
 ## Resources
 
