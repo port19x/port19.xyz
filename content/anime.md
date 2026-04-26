@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2026-03-29
+updated = 2026-03-26
 description = "Port19s selfhosted anime list"
 +++
 
@@ -22,6 +22,8 @@ description = "Port19s selfhosted anime list"
 3. Highschool of the Dead
 4. Is this a Zombie
 5. Tsukigakirei
+
+## Watching: The Apothecary Diaries
 
 ## Completed
 
