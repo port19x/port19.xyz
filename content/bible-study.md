@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2026-04-11
+updated = 2026-05-04
 description = "Tracking Bible & Spiritual Reading Progress"
 +++
 
@@ -33,6 +33,7 @@ From [TAN Books](https://tanbooks.com/) I have:\
 - [St. Alphonsus Ligouri: Uniformity with Gods Will](https://www.goodreads.com/book/show/1590924.Uniformity_with_God_s_Will)
 - [Fr. Paul O'Sullivan: The Secret of Confession](https://www.goodreads.com/book/show/2105820.The_Secret_of_Confession)
 - [St. Alphonsus Ligouri: How to Converse with God](https://www.goodreads.com/book/show/7910670-how-to-converse-with-god)
+- [St. Robert Bellarmine: Doctrina Christiana Explicatio](https://www.goodreads.com/book/show/31376513-doctrina-christiana)
 
 ### Bible
 
