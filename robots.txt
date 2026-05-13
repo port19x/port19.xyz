@@ -1,0 +1,7 @@
+User-agent: GPTBot
+Disallow: /
+
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://port19.xyz/sitemap.xml

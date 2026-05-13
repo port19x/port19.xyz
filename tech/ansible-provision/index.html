@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 DigitalOcean Provisioning with Ansible</title>
+<meta name="description" content="Because clicking through a web interface is highly cringe">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 DigitalOcean Provisioning with Ansible
+</h1>
+
+<i>First Published: 2023-08-04</i>
+
+<hr>
+<h2 id="prerequisites">
+<a class="zola-anchor" href="#prerequisites" aria-label="Anchor link for: prerequisites">🔗</a>
+
+Prerequisites</h2>
+<ul>
+<li>Have ansible installed <a rel="external" href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html">(docs)</a></li>
+<li>Have a digital ocean account <a rel="external" href="https://m.do.co/c/e3fad703cc9b">(ref link)</a></li>
+<li>Create an API token <a rel="external" href="https://docs.digitalocean.com/reference/api/create-personal-access-token/">(docs)</a></li>
+<li>Save the API token in a file with the name <code>.token</code></li>
+<li>Add <code>.token</code> as a line to your <code>.gitignore</code> file</li>
+<li>Prepare ssh key pair or use the same you use for git <a rel="external" href="https://docs.digitalocean.com/products/droplets/how-to/add-ssh-keys/create-with-openssh/">(docs)</a></li>
+</ul>
+<h3 id="requirements-yml">
+requirements.yml</h3>
+<pre class="giallo" style="color: #BFBDB6; background-color: #0D1017;"><code data-lang="yaml"><span class="giallo-l"><span>---</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">collections</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"><span>  -</span><span style="color: #39BAE6;"> name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> community.digitalocean</span></span></code></pre><h3 id="inventory-yml">
+inventory.yml</h3>
+<pre class="giallo" style="color: #BFBDB6; background-color: #0D1017;"><code data-lang="yaml"><span class="giallo-l"><span>---</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">digitalocean</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">  hosts</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">    megamind.example.com</span><span style="color: #BFBDB6B3;">:</span></span></code></pre><h3 id="ansible-cfg">
+ansible.cfg</h3>
+<pre class="giallo" style="color: #BFBDB6; background-color: #0D1017;"><code data-lang="ini"><span class="giallo-l"><span style="color: #59C2FF;">[defaults]</span></span>
+<span class="giallo-l"><span style="color: #FF8F40;">inventory</span><span style="color: #BFBDB6B3;"> =</span><span> inventory.yml</span></span></code></pre><h2 id="the-playbooks">
+<a class="zola-anchor" href="#the-playbooks" aria-label="Anchor link for: the-playbooks">🔗</a>
+
+The Playbooks</h2>
+<p>First, run <code>ansible-galaxy install -r requirements.yml</code> to install the digital ocean module. <br />
+In the following, <code>~/.ssh/digital-ocean.pub</code> points to my public key. <br />
+You may need to adapt that path.</p>
+<h3 id="provision-yml">
+provision.yml</h3>
+<pre class="giallo" style="color: #BFBDB6; background-color: #0D1017;"><code data-lang="yaml"><span class="giallo-l"><span>---</span></span>
+<span class="giallo-l"><span>-</span><span style="color: #39BAE6;"> name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> Provision Digital Ocean Ressources</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">  hosts</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> localhost</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">  vars</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">    oauth_token</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> &quot;{{ lookup(&#39;ansible.builtin.file&#39;, &#39;.token&#39;) }}&quot;</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">  tasks</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    -</span><span style="color: #39BAE6;"> name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> Register SSH Public Key</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">      community.digitalocean.digital_ocean_sshkey</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> &quot;Digital Ocean SSH Key&quot;</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        oauth_token</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> &quot;{{ oauth_token }}&quot;</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        ssh_pub_key</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> &quot;{{ lookup(&#39;ansible.builtin.file&#39;,</span></span>
+<span class="giallo-l"><span style="color: #AAD94C;">                         &#39;~/.ssh/digital-ocean.pub&#39;) }}&quot;</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        state</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> present</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">      register</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> sshkey_result</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    -</span><span style="color: #39BAE6;"> name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> Create Droplet</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">      community.digitalocean.digital_ocean_droplet</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        state</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> present</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        oauth_token</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> &quot;{{ oauth_token }}&quot;</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> &quot;{{ item }}&quot;</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        size</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> s-1vcpu-512mb-10gb</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        region</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> fra1</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        image</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> debian-12-x64</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        unique_name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #D2A6FF;"> true</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        ssh_keys</span><span style="color: #BFBDB6B3;">:</span><span> [</span><span style="color: #AAD94C;">&quot;{{ sshkey_result.data.ssh_key.id }}&quot;</span><span>]</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">      with_inventory_hostnames</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"><span>        -</span><span style="color: #AAD94C;"> digitalocean</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">      register</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> droplet_result</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    -</span><span style="color: #39BAE6;"> name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> Persist IP address in hostfile</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">      become</span><span style="color: #BFBDB6B3;">:</span><span style="color: #D2A6FF;"> true</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">      ansible.builtin.lineinfile</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        dest</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> /etc/hosts</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        regexp</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> &#39;.*{{ item.data.droplet.name }}$&#39;</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        line</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> &quot;{{ item.data.droplet.networks.v4.0.ip_address }}</span></span>
+<span class="giallo-l"><span style="color: #AAD94C;">               {{ item.data.droplet.name }}&quot;</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        state</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> present</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">      with_items</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> &quot;{{ droplet_result.results }}&quot;</span></span></code></pre>
+<p>Please refer to the <a rel="external" href="https://slugs.do-api.dev/">api docs</a> for regions, image and size shorthands. <br />
+To provision your droplet now run <code>ansible-playbook provision.yml</code> <br />
+Congrats, you should now have a virtual private server in the cloud.</p>
+<h3 id="destroy-yml">
+destroy.yml</h3>
+<pre class="giallo" style="color: #BFBDB6; background-color: #0D1017;"><code data-lang="yaml"><span class="giallo-l"><span>---</span></span>
+<span class="giallo-l"><span>-</span><span style="color: #39BAE6;"> hosts</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> localhost</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">  name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> Cleanup</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">  vars</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">    oauth_token</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> &quot;{{ lookup(&#39;ansible.builtin.file&#39;, &#39;.token&#39;) }}&quot;</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">  tasks</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    -</span><span style="color: #39BAE6;"> name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> Destroy Droplet</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">      community.digitalocean.digital_ocean_droplet</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        state</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> absent</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        oauth_token</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> &quot;{{ oauth_token }}&quot;</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> &quot;{{ item }}&quot;</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        unique_name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #D2A6FF;"> true</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">      with_inventory_hostnames</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"><span>        -</span><span style="color: #AAD94C;"> digitalocean</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    -</span><span style="color: #39BAE6;"> name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> Retrieve DigitalOcean Customer Balance</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">      community.digitalocean.digital_ocean_balance_info</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        oauth_token</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> &quot;{{ oauth_token }}&quot;</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">      register</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> balance</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    -</span><span style="color: #39BAE6;"> name</span><span style="color: #BFBDB6B3;">:</span><span style="color: #AAD94C;"> Display balance</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">      ansible.builtin.debug</span><span style="color: #BFBDB6B3;">:</span></span>
+<span class="giallo-l"><span style="color: #39BAE6;">        msg</span><span style="color: #BFBDB6B3;">:</span><span style="color: #FF8F40;"> |</span></span>
+<span class="giallo-l"><span style="color: #AAD94C;">          Total|MTD: {{ balance.data.account_balance }}|</span></span>
+<span class="giallo-l"><span style="color: #AAD94C;">                     {{ balance.data.month_to_date_usage }}</span></span></code></pre>
+<p>Let's save some bucks while we're learning systems administration and deprovision our servers when we're done playing with them for the day. <br />
+Run <code>ansible-playbook destroy.yml</code> to squash your cloud infrastructure. <br />
+This playbook will also display your current account balance and usage in the running month.</p>
+<h2 id="common-errors">
+<a class="zola-anchor" href="#common-errors" aria-label="Anchor link for: common-errors">🔗</a>
+
+Common Errors</h2>
+<p>If the playbook run fails at the "Persist IP address in hostfile" step, it spits out a large error message.
+This can be fixed by running <code>sudo echo hi</code> and then retrying. You need root privileges to write to your hostfile after all.</p>
+<p>If the playbook run fails at the "Register SSH public key" step, it will fail with an HTTP 401 status code.
+Seeing this error message indicates your api token has expired.</p>
+<h2 id="what-now">
+<a class="zola-anchor" href="#what-now" aria-label="Anchor link for: what-now">🔗</a>
+
+What now?</h2>
+<p>To dive further into ansible, I recommend Jeff Geerlings book <a rel="external" href="https://www.ansiblefordevops.com/">Ansible for Devops</a> <br />
+You can also check out <a rel="external" href="https://github.com/port19x/rapture">my vps setup</a> <br />
+The code for this article is available <a rel="external" href="https://github.com/port19x/digitalocean-provisioning-with-ansible">here</a></p>
+<p>If you run into any problems, feel free to reach out.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;va&#x2F;">💻 Why I prefer VA Monitors ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;dang-stack&#x2F;">‹ 💻 Infrastructure with the DANG Stack</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
