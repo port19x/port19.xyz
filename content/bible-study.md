@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2026-05-07
+updated = 2026-05-13
 description = "Tracking Bible & Spiritual Reading Progress"
 +++
 
@@ -72,6 +72,7 @@ From [TAN Books](https://tanbooks.com/) I have:\
 | Psalms                 |      150 |     08.03.2026 |
 | Genesis                |       50 |     11.04.2026 |
 | Exodus                 |       40 |     07.05.2026 |
+| Wisdom                 |       19 |     13.05.2026 |
 
 ## Resources
 
