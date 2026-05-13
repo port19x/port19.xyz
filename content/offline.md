@@ -1,6 +1,6 @@
 +++
 title = "💻Offline Stack💻"
-date = 2026-05-03
+date = 2026-05-13
 description = "becoming independent from home internet"
 +++
 
@@ -9,6 +9,11 @@ also check my *[programs I use](https://port19.xyz/programs/)*
 Precursor to this list: [💻 Internet Exit Strategy](https://port19.xyz/tech/internet-exit/)
 
 🌸 = high value, those are also saved on my phone
+
+## LLMs
+
+- 9GB [gemma-4-E4B-it-MLX-8bit](https://huggingface.co/lmstudio-community/gemma-4-E4B-it-MLX-8bit)
+- 3.6GB [gemma-4-e2b-it-4bit](https://huggingface.co/mlx-community/gemma-4-e2b-it-4bit)
 
 ## Non Kiwix
 
@@ -19,6 +24,7 @@ Precursor to this list: [💻 Internet Exit Strategy](https://port19.xyz/tech/in
 - 200MB [Seterra](https://www.geoguessr.com/quiz/seterra) (ipad app on mac)
 
 ## [Kiwix](https://en.wikipedia.org/wiki/Kiwix)
+
 - 🌸52GB full  English Wikipedia without pictures
 - 22.3GB CrashCourse
 - 2.22GB WikiMed Medical Encyclopedia
