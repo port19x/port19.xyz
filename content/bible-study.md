@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2026-06-15
+updated = 2026-07-08
 description = "Tracking Bible & Spiritual Reading Progress"
 +++
 
@@ -74,6 +74,7 @@ From [TAN Books](https://tanbooks.com/) I have:\
 | Exodus                 |       40 |     07.05.2026 |
 | Wisdom                 |       19 |     13.05.2026 |
 | Sirach                 |       51 |     15.06.2026 |
+| Leviticus              |       27 |     08.07.2026 |
 
 ## Resources
 
