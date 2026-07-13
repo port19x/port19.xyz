@@ -11,7 +11,7 @@ It's an official honorary decoration of Germany,
 prerequisite qualification for many of our police forces and customs agencies,
 recognized by the bonus programs of many health insurances and it looks nice on a suit.
 
-It comes in bronze, silver, and gold. It's tested against the four categories endurance, speed, power and coordination.
+It comes in bronze, silver, and gold. It's tested against the four categories of endurance, speed, power and coordination.
 Each category gets you 1-3 points. For bronze you need 4-7 points, but at least passing each category with 1, silver you need 8-10 and gold 11-12.
 The times in this article are for a man aged 25-29, which is my age bracket. I'll also add german names where appropriate.
 
@@ -60,7 +60,7 @@ But for bronze, assuming we keep the golden 13.3s 100m sprint and 8.75m 7.26kg s
 
 ## Testing formalities
 
-**Important limitation: you may only replace on discipline per calendar year with a recognized federation badge!**
+**Important limitation: you may only replace one discipline per calendar year with a recognized federation badge!**
 
 If you thought the exploits end here you're wrong.
 The german sports badge counts your best performance each year in official test conditions.
