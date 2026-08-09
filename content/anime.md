@@ -1,7 +1,7 @@
 +++
 title = "🌸Anime List🌸"
 date = 2022-03-17
-updated = 2026-03-26
+updated = 2026-08-09
 description = "Port19s selfhosted anime list"
 +++
 
@@ -47,6 +47,7 @@ description = "Port19s selfhosted anime list"
 | ODDTAXI                                         |     5 |     13 | TV      |
 | Paranoia Agent                                  |     5 |     13 | TV      |
 | Perfect Blue                                    |     5 |      1 | Movie   |
+| The Apothecary Diaries                          |     5 |     24 | TV      |
 | The Garden of Words                             |     5 |      1 | Movie   |
 | The Night is Short, Walk on Girl                |     5 |      1 | Movie   |
 | Toradora!                                       |     5 |     25 | TV      |
