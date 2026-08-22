@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Claude for Code Review in Github Actions</title>
+<meta name="description" content="learnings from ani-cli v5">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Claude for Code Review in Github Actions
+</h1>
+
+<i>First Published: 2026-08-14</i>
+
+<hr>
+<p>AI somehow got good at code, but other than writing it, it can also review it now.
+In this post, I will show you how you can integrate Claude into your project with GitHub Actions to review pull requests.</p>
+<p>90% of my AI usage during the development of <a rel="external" href="https://github.com/pystardust/ani-cli/releases/tag/v5.0">ani-cli v5</a> was getting Claude to review the current state of the v5 branch and nitpick small problems. I would say that around 60-70% of the raised issues were false positives, but the remaining 30-40% were actually valuable nitpicks that prevented some real issues, sped up the development and made me ship faster with greater confidence.</p>
+<p>Afterwards, I had the idea that you could theoretically have Claude review each pull request automatically, and do so in a way that is tailored to the needs of ani-cli.
+I abandoned that idea, not because it is unfeasible, but because AI companies are very unreliable and I don't want to commit to paying my Claude subscription long-term for a CI enhancement that my fellow maintainers are unenthusiastic about at best.</p>
+<p>The basic premise is using the <a rel="external" href="https://github.com/anthropics/claude-code-action">official GitHub Action</a> by Anthropic and adding a personal OAUTH token to the repository secrets.
+This sidesteps the issue of not having full ownership permissions, which would be necessary for installing Claude or other AI agents as an app.
+Then the main work is tweaking a prompt and finding the right model to use.</p>
+<h2 id="prompt">
+<a class="zola-anchor" href="#prompt" aria-label="Anchor link for: prompt">🔗</a>
+
+Prompt</h2>
+<p><a rel="external" href="https://github.com/port19x/ani-cli/blob/master/.github/workflows/claude-review.yml">Link to workflow file</a></p>
+<p>The prompt that I settled on:</p>
+<pre class="giallo" style="color: #BFBDB6; background-color: #0D1017;"><code data-lang="plain"><span class="giallo-l"><span>REPO: ${{ github.repository }}</span></span>
+<span class="giallo-l"><span>PR NUMBER: ${{ github.event.pull_request.number }}</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>Review this shell script change. ani-cli is POSIX-sh: no bashisms,</span></span>
+<span class="giallo-l"><span>no awk, no wget. Base version at ./ani-cli, PR version at</span></span>
+<span class="giallo-l"><span>pr-head/ani-cli. Only post comments, never edit files.</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>Gather first: `gh pr diff`, plus, if ani-cli changed, verbatim</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    shellcheck -s sh -o all -e 2250 pr-head/ani-cli</span></span>
+<span class="giallo-l"><span>    shfmt -i 4 -ci -d pr-head/ani-cli</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>Then produce exactly two things, in this order.</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>1. One top-level `gh pr comment`, always, even when both linters</span></span>
+<span class="giallo-l"><span>are clean. The only place prose belongs. What the change does,</span></span>
+<span class="giallo-l"><span>whether the approach holds up, any logic, portability or security</span></span>
+<span class="giallo-l"><span>concern the linters cannot see, plus the version verdict below.</span></span>
+<span class="giallo-l"><span>Under 150 words, no headings, no recap of the inline comments.</span></span>
+<span class="giallo-l"><span>Never mention your own tooling, environment or limitations in any</span></span>
+<span class="giallo-l"><span>comment. If the linter output is missing, review the diff and say</span></span>
+<span class="giallo-l"><span>nothing about it.</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>2. One inline comment per linter finding, prose-free. The body is</span></span>
+<span class="giallo-l"><span>one line plus a ```suggestion fence holding the minimal fix,</span></span>
+<span class="giallo-l"><span>nothing else. For shellcheck that line is a markdown link to</span></span>
+<span class="giallo-l"><span>https://www.shellcheck.net/wiki/SC0000 titled with the code; for</span></span>
+<span class="giallo-l"><span>shfmt it is the literal `shfmt -i 4 -ci`, including the backticks.</span></span>
+<span class="giallo-l"><span>The fence replaces exactly the lines you anchor to, closing braces</span></span>
+<span class="giallo-l"><span>included, so count both before posting. Never post a comment</span></span>
+<span class="giallo-l"><span>correcting an earlier one; drop the fence if unsure.</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>Version verdict: if ani-cli changed and `version_number=&quot;X.Y.Z&quot;` is</span></span>
+<span class="giallo-l"><span>unchanged or lower than base, say so and give the base patch number</span></span>
+<span class="giallo-l"><span>incremented by one. Never judge minor or major. If it already</span></span>
+<span class="giallo-l"><span>increased, say nothing.</span></span></code></pre><h2 id="examples">
+<a class="zola-anchor" href="#examples" aria-label="Anchor link for: examples">🔗</a>
+
+Examples</h2>
+<p>In order to test the viability of Claude as a reviewer, I opened one good pull request and one bad pull request.
+While the bad pull request could get away with Opus 5 medium, the good one benefited a good deal from Opus 5 extra.
+Check them out yourself:</p>
+<ul>
+<li><a rel="external" href="https://github.com/port19x/ani-cli/pull/9">Opus 5 medium Bad</a></li>
+<li><a rel="external" href="https://github.com/port19x/ani-cli/pull/10">Opus 5 medium Good</a></li>
+<li><a rel="external" href="https://github.com/port19x/ani-cli/pull/18">Opus 5 extra Bad</a></li>
+<li><a rel="external" href="https://github.com/port19x/ani-cli/pull/17">Opus 5 extra Good</a></li>
+</ul>
+<p>I should note that Sonnet 5 and Haiku 4.5 both failed at posting github comments, they were too stupid to use the MCP.</p>
+<h2 id="conclusion">
+<a class="zola-anchor" href="#conclusion" aria-label="Anchor link for: conclusion">🔗</a>
+
+Conclusion</h2>
+<p>If you have an open source project with actual outside contributors, and you are paying for an AI subscription, you'll benefit from a setup like this.
+It will speed up your review process and make contributing easier for outsiders and inexperienced developers.
+Keep in mind that AI, as good as it is currently, still lacks good judgement and taste, so you'll need to be aware of the false positives that will inevitably crop up.
+Overall, if you like AI, I think this is one good way to integrate it.</p>
+<p><em>While this post is about AI, it was entirely written and edited by me. The only tool that’s technically AI that was involved in the process is MacOS 27 dictation. AI as a field is developing at an incredible pace, so if this post is more than a year old treat it as a historical artifact.</em></p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;8bitdo-pro3&#x2F;">💻 8bitdo pro 3 controller review ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;claude-window-alignment&#x2F;">‹ 💻 How to auto-align your claude usage windows</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
