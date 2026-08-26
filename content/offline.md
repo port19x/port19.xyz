@@ -14,7 +14,7 @@ Precursor to this list: [💻 Internet Exit Strategy](https://port19.xyz/tech/in
 
 - 8.5GB [Bonsai-27B-Ternary](https://lmstudio.ai/models/prism-ml/bonsai-27b)
 - 3.4GB [MedGemma-1.5-4B-it-4bit](https://huggingface.co/mlx-community/medgemma-1.5-4b-it-4bit)
-- 1.7GB [Qwen3.5-2B-MLX-4bit](https://huggingface.co/mlx-community/Qwen3.5-2B-MLX-4bit)
+- 🌸1.7GB [Qwen3.5-2B-MLX-4bit](https://huggingface.co/mlx-community/Qwen3.5-2B-MLX-4bit)
 
 ## Non Kiwix
 
@@ -30,6 +30,7 @@ Precursor to this list: [💻 Internet Exit Strategy](https://port19.xyz/tech/in
 - 22.3GB CrashCourse
 - 🌸2.22GB WikiMed Medical Encyclopedia
 - 1.19GB StackExchange: Apple Q&A
+- 🌸1.19GB Wikivoyage
 - 700MB Low-Tech Magazine
 - 452MB XKCD
 - 250MB RationalWiki
@@ -39,6 +40,7 @@ Precursor to this list: [💻 Internet Exit Strategy](https://port19.xyz/tech/in
 - 🌸35MB ArchWiki
 - 23.1MB Corey Schafer SQL Tutorials
 - 21.0MB ZimGit Water
+- 🌸17.8MB Restarters
 - 4.61MB WikiCiv
 
 ## [DevDocs](https://devdocs.io/)
@@ -46,9 +48,9 @@ Precursor to this list: [💻 Internet Exit Strategy](https://port19.xyz/tech/in
 *also via Kiwix*
 
 - 31.5MB Ansible
+- 4.93MB CSS
 - 4.40MB Python
 - 3.46MB SQLite
-- 3.15MB Terraform
 - 2.73MB JavaScript
 - 1.99MB HTTP
 - 1.78MB Docker
@@ -59,4 +61,3 @@ Precursor to this list: [💻 Internet Exit Strategy](https://port19.xyz/tech/in
 - 816KB Nginx
 - 781KB Zsh
 - 558KB Bash
-
