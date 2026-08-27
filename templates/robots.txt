@@ -1,6 +1,4 @@
-User-agent: GPTBot
-Disallow: /
-
+# Robots Welcome
 User-agent: *
 Disallow:
 Allow: /
