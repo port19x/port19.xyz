@@ -1,6 +1,7 @@
 +++
 title = "💻Offline Stack💻"
 date = 2026-08-26
+updated = 2026-09-11
 description = "becoming independent from home internet"
 +++
 
@@ -10,11 +11,30 @@ Precursor to this list: [💻 Internet Exit Strategy](https://port19.xyz/tech/in
 
 🌸 = high value, those are also saved on my phone
 
+## Dication
+
+- 114MB + 626MB Mobile: [VivaDicta](https://vivadicta.com/) running [Whisper Large v3](https://huggingface.co/openai/whisper-large-v3)
+- 43MB + 1.1 GB Desktop: [Handy](https://github.com/cjpais/handy), also running [Whisper Large v3](https://huggingface.co/openai/whisper-large-v3)
+
+Shoutout to [Qwen3-ASR 1.7B](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) as well.
+One day someone will be brave enough to run it on a phone.
+
 ## LLMs
 
-- 8.5GB [Bonsai-27B-Ternary](https://lmstudio.ai/models/prism-ml/bonsai-27b)
-- 3.4GB [MedGemma-1.5-4B-it-4bit](https://huggingface.co/mlx-community/medgemma-1.5-4b-it-4bit)
-- 🌸1.7GB [Qwen3.5-2B-MLX-4bit](https://huggingface.co/mlx-community/Qwen3.5-2B-MLX-4bit)
+*they are pretty stupid at this size, but also entertaining*
+
+### Desktop
+
+- 1.6GB Runtime: [LM Studio](https://lmstudio.ai/)
+- 6.0GB [Qwen3.5-9B 4bit mlx](https://huggingface.co/Qwen/Qwen3.5-9B)
+- 9.1GB [Gemma 4 12B it 6bit mlx](https://huggingface.co/google/gemma-4-12B-it)
+
+### Mobile
+
+- 105MB Runtime: [Locally](https://locallyai.app/)
+- 2.1GB [Ternary Bonsai 8B](https://huggingface.co/prism-ml/Ternary-Bonsai-8B-mlx-2bit)
+- 2.4GB [Gemma 4 Mobile E2B](https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers)
+- 3.1GB [Qwen 3.5 4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 
 ## Non Kiwix
 
@@ -33,31 +53,8 @@ Precursor to this list: [💻 Internet Exit Strategy](https://port19.xyz/tech/in
 - 🌸1.19GB Wikivoyage
 - 700MB Low-Tech Magazine
 - 452MB XKCD
-- 250MB RationalWiki
-- 206MB Art of Problem Solving
 - 189MB StackExchange: Christianity Q&A
 - 115MB StackExchange: Economics Q&A
 - 🌸35MB ArchWiki
-- 23.1MB Corey Schafer SQL Tutorials
 - 21.0MB ZimGit Water
 - 🌸17.8MB Restarters
-- 4.61MB WikiCiv
-
-## [DevDocs](https://devdocs.io/)
-
-*also via Kiwix*
-
-- 31.5MB Ansible
-- 4.93MB CSS
-- 4.40MB Python
-- 3.46MB SQLite
-- 2.73MB JavaScript
-- 1.99MB HTTP
-- 1.78MB Docker
-- 1.68MB Go
-- 1.68MB HTML
-- 1.57MB Git
-- 887KB HAProxy
-- 816KB Nginx
-- 781KB Zsh
-- 558KB Bash
