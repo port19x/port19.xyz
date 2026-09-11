@@ -26,8 +26,9 @@ One day someone will be brave enough to run it on a phone.
 ### Desktop
 
 - 1.6GB Runtime: [LM Studio](https://lmstudio.ai/)
-- 6.0GB [Qwen3.5-9B 4bit mlx](https://huggingface.co/Qwen/Qwen3.5-9B)
+- 10.5GB [Qwen3.5 9B 8bit mlx](https://huggingface.co/Qwen/Qwen3.5-9B)
 - 9.1GB [Gemma 4 12B it 6bit mlx](https://huggingface.co/google/gemma-4-12B-it)
+- 8.5GB [Ternary Bonsai 27B mlx](https://huggingface.co/prism-ml/Ternary-Bonsai-27B-mlx-2bit)
 
 ### Mobile
 
