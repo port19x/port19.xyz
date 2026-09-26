@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 Automatic Speech Recognition Overview</title>
+<meta name="description" content="Mouse Button, Handy, VivaDicta, Whisper Large V3, Qwen3 1.7B ASR">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 Automatic Speech Recognition Overview
+</h1>
+
+<i>First Published: 2026-09-26</i>
+
+<hr>
+<p>After giving an overview of what I use for search and spending some time optimizing my speech recognition setup,
+I would now like to share some of my tools for it.</p>
+<h2 id="history">
+<a class="zola-anchor" href="#history" aria-label="Anchor link for: history">🔗</a>
+
+History</h2>
+<p>My history with voice recognition starts somewhere in 2023, where I started dictating a paper for college.
+And it really kicked off when I dictated my entire bachelor's thesis in 2024.
+Back then I used Whisper with its base model using the following script:</p>
+<pre class="giallo" style="color: #BFBDB6; background-color: #0D1017;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #5A6673;font-style: italic;">#!/bin/sh</span></span>
+<span class="giallo-l"><span style="color: #F07178;">echo</span><span style="color: #AAD94C;"> &quot;Recording. Press C-c to stop...&quot;</span></span>
+<span class="giallo-l"><span style="color: #59C2FF;">ffmpeg</span><span style="color: #95E6CB;"> -hide_banner -nostats -loglevel</span><span style="color: #AAD94C;"> quiet</span><span style="color: #95E6CB;"> -y -f</span><span style="color: #AAD94C;"> alsa</span><span style="color: #95E6CB;"> -i</span><span style="color: #AAD94C;"> default &quot;/tmp/audio.wav&quot;</span></span>
+<span class="giallo-l"><span style="color: #F07178;">echo</span><span style="color: #AAD94C;"> &quot;Transcribing audio...&quot;</span></span>
+<span class="giallo-l"><span style="color: #59C2FF;">whisper</span><span style="color: #AAD94C;"> &quot;/tmp/audio.wav&quot;</span><span style="color: #95E6CB;"> --model</span><span style="color: #AAD94C;"> base</span><span style="color: #95E6CB;"> --fp16</span><span style="color: #AAD94C;"> False</span><span style="color: #95E6CB;"> --output_format</span><span style="color: #AAD94C;"> txt</span><span style="color: #95E6CB;"> -o</span><span style="color: #AAD94C;"> /tmp/transcription</span></span>
+<span class="giallo-l"><span style="color: #59C2FF;">xclip</span><span style="color: #95E6CB;"> -selection</span><span style="color: #AAD94C;"> c</span><span style="color: #F29668;"> &lt;</span><span style="color: #AAD94C;"> /tmp/transcription/audio.txt</span></span>
+<span class="giallo-l"><span style="color: #F07178;">echo</span><span style="color: #AAD94C;"> &quot;DONE! Check your Clipboard&quot;</span></span></code></pre>
+<p>This dictation helped me greatly alleviate my hand pain and finger pain that is still present if I have days where I type a lot.
+So for writing anything longer than two or three sentences, I really appreciate the option of dictating it.</p>
+<h2 id="macos">
+<a class="zola-anchor" href="#macos" aria-label="Anchor link for: macos">🔗</a>
+
+MacOS</h2>
+<p>What really sparked me to reinvestigate dictation for my workflow now in 2026 was the introduction of a new voice model natively in macOS 27.
+This model I tried and used since early Q3 of this year, but I have not stopped there.</p>
+<h2 id="handy">
+<a class="zola-anchor" href="#handy" aria-label="Anchor link for: handy">🔗</a>
+
+Handy</h2>
+<p>On windows at work i quickly sought an equivalent and landed on the open source tool <a rel="external" href="https://handy.computer/">Handy</a>.
+This application provides an interface to many easily downloadable voice models, such as <a rel="external" href="https://huggingface.co/openai/whisper-large-v3">Whisper Large V3</a>, which I now use, and <a rel="external" href="https://handy.computer/">Qwen3 1.7B ASR</a>, which is also quite decent.
+Then, after having used Handy for a while on the Windows PC, I decided to also use it on my Mac, so I can have the same voice model on both systems and align my speech patterns towards the quirks of each option.
+On both platforms I have the dictation toggle bound to the forward mouse button.</p>
+<h2 id="ios">
+<a class="zola-anchor" href="#ios" aria-label="Anchor link for: ios">🔗</a>
+
+iOS</h2>
+<p>On iOS, I have spent some time looking for a good app for this and landed on <a rel="external" href="https://vivadicta.com/">VivaDicta</a>.
+VivaDicta is a good option because it is free and open source.
+It's also convenient to import Voice Memos into it and to export the audio and/or the text from it.
+I dictated a first draft of this post with the app on September 19th.</p>
+<h2 id="voice-models">
+<a class="zola-anchor" href="#voice-models" aria-label="Anchor link for: voice-models">🔗</a>
+
+Voice models</h2>
+<p>As for voice models, my recommendation leans towards <a rel="external" href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B">Qwen3 ASR 1.7B</a> or <a rel="external" href="https://huggingface.co/openai/whisper-large-v3">Whisper Large V3</a>.
+You can use faster models or even the natively built-in models of macOS and Windows,
+but if you spend any serious amount of time dictating, this doesn't make much sense.
+I should also note that if you are a heavy user of AI tools, most of them have a dictation option built into their UI.</p>
+<p>I hope this was interesting and you consider trying out a dictation tool, at least for longer writing sessions.</p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;search-2026&#x2F;">‹ 💻 Review of Current Search</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
