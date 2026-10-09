@@ -1,7 +1,7 @@
 +++
 title = "✝️ Bible Study ✝️ "
 date = 2025-06-03
-updated = 2026-09-22
+updated = 2026-10-09
 description = "Tracking Bible & Spiritual Reading Progress"
 +++
 
@@ -26,7 +26,8 @@ From [TAN Books](https://tanbooks.com/) I have:\
 
 ### Spiritual Reading
 
-- [St Alphonsus Ligouri: 12 Steps to Holiness and Salvation](https://www.goodreads.com/book/show/1093642.The_12_Steps_to_Holiness_and_Salvation)
+Favorite: [St Alphonsus Ligouri: 12 Steps to Holiness and Salvation](https://www.goodreads.com/book/show/1093642.The_12_Steps_to_Holiness_and_Salvation)
+
 - [St. Louis de Montfort: The Secret of the Rosary](https://www.goodreads.com/book/show/1448527.The_Secret_Of_The_Rosary)
 - [St. Benedict of Nursia: The Rule of Saint Benedict](https://www.goodreads.com/book/show/82406.The_Rule_of_Saint_Benedict)
 - [Benedicta Ward: The Sayings of the Desert Fathers - The Alphabetical Collection](https://www.goodreads.com/book/show/132153.The_Sayings_of_the_Desert_Fathers)
@@ -76,6 +77,7 @@ From [TAN Books](https://tanbooks.com/) I have:\
 | Sirach                 |       51 |     15.06.2026 |
 | Leviticus              |       27 |     08.07.2026 |
 | Numbers                |       36 |     21.09.2026 |
+| Deuteronomy            |       34 |     09.10.2026 |
 
 ## Resources
 
