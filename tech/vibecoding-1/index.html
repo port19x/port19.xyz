@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 My first experience with vibe coding</title>
+<meta name="description" content="Making a database for the Nintendo Switch games of my local library">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 My first experience with vibe coding
+</h1>
+
+<i>First Published: 2026-08-14</i>
+
+<hr>
+<p>So, around a month ago, I had my first real experience with vibe coding.
+I define vibe coding as generating the whole application with minimal or no human editing of the source code.
+In this post, I want to share my experience.</p>
+<a href="https://port19x.github.io/nintendo-switch-library/">
+<img src="preview.jpg" height="300vw">
+</a>
+<h2 id="application">
+<a class="zola-anchor" href="#application" aria-label="Anchor link for: application">🔗</a>
+
+Application</h2>
+<p>I have a Nintendo Switch 2 and my <a rel="external" href="https://stadtbibliothek.karlsruhe.de/">local library</a> has a large catalogue of ca 500 Nintendo Switch games that are accessible via a <a rel="external" href="https://opac.karlsruhe.de/cgi-bin/koha/opac-search.pl?&amp;limit=mc-itype%2Cphr%3A17&amp;limit=ccode%3A7507&amp;count=1000&amp;sort_by=acqdate_dsc&amp;format=rss">RSS file</a>.</p>
+<p>Before playing a game, I like to look it up on <a rel="external" href="https://www.metacritic.com/">Metacritic</a> as well as <a rel="external" href="https://howlongtobeat.com/">Howlongtobeat</a> as I like short games that are at least decent.</p>
+<p>The goal of the website is to have a pregenerated static JSON database as well as a small self-contained web frontend that I can both host on GitHub pages.
+The user interface should resemble a table with titles, first or third-party distinction, Metacritic score, Howlongtobeat playtime (main+extra), a density score, and a link to my local library index.
+It should have filters and be sortable by column.</p>
+<h2 id="why">
+<a class="zola-anchor" href="#why" aria-label="Anchor link for: why">🔗</a>
+
+Why?</h2>
+<p>Technologically, this should play to the strengths of current AI, as simple data aggregation and manipulation, as well as basic front-end design are well within their capabilities.
+At the same time, it checks for self-correction, data normalization, and thorough scraping abilities, since this aggregates the data of 3 websites into one data set.</p>
+<p>The version that you can use and see right now was made in the browser with <a rel="external" href="https://arena.ai">arena.ai</a> in eight iterations, taking about 1.5 hours total, plus another manual half hour for deployment onto GitHub pages.
+Taking the Application paragraph as a prompt, this could be a good benchmark for frontier harnesses, such as
+<a rel="external" href="https://claude.com/product/claude-code">Claude Code</a>,
+<a rel="external" href="https://openai.com/codex/">Codex</a>,
+<a rel="external" href="https://x.ai/build">Grok build</a>,
+or <a rel="external" href="https://geminicli.com/">Gemini CLI</a>.</p>
+<p>What took eight iterations and 1.5 hours in <a rel="external" href="https://arena.ai">arena.ai</a> should realistically be one-shotable by the current frontier.
+Look for updates to <a rel="external" href="https://github.com/port19x/nintendo-switch-library">the repo</a> on different branches, as well as edits to the readme on the master branch to follow future benchmarking with this.</p>
+<h2 id="perspective">
+<a class="zola-anchor" href="#perspective" aria-label="Anchor link for: perspective">🔗</a>
+
+Perspective</h2>
+<p>Around two years ago, I first used AI to assist in a coding project, namely <a rel="external" href="https://github.com/port19x/deadsniper">deadsniper</a> where GPT4o was helpful,
+but still incapable of doing more than giving short snippets for idioms in go that I at the time was unfamiliar with.</p>
+<p>Now you can feasibly develop small applications entirely with AI and the scope of what is possible is growing month by month.
+Depending on how much you are willing to spend, you're already able to do some amazing things with modern AI harnesses.
+Take this demo as a floor of current capability and not as the ceiling.</p>
+<p><em>While this post is about AI, it was entirely written and edited by me. The only tool that’s technically AI that was involved in the process is MacOS 27 dictation. AI as a field is developing at an incredible pace, so if this post is more than a year old treat it as a historical artifact.</em></p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;claude-window-alignment&#x2F;">💻 How to auto-align your claude usage windows ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;farewell&#x2F;">‹ 💻 Site Archival &amp; My Favorite Posts</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
