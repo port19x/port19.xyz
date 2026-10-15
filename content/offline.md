@@ -1,7 +1,7 @@
 +++
 title = "💻Offline Stack💻"
 date = 2026-08-26
-updated = 2026-09-11
+updated = 2026-10-15
 description = "becoming independent from home internet"
 +++
 
@@ -26,16 +26,13 @@ One day someone will be brave enough to run it on a phone.
 ### Desktop
 
 - 1.6GB Runtime: [LM Studio](https://lmstudio.ai/)
-- 10.5GB [Qwen3.5 9B 8bit mlx](https://huggingface.co/Qwen/Qwen3.5-9B)
-- 9.1GB [Gemma 4 12B it 6bit mlx](https://huggingface.co/google/gemma-4-12B-it)
-- 8.5GB [Ternary Bonsai 27B mlx](https://huggingface.co/prism-ml/Ternary-Bonsai-27B-mlx-2bit)
+- 16.1GB [Qwen3.8 27B 4bit mlx](https://lmstudio.ai/models/qwen/qwen3.8-27b)
+- 15.6GB [Gemma 4 26B A4B QAT 4bit mlx](https://lmstudio.ai/models/google/gemma-4-26b-a4b-qat)
 
 ### Mobile
 
 - 105MB Runtime: [Locally](https://locallyai.app/)
-- 2.1GB [Ternary Bonsai 8B](https://huggingface.co/prism-ml/Ternary-Bonsai-8B-mlx-2bit)
-- 2.4GB [Gemma 4 Mobile E2B](https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers)
-- 3.1GB [Qwen 3.5 4B](https://huggingface.co/Qwen/Qwen3.5-4B)
+- 1.43GB [MiniCPM 5 2B](https://huggingface.co/openbmb/MiniCPM5-2B)
 
 ## Non Kiwix
 
@@ -47,7 +44,7 @@ One day someone will be brave enough to run it on a phone.
 
 ## [Kiwix](https://en.wikipedia.org/wiki/Kiwix)
 
-- 🌸52GB full English Wikipedia without pictures
+- 🌸127GB full English Wikipedia with pictures (on phone without pictures 52GB)
 - 22.3GB CrashCourse
 - 🌸2.22GB WikiMed Medical Encyclopedia
 - 1.19GB StackExchange: Apple Q&A
