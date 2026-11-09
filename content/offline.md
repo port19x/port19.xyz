@@ -1,7 +1,7 @@
 +++
 title = "💻Offline Stack💻"
 date = 2026-08-26
-updated = 2026-10-15
+updated = 2026-11-09
 description = "becoming independent from home internet"
 +++
 
@@ -32,7 +32,7 @@ One day someone will be brave enough to run it on a phone.
 ### Mobile
 
 - 105MB Runtime: [Locally](https://locallyai.app/)
-- 1.43GB [MiniCPM 5 2B](https://huggingface.co/openbmb/MiniCPM5-2B)
+- 2.1GB [Ternary Bonsai 2 4B](https://huggingface.co/prism-ml/Ternary-Bonsai-2-4B-gguf)
 
 ## Non Kiwix
 
