@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="author" content="port19">
+  <meta name="generator" content="zola">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://port19.xyz/favicon.ico">
+  <link rel="apple-touch-icon" href="https://port19.xyz/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="https://port19.xyz/style.css" />
+  <link rel="preload" href="https://port19.xyz/NotoColorEmojiSubfont.woff2" as="font" type="font/woff2">
+  <link type="application/rss+xml" rel="alternate" href="https://port19.xyz/rss.xml" title="Port19s Webpage">
+  
+<title>💻 How to auto-align your claude usage windows</title>
+<meta name="description" content="stretch your weekly limit further">
+
+</head>
+
+<body>
+  
+<section>
+<h1 class="title">
+  💻 How to auto-align your claude usage windows
+</h1>
+
+<i>First Published: 2026-08-14</i>
+
+<hr>
+<p>I've been using Claude for three weeks now, and want to share a small but impactful lifehack for getting more usage out of the weekly limit by aligning your five-hour usage windows to your actual daily schedule.
+The basic premise is that Claude supports scheduled tasks. In Claude code and since sometime this week also in the regular Claude chat.</p>
+<h2 id="how-to">
+<a class="zola-anchor" href="#how-to" aria-label="Anchor link for: how-to">🔗</a>
+
+How To</h2>
+<p>What you do is you go ahead and you make a <a rel="external" href="https://code.claude.com/docs/en/scheduled-tasks">scheduled task</a> that uses the cheapest model available, currently Haiku 4.5, and that runs once every five or so hours in my case I use 5 AM, 10 AM, 3 PM and 8 PM. Then you give it a very short prompt to keep token use minimal and then it should work.
+The effect is that now if you sign into Claude and send your first message at 8 AM, you will have your first reset 2 hours later at 10 AM rather than having to wait all the way until 1 PM to continue your work if you happen to lean on the AI a little more heavily or have tasks that eat up tokens for one reason or another.
+With the Claude weekly limit being roughly 10 to 15 five-hour usage windows, this has helped me to make the most out of the AI that I pay for, and already came in clutch a couple of times.
+Keep in mind time zones!</p>
+<h2 id="copy-pasta">
+<a class="zola-anchor" href="#copy-pasta" aria-label="Anchor link for: copy-pasta">🔗</a>
+
+Copy Pasta</h2>
+<p>Prompt: <code>are you awake? If yes, say "good morning"</code><br />
+<a rel="external" href="https://en.wikipedia.org/wiki/Central_European_Summer_Time">CEST</a> cron expression: <code>0 3,8,13,18 * * *</code></p>
+<h2 id="effort-cost">
+<a class="zola-anchor" href="#effort-cost" aria-label="Anchor link for: effort-cost">🔗</a>
+
+Effort Cost</h2>
+<p>While we are on the point of optimizing Claude usage, I would also like to share my mental model regarding cost of Opus 5 and Sonnet 5 at different effort levels.
+Normalized to Sonnet 5 medium being 1 consult the following table:</p>
+<table><thead><tr><th>Effort</th><th>Sonnet 5</th><th>Opus 5</th></tr></thead><tbody>
+<tr><td>low</td><td>0.5</td><td>1</td></tr>
+<tr><td>medium</td><td>1</td><td>2</td></tr>
+<tr><td>high</td><td>2</td><td>4</td></tr>
+<tr><td>extra</td><td>3</td><td>6</td></tr>
+<tr><td>max</td><td>5</td><td>10</td></tr>
+</tbody></table>
+<p><em>While this post is about AI, it was entirely written and edited by me. The only tool that’s technically AI that was involved in the process is MacOS 27 dictation.
+AI as a field is developing at an incredible pace, so if this post is more than a year old treat it as a historical artifact.</em></p>
+
+<hr>
+</section>
+
+  <nav class="post-nav" style="width:100%">
+    
+    <a style="float:right" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;claude-for-code-review&#x2F;">💻 Claude for Code Review in Github Actions ›</a>
+    
+    <a class="float:middle" href="https://port19.xyz">🏠</a>
+    
+    <a style="float:left" href="https:&#x2F;&#x2F;port19.xyz&#x2F;tech&#x2F;vibecoding-1&#x2F;">‹ 💻 My first experience with vibe coding</a>
+    
+  </nav>
+<wbr>
+<hr>
+
+
+  <footer>
+    <a href="mailto:port19@port19.xyz"><img src="https://port19.xyz/buttons/email.gif" alt="Webbutton to email" style="height:31px;width:88px;" align="left"></a>
+    <a href="/rss.xml"><img src="https://port19.xyz/buttons/rss.gif" alt="Webbutton to rss feed" style="height:31px;width:88px;" align="right"></a>
+  </footer>
+</body>
+
+</html>
